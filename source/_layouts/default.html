@@ -1,0 +1,8 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include head.html %}
+<body {% if page.body_id %}id="{{ page.body_id }}"{% endif %}>
+  <div id="content">
+    {{ content }}
+  </div>
+</body>
+</html>

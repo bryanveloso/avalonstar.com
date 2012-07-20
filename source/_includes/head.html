@@ -1,0 +1,12 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} // {% endif %}{{ site.title }}</title>
+
+  <meta name="author" content="{{ site.author }}">
+
+  {% capture canonical %}{{ site.url }}{% if site.permalink contains ".html" %}{{ page.url }}{% else %}{{ page.url | remove: "index.html" }}{% endif %}{% endcaputre %}
+  <link rel="canonical" href="{{ canonical }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
