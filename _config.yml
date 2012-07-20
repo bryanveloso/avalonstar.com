@@ -1,0 +1,13 @@
+root: /
+permalink: /journal/:year/:title/
+
+source: source
+destination: public
+plugins: plugins
+markdown: kramdown
+pygments: false
+
+paginate: 10
+pagination_dir: journal
+
+titlecase: true       # Converts page and post titles to titlecase
