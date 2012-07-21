@@ -1,3 +1,5 @@
+author: Bryan Veloso
+
 root: /
 permalink: /journal/:year/:title/
 
@@ -10,4 +12,4 @@ pygments: false
 paginate: 10
 pagination_dir: journal
 
-titlecase: true       # Converts page and post titles to titlecase
+titlecase: true  # Converts page and post titles to titlecase.
