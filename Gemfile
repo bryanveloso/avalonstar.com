@@ -6,7 +6,6 @@ group :development do
   gem 'jekyll', '~> 0.11.2'
   gem 'kramdown', '~> 0.13.7'
   gem 'pygments.rb', '~> 0.2.13'
-  gem 'rubypants', '~> 0.2.0'
   gem 'rb-fsevent', '~> 0.9.1'
   gem 'stringex', '~> 1.4.0'
   gem 'liquid', '~> 2.3.0'

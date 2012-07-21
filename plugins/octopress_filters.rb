@@ -4,13 +4,17 @@ require 'rubypants'
 module OctopressFilters
   def post_filter(input)
     input = unwrap(input)
-    RubyPants.new(input).to_html
   end
 end
 
 module Jekyll
   class ContentFilters < PostFilter
     include OctopressFilters
+    def pre_render(post)
+      if post.ext.match('html|markdown')
+        post.content = pre_filter(post.content)
+      end
+    end
     def post_render(post)
       if post.ext.match('html|markdown')
         post.content = post_filter(post.content)
