@@ -1,5 +1,4 @@
 require './plugins/post_filters'
-require 'rubypants'
 
 module OctopressFilters
   def post_filter(input)
