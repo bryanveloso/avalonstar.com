@@ -1,3 +1,24 @@
+require './plugins/post_filters'
+require 'rubypants'
+
+module OctopressFilters
+  def post_filter(input)
+    input = unwrap(input)
+    RubyPants.new(input).to_html
+  end
+end
+
+module Jekyll
+  class ContentFilters < PostFilter
+    include OctopressFilters
+    def post_render(post)
+      if post.ext.match('html|markdown')
+        post.content = post_filter(post.content)
+      end
+    end
+  end
+end
+
 module OctopressLiquidFilters
   # Removes trailing forward slashes from a string for easily appending
   # URL segments.

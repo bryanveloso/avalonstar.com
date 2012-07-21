@@ -115,8 +115,8 @@ module Jekyll
     #
     # Returns nothing.
     def post_write
-      if self.post_filters and is_filterable?
-        self.site_postfilters.each do |filter|
+      if self.site.post_filters and is_filterable?
+        self.site.post_filters.each do |filter|
           filter.post_write(self)
         end
       end
