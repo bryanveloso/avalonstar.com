@@ -16,5 +16,5 @@ group :development do
   gem 'compass', '~> 0.12.2'
 end
 
-gem 'sinatra', '~> 1.4.0'
+gem 'sinatra', '~> 1.3.2'
 gem 'rack-rewrite', '~> 1.2.1'
