@@ -7,6 +7,7 @@ $root = ::File.dirname(__FILE__)
 
 use Rack::Rewrite do
   # Insert all of the rewrite rules here.
+  r301 %r{^\/(?:blog|journal)\/([0-9]{4})\/[a-z]{3}\/[0-9]{1,2}\/(.*)\/$}, '/journal/$1/$2/'
 end
 
 class SinatraStaticServer < Sinatra::Base
