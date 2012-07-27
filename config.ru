@@ -20,6 +20,9 @@ use Rack::Rewrite do
 
   r301 '/blog', '/journal'
   r301 '/bsod', '/'
+
+  # LOL, Custom built PHP site! Holla 2001!
+  r301 '/index.php', '/'
 end
 
 class SinatraStaticServer < Sinatra::Base
