@@ -6,24 +6,26 @@ require "rack-rewrite"
 $root = ::File.dirname(__FILE__)
 
 use Rack::Rewrite do
-  # Insert all of the rewrite rules here.
+  # Redirections to journal entries.
   r301 %r{^\/(?:legacy)\/(?:journal)\/([0-9]{4})\/[a-z]{3}\/[0-9]{1,2}\/(.*)\/$}, '/journal/$1/$2/'
   r301 %r{^\/(?:blog|journal)\/([0-9]{4})\/[a-z]{3}\/[0-9]{1,2}\/(.*)\/$}, '/journal/$1/$2/'
   r301 %r{^\/([0-9]{4})\/[0-9]{1,2}\/[0-9]{1,2}\/(.*)\/$}, '/journal/$1/$2/'
 
+  # Redirections to /journal.
   r301 %r{^\/archives(\/.*\/)?$}, '/journal'
   r301 %r{^\/category(\/.*\/)?$}, '/journal'
   r301 %r{^\/topic(\/.*\/)?$}, '/journal'
+  r301 '/blog', '/journal'
 
+  # Redirections to /.
   r301 %r{^\/featurettes(\/.*\/)?$}, '/'
   r301 %r{^\/memoirs(\/.*\/)?$}, '/'
   r301 %r{^\/sotm(\/.*\/)?$}, '/'
-
-  r301 '/blog', '/journal'
-  r301 '/colophonics', '/about'
-
   r301 '/bsod', '/'
   r301 '/product', '/'
+
+  # Miscellaneous redirections.
+  r301 '/colophonics', '/about'
 
   # Redirect ChaoticSoul to its repository on GitHub.
   r301 '/chaoticsoul', 'https://github.com/bryanveloso/chaoticsoul'
