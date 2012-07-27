@@ -9,11 +9,19 @@ single: true
   <header>
     <h1>{{ page.title }}</h1>
     <p>{{ page.date }}</p>
-    <p>Episode {{ page.episode }}</p>
+
+    <ul class="js-yt-metadata">
+      <li class="js-yt-episode">Episode {{ page.episode }}</li>
+      <li class="js-yt-views"></li>
+      <li class="js-yt-comments"></li>
+    </ul>
+    <p></p>
   </header>
 
   <iframe src="http://youtube.com/embed/{{ page.ytid }}" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
   <div class="entry-content">{{ content }}</div>
+
+  {% include youtube.html %}
 </article>
 </div>
