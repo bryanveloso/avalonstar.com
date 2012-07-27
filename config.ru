@@ -16,6 +16,7 @@ use Rack::Rewrite do
   r301 %r{^\/topic(\/.*\/)?$}, '/journal'
 
   r301 %r{^\/featurettes(\/.*\/)?$}, '/'
+  r301 %r{^\/memoirs(\/.*\/)?$}, '/'
   r301 %r{^\/sotm(\/.*\/)?$}, '/'
 
   r301 '/blog', '/journal'
