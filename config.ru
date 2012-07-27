@@ -11,6 +11,7 @@ use Rack::Rewrite do
   r301 %r{^\/(?:blog|journal)\/([0-9]{4})\/[a-z]{3}\/[0-9]{1,2}\/(.*)\/$}, '/journal/$1/$2/'
   r301 %r{^\/([0-9]{4})\/[0-9]{1,2}\/[0-9]{1,2}\/(.*)\/$}, '/journal/$1/$2/'
   r301 '/blog', '/journal'
+  r301 '/bsod', '/'
 end
 
 class SinatraStaticServer < Sinatra::Base
