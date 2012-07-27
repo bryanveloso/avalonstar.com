@@ -20,6 +20,8 @@ use Rack::Rewrite do
   r301 %r{^\/sotm(\/.*\/)?$}, '/'
 
   r301 '/blog', '/journal'
+  r301 '/colophonics', '/about'
+
   r301 '/bsod', '/'
   r301 '/product', '/'
 
