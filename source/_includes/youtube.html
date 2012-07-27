@@ -1,11 +1,10 @@
 <script type="text/javascript">
   $(function() {
-    $.getJSON("https://gdata.youtube.com/feeds/api/videos/{{ page.ytid }}?v=2&alt=jsonc", function(data) {
-      response = data.data;
-      console.log(response);
+    $.getJSON("https://gdata.youtube.com/feeds/api/videos/{{ page.ytid }}?v=2&alt=jsonc", function(response) {
+      console.log(response.data);
 
-      $('.js-yt-views').text(response.viewCount);
-      $('.js-yt-comments').text(response.commentCount);
+      $('.js-yt-views').text(response.data.viewCount);
+      $('.js-yt-comments').text(response.data.commentCount);
     });
   });
 </script>
