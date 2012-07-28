@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source :rubygems
 
 group :development do
   gem 'rake', '~> 0.9.2.2'
@@ -13,6 +13,11 @@ group :development do
   gem 'coffee-script', '~> 2.2.0'
   gem 'sass', '~> 3.1.20'
   gem 'compass', '~> 0.12.2'
+end
+
+group :deployment do
+  gem 'rack-jekyll', :git => 'https://github.com/adaoraul/rack-jekyll.git'
+  gem 'unicorn'
 end
 
 gem 'sinatra', '~> 1.3.2'
