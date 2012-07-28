@@ -1,5 +1,8 @@
 source :rubygems
 
+gem 'rack-rewrite', '~> 1.2.1'
+gem 'sinatra', '~> 1.3.2'
+
 group :development do
   gem 'rake', '~> 0.9.2.2'
   gem 'rack', '~> 1.4.1'
@@ -15,10 +18,6 @@ group :development do
   gem 'compass', '~> 0.12.2'
 end
 
-group :deployment do
-  gem 'rack-jekyll', :git => 'https://github.com/adaoraul/rack-jekyll.git'
+group :production do
   gem 'unicorn'
 end
-
-gem 'sinatra', '~> 1.3.2'
-gem 'rack-rewrite', '~> 1.2.1'
