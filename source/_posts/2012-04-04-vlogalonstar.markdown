@@ -1,4 +1,5 @@
 ---
+category: video
 layout: video
 title: "Vlogalonstar"
 date: 2012-04-04 22:00
