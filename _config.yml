@@ -3,6 +3,7 @@ author: Bryan Veloso
 
 root: /
 
+date_format: "ordinal"
 permalink: /:year/:title/
 
 source: source
