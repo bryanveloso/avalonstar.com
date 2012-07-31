@@ -9,6 +9,9 @@ use Rack::Rewrite do
   # Redirections to journal entries.
   r301 %r{^(?:(?:\/legacy)?\/(?:archives|blog|journal))?\/([0-9]{4})\/(?:[a-z]{3}|[0-9]{1,2})\/[0-9]{1,2}\/(.*)\/.*?$}, '/$1/$2/'
 
+  # Specific post redirections.
+  # r301 ..., ...
+
   # Redirections to /journal.
   r301 %r{^\/archives(\/.*\/)?$}, '/journal/'
   r301 %r{^\/blog(\/.*\/)?$}, '/journal/'
