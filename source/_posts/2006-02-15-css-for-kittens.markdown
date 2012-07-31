@@ -1,0 +1,24 @@
+---
+layout: prose
+title: "CSS for Kittens"
+date: 2006-02-15 19:45
+comments: false
+
+version: 21
+summary: "This is the story about a guy, the fact he can't write books, and his cats. If only cats could code--then said guy's life would be a hell of a lot easier."
+---
+
+[<img src="http://static.flickr.com/32/100230432_38f2166be6_m.jpg" alt="CSS For Kittens" />][1]
+
+So remember that book I'd never write? Looks like we were all wrong, even me. I was wrong. I wrote a book! So let me give you the synopsis (and background story) of the new book by Bryan Veloso, "CSS by Kittens".
+
+The idea for this book came to me when used my smallest kitten, [Naida][2], [as a stand for my PowerBook][3]. Then I thought to myself, what would it be like if one of my kittens designed a website using CSS? Now come on, they're **my** cats, so they better know their CSS. So I sat down with them and held a pow-wow. After feeding them a few times and sitting through a few of their naps, we got down to business. I have to say that it was one of the most trying times of my life, sitting there and showing the cats page after page of wireframes, graphs and balls of yarn. They happened to like the pages where I started mentioning the catnip auction site. I think I fell asleep on the floor, much to Jenni's dismay.
+
+Now _CSS by Kittens_ could be a metaphor for something else, but it isn't. If one of my cats built a site, the examples shown here would be them. Sites for the lazy people, sites for the people with no time on their hands and sites for those with the shortest of attention spans - that's what you'll find in this book. Fifteen chapters span this book, from an introduction to CSS to your first CSS site; the tutorials are so easy, you could actually teach your cat to make them! But I'm sure you have more of a life than I do. Now if I were you, I'd get this CSS classic when they come out in stores. Very soon. So soon, never seems sooner than that. Don't waste your money on those boring CSS books! That's so 2005 and web 1.0. Kitties are the wave of the web design world's future! Come on, why wouldn't you want a book that cats help wrote? They even stamped their paws into the inside front cover of the first 100 copies! God, don't even get me started on how hard that was to do (the publishers weren't much help through that process).
+
+Whew, now that was hard. First book and everything, yep. I have to thank [Luke][4] for inspiring my first leap into the publishing world. Now if you excuse me, I have to go feed my cats while laughing my ass off. I hope you enjoyed this little break for reality. Seriously, I think this will be the closest I'll ever get to a book deal.
+
+[1]: http://www.flickr.com/photos/luxuryluke/100230432
+[2]: http://flickr.com/photos/avalonstar/98615174/
+[3]: http://www.flickr.com/photos/iceymoon/56348837/
+[4]: http://flickr.com/photos/luxuryluke/

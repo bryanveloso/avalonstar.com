@@ -1,0 +1,34 @@
+---
+layout: prose
+title: "Mint > Mentos"
+date: 2005-09-05 14:30
+comments: false
+
+version: 20
+---
+
+[<img src="http://static.flickr.com/33/40622160_5f5d08a13b.jpg" width="330" height="527" class="posted" alt="Mint-y Freshness" />][1]
+
+Now come on, how could something this cool be released without me talking about it. \*slap\*
+
+> Thanks again for taking an interest in Mint. Mint 1.0 is now available at [http://www.haveamint.com/][2]
+I got that today at about 3:15 PM, right after I installed a new showerhead. So without even taking a breath, I clicked on the link and found myself at the beautiful Inman Mint Supermarket, where for $30 you could buy Mint, Pepper (-mint, should have been Salt & Pepper) and Junior Mints for those on the go. After I blinked, I found myself with a pretty activation code and four ZIP files on my desktop.
+
+First thing I did was to look around for something that resembled an import function. **Nothing.** I thought the "update" section of the instructions might of had something on it. **Nope.** After a long sigh, I proceeded to feed Mint to my server. According to the server, it tasted good, and it's hard drive now smells fresh. Screw Mentos. Next I grabbed my activation code and tried to boot up Mint.
+
+Nothing but a message saying that the **code wasn't correct**.
+
+"Damnit!" I thought to myself while trying again about 5 more times, being greeted by the same message after every attempt. So after yelling my brains out to poor <a href="http://solutionwatch.com" rel="friend">Brian,</a> <a href="http://brokenkode.com" rel="friend">Khaled</a> and <a href="http://www.airbagindustries.com" rel="friend met">Greg,</a> I emailed the Mint-master about the problem. Ten minutes later I was told that I wasn't supposed to add the **http://** before my domain name in the registration area. Mr. Inman quickly fixed the problem, showing a great sense of customer service, then asked me to try again.
+
+So, it's up and it's really pretty. I never thought green could look so sexy, but Shaun did a mighty fine job with it. The Ay-yax portion of it is a little slow, as one will see parts of pages disappear to become window panes, but I got used to that pretty quickly. I have no idea how to configure the "Local Search Pepper" to work with WordPress[^1], but that can wait.
+
+Overall, it's just so welcoming. I really like it and I'm sure my stats love it too. I can't forget to mention that Junior Mint goes really well with my Battery Indicator and Feedburner widgets.
+
+Now... if only I can get my ShortStats ported to [Mint][3], I'd be really happy. **Shaun, stop avoiding my question.** :p
+
+[^1]: If you want to know how to get the local search to work within WordPress, [Mike over at Binary Bonsai][4] has just posted about it. It's fairly easy, but I had to put in **index.php** myself, contrary to what the instructions said.
+
+[1]: http://www.flickr.com/photos/avalonstar/40622160/ "Photo Sharing"
+[2]: http://www.haveamint.com
+[3]: http://www.avalonstar.com/mint/
+[4]: http://binarybonsai.com/archives/2005/09/06/mint-local-searches-with-wordpress/
