@@ -2,7 +2,7 @@ title: Avalonstar
 author: Bryan Veloso
 
 root: /
-permalink: /journal/:year/:title/
+permalink: /:year/:title/
 
 source: source
 destination: public
