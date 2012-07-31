@@ -10,10 +10,10 @@ use Rack::Rewrite do
   r301 %r{^(?:(?:\/legacy)?\/(?:archives|blog|journal))?\/([0-9]{4})\/(?:[a-z]{3}|[0-9]{1,2})\/[0-9]{1,2}\/(.*)\/.*?$}, '/$1/$2/'
 
   # Redirections to /journal.
-  r301 %r{^\/archives(\/.*\/)?$}, '/journal'
-  r301 %r{^\/category(\/.*\/)?$}, '/journal'
-  r301 %r{^\/topic(\/.*\/)?$}, '/journal'
-  r301 '/blog', '/journal'
+  r301 %r{^\/archives(\/.*\/)?$}, '/journal/'
+  r301 %r{^\/blog(\/.*\/)?$}, '/journal/'
+  r301 %r{^\/category(\/.*\/)?$}, '/journal/'
+  r301 %r{^\/topic(\/.*\/)?$}, '/journal/'
 
   # Redirections to /.
   r301 %r{^\/featurettes(\/.*\/)?$}, '/'
