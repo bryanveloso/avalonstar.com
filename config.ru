@@ -30,7 +30,7 @@ use Rack::Rewrite do
   r301 '/chaoticsoul', 'https://github.com/bryanveloso/chaoticsoul'
 
   # LOL, Custom built PHP site! Holla 2001!
-  r301 '/index.php', '/'
+  r301 %r{^\/index.php(?:\?.*)?$}, '/'
 end
 
 class SinatraStaticServer < Sinatra::Base
