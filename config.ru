@@ -7,8 +7,7 @@ $root = ::File.dirname(__FILE__)
 
 use Rack::Rewrite do
   # Redirections to journal entries.
-  r301 %r{^\/legacy\/journal\/([0-9]{4})\/[a-z]{3}\/[0-9]{1,2}\/(.*)\/$}, '/$1/$2/'
-  r301 %r{^\/(?:blog|journal)\/([0-9]{4})\/[a-z]{3}\/[0-9]{1,2}\/(.*)\/$}, '/$1/$2/'
+  r301 %r{^(?:\/legacy)?\/(?:blog|journal)\/([0-9]{4})\/[a-z]{3}\/[0-9]{1,2}\/(.*)\/.*?$}, '/$1/$2/'
   r301 %r{^\/([0-9]{4})\/[0-9]{1,2}\/[0-9]{1,2}\/(.*)\/$}, '/$1/$2/'
 
   # Redirections to /journal.
