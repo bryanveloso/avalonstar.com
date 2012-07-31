@@ -2,6 +2,7 @@ title: Avalonstar
 author: Bryan Veloso
 
 root: /
+
 permalink: /:year/:title/
 
 source: source
