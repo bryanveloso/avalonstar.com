@@ -4,7 +4,7 @@ author: Bryan Veloso
 root: /
 
 date_format: "ordinal"
-permalink: /:year/:title/
+permalink: /journal/:year/:title/
 
 source: source
 destination: public
