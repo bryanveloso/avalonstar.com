@@ -20,6 +20,7 @@ use Rack::Rewrite do
   r301 %r{^\/memoirs(\/.*\/)?$}, '/'
   r301 %r{^\/sotm(\/.*\/)?$}, '/'
   r301 '/bsod', '/'
+  r301 '/dancetracker', '/'
   r301 '/product', '/'
 
   # Miscellaneous redirections.
