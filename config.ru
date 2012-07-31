@@ -23,6 +23,7 @@ use Rack::Rewrite do
   r301 '/bsod', '/'
   r301 '/dancetracker', '/'
   r301 '/product', '/'
+  r301 '/radio', '/'
 
   # Miscellaneous redirections.
   r301 '/colophonics/', '/about/'
