@@ -1,0 +1,27 @@
+---
+layout: prose
+title: "Stylegala and Semantics"
+date: 2005-07-16 21:00
+comments: false
+
+version: 20
+summary: "This is the story of two guys. One guy runs the site you're reading. The other, a guy (and future friend) that reviewed said site on Stylegala. The reviewer brings to light the idea of semantics and structurally perfect code and this guy discusses said idea."
+---
+
+Get your horses again it's time to get back on the track, we got another one chasin' us! First, I'd like to thank [James Archer][1] for the nice words and I would just like to say that it has been a dream to get on that site, and now it's happened. Now that I got that out of my system, I'd like to focus on something that was said in his review tonight:
+
+> As is often the case, the code isn't semantically/structurally perfect, but I'm beginning to wonder if my standards are too high because I say that same thing in almost every review.
+
+Now semantics has been a very hot topic in the community, and is usually the word used when discussing the separation between church and... um... presentation and style. In other words, accessibility. You won't find that definition in the dictionary though, the one you'll usually find is the following:
+
+<dl><dt>Semantics</dt><dd>In general, semantics (from the Greek semantikos, or "significant meaning," derived from sema, sign) is the study of meaning, in some sense of that term. Semantics is often opposed to syntax, in which case the former pertains to what something means while the latter pertains to the formal structure/patterns in which something is expressed (e.g. written or spoken).
+
+~<cite>Wikipedia</cite></dd></dl>
+
+What am I trying to get at? Look at the second sentence of James' comment, "but I'm beginning to wonder if my standards are too high," in reference to my coding style. First of all, I only know so much about coding semantically, it seems that every time you blink, there's a new way of coding or a new technology for you to tackle (ie. [Ruby on Rails][2], [microformats][3], etc.). One can only do so much, and then there's the balance in what I call the "magazine/newspaper" relationship. Total semantics seems like the writing in a newspaper, very straightforward, to the point, accessible and separated from design. Whereas in a magazine, the design takes more of a central role in presenting content at the sacrifice of legible text, and uniform coloring. When it comes to this website in particular, I tried my hardest to keep the code as clean and semantic as possible **without** sacrificing my design. It is because I wanted my design to take a more central role that I coded to that level and not any farther.
+
+I really respect James' comment and I see that he's starting to notice that maybe there is a balance between both, or maybe that people are still trying to grasp the whole concept itself. In my opinion, so much focus is put on screen-readers and accessibility for the 1% of my visitors that need them, when I really should be focusing on the 99% of the people that will enjoy my design in its **entirety** along with my content. I truly feel that this movement is causing our blogosphere to become homogeneous, (which **is** following the path of globalization I might add) where all our sites will look the same and be truly semantic. So then, where does the art of design go? Where does the creativity in our community go if it can't be applied to both design **and** content.
+
+[1]: http://fortymedia.com/
+[2]: http://rubyonrails.com/
+[3]: http://microformats.org/

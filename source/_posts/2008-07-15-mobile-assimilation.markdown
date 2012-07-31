@@ -1,0 +1,67 @@
+---
+layout: prose
+title: "Mobile Assimilation"
+date: 2008-07-15 15:00
+comments: false
+
+version: 25
+summary: "This is the story of a guy and his process. He rehashes his process and begins to learn a little about how he uses applications or how applications grab hold of him. He later discovers that the mobile platform is a great way for him to actually \"get\" the whole GTD thing."
+---
+
+**Recovery Update:** Thanks to [Dean Robinson](http://deanjrobinson.com/), I was able to recover this post. *Thanks Dean!*
+
+[A week or so ago][1], I talked about *assimilation*, or rather, the ease of having anything fit into my workflow. Whether that was using iCal or going to the gym, it was like pulling teeth after about two weeks.
+
+But this time we're going to add another one to the list, **GTD**. GTD or "Getting Things Done," has been the one thing that everybody else seem to get that has alluded me. To-do lists. Task management. Sorting emails. I couldn't keep up with it. I wouldn't necessarily say I was unproductive, because I survived fine without it, but I felt that I was missing something. I'd see people talk about achieving the *super-amazing* "[Inbox Zero][2]" and I'd just sit there, petting my [failwhale][3], looking at my Inbox 268.
+
+But the mailbox talk is for another day because I might have found my way to "get" task management.
+
+## Enter Things
+
+[Things][4], by [CulturedCode][5], is a task manager that you've probably heard of. I was lucky to get invited to the alpha when they first put the word out, but after downloading it, I did the usual. I opened it, stared at it, inputted and deleted a task or two, closed it, and zapped it. Was it bad? No, not at all. I just didn't get it. During the span of 3 or 4 months I gave it a few more tries, without any luck. Even if I told myself not to delete it, it would just sit there looking entropic. But it's not just Things, it's any *life management* application that requires semi-constant updating. [Delicious Library 2][6] would be another example. I haven't opened that since the day I bought [Practical Django Projects][7]. But I digress.
+
+Then the lovely AppStore for the iPhone came out and I realized what my problem was. It wasn't the program, it was the platform. Now, this could very well be an isolated case. Notebooks didn't work, desktop applications didn't work, but the mobile platform did.
+
+## Enter Things, for the iPhone
+
+[<img src="http://farm4.static.flickr.com/3088/2673161628_d766f22277_m.jpg" width="160" height="240" alt="The App Screen" />][13] [<img src="http://farm4.static.flickr.com/3266/2673161670_19b6bee789_m.jpg" width="160" height="240" alt="Things" />][14]
+
+So last night, I buckled and got [Things for the iPhone][8]. Sure enough, I sat there typing at least 10 to-do items in the first 30 minutes of using it. The kicker is, I kept checking and inputting more tasks as they came out mind. Now, let's back up a little bit.
+
+[<img src="http://farm4.static.flickr.com/3239/2672343045_74c2605fa8_m.jpg" width="160" height="240" alt="Projects in Things" />][15] [<img src="http://farm4.static.flickr.com/3157/2672343083_eb8a070af4_m.jpg" width="160" height="240" alt="Tasks in Things" />][16]
+
+*Why* did mobile work for me? There are three things I have with me at all times.
+
+* My wallet.
+* My keys.
+* My phone.
+
+
+Sure, I'll forget one every now and then when I'm rushing, but 90% of the time I'll always have my oversized black leather wallet, my keys on a [Media Temple][9] lanyard and my iPhone. So it's always on me. That's a biggie. Whenever there's any sort of downtime, such as waiting in line, I would always either update [Brightkite][10] or check Twitter using [Hahlo][11], and now, [Mobile Twitterific][12]. Even when I'm home, *sitting in front of my laptop*, I'll check stuff on it.
+
+So we can conclude that I have the attention span of a doorknob. But that attention span has limited my ability to use applications I know I don't *need* to use daily. However, since I'm always clicking around my iPhone during those dead moments, there's always going to be a chance that I click on Things. The more I click it, the more I'm going to use it and obviously a lot of that you have to attribute to the lovely interface.
+
+## Could this work for other things?
+
+Maybe. I'll just have to wait for nice enough applications to come and fill those needs. Example, since I admit I'm a stats whore, when Nike+ comes out for the iPhone, I'll probably be running more.
+
+But I now know that mobile applications win me over, which will be very bad for my wallet.
+
+**Sidenote:** Now, I realize that many people haven't bought Things because of its lack of syncing. For me, I could go without it, Things for the desktop would probably have a backup of what I input into the iPhone app. So, when that comes, it comes. It also irks me that people expected so much out of such a short development period, but that's another story for another day.
+
+[1]: http://avalonstar.com/blog/2008/jul/2/can-haz-assimilation/
+[2]: http://search.twitter.com/search?q=inbox+zero
+[3]: http://failwhale.com/
+[4]: http://culturedcode.com/things/
+[5]: http://culturedcode.com/
+[6]: http://delicious-monster.com/
+[7]: http://www.amazon.com/Practical-Django-Projects-Pratical/dp/1590599969
+[8]: http://culturedcode.com/things/iphone/
+[9]: http://www.mediatemple.net/go/order/?refdom=avalonstar.com
+[10]: http://brightkite.com/
+[11]: http://hahlo.com/
+[12]: http://iconfactory.com/software/twitterrific/
+[13]: http://www.flickr.com/photos/avalonstar/2673161628/
+[14]: http://www.flickr.com/photos/avalonstar/2673161670/
+[15]: http://www.flickr.com/photos/avalonstar/2672343045/
+[16]: http://www.flickr.com/photos/avalonstar/2672343083/

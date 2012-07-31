@@ -1,0 +1,16 @@
+---
+layout: prose
+title: "Children of the Sea"
+date: 2005-03-06 23:15
+comments: false
+
+version: 19
+---
+
+[<img src="http://photos7.flickr.com/6055175_43f67c3b9b.jpg" width="400" height="300" alt="Children of the Sea" />][1]
+
+For #39, I couldn't help but post a memory of my trip to the Philippines, and if you look a the faces of my cousins in that picture I think that'll tell you how much fun I had. As my photostream will say, I really do miss those children and I wonder what they're up to now and what memories they're creating. I wonder if they'd remember me if they saw a picture or snicker if they heard me try to pronounce something in Visayan.
+
+Someday - I'll see them again. Then they won't be children anymore. But at least I'll always have this picture.
+
+[1]: http://www.flickr.com/photos/11996380@N00/6055175/ "Photo Sharing"

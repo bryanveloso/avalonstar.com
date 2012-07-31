@@ -1,0 +1,44 @@
+---
+layout: prose
+title: "Advent Children"
+date: 2005-09-14 00:00
+comments: false
+
+version: 20
+---
+
+> Final Fantasy VII: Advent Children is the much anticipated sequel to Square's top selling game Final Fantasy VII. The sequel however will not be in the form of a game [like Final Fantasy X-2], but instead as a CG movie.
+>
+><cite>— <a href="http://www.adventchildren.net">adventchildren.net</a></cite>
+
+**Beautiful and stunning, this movie gives *sensory overload* it's rightful definition.**
+
+Prepare for the brief ramblings of a long-time fan. If you're not a Final Fantasy person, this isn't your post. But I do encourage you to open your eyes to this movie when it takes the boat stateside, it's worth every minute. This is what a Final Fantasy movie should have been, this is what should have came out instead of that plotless wannabe. Harsh? Yes. But after seeing this, that other one doesn't even pale in comparison.
+
+Second to urging you to see this movie, I urge you to play through the game if you haven't yet. Believe me, you won't be as confused. I hadn't played it for pretty long time (I believe 2000 was the last time I played it), and I was definitely rusty. Now, I don't plan on giving anything away here, so I won't even call this a review. More like... a mini-view.
+
+## The Story
+
+Just for starters, the events of Advent Children take place two years after the end of Final Fantasy VII. That's it, you can [Google][1] for more information on this one. Within the confinds of the movie, the action kept me on the edge of my seat from start to finish.
+
+## Computer Graphics
+
+Wow. Can I say "Spirits Within" x10? Square doesn't need a whole studio in Hawaii if they can make something **this** good in Japan. Photorealism was an understatement at times. I was left either speechless, or saying "wow..." over and over again. The special effects were everything I wished for, as my favorite attacks, limit breaks and summons were brought to life in extraordinary fashion. When I dreamt of a Final Fantasy movie, this is what I dreamt of. It's so good, I wish I could have played it. I wait for the day that games will be playable in this quality. Then, every Final Fantasy should be remade in this style. Let me leave you with some shots (that you've probably already seen):
+
+[<img src="http://static.flickr.com/26/43231589_3bcd796271_o.png" class="nofloat" width="710" height="100" alt="Tifa" />][2] [<img src="http://static.flickr.com/25/43231584_4c91e0cb40_o.png" class="nofloat" width="710" height="100" alt="Cloud" />][3]
+
+## Soundtrack
+
+[Where is it? Can I buy it yet?][4]
+
+When I saw [Nobuo Uematsu][5] as the composer for Advent Children, I immediately shot up in my chair. As you will soon find out, I am a long-time fan of his music and it is because of him that I love the music that I do today. Sometimes, all you have to do is teach an old dog new tricks and that was the case here. There was no need to come out with a whole new set of songs, just remix the old ones. However, they weren't just remixed, they were remixed beautifully. According to the above resource, the 2-disc soundtrack's coming out on the 28th. So in addition to [saving up for the lucky winner of the contest][6], I'll be pre-ordering this too.
+
+What more can I say? If you haven't seen screenshots or the trailers, then this is not worth missing. If I could ask for more, I would. A 2-hour DVD follow-up to a 60-hour PSX game leaves more to be desired. So yes, I wish it would have been longer. But who knows? Now that [Square Enix][7] will finally get the credit they deserve, who knows what will come next?
+
+[1]: http://www.google.com/search?client=safari&rls=en&q=advent+children+story&ie=UTF-8&oe=UTF-8
+[2]: http://www.flickr.com/photos/avalonstar/43231589/
+[3]: http://www.flickr.com/photos/avalonstar/43231584/
+[4]: http://www.ff7acmovie.com/news/ff7ac_news/ff7ac_ost_pre-orders.html
+[5]: http://www.square-enix.co.jp/music/sem/page/uematsu/index.html
+[6]: http://avalonstar.com/blog/2005/aug/10/avalonstars-5th-birthday-bash/
+[7]: http://www.square-enix.com/

@@ -1,0 +1,36 @@
+---
+layout: prose
+title: "Ripping Apart LinkedIn"
+date: 2005-09-15 22:30
+comments: false
+
+version: 20
+---
+
+No, now don't get the wrong idea. I love the service, [I even wrote about it.][1] This is my **100th entry**, it wouldn't be my style to go around bashing something. **;)**
+
+Let me begin by [going back to July 31st][2]:
+
+> I was told to sort of give my input on implementing a hypothetical feature into their homepage (and it was the first time I had ever used a white board to wire frame a page), and I don't believe I did that badly. So next came the homework, and it would be more of the same. He actually told me to think about ideas on the way back to Banning, but I was so determined to sell myself that I rushed back and pretty much held Evan's computer hostage while I was working away at revamping a few pages of the company's site. That pretty much took the rest of the night, and I would be seeing Ches again the next morning. But he wouldn't be the only person I would meet.
+
+Now since LinkedIn was a little slow in taking me away from Facebook, that probably says to you that I won't be working there anytime soon. So with that said, below are those "ideas" that I came up with. So in abnormal Avalonstar fashion, I'm going to tell let the pictures tell the story. Note that these were based off the previous iteration of LinkedIn with me having know prior knowledge of a redesign accompanying their new product lines. See you on the other end.
+
+This first one did the actual "ripping apart." Actually, I did have the most fun with this.
+
+[<img src="http://static.flickr.com/26/43405931_ab05f00c97_o.png" width="690" height="826" alt="Ripping Apart LinkedIn's Homepage" />][3]
+
+Next is where I did the actual work. That "Quick Search" would have been done in Ay-yax. What a trendy thing to do!
+
+[<img src="http://static.flickr.com/33/43405893_2059e4aacc_o.png" width="690" height="863" alt="My LinkedIn Rendition" />][4]
+
+This last one focused on one of the few parts I felt needed the most work, the job listings. There are parts of this I wish they incorporated in the new design, but alas, that would be stealing my ideas. Eh?
+
+[<img src="http://static.flickr.com/29/43405903_a941cc6205_b.jpg" width="690" height="345" alt="My LinkedIn Job Listing" />][5]
+
+All in all, with the time I took on it, I think I did a pretty decent job. If I were to take more time with it, it could have been a lot more polished. (Remember guys, it was only an interview requirement.) But it makes you wonder what I could have done for them in the long run. Well, at least it makes me wonder. So now that I've showed you what I could have done for them, I'll be waiting for those comments ripping my designs apart. Come on, you know you want to.
+
+[1]: http://avalonstar.com/archives/2005/sep/05/monster-dead/
+[2]: http://avalonstar.com/archives/2005/jul/31/kick-ass-and-take-names/
+[3]: http://www.flickr.com/photos/avalonstar/43405931/
+[4]: http://www.flickr.com/photos/avalonstar/43405893/
+[5]: http://www.flickr.com/photos/avalonstar/43405903/
