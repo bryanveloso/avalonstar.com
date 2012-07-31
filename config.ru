@@ -25,7 +25,7 @@ use Rack::Rewrite do
   r301 '/product', '/'
 
   # Miscellaneous redirections.
-  r301 '/colophonics', '/about'
+  r301 '/colophonics/', '/about/'
 
   # Redirect ChaoticSoul to its repository on GitHub.
   r301 '/chaoticsoul', 'https://github.com/bryanveloso/chaoticsoul'
