@@ -18,6 +18,7 @@ use Rack::Rewrite do
   # Redirections to /.
   r301 %r{^\/featurettes(\/.*\/)?$}, '/'
   r301 %r{^\/memoirs(\/.*\/)?$}, '/'
+  r301 %r{^\/podcasts(\/.*\/)?$}, '/'
   r301 %r{^\/sotm(\/.*\/)?$}, '/'
   r301 '/bsod', '/'
   r301 '/dancetracker', '/'
@@ -30,7 +31,7 @@ use Rack::Rewrite do
   r301 '/chaoticsoul', 'https://github.com/bryanveloso/chaoticsoul'
 
   # LOL, Custom built PHP site! Holla 2001!
-  r301 %r{^\/index.php(?:\?.*)?$}, '/'
+  r301 %r{^\/index.php(\?.*)?$}, '/'
 end
 
 class SinatraStaticServer < Sinatra::Base
