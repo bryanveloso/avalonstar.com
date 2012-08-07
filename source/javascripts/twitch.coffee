@@ -8,4 +8,6 @@ status = ->
     if response.stream != null
       return
 
+status()
+
 setInterval status, 60000
