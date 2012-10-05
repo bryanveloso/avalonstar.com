@@ -4,5 +4,6 @@
 .gist-cache
 .pygments-cache
 
+public
 source/_stash
 source/stylesheets/screen.css
