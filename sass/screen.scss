@@ -27,7 +27,7 @@ body {
   @include clearfix;
   margin: 0 auto;
   max-width: 1100px;
-  width: 990px;
+  width: 90%;
 }
 
 .hero {
@@ -44,28 +44,42 @@ body {
 
 
 .video-statistics {
-  margin: 2px 0 3px;
-  height: 24px;
+  padding: 10px 0;
+  overflow: hidden;
 
   a {
     background-color: #222;
+    border-radius: 4px;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
-    padding: 6px 12px 5px;
+    line-height: 25px;
     text-transform: uppercase;
+    text-indent: 8px;
 
+    padding-top: 1px;
+    position: relative;
+
+    &.subscriber-link {
+      background-color: transparent;
+      color: rgba(black, 0.25);
+      font-weight: normal;
+      font-size: 12px;
+      text-align: right;
+
+      b { font-size: 14px; }
+    }
     i {
+      color: rgba(white, 0.5);
+      font-size: 12px;
       font-style: normal;
       font-weight: normal;
     }
   }
-
-  .subscriber-count {
-    color: rgba(white, 0.5);
-    font-weight: normal;
-  }
 }
+.twitch .video-link { background-color: $brand-twitch; }
+.youtube .video-link { background-color: $brand-youtube; }
+
 .embed-container {
   background-color: #000;
 
@@ -81,6 +95,24 @@ body {
     width: 100%; height: 100%;
   }
 }
+.video-error {
+  padding: 48px;
+}
+
+
+.background h1 {
+  border-bottom: 1px solid rgba(black, 0.1);
+  font-weight: 100;
+  letter-spacing: -1px;
+  line-height: 1;
+
+  margin-top: 0;
+  padding-bottom: 0.5em;
+  height: 64px;
+
+  a {}
+}
+
 
 body > header {
   background-color: #000;
@@ -90,14 +122,16 @@ nav ul {
   a {
     color: rgba(white, 0.75);
     font-size: 18px;
+    font-weight: bold;
     text-transform: uppercase;
 
     &:hover, &:hover * { color: rgba(white, 1.0); }
   }
   i, span {
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
-    text-transform: none;
+    font-weight: normal;
+    text-transform: lowercase;
 
     display: block;
   }
@@ -117,8 +151,8 @@ nav ul {
 
     &.facebook { background-color: #3b5998; }
     &.twitter { background-color: #00a0d1; }
-    &.twitch { background-color: #6441a5; }
-    &.youtube { background-color: #c4302b; }
+    &.twitch { background-color: $brand-twitch; }
+    &.youtube { background-color: $brand-youtube; }
     &.vimeo { background-color: #86c9ef; }
     &.github { background-color: #4183c4; }
 
