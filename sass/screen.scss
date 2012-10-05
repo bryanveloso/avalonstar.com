@@ -23,3 +23,23 @@ body { -webkit-font-smoothing: antialiased; }
         width: 100%; height: 100%;
     }
 }
+
+
+.social {
+    margin: 2.0202% 0;
+
+    li {
+        height: 82px;
+        line-height: 82px;
+        text-align: center;
+
+        &.facebook { background-color: #3b5998; }
+        &.twitter { background-color: #00a0d1; }
+        &.twitch { background-color: #6441a5; }
+        &.youtube { background-color: #c4302b; }
+        &.vimeo { background-color: #86c9ef; }
+        &.github { background-color: #4183c4; }
+
+        a { display: block; }
+    }
+}
