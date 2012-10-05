@@ -8,6 +8,7 @@
 
   {% capture canonical %}{{ site.url }}{% if site.permalink contains ".html" %}{{ page.url }}{% else %}{{ page.url | remove:"index.html" }}{% endif %}{% endcapture %}
   <link rel="canonical" href="{{ canonical }}">
+  <link href="{{ root_url }}/stylesheets/screen.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
   <!-- Temporary -->

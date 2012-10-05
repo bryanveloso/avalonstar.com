@@ -3,10 +3,31 @@ layout: default
 single: true
 ---
 
-<div>
+<div class="wrapper">
 <article class="hentry" role="article">
   <section class=""></section>
-  <header></header>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date }}</p>
+
+    <ul class="js-yt-metadata">
+      <li class="js-yt-episode">Episode {{ page.episode }}</li>
+      <li class="js-yt-views"></li>
+      <li class="js-yt-comments"></li>
+    </ul>
+  </header>
+
+  <div class="embed-container">
+    <iframe src="http://youtube.com/embed/{{ page.ytid }}?vq=hd720" frameborder="0" allowfullscreen></iframe>
+  </div>
+
   <div class="entry-content">{{ content | widont }}</div>
+  <div class="entry-content js-yt-description"></div>
 </article>
+
+<div class="juke">
+{% include post/juke.html %}
 </div>
+</div>
+
+{% include custom/youtube.html %}
