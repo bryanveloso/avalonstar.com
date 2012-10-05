@@ -21,9 +21,8 @@ single: true
     <iframe src="http://youtube.com/embed/{{ page.ytid }}?vq=hd720" frameborder="0" allowfullscreen></iframe>
   </div>
 
-  <div class="entry-content">{{ content }}</div>
+  <div class="entry-content">{{ content | widont }}</div>
   <div class="entry-content js-yt-description"></div>
-
 </article>
 
 <div class="juke">
