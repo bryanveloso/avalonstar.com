@@ -2,15 +2,69 @@
 
 @import "base/normalize";
 
-body { -webkit-font-smoothing: antialiased; }
+a { text-decoration: none; }
+body {
+  background-color: white;
+  color: #333;
+  font-family: "proxima-nova", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.underlay {
+  background-color: #111;
+  top: 0; left: 0; right: 0;
+  height: 500px;
+  position: absolute;
+  z-index: -10;
+}
 
 .wrapper {
+  @include clearfix;
   margin: 0 auto;
   max-width: 1100px;
   width: 990px;
 }
 
+.hero {
+  border-top: 1px solid rgba(white, 0.1);
+  color: white;
+  font-size: 36px;
+  font-weight: 100;
+  letter-spacing: -1px;
+
+  padding-top: 2.0202%;
+
+  strong { font-weight: normal; }
+}
+
+
+.video-statistics {
+  margin: 2px 0 3px;
+  height: 24px;
+
+  a {
+    background-color: #222;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 12px 5px;
+    text-transform: uppercase;
+
+    i {
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
+
+  .subscriber-count {
+    color: rgba(white, 0.5);
+    font-weight: normal;
+  }
+}
 .embed-container {
+  background-color: #000;
+
   position: relative;
   padding-bottom: 56.25%; /* 16/9 ratio */
   padding-top: 30px; /* IE6 workaround*/
@@ -24,6 +78,30 @@ body { -webkit-font-smoothing: antialiased; }
   }
 }
 
+body > header {
+  background-color: #000;
+  padding-bottom: 3.0303%; padding-top: 2.0202%;
+}
+nav ul {
+  a {
+    color: rgba(white, 0.75);
+    font-size: 18px;
+    text-transform: uppercase;
+
+    &:hover, &:hover * { color: rgba(white, 1.0); }
+  }
+  i, span {
+    font-size: 12px;
+    font-style: normal;
+    text-transform: none;
+
+    display: block;
+  }
+  span {
+    color: rgba(white, 0.5);
+    padding-top: 3px; }
+  i { color: rgba(white, 0.3); }
+}
 
 .social {
   margin: 2.0202% 0;
@@ -40,6 +118,8 @@ body { -webkit-font-smoothing: antialiased; }
     &.vimeo { background-color: #86c9ef; }
     &.github { background-color: #4183c4; }
 
-    a { display: block; }
+    a {
+      color: white;
+      display: block; }
   }
 }
