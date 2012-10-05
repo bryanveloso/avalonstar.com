@@ -1,16 +1,38 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
 <body {% if page.body_id %}id="{{ page.body_id }}"{% endif %}>
-  <header></header>
+  <header class="sv-all">
+    <div class="wrapper">
+      <h1 class="sv1"><a href="/"></a></h1>
+      <nav>
+        <ul>
+          <li class="sv4"><a href="/journal/">Journal <span>Videos from the present. <i>Words from the past.</i></span></a></li>
+          <li class="sv5"><a href="/live/">Live <span>Making a fool of myself. <i>And it's all live.</i></span></a></li>
+          <li class="sv6"><a href="/about/">About <span>Written in the stars. <i>(It's not that interesting.)</i></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <div id="content">
     {{ content }}
   </div>
   <footer>
-    <div class="wrapper">
-      <div class="copyright">
-        <p>Copyright &copy; 2000-2012 <a href="http://bryanvelo.so">Bryan Veloso</a>. All rights reserved. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://heroku.com">Heroku</a>. <a href="https://github.com/avalonstar/avalonstar">Get the source.</a></p>
+    <section>
+      <div class="wrapper">
+        <div class="">
+          <h1>What is Avalonstar?</h1>
+          <p>Avalonstar is the long-running journal and online moniker of designer and developer, Bryan Veloso.</p>
+        </div>
+        <div class="">
+        </div>
       </div>
-    </div>
+    </section>
+    <section class="copyright">
+      <div class="wrapper">
+        <p>This has been <a href="http://bryanvelo.so">Bryan Veloso</a>'s Avalonstar.</p>
+        <p>&copy; 2000-2012. All rights reserved. Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://heroku.com">Heroku</a>. <a href="https://github.com/avalonstar/avalonstar">Get the source.</a></p>
+      </div>
+    </section>
   </footer>
 
   <script src="http://get.gridsetapp.com/10673/overlay/"></script>
