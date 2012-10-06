@@ -10,15 +10,16 @@ a { text-decoration: none; }
 body {
   background-color: white;
   color: #333;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "jubilat", sans-serif;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
+
+h1, h2, h3, h4, h5, h6 { font-family: "omnes-pro", sans-serif; }
 
 .underlay {
   background-color: #111;
   top: 0; left: 0; right: 0;
-  height: 500px;
+  min-height: 290px;
   position: absolute;
   z-index: -10;
 }
@@ -27,29 +28,34 @@ body {
   @include clearfix;
   margin: 0 auto;
   max-width: 1100px;
-  width: 90%;
+  width: 990px;
 }
 
 .hero {
   border-top: 1px solid rgba(white, 0.1);
-  color: white;
+  color: rgba(white, 0.5);
+  font-family: "omnes-pro", sans-serif;
   font-size: 36px;
-  font-weight: 100;
+  font-weight: 200;
+  line-height: 1em;
   letter-spacing: -1px;
 
   padding-top: 2.0202%;
 
-  strong { font-weight: normal; }
+  strong {
+    color: white;
+    font-weight: normal;
+  }
 }
 
 
 .video-statistics {
-  padding: 10px 0;
+  font-family: "omnes-pro", sans-serif;
+  padding: 0 0 10px;
   overflow: hidden;
 
   a {
     background-color: #222;
-    border-radius: 4px;
     color: white;
     font-size: 14px;
     font-weight: bold;
@@ -57,13 +63,11 @@ body {
     text-transform: uppercase;
     text-indent: 8px;
 
-    padding-top: 1px;
+    padding-bottom: 1px;
     position: relative;
 
     &.subscriber-link {
       background-color: transparent;
-      color: rgba(black, 0.25);
-      font-weight: normal;
       font-size: 12px;
       text-align: right;
 
@@ -73,12 +77,19 @@ body {
       color: rgba(white, 0.5);
       font-size: 12px;
       font-style: normal;
-      font-weight: normal;
     }
   }
 }
-.twitch .video-link { background-color: $brand-twitch; }
-.youtube .video-link { background-color: $brand-youtube; }
+.twitch {
+  .video-statistics { margin-top: 0px; }
+  .video-link { @include background-image(linear-gradient($brand-twitch, darken($brand-twitch, 5%))); }
+  .subscriber-link { color: rgba($brand-twitch, 0.5); }
+}
+.youtube {
+  .video-link { @include background-image(linear-gradient($brand-youtube, darken($brand-youtube, 10%))); }
+  // .video-link { background-color: $brand-youtube; }
+  .subscriber-link { color: rgba($brand-youtube, 0.5); }
+}
 
 .embed-container {
   background-color: #000;
@@ -101,8 +112,7 @@ body {
 
 
 .background h1 {
-  border-bottom: 1px solid rgba(black, 0.1);
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: -1px;
   line-height: 1;
 
@@ -110,7 +120,9 @@ body {
   padding-bottom: 0.5em;
   height: 64px;
 
-  a {}
+  a {
+    color: rgba(black, 0.5);
+  }
 }
 
 
@@ -121,6 +133,7 @@ body > header {
 nav ul {
   a {
     color: rgba(white, 0.75);
+    font-family: "omnes-pro", sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
