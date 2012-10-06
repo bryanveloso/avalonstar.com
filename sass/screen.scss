@@ -6,16 +6,21 @@
 $brand-twitch: #6441a5;
 $brand-youtube: #c4302b;
 
-a { text-decoration: none; }
+$font-family-sans-serif: "omnes-pro", sans-serif;
+$font-family-serif: "jubilat", sans-serif;
+
+a {
+  color: #339fd6;
+  text-decoration: none; }
 body {
   background-color: white;
   color: #999;
-  font-family: "jubilat", sans-serif;
+  font-family: $font-family-serif;
   text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "omnes-pro", sans-serif;
+  font-family: $font-family-sans-serif;
   font-weight: normal;
 }
 
@@ -35,9 +40,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  border-top: 1px solid rgba(white, 0.1);
-  color: rgba(white, 0.5);
-  font-family: "omnes-pro", sans-serif;
+  border-top: 1px solid rgba(black, 0.1);
+  color: rgba(black, 0.5);
+  font-family: $font-family-sans-serif;
   font-size: 36px;
   font-weight: 200;
   line-height: 1em;
@@ -46,14 +51,14 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 2.0202%;
 
   strong {
-    color: white;
+    color: black;
     font-weight: normal;
   }
 }
 
 
 .video-statistics {
-  font-family: "omnes-pro", sans-serif;
+  font-family: $font-family-sans-serif;
   padding: 0 0 10px;
   overflow: hidden;
 
