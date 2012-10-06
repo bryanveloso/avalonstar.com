@@ -24,13 +24,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-.underlay {
-  background-color: #111;
-  top: 0; left: 0; right: 0;
-  min-height: 290px;
-  position: absolute;
-  z-index: -10;
-}
+// .underlay {
+//   background-color: #111;
+//   top: 0; left: 0; right: 0;
+//   min-height: 290px;
+//   position: absolute;
+//   z-index: -10;
+// }
 
 .wrapper {
   @include clearfix;
@@ -181,5 +181,13 @@ nav ul {
     a {
       color: white;
       display: block; }
+  }
+}
+
+footer {
+  .copyright {
+    font-family: $font-family-sans-serif;
+    background-color: #111;
+    color: #fff;
   }
 }
