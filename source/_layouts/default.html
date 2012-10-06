@@ -1,18 +1,7 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
 <body id="avalonstar-tv" {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
-  <header class="sv-all">
-    <div class="wrapper">
-      <h1 class="sv1"><a href="/"></a></h1>
-      <nav>
-        <ul>
-          <li class="sv4"><a href="/journal/">Journal <span>Videos from the present. <i>Words from the past.</i></span></a></li>
-          <li class="sv5"><a href="/live/">Live <span>Making a fool of myself. <i>And it's all live.</i></span></a></li>
-          <li class="sv6"><a href="/about/">About <span>Written in the stars. <i>(It's not that interesting.)</i></span></a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
   <div id="content">
     {{ content }}
   </div>
