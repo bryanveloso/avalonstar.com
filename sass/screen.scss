@@ -9,12 +9,15 @@ $brand-youtube: #c4302b;
 a { text-decoration: none; }
 body {
   background-color: white;
-  color: #333;
+  color: #999;
   font-family: "jubilat", sans-serif;
   text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4, h5, h6 { font-family: "omnes-pro", sans-serif; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "omnes-pro", sans-serif;
+  font-weight: normal;
+}
 
 .underlay {
   background-color: #111;
@@ -82,12 +85,13 @@ h1, h2, h3, h4, h5, h6 { font-family: "omnes-pro", sans-serif; }
 }
 .twitch {
   .video-statistics { margin-top: 0px; }
-  .video-link { @include background-image(linear-gradient($brand-twitch, darken($brand-twitch, 5%))); }
+  // .video-link { @include background-image(linear-gradient($brand-twitch, darken($brand-twitch, 5%))); }
+  .video-link { background-color: $brand-twitch; }
   .subscriber-link { color: rgba($brand-twitch, 0.5); }
 }
 .youtube {
-  .video-link { @include background-image(linear-gradient($brand-youtube, darken($brand-youtube, 10%))); }
-  // .video-link { background-color: $brand-youtube; }
+  // .video-link { @include background-image(linear-gradient($brand-youtube, darken($brand-youtube, 10%))); }
+  .video-link { background-color: $brand-youtube; }
   .subscriber-link { color: rgba($brand-youtube, 0.5); }
 }
 
