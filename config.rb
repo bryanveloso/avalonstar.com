@@ -1,4 +1,6 @@
 # Require any additional compass plugins here.
+require "compass-normalize"
+
 project_type = :stand_alone
 
 # Publishing paths

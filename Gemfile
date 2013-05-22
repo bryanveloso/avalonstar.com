@@ -11,6 +11,7 @@ group :development do
   gem 'coffee-script', '~> 2.2.0'
   gem 'sass', '~> 3.1.20'
   gem 'compass', '~> 0.12.2'
+  gem 'compass-normalize', '~> 1.4.3'
 end
 
 gem 'sinatra', '~> 1.3.2'
