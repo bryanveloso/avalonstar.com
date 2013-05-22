@@ -8,8 +8,8 @@ date_format: "ordinal"
 permalink: /journal/:year/:title/
 include: ["javascripts", "stylesheets"]
 
-source: source
-destination: public
+source: _source
+destination: _public
 plugins: plugins
 markdown: kramdown
 pygments: false
