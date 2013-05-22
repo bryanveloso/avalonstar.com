@@ -1,0 +1,198 @@
+@import "base"
+
+$brand-twitch: #6441a5
+$brand-youtube: #c4302b
+
+$font-family-sans-serif: "omnes-pro", sans-serif
+$font-family-serif: "jubilat", sans-serif
+
+a
+  color: #339fd6
+  text-decoration: none
+body
+  background-color: white
+  color: #999
+  font-family: $font-family-serif
+  text-rendering: optimizeLegibility
+
+
+h1, h2, h3, h4, h5, h6
+  font-family: $font-family-sans-serif
+  font-weight: normal
+
+
+.wrapper
+  @include clearfix
+  margin: 0 auto
+  max-width: 1100px
+  width: 990px
+
+
+.hero
+  border-top: 1px solid rgba(black, 0.1)
+  color: rgba(black, 0.5)
+  font-family: $font-family-sans-serif
+  font-size: 36px
+  font-weight: 200
+  line-height: 1em
+  letter-spacing: -1px
+  padding-top: 2.0202%
+
+  strong
+    color: black
+    font-weight: normal
+
+
+
+
+.video-statistics
+  font-family: $font-family-sans-serif
+  padding: 0 0 10px
+  overflow: hidden
+
+  a
+    background-color: #222
+    color: white
+    font-size: 14px
+    font-weight: bold
+    line-height: 25px
+    text-transform: uppercase
+    text-indent: 8px
+
+    padding-bottom: 1px
+    position: relative
+
+    &.subscriber-link
+      background-color: transparent
+      font-size: 12px
+      text-align: right
+
+      b
+        font-size: 14px
+
+    i
+      color: rgba(white, 0.5)
+      font-size: 12px
+      font-style: normal
+
+
+
+.twitch
+  .video-statistics
+    margin-top: 0px
+  // .video-link @include background-image(linear-gradient($brand-twitch, darken($brand-twitch, 5%)))
+  .video-link
+    background-color: $brand-twitch
+  .subscriber-link
+    color: rgba($brand-twitch, 0.5)
+
+.youtube
+  // .video-link @include background-image(linear-gradient($brand-youtube, darken($brand-youtube, 10%)))
+  .video-link
+    background-color: $brand-youtube
+  .subscriber-link
+    color: rgba($brand-youtube, 0.5)
+
+
+.embed-container
+  background-color: #000
+
+  position: relative
+  padding-bottom: 56.25% /* 16/9 ratio */
+  padding-top: 30px /* IE6 workaround*/
+  height: 0
+  overflow: hidden
+
+  iframe, object, embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+
+.video-error
+  padding: 48px
+
+
+
+.background h1
+  font-weight: 300
+  letter-spacing: -1px
+  line-height: 1
+
+  margin-top: 0
+  padding-bottom: 0.5em
+  height: 64px
+
+  a
+    color: rgba(black, 0.5)
+
+
+
+
+body > header
+  background-color: #000
+  padding-bottom: 3.0303%
+  padding-top: 2.0202%
+
+nav ul
+  a
+    color: rgba(white, 0.75)
+    font-family: "omnes-pro", sans-serif
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+
+    &:hover, &:hover *
+      color: rgba(white, 1.0)
+
+  i, span
+    font-size: 13px
+    font-style: normal
+    font-weight: normal
+    text-transform: lowercase
+
+    display: block
+
+  span
+    color: rgba(white, 0.5)
+    padding-top: 3px
+  i
+    color: rgba(white, 0.3)
+
+
+.social
+  margin: 2.0202% 0
+
+  li
+    height: 82px
+    line-height: 82px
+    text-align: center
+
+    &.facebook
+      background-color: #3b5998
+    &.twitter
+      background-color: #00a0d1
+    &.twitch
+      background-color: $brand-twitch
+    &.youtube
+      background-color: $brand-youtube
+    &.vimeo
+      background-color: #86c9ef
+    &.github
+      background-color: #4183c4
+
+    a
+      color: white
+      display: block
+
+
+
+footer
+  .copyright
+    font-family: $font-family-sans-serif
+    background-color: #111
+    color: #fff
+
+
