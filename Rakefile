@@ -3,8 +3,8 @@ require "bundler/setup"
 require "stringex"
 
 # Configuration variables.
-public_dir = "public"
-source_dir = "source"
+public_dir = "_public"
+source_dir = "_source"
 server_port = "4000"
 
 desc "Generate site."
