@@ -12,6 +12,7 @@ group :development do
   gem 'sass', '~> 3.1.20'
   gem 'compass', '~> 0.12.2'
   gem 'compass-normalize', '~> 1.4.3'
+  gem 'susy', '~> 1.0.8'
 end
 
 gem 'sinatra', '~> 1.3.2'

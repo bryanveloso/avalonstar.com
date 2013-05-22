@@ -1,5 +1,6 @@
 # Require any additional compass plugins here.
 require "compass-normalize"
+require "susy"
 
 project_type = :stand_alone
 
