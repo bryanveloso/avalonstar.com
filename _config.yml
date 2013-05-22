@@ -6,6 +6,7 @@ root: /
 
 date_format: "ordinal"
 permalink: /journal/:year/:title/
+include: ["javascripts", "stylesheets"]
 
 source: source
 destination: public

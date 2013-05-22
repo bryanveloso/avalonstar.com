@@ -1,3 +1,3 @@
-coffee:  coffee --compile --output public/javascripts --watch source/javascripts
-compass: compass watch -e production
 web:     jekyll server --watch
+coffee:  coffee --compile --output source/javascripts --watch coffeescripts
+compass: compass watch -e production
