@@ -9,7 +9,6 @@ group :development do
   gem 'liquid', '~> 2.3.0'
 
   gem 'coffee-script', '~> 2.2.0'
-  gem 'sass', '~> 3.1.20'
   gem 'compass', '~> 0.12.2'
   gem 'compass-normalize', '~> 1.4.3'
   gem 'susy', '~> 1.0.8'
