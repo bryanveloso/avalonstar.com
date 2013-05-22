@@ -1,6 +1,3 @@
----
----
-
 $ ->
   # Fetches all of my uploaded videos.
   $.getJSON "https://gdata.youtube.com/feeds/api/users/bryanveloso/uploads?v=2&max-results=1&alt=jsonc", (response) ->
