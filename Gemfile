@@ -3,9 +3,7 @@ source "http://rubygems.org"
 group :development do
   gem 'rake', '~> 0.9.2.2'
   gem 'rack', '~> 1.4.1'
-  gem 'jekyll', '~> 1.0.0.beta4'
-  gem 'kramdown', '~> 0.13.7'
-  gem 'pygments.rb', '~> 0.2.13'
+  gem 'jekyll', '~> 1.0.2'
   gem 'rb-fsevent', '~> 0.9.1'
   gem 'stringex', '~> 1.4.0'
   gem 'liquid', '~> 2.3.0'
