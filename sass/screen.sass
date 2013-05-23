@@ -7,6 +7,22 @@
   padding: 0 $grid-padding * 2
 
 //
+body
+  margin: 0
+
 .page
   @include container
   @include susy-grid-background
+
+.footer
+  @extend %full-span
+  color: #fff
+  background: #333
+
+.copyright
+  @extend %full-span
+  color: #fff
+  background: #333
+
+  p
+    margin-bottom: 0
