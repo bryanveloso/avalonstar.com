@@ -4,17 +4,19 @@ single: true
 ---
 
 <div class="wrapper">
-<article class="hentry" role="article">
+<article class="entry hentry" role="article">
   <section class=""></section>
-  <header>
-    <p>{{ page.date | date: "%A, %B %d, %Y" }}</p>
-    <h1>{{ page.title }}</h1>
-
-    <ul class="js-yt-metadata">
-      <li class="js-yt-episode">Episode {{ page.episode }}</li>
-      <li class="js-yt-views"></li>
-      <li class="js-yt-comments"></li>
-    </ul>
+  <header class="entry-header">
+    <h1 class="entry-title">{{ page.title }}</h1>
+    <table class="entry-metadata js-yt-metadata">
+      <tr>
+        <td class="episode js-yt-episode" rowspan="2">Episode {{ page.episode }} <span class="entry-date">{{ page.date | date: "%B %d, %Y" }}</span></td>
+        <td class="views"><span class="js-yt-views"></span> views</td>
+      </tr>
+      <tr>
+        <td class="comments"><span class="js-yt-comments"></span> favorites</td>
+      </tr>
+    </table>
   </header>
 
   <div class="embed-container">
