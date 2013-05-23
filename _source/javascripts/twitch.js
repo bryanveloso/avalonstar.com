@@ -15,4 +15,11 @@
 
   setInterval(status, 60000);
 
+  $(function() {
+    return $.getJSON("https://api.twitch.tv/kraken/channels/avalonstartv/?callback=?", function(response) {
+      console.log(response);
+      return console.log(response.name);
+    });
+  });
+
 }).call(this);
