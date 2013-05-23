@@ -6,13 +6,16 @@
   margin: 0 0 - $grid-padding * 2
   padding: 0 $grid-padding * 2
 
+
 //
 body
   margin: 0
 
 .page
   @include container
-  @include susy-grid-background
+  // @include susy-grid-background
+  font-family: $font-family-sans
+  font-size: 16px
 
 .footer
   @extend %full-span
