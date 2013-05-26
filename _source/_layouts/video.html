@@ -6,6 +6,11 @@ single: true
 <div class="wrapper">
 <article class="entry hentry" role="article">
   <section class=""></section>
+
+  <div class="embed-container">
+    <iframe src="http://youtube.com/embed/{{ page.ytid }}?vq=hd720" frameborder="0" allowfullscreen></iframe>
+  </div>
+
   <header class="entry-header">
     <h1 class="entry-title">{{ page.title }}</h1>
     <table class="entry-metadata js-yt-metadata">
@@ -18,10 +23,6 @@ single: true
       </tr>
     </table>
   </header>
-
-  <div class="embed-container">
-    <iframe src="http://youtube.com/embed/{{ page.ytid }}?vq=hd720" frameborder="0" allowfullscreen></iframe>
-  </div>
 
   <div class="entry-content">{{ content | widont }}</div>
   <div class="entry-content js-yt-description"></div>
