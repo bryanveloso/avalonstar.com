@@ -3,10 +3,11 @@
 <body id="avalonstar-tv" {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
   <div class="page">
     {% include header.html %}
-    <div id="content">
+    {% include navigation.html %}
+    <div id="content" role="main">
       {{ content }}
     </div>
-    <footer class="footer">
+    <footer class="footer" role="complimentary">
       <div class="lower-hero">
         <!-- Throw a logo in here. -->
         <p>This has been <a href="http://bryanvelo.so">Bryan Veloso</a>'s Avalonstar.</p>
@@ -25,11 +26,11 @@
           <li class="github"><a href="http://github.com/bryanveloso">GitHub</a></li>
         </ul>
       </div>
-    </footer>
-    <div class="copyright">
+      <div class="copyright">
         <p>&copy; 2000-2013.</p>
         <p>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://heroku.com">Heroku</a>. <a href="https://github.com/bryanveloso/avalonstar">Get the source.</a></p>
-    </div>
+      </div>
+    </footer>
   </div>
 
   <script src="http://get.gridsetapp.com/10673/overlay/"></script>
