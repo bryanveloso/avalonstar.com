@@ -12,20 +12,23 @@ single: true
   </div>
 
   <header class="entry-header">
-    <h1 class="entry-title">{{ page.title }}</h1>
+    <h1 class="entry-title">{{ page.title | widont }}</h1>
     <table class="entry-metadata js-yt-metadata">
       <tr>
         <td class="episode js-yt-episode" rowspan="2">Episode {{ page.episode }} <span class="entry-date">{{ page.date | date: "%B %d, %Y" }}</span></td>
         <td class="views"><span class="js-yt-views"></span> views</td>
       </tr>
       <tr>
-        <td class="comments"><span class="js-yt-comments"></span> favorites</td>
+        <td class="comments"><span class="js-yt-comments"></span> likes</td>
       </tr>
     </table>
   </header>
 
   <div class="entry-content">{{ content | widont }}</div>
-  <div class="entry-content js-yt-description"></div>
+  <div class="yt-description">
+    <h2 class="yt-description-header">Video Description</h2>
+    <div class="js-yt-description"></div>
+  </div>
 </article>
 
 <div class="juke">

@@ -9,6 +9,7 @@
 //
 body {
   margin: 0;
+
   &:after {
     content: "mobile";
     display: none;
@@ -17,16 +18,34 @@ body {
 
 .page {
   @include container;
-  // @include susy-grid-background
+  @include susy-grid-background;
   overflow: hidden;
   font-family: $font-family-sans;
   font-size: 16px;
 }
 
+.header {
+  @extend %full-span;
+  background: #222;
+  padding-top: 1em; padding-bottom: 1em;
+
+  .site-logo {
+    @extend .zeta;
+    margin: 0;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
 .footer {
   @extend %full-span;
   color: white;
-  background: #222222;
+  background: #222;
+
   h1 {
     color: white;
     @extend .delta;
@@ -36,7 +55,8 @@ body {
 .copyright {
   @extend %full-span;
   color: white;
-  background: #333333;
+  background: #333;
+
   p {
     text-align: center;
   }
@@ -46,6 +66,7 @@ body {
   .entry-title {
     @extend %normal-wrap;
     @extend .delta;
+    margin: 1rem 0;
   }
   .entry-metadata {
     @include reset-table;
@@ -92,6 +113,7 @@ body {
   padding-top: 30px;
   height: 0;
   overflow: hidden;
+
   iframe, object, embed {
     position: absolute;
     top: 0;
