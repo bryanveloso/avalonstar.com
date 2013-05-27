@@ -1,0 +1,31 @@
+@import "susy";
+
+
+$total-columns    : 5;
+$medium-columns   : 8;
+$large-columns    : 12;
+
+$container-width  : container-outer-width($large-columns);
+
+$anchor : 1;
+$side   : $total-columns - $anchor;
+
+
+[role="navigation"] {
+  @include span-columns($side);
+  margin-left: -100%;
+  .show-left & { margin-left: 0; }
+}
+
+[role="main"] {
+  @include span-columns($total-columns);
+  margin-right: 0;
+  .show-left & { margin-right: - space($side); }
+  .show-right & { margin-left: - space($side); }
+}
+
+[role="complimentary"] {
+  @include span-columns($side omega);
+  margin-right: -100%;
+  .show-right & { margin-right: 0; }
+}
