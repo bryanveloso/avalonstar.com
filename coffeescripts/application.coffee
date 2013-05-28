@@ -16,7 +16,7 @@ OffCanvasToggle =
       console.log 'wat'
       e.preventDefault()
       OffCanvasToggle.toggleClasses this
-      OffCanvasToggle.toggleText triggers
+      # OffCanvasToggle.toggleText triggers
 
   toggleClasses: (el) ->
     body = $('body')
