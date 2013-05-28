@@ -141,6 +141,7 @@ $side   : $total-columns - $anchor;
 
 [role="navigation"] {
   background: #222;
+  height: 30em;
 }
 
 [role="navigation"] {
@@ -156,8 +157,9 @@ $side   : $total-columns - $anchor;
   @include reset-box-model;
 
   li {
+    @include clearfix;
     border-bottom: 1px solid rgba(#fff, 0.1);
-    line-height: normal;
+    line-height: 1;
     padding: 1em;
   }
 
@@ -187,4 +189,11 @@ $side   : $total-columns - $anchor;
   @include span-columns($side omega);
   margin-right: -100%;
   .show-right & { margin-right: 0; }
+}
+
+html,
+body.show-left,
+.show-left .page,
+.show-left [role="navigation"] {
+  height: 100%
 }
