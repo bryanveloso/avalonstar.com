@@ -26,8 +26,10 @@ body {
 
 .header {
   @extend %full-span;
-  background: #222;
+  position: relative;
   padding-top: 1em; padding-bottom: 1em;
+
+  background: $brand-youtube;
 
   .site-logo {
     @extend .zeta;
@@ -123,4 +125,68 @@ body {
   }
 }
 
-@import "hacks";
+
+$total-columns    : 6;
+$medium-columns   : 8;
+$large-columns    : 12;
+
+$container-width  : container-outer-width($large-columns);
+
+$anchor : 1;
+$side   : $total-columns - $anchor;
+
+[role="navigation"],
+[role="main"],
+[role="complementary"] {
+  @include transition(.3s all ease);
+}
+
+[role="navigation"] {
+  background: #222;
+}
+
+[role="navigation"] {
+  @include span-columns($side);
+  position: relative;
+  left: - $grid-padding;
+  margin-left: -100%; margin-right: 0;
+  .show-left & {
+    margin-left: 0; }
+}
+
+.main-navigation {
+  @include reset-box-model;
+
+  li {
+    border-bottom: 1px solid rgba(#fff, 0.1);
+    line-height: normal;
+    padding: 1em;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  strong { display: block; }
+  span {
+    font-size: 13px;
+
+    i {
+      display: block;
+    }
+  }
+}
+
+
+[role="main"] {
+  @include span-columns($total-columns);
+  margin-right: 0;
+  .show-left & { margin-right: - space($side); }
+  .show-right & { margin-left: - space($side); }
+}
+
+[role="complimentary"] {
+  @include span-columns($side omega);
+  margin-right: -100%;
+  .show-right & { margin-right: 0; }
+}
