@@ -1,4 +1,5 @@
 @import "base";
+@import "fonts";
 
 // Base placeholders.
 %full-span {
@@ -34,6 +35,8 @@ body {
   .site-logo {
     @extend .zeta;
     margin: 0;
+
+    text-align: center;
 
     a {
       color: #fff;
@@ -74,18 +77,19 @@ body {
     @include reset-table;
     margin-bottom: 1em;
     width: 100%;
-    border: 1px solid #eeeeee;
+    border: 1px solid #eee;
+    border-width: 1px 0;
     font-size: 14px;
     td {
       padding: 0.5em 1em;
     }
     .episode {
       width: 60%;
-      border-right: 1px solid #eeeeee;
+      border-right: 1px solid #eee;
       font-weight: bold;
     }
     .views {
-      border-bottom: 1px solid #eeeeee;
+      border-bottom: 1px solid #eee;
     }
     .entry-date {
       display: block;
@@ -158,7 +162,7 @@ $side   : $total-columns - $anchor;
 
   li {
     @include clearfix;
-    border-bottom: 1px solid rgba(#fff, 0.1);
+    border-bottom: 1px solid rgba(#fff, 0.05);
     line-height: 1;
     padding: 1em;
   }
@@ -167,12 +171,21 @@ $side   : $total-columns - $anchor;
     color: #fff;
     text-decoration: none;
   }
-  strong { display: block; }
+  strong {
+    display: block;
+    float: left;
+    text-transform: uppercase;
+  }
   span {
+    float: right;
+
+    color: rgba(#fff, 0.3);
     font-size: 13px;
+    text-align: right;
 
     i {
       display: block;
+      font-style: normal;
     }
   }
 }
@@ -197,3 +210,26 @@ body.show-left,
 .show-left [role="navigation"] {
   height: 100%
 }
+
+.toggle {
+  position: relative;
+  top: -2px;
+
+  color: #fff;
+  text-decoration: none;
+}
+[href="#left"] {
+  float: left;
+}
+
+.main-navigation {
+  strong:before {
+    position: relative;
+    top: 3px;
+    padding-right: 6px;
+  }
+}
+
+.section-journal strong:before { color: $brand-youtube; }
+.section-live strong:before { color: $brand-twitch; }
+.section-about strong:before { color: #fcd20b; }
