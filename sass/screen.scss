@@ -136,7 +136,7 @@ $side   : $total-columns - $anchor;
 [role="navigation"],
 [role="main"],
 [role="complementary"] {
-  @include transition(.3s all ease);
+  @include transition(.3s margin ease);
 }
 
 [role="navigation"] {
