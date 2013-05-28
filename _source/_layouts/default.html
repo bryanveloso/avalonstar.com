@@ -2,9 +2,9 @@
 {% include head.html %}
 <body id="avalonstar-tv" {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
   <div class="page">
-    {% include header.html %}
     {% include navigation.html %}
     <div id="content" role="main">
+      {% include header.html %}
       {{ content }}
     </div>
     <footer class="footer" role="complimentary">
