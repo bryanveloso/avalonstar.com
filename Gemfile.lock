@@ -37,7 +37,7 @@ GEM
     liquid (2.3.0)
     maruku (0.6.1)
       syntax (>= 1.0.0)
-    multi_json (1.7.3)
+    multi_json (1.7.6)
     posix-spawn (0.3.6)
     pygments.rb (0.5.0)
       posix-spawn (~> 0.3.6)
