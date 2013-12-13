@@ -1,20 +1,27 @@
 title: Avalonstar
 author: Bryan Veloso
-description: "This is Avalonstar, a micro-video network covering everything from deisgn and web development to StarCraft II and eSports."
 
 root: /
-
-date_format: "ordinal"
 permalink: /journal/:year/:title/
-include: ["javascripts", "stylesheets"]
+date_format: 'ordinal'
 
 source: _source
 destination: _public
 plugins: plugins
 markdown: kramdown
 pygments: false
-
 paginate: 10
 pagination_dir: journal
-
 titlecase: true  # Converts page and post titles to titlecase.
+
+include:
+ - javascripts
+ - stylesheets
+exclude:
+ - unicorn.rb
+ - README.md
+ - Procfile
+ - Gemfile
+ - Gemfile.lock
+ - config.ru
+ - vendor
