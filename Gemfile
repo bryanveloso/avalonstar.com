@@ -6,11 +6,12 @@ group :development do
   gem 'jekyll', '~> 1.4.1'
   gem 'rb-fsevent', '~> 0.9.3'
   gem 'stringex', '~> 2.1.2'
-  gem 'liquid', '~> 2.5.2'
 
   gem 'coffee-script', '~> 2.2.0'
   gem 'compass', '~> 0.12.2'
   gem 'compass-normalize', '~> 1.4.3'
+  gem 'kramdown', '~> 1.3.0'
+  gem 'liquid', '~> 2.5.2'
   gem 'susy', '~> 1.0.8'
 end
 
