@@ -13,11 +13,19 @@ $column-width: 4em;
 $gutter-width: 1em;
 $grid-padding: $gutter-width;
 
+// Typographic variables.
+// Lovingly inspired by Bootstrap's type scaffolding library.
+// (http://getbootstrap.com)
+$font-family-primary: "freight-text-pro", serif;
+$font-family-secondary: "freight-sans-pro", sans-serif;
+
+$font-size-base: 1em !default;
+$font-size-large: ceil($font-size-base * 1.333) !default;
+$font-size-small: ceil($font-size-base * 0.75) !default;
+
+$line-height-base: 1.333 !default;
+$line-height-computed: floor($font-size-base * $line-height-base) !default;
+
 // Temporary color variable placement.
 $brand-twitch: #6441a5;
 $brand-youtube: #c4302b;
-
-// Typeplate related variables.
-$serif-boolean: false;
-$font-family: "freight-text-pro", serif;
-$font-family-sans: "freight-sans-pro", sans-serif;
