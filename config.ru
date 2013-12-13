@@ -38,4 +38,4 @@ use Rack::Rewrite do
 end
 
 Bundler.require(:default)
-run Rack::Jekyll.new(:destination => '_site')
+run Rack::Jekyll.new
