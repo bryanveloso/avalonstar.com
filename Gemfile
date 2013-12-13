@@ -6,6 +6,7 @@ group :development do
   gem 'jekyll', '~> 1.4.1'
   gem 'rb-fsevent', '~> 0.9.3'
   gem 'stringex', '~> 2.1.2'
+  gem 'foreman', '~> 0.63.0'
 
   gem 'coffee-script', '~> 2.2.0'
   gem 'compass', '~> 0.12.2'
