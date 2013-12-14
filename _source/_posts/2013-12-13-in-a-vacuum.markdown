@@ -8,13 +8,15 @@ comments: false
 
 Over the past year and a half, I've mostly ignored Avalonstar. Mostly, *because I've had no idea what to do with it*.
 
-This isn't for lack of ideas though, I went through 2012 utterly determined that I would change Avalonstar into something of a video network with streaming and weekly videos. Like many of my plans with this place, it never did come to fruition because of doubt.
+**This isn't despite a lack of ideas though**, I went through 2012 utterly determined that I would change Avalonstar into something of a video network with streaming and weekly videos. Like many of my plans with this place, it never did come to fruition because of doubt.
 
 *Doubt* that I was a viable enough host. *Doubt* that people would watch. *Doubt* that I was interesting enough. *Doubt* that I looked the part.
 
 *Doubt* is the yang to my ambition's yin.
 
 The world around me has changed rapildy in the past two years and I've struggled to keep up. There are a lot of things that I've wanted to talk about that I've been afraid to address. Avalonstar has carried this stigma around it since it became "a thing" in 2005.
+
+---
 
 So humor me while I try another experiment:
 
