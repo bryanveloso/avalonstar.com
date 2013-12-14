@@ -1,3 +1,6 @@
+$base-size: 14px !default;
+$ratio: fourth();
+
 // Let's start out with some variables. Here, we determine what kind of CSS
 // we want Compass to write, because we don't want EVERYTHING.
 $legacy-support-for-ie: false;
@@ -16,16 +19,21 @@ $grid-padding: $gutter-width;
 // Typographic variables.
 // Lovingly inspired by Bootstrap's type scaffolding library.
 // (http://getbootstrap.com)
-$font-family-primary: "freight-text-pro", serif;
-$font-family-secondary: "freight-sans-pro", sans-serif;
+$font-family-primary: 'Whitney SSm A', 'Whitney SSm B';
+$font-family-secondary: 'Gotham SSm A', 'Gotham SSm B';
+$font-family-tertiary: 'Tungsten A', 'Tungsten B';
+$font-family-logotype: '';
 
-$font-size-base: 1em !default;
-$font-size-large: ceil($font-size-base * 1.333) !default;
-$font-size-small: ceil($font-size-base * 0.75) !default;
+$font-size-base: $base-size;
+$font-size-large: ms(1) !default;
+$font-size-small: ms(-1) !default;
 
-$line-height-base: 1.333 !default;
+$line-height-base: 1.5 !default;
 $line-height-computed: floor($font-size-base * $line-height-base) !default;
 
 // Temporary color variable placement.
+$body-font-color: #454D57 !default;
+$headings-font-color: #272E37 !default;
+
 $brand-twitch: #6441a5;
 $brand-youtube: #c4302b;
