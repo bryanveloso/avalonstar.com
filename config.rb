@@ -2,6 +2,7 @@
 require 'autoprefixer-rails'
 require 'compass-normalize'
 require 'csso'
+require 'modular-scale'
 require 'susy'
 
 # Additional import paths for external dependencies:
