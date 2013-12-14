@@ -1,8 +1,50 @@
 .lower-hero {
-  text-align: center;
+  align-items: stretch;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: ms(3);
+  padding-bottom: ms(3);
+  width: ms(13);
 
+  h1 {
+    margin-bottom: 0;
+    padding-top: ms(-5);
+    color: #CBD1D8;
+    font-family: $font-family-secondary;
+    font-size: ms(-2);
+    order: 3;
+  }
   img {
     border-radius: 50%;
-    width: ms(4);
+    margin: 7px 0;
+    width: ms(3);
   }
+  p {
+    flex: 1;
+    margin: 0;
+    font-size: ms(-1);
+  }
+}
+.this-has-been,
+.what-is {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 1rem;
+
+  border-left: 1px solid #DFE3E8;
+  text-align: left;
+}
+.this-has-been {
+}
+.what-is {
+}
+
+.copyright,
+.copyright a {
+  color: #CBD1D8;
+  padding: 1rem 0;
+  font-size: ms(-1);
+  text-align: center;
 }
