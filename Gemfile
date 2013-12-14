@@ -15,6 +15,7 @@ group :development do
   gem 'csso-rails', '~> 0.3.2'
   gem 'kramdown', '~> 1.3.0'
   gem 'liquid', '~> 2.5.2'
+  gem 'modular-scale', '~> 1.0.6'
   gem 'susy', '~> 1.0.8'
 end
 
