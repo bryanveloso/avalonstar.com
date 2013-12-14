@@ -6,7 +6,20 @@
 
 html { -webkit-tap-highlight-color: rgba(#000, 0); }
 body {
+  color: $body-font-color;
   font-family: $font-family-primary;
   font-size: $font-size-base;
   line-height: $line-height-base;
+}
+
+a {
+  color: #272E37;
+}
+hr {
+  display: block;
+  margin: ms(3) auto;
+  width: 25%;
+
+  border: 0;
+  border-top: 1px solid #DFE3E8;
 }

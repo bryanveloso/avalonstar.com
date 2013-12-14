@@ -1,0 +1,46 @@
+$width: ms(13);
+
+.entry {
+  p {
+    font-size: ms(1);
+    margin: ms(2) auto;
+    // width: ms(13);
+  }
+  blockquote {
+    margin: 0;
+    padding: ms(1);
+    background: #F9FAFC;
+
+    cite, cite a {
+      color: #828B96;
+      font-size: ms(0);
+    }
+    p {
+      color: #828B96;
+      font-size: ms(0);
+      // width: ms(13) + ms(4);
+    }
+  }
+}
+.entry-header {
+  padding-top: ms(6); padding-bottom: ms(2);
+}
+.entry-title {
+  font-family: $font-family-tertiary;
+  font-size: ms(5);
+  font-weight: 300;
+  width: $width;
+  margin: 0 auto;
+  line-height: 0.9;
+}
+.entry-published {
+  font-family: $font-family-secondary;
+  font-size: ms(-1);
+}
+
+
+
+.entry p {
+  margin: ms(2) auto;
+  width: ms(13);
+}

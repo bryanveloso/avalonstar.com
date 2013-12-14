@@ -1,0 +1,28 @@
+[role="navigation"] {
+  background-color: #161B21;
+
+  a { text-decoration: none; }
+  i, span {
+    display: block;
+    color: #828B96;
+    font-size: ms(-1);
+  }
+  strong {
+    color: #FFF;
+    display: block;
+    font-family: $font-family-secondary;
+  }
+}
+
+.main-navigation {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  width: ms(13);
+
+  li {
+    flex: 1;
+    padding-bottom: ms(0);
+    padding-top: ms(0);
+  }
+}
