@@ -7,18 +7,20 @@
       {% include header.html %}
       {{ content }}
     </div>
-    <hr>
     <footer class="footer" role="complimentary">
       <div class="lower-hero">
+        <div class="this-has-been">
         <!-- Throw a logo in here. -->
-        <img src="https://pbs.twimg.com/profile_images/378800000760682209/b065d3b7e642ddda1155741e3c3ccd80_bigger.jpeg">
-        <p>This has been <a href="http://bryanvelo.so">Bryan Veloso</a>'s Avalonstar.</p>
-      </div>
-      <div class="">
-        <div class="">
-          <h1>What is Avalonstar?</h1>
-          <p>Avalonstar is the long-running journal and online moniker of designer and developer, Bryan Veloso. From design portfolio, to award-winning blog, to wannabe video destination, Avalonstar has strived to be true to its creator.</p>
+          <h1>Thanks for reading!</h1>
+          <img src="https://pbs.twimg.com/profile_images/378800000760682209/b065d3b7e642ddda1155741e3c3ccd80_bigger.jpeg">
+          <p>This has been <a href="http://bryanvelo.so">Bryan Veloso</a>'s <strong>Avalonstar</strong>.</p>
         </div>
+        <div class="what-is">
+          <h1>What is Avalonstar?</h1>
+          <p>From design portfolio, to award-winning blog, to personal playground, Avalonstar is the long-running journal and online moniker of designer and developer, Bryan Veloso.</p>
+        </div>
+      </div>
+        <!--
         <ul class="social">
           <li class="facebook"><a href="https://facebook.com/bryanveloso">Facebook</a></li>
           <li class="twitter"><a href="https://twitter.com/bryanveloso">Twitter</a></li>
@@ -27,12 +29,17 @@
           <li class="vimeo"><a href="http://vimeo.com/bryanveloso">Vimeo</a></li>
           <li class="github"><a href="http://github.com/bryanveloso">GitHub</a></li>
         </ul>
+        -->
       </div>
       <div class="copyright">
-        <p>&copy; 2000-2013.</p>
-        <p>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://heroku.com">Heroku</a>. <a href="https://github.com/bryanveloso/avalonstar">Get the source.</a></p>
+        <p><strong>&copy; 2000-2013.</strong> Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://heroku.com">Heroku</a>. <a href="https://github.com/bryanveloso/avalonstar">Get the source</a>.</p>
       </div>
     </footer>
+    {% if page.next.url %}
+    <div class="juke juke-next">
+      <a class="right" href="{{ page.next.url }}" title="Next: {{ page.next.title }}">{{ page.next.title }}</a>
+    </div>
+    {% endif %}
   </div>
 
   <script src="/javascripts/application.js"></script>
