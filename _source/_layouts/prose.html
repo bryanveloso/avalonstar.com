@@ -15,9 +15,9 @@ single: true
   </header>
   <div class="entry-content">{{ content | widont }}</div>
   <footer class="entry-metadata">
-    <div class="entry-published">
+    <div class="entry-meta">
       <span class="ss-icon ss-calendar"></span>
-      <time class="entry-datestamp"><span class="datestamp-action">Published</span> {{ page.date | date: "%B %-d, %Y" }}</time>
+      <time class="entry-meta-detail"><span class="metadata-prefix">Published</span> {{ page.date | date: "%B %-d, %Y" }}</time>
     </div>
   </footer>
 </article>
