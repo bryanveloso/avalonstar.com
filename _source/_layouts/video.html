@@ -18,26 +18,32 @@ single: true
 
   <div class="entry-content">{{ content | widont }}</div>
 
-  <footer class="entry-metadata">
-    <div class="entry-published">
+  <footer class="entry-metadata js-yt-metadata">
+    <div class="entry-meta entry-published">
       <span class="ss-icon ss-calendar"></span>
-      <time class="entry-datestamp"><span class="datestamp-action">Published</span> {{ page.date | date: "%B %-d, %Y" }}</time>
+      <time class="entry-meta-detail"><span class="metadata-prefix">Uploaded</span> {{ page.date | date: "%B %-d, %Y" }}</time>
+    </div>
+    {% if page.episode %}
+    <div class="entry-meta entry-episode">
+      <span class="ss-icon ss-clapboard"></span>
+      <span class="entry-meta-detail"><span class="metadata-prefix">Episode</span> {{ page.episode }}</span>
+    </div>
+    {% endif %}
+    <div class="entry-meta entry-views">
+      <span class="ss-icon ss-tv"></span>
+      <span class="entry-meta-detail"><span class="js-yt-views"></span> <span class="metadata-prefix">Views</span></span>
+    </div>
+    <div class="entry-meta entry-likes">
+      <span class="ss-icon ss-heart"></span>
+      <span class="entry-meta-detail"><span class="js-yt-comments"></span> <span class="metadata-prefix">Likes</span></span>
     </div>
   </footer>
-
-  <table class="entry-metadata js-yt-metadata">
-    <tr>
-      <td class="episode js-yt-episode" rowspan="2">Episode {{ page.episode }} <span class="entry-date">{{ page.date | date: "%B %d, %Y" }}</span></td>
-      <td class="views"><span class="js-yt-views"></span> views</td>
-    </tr>
-    <tr>
-      <td class="comments"><span class="js-yt-comments"></span> likes</td>
-    </tr>
-  </table>
+  <!--
   <div class="yt-description">
     <h2 class="yt-description-header">Video Description</h2>
     <div class="js-yt-description"></div>
   </div>
+  -->
 </article>
 </div>
 

@@ -58,18 +58,20 @@ $width: ms(13);
 
 .entry-metadata {
   @extend %container;
+  display: flex;
 }
-.entry-published {
+.entry-meta {
   @include position(relative);
+  flex: 1;
   margin: 3rem 0 1rem;
   font-family: $font-family-secondary;
   font-size: ms(-1);
   text-align: center;
 
-  .datestamp-action {
+  .metadata-prefix {
     color: #A1ABB6;
   }
-  .entry-datestamp {
+  .entry-meta-detail {
     @include position(relative);
     z-index: 10;
     background-color: #FFF;
