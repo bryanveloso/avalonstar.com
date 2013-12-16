@@ -7,10 +7,11 @@ single: true
 <article class="entry hentry prose-entry" role="article">
   <section class=""></section>
   <header class="entry-header">
-    <div class="entry-metadata">
-      <time class="entry-published">{{ page.date | date: "%B %-d, %Y" }}</time>
+    <div class="wrapper">
+      <h1 class="entry-title">{{ page.title | widont }}</h1>
+      <span class="entry-category">{{ page.category }}</span>
+      <span class="ss-icon ss-navigatedown"></span>
     </div>
-    <h1 class="entry-title">{{ page.title | widont }}</h1>
   </header>
   <div class="entry-content">{{ content | widont }}</div>
   <footer class="entry-metadata">

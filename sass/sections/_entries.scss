@@ -23,15 +23,41 @@ $width: ms(13);
   }
 }
 .entry-header {
-  padding-top: ms(6); padding-bottom: ms(2);
+  padding-top: 4.209rem; padding-bottom: 2.369rem;
+  background-color: #161B21;
+
+  .wrapper {
+    @extend %container;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .entry-title {
+    flex: 1;
+    margin: 0;
+
+    color: #FFF;
+    font-family: $font-family-tertiary;
+    font-size: ms(6);
+    font-weight: 200;
+    letter-spacing: -1px;
+    line-height: 0.9;
+  }
+  .ss-navigatedown {
+    padding-top: 2.369rem;
+  }
 }
-.entry-title {
-  font-family: $font-family-tertiary;
-  font-size: ms(5);
-  font-weight: 300;
-  width: $width;
-  margin: 0 auto;
-  line-height: 0.9;
+.entry-category {
+  font-family: $font-family-secondary;
+  font-size: ms(-1);
+}
+
+.entry-content {
+  padding-top: 1rem;
+}
+
+.entry-metadata {
+  @extend %container;
 }
 .entry-published {
   @include position(relative);
