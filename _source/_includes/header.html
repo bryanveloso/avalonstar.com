@@ -1,4 +1,8 @@
 <header class="header">
-  <!-- <a class="toggle" href="#left"><i class="ss-icon">rows</i></a> -->
-  <h1 class="site-logo"><a href="/">Avalonstar</a></h1>
+  <a class="toggle" href="#left"><span class="ss-icon ss-menu"></span></a>
+  <h1 class="site-logo {% if page.category %}sans-star{% endif %}"><a href="/">Avalonstar</a></h1>
+  <div class="icon-contain">
+    {% if page.category == "prose" %}<span class="ss-icon ss-notebook"></span>{% endif %}
+    {% if page.category == "video" %}<span class="ss-icon ss-video"></span>{% endif %}
+  </div>
 </header>

@@ -1,5 +1,7 @@
 [role="navigation"] {
-  background-color: #161B21;
+  background-color: #272E37;
+  transition: all 250ms ease;
+  text-align: center;
 
   a { text-decoration: none; }
   i, span {
@@ -12,6 +14,12 @@
     display: block;
     font-family: $font-family-secondary;
   }
+  .ss-icon {
+    font-size: 36px;
+  }
+}
+.show-left [role="navigation"] {
+  visibility: visible;
 }
 
 .main-navigation {
@@ -24,5 +32,50 @@
     flex: 1;
     padding-bottom: ms(0);
     padding-top: ms(0);
+  }
+}
+
+
+.header {
+  @include position(relative);
+  background-color: #161B21;
+  text-align: center;
+
+  a { text-decoration: none; }
+}
+
+.site-logo {
+  background-image: url('../images/phoenix.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin: 0;
+  height: 23.612rem - 1.777rem;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.site-logo.sans-star {
+  background-image: url('../images/phoenix-sans-star.png');
+}
+
+.ss-icon {
+  color: #FFF;
+  font-size: 32px;
+}
+.toggle {
+  display: block;
+  @include position(absolute);
+  width: 100%;
+}
+
+.icon-contain {
+  @include position(absolute, 0 0 0rem 0);
+  width: 100%;
+
+  .ss-icon {
+    // color: #009DDD;
+    font-size: 64px;
+    text-shadow: 0 0 5px #000;
   }
 }
