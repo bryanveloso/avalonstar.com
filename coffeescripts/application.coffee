@@ -41,3 +41,4 @@ OffCanvasToggle =
 
 $(document).ready ->
   OffCanvasToggle.init $('.toggle')
+  $('.site-logotype').fitText 0.7
