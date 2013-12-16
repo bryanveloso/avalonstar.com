@@ -7,15 +7,23 @@ single: true
 <article class="entry hentry video-entry" role="article">
   <section class=""></section>
 
-  <div class="embed-container">
-    <iframe src="http://youtube.com/embed/{{ page.ytid }}?vq=hd720&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
-  </div>
-
   <header class="entry-header">
-    <h1 class="entry-title">{{ page.title | widont }}</h1>
+    <div class="wrapper">
+      <div class="embed-container">
+        <iframe src="http://youtube.com/embed/{{ page.ytid }}?vq=hd720&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <h1 class="entry-title">{{ page.title | widont }}</h1>
+    </div>
   </header>
 
   <div class="entry-content">{{ content | widont }}</div>
+
+  <footer class="entry-metadata">
+    <div class="entry-published">
+      <span class="ss-icon ss-calendar"></span>
+      <time class="entry-datestamp"><span class="datestamp-action">Published</span> {{ page.date | date: "%B %-d, %Y" }}</time>
+    </div>
+  </footer>
 
   <table class="entry-metadata js-yt-metadata">
     <tr>
@@ -31,10 +39,6 @@ single: true
     <div class="js-yt-description"></div>
   </div>
 </article>
-
-<div class="juke">
-{% include post/juke.html %}
-</div>
 </div>
 
 {% include custom/youtube.html %}
