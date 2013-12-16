@@ -1,7 +1,9 @@
 [role="navigation"] {
+  margin-top: calc(-146px - 1.777rem);
   background-color: #272E37;
   transition: all 250ms ease;
   text-align: center;
+  padding-bottom: 1.777rem;
 
   a { text-decoration: none; }
   i, span {
@@ -19,7 +21,9 @@
   }
 }
 .show-left [role="navigation"] {
-  visibility: visible;
+  margin-top: 0;
+}
+.show-left {
 }
 
 .main-navigation {
@@ -36,37 +40,57 @@
 }
 
 
+.site-logotype {
+  @include position(absolute, 0px 0px 0 0px);
+  width: 100%;
+  z-index: 0;
+
+  color: #161B21;
+  font-family: $font-family-tertiary;
+  letter-spacing: -3px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(#FFF, 0.05);
+}
+
 .header {
   @include position(relative);
-  background-color: #161B21;
+  background: linear-gradient(#272E37, #161B21);
   text-align: center;
 
+  margin-top: -1.777rem;
+
   a { text-decoration: none; }
+  .ss-icon {
+    color: #FFF;
+    font-size: 32px;
+  }
 }
 
 .site-logo {
-  background-image: url('../images/phoenix.png');
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  @include position(relative);
   margin: 0;
-  height: 23.612rem - 1.777rem;
+  height: 23.612rem;
 
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+
+  background-image: url('../images/phoenix.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  z-index: 5;
 }
 .site-logo.sans-star {
   background-image: url('../images/phoenix-sans-star.png');
 }
 
-.ss-icon {
-  color: #FFF;
-  font-size: 32px;
-}
 .toggle {
   display: block;
   @include position(absolute);
+  padding-top: 1.777rem;
   width: 100%;
+  z-index: 100;
 }
 
 .icon-contain {
@@ -74,8 +98,7 @@
   width: 100%;
 
   .ss-icon {
-    // color: #009DDD;
+    color: #828B96;
     font-size: 64px;
-    text-shadow: 0 0 5px #000;
   }
 }
