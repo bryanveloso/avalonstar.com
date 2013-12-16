@@ -15,6 +15,7 @@ pagination_dir: journal
 titlecase: true  # Converts page and post titles to titlecase.
 
 include:
+ - images
  - javascripts
  - stylesheets
 exclude:
