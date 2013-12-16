@@ -13,5 +13,11 @@ single: true
     <h1 class="entry-title">{{ page.title | widont }}</h1>
   </header>
   <div class="entry-content">{{ content | widont }}</div>
+  <footer class="entry-metadata">
+    <div class="entry-published">
+      <span class="ss-icon ss-calendar"></span>
+      <time class="entry-datestamp"><span class="datestamp-action">Published</span> {{ page.date | date: "%B %-d, %Y" }}</time>
+    </div>
+  </footer>
 </article>
 </div>
