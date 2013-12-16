@@ -34,10 +34,28 @@ $width: ms(13);
   line-height: 0.9;
 }
 .entry-published {
+  @include position(relative);
+  margin: 3rem 0 1rem;
   font-family: $font-family-secondary;
   font-size: ms(-1);
-}
+  text-align: center;
 
+  .datestamp-action {
+    color: #A1ABB6;
+  }
+  .entry-datestamp {
+    @include position(relative);
+    z-index: 10;
+    background-color: #FFF;
+  }
+  .ss-icon {
+    @include position(absolute, -20px 0 0 50%);
+    margin-left: -21px;
+    z-index: 0;
+    color: #EBEFF5;
+    font-size: 42px;
+  }
+}
 
 
 .entry p {
