@@ -48,3 +48,34 @@
   font-size: ms(-1);
   text-align: center;
 }
+
+.juke a {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.369rem;
+  padding: 4.209rem 0;
+  width: 100%;
+
+  background-color: #FFF;
+  border-top: 1px solid #EBEFF5;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms ease;
+
+  &:hover { background-color: #F9FAFC; }
+  h2 {
+    font-family: $font-family-tertiary;
+    font-size: ms(4);
+    margin: 0;
+  }
+  .next-up {
+    color: #A1ABB6;
+    font-family: $font-family-secondary;
+    font-size: ms(-1);
+  }
+  .ss-icon {
+    height: 32px;
+    color: #A1ABB6;
+    font-size: 32px;
+  }
+}
