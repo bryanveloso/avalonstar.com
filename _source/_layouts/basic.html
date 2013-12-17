@@ -1,0 +1,11 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include head.html %}
+<body id="avalonstar-tv" {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
+  {{ content }}
+
+  <script src="/javascripts/application.js"></script>
+  <script src="/javascripts/twitch.js"></script>
+  <script src="/javascripts/youtube.js"></script>
+  <script src="/javascripts/fonts.js"></script>
+</body>
+</html>
