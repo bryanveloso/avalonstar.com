@@ -1,9 +1,10 @@
 [role="navigation"] {
   margin-top: calc(-146px - 1.777rem);
   background-color: #272E37;
-  transition: all 250ms ease;
-  text-align: center;
   padding-bottom: 1.777rem;
+
+  text-align: center;
+  transition: all 250ms ease;
 
   a { text-decoration: none; }
   i, span {
@@ -23,8 +24,6 @@
 .show-left [role="navigation"] {
   margin-top: 0;
 }
-.show-left {
-}
 
 .main-navigation {
   display: flex;
@@ -38,7 +37,6 @@
     padding-top: ms(0);
   }
 }
-
 
 .site-logotype {
   @include position(absolute, 0px 0px 0 0px);

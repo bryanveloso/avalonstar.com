@@ -29,6 +29,7 @@ $width: ms(13);
   }
 }
 .entry-header {
+  margin-bottom: 1.333rem;
   padding-top: 4.209rem; padding-bottom: 2.369rem;
   background-color: #161B21;
 
@@ -50,6 +51,8 @@ $width: ms(13);
     line-height: 0.9;
   }
   .ss-navigatedown {
+    color: #FFF;
+    font-size: 36px;
     padding-top: 2.369rem;
   }
 }
@@ -58,18 +61,15 @@ $width: ms(13);
   font-size: ms(-1);
 }
 
-.entry-content {
-  padding-top: 1rem;
-}
-
 .entry-metadata {
   @extend %container;
   display: flex;
+  margin-top: 1.333rem; margin-bottom: 1.333rem;
 }
 .entry-meta {
   @include position(relative);
   flex: 1;
-  margin: 3rem 0 1rem;
+  margin: 1rem 0;
   font-family: $font-family-secondary;
   font-size: ms(-1);
   text-align: center;
