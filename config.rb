@@ -5,9 +5,6 @@ require 'csso'
 require 'modular-scale'
 require 'susy'
 
-# Additional import paths for external dependencies:
-add_import_path 'components/typeplate/scss/'
-
 project_type = :stand_alone
 
 # Publishing paths
