@@ -1,6 +1,7 @@
 ---
 category: video
 layout: video
+series: Vlogalonstar
 title: "Passion, Drive and eSports Commentating"
 date: 2012-05-30 21:25
 comments: false

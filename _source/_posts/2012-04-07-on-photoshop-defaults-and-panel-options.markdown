@@ -1,6 +1,7 @@
 ---
 category: video
 layout: video
+series: Vlogalonstar
 title: "On Photoshop, Defaults and Panel Options"
 date: 2012-04-07 00:00
 comments: false

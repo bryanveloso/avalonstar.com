@@ -1,6 +1,7 @@
 ---
 category: video
 layout: video
+series: Vlogalonstar
 title: "Replication"
 date: 2012-04-13 18:00
 comments: false

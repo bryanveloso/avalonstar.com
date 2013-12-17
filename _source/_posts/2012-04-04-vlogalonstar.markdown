@@ -1,6 +1,7 @@
 ---
 category: video
 layout: video
+series: Vlogalonstar
 title: "Vlogalonstar"
 date: 2012-04-04 22:00
 comments: false
