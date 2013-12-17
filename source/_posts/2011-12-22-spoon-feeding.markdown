@@ -1,0 +1,30 @@
+---
+layout: prose
+title: "Spoon-feeding"
+date: 2011-12-22 16:00
+comments: false
+---
+
+Let's talk about one of my favorite games of all time, [MegaMan X][1]. I've *played* them all, and I've *beat* them all—yes, even the 3D ones—but I'll focus on the inaugural edition.
+
+Like many of the games that have defined my history as a gamer—Final Fantasy, Chrono Trigger, Super Mario Bros.—the nostalgia kick the X series gives me is, to this day, immense. The gameplay was extremely fun, it wasn't stupidly difficult, the artistic direction was a welcome-but-faithful departure from its predecessor, and the music still gets me going to this day. I still listen to the themes of [Armored Armadillo][2] and [Storm Eagle][3] on repeat once.
+
+But here's where I'll stop and encourage you to watch the video below. It is a bit long, but don't let that stop you! Even if you're not a fan of this style of presentation, the message behind this video is powerful *and* equally universal.
+
+<div class="embed-container"> <iframe src="http://www.youtube.com/embed/8FpigqfcvlM?hd=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe> </div>
+
+Did you finish it? Good. Now nod if you agree with it's message. Note that [Arin][4] expectedly only mentions game developers when it comes to the notion of introducing a user to your experience, but it applies everywhere.
+
+Not only did this video expose me an entirely different viewpoint of one of my favorite childhood video games, it also spoke to the builder and designer within me, while confirming a belief I've always held about user experience. I've always been a proponent of exploration and discovery: the sense of motivation, accomplishment and wonder that comes with being able to finding things on one's own rather than being bugged by [Navi][6]. This notion of _overtly_ spoon-feeding—guided tours, pop-ups and the like—is something that spits in the face of exploration and experimentation... _[INSERT BIG ASTERISK]_ or rather, _unless it's done tastefully_.
+
+In fear of veering off-topic, I'll save you the blabbering and let you take the video for what it is: [a prime example of getting your point across while swearing at the same time][7]. But in all seriousness, if you're reading this, you already understand the fact that you shouldn't be underestimating or worse, insulting your users' intelligence.
+
+Nothing annoys somebody more than being forcefully taught something they already know.
+
+[1]: http://en.wikipedia.org/wiki/Mega_Man_X_(video_game)
+[2]: http://www.youtube.com/watch?v=Ja5QUTlgZ3Y
+[3]: http://www.youtube.com/watch?v=1uYeags6JMw
+[4]: https://twitter.com/#!/egoraptor
+[5]: http://tapbots.com/software/tweetbot/
+[6]: http://www.youtube.com/watch?v=lCjyiEOZP44
+[7]: http://zachholman.com/posts/swearing/

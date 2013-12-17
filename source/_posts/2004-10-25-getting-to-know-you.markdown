@@ -1,0 +1,26 @@
+---
+layout: prose
+title: "Getting to Know You"
+date: 2004-10-25 15:30
+comments: false
+
+version: 19
+---
+
+I had the pleasure of watching "[The King and I][1]" over the past weekend. Jenni was one of five who won our local Nordstrom's sweepstakes (that being the first thing she has ever won) to see the musical along with two free dinners and a $100 gift card. The last show I had been to was "[The Phantom of the Opera][2]" and that was about five or six years ago on Broadway. So needless to say I was very excited about seeing this performance.
+
+Needless to say, it was spectacular. Now, I'm no Broadway buff, and many things amuse me easily, but I was floored over the quality of the acting and the lovely story. I would have to say Uncle Thomas' House was my favorite part of the play, as it had a very different and humorous approach to something I probably wouldn't ordinarily be interested in. [Sandy][3] [Duncan][4] did a wonderful job playing Anne, in this, a much more lively version of the spin-off I had seen in the movies with [Jodie Foster's][5] "[Anna and the King][6]". [Martin Vidnovic][7] played the role of the King of Siam and truly brought a lively and very humorous take to the part, I couldn't stop laughing every time he said: "Etcetera, etcetera, etcetera." I was also glad to read that he was the voice of the King in the [animated version of the play][8]. The kids were just adorable and judging by the look on Jen's face, she wanted to adopt one of them.
+
+There are a few more musicals that the two of us wish to see in the coming months, two of them being "[The Lord of the Dance][9]" and "[Chicago][10]" (hopefully the one with Trading Spaces' [Paige Davis][11]) If there are any more musicals that we should see, by all means let us know.",
+
+[1]: http://www.dallassummermusicals.org/2004king.htm
+[2]: http://www.thephantomoftheopera.com/
+[3]: http://news.minnesota.publicradio.org/features/2004/07/28_cunninghamg_sandyduncan/
+[4]: http://www.imdb.com/name/nm0242098/
+[5]: http://us.imdb.com/name/nm0000149/
+[6]: http://us.imdb.com/title/tt0166485/
+[7]: http://www.imdb.com/name/nm0896517/
+[8]: http://www.imdb.com/title/tt0160429/
+[9]: http://www.lordofthedance.com/
+[10]: http://www.chicagothemusical.com/indexl.html
+[11]: http://www.imdb.com/name/nm1057101/

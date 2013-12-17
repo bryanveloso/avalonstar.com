@@ -1,0 +1,39 @@
+---
+layout: prose
+title: "Tigers and Twenty Birthday Wishes"
+date: 2006-02-06 21:15
+comments: false
+
+version: 21
+---
+
+[<img src="http://static.flickr.com/19/96549070_f83e2b2dbf_m.jpg" width="240" height="160" class="posted" alt="Her Greatest Love" />][1]
+
+This one comes a day late, but I don't want to say it was because of a Photoshop tutorial. But then I'd be lying.
+
+Yesterday was Jenni's birthday, and for those of you who don't know me well enough, Jenni is my fiancÃ© of (almost) three years. We've been living together since October of 2003, so it's a testament to the trials and tribulations of living with your significant other. Needless to say, these have been the best and most memorable years of my life; proving the statement that "behind every great man, is a great woman."
+
+So over the past weekend, Jenni and I traveled to [Minneapolis, Minnesota][2] to visit the [Minnesota Zoo][3]. The plans for this adventure came a few months prior when we were deciding where to go for her 20th birthday. After reading about it, she did some research and put the zoo up as an option over [Disney World][4]. The main reason for doing this was that the Zoo was one of the few places that had a tiger lair, or a place where you could pretty much come within inches of an [amur tiger][5]. It's needless to note at this point that Jenni is a huge feline fan (we own three cats), and that tigers are on the top of that list.
+
+We took about 300 pictures while we were there, and to share our memories with all of you, I've decided to post a few of my favorites. They're not just of tigers, but of all of the zoo's animals. We did spend about 50% of our time with the tigers and Mexican wolves, but we made sure that we saw everything while we were there. Unfortunately since it was the winter season, there was a lot that we couldn't see due to temperatures and snow. However, that means that we can plan a second trip sometime in the future. In the meantime, [enjoy the photos][6] and feel free to comment about some of your favorite moments with your significant others (past or present).
+
+[<img src="http://static.flickr.com/32/96555686_1bad5fc3cb_t.jpg" width="100" height="67" class="posted" alt="I'll Get It!" />][7] [<img src="http://static.flickr.com/12/96555305_ab2c172fc5_t.jpg" width="100" height="67" class="posted" alt="Happily Camoflauged" />][8] [<img src="http://static.flickr.com/40/96554770_f0148eafdc_t.jpg" width="100" height="67" class="posted" alt="Alone in the Snow" />][9] [<img src="http://static.flickr.com/29/96552467_12beb3eecd_t.jpg" width="100" height="67" class="posted" alt="Pissed Off?" />][10] [<img src="http://static.flickr.com/31/96553013_cd47ef71c8_t.jpg" width="100" height="67" class="posted" alt="Sleeping Like a Human" />][11] [<img src="http://static.flickr.com/31/96552032_675b8b54f1_t.jpg" width="100" height="67" class="posted" alt="I Got a Ball!" />][12] [<img src="http://static.flickr.com/29/96545353_675365aaca_t.jpg" width="100" height="67" class="posted" alt="Big Yawn" />][13] [<img src="http://static.flickr.com/39/96544117_91d42f429f_t.jpg" width="100" height="67" class="posted" alt="Saying Hello" />][14] [<img src="http://static.flickr.com/24/96542071_3ed8be1ccc_t.jpg" width="100" height="67" class="posted" alt="Firefox Forever!" />][15] [<img src="http://static.flickr.com/26/96541155_e8766ea760_t.jpg" width="100" height="67" class="posted" alt="Tiger Tackle" />][16]
+
+Oh yeah, next year we'll be going to Las Vegas. I don't think I have to say anything more.
+
+[1]: http://www.flickr.com/photos/avalonstar/96549070/
+[2]: http://www.ci.minneapolis.mn.us/
+[3]: http://www.mnzoo.com
+[4]: http://disneyworld.disney.go.com/wdw/
+[5]: http://www.amur.org.uk/tigers.shtml
+[6]: http://flickr.com/photos/avalonstar/sets/72057594060495656/
+[7]: http://www.flickr.com/photos/avalonstar/96555686/
+[8]: http://www.flickr.com/photos/avalonstar/96555305/
+[9]: http://www.flickr.com/photos/avalonstar/96554770/
+[10]: http://www.flickr.com/photos/avalonstar/96552467/
+[11]: http://www.flickr.com/photos/avalonstar/96553013/
+[12]: http://www.flickr.com/photos/avalonstar/96552032/
+[13]: http://www.flickr.com/photos/avalonstar/96545353/
+[14]: http://www.flickr.com/photos/avalonstar/96544117/
+[15]: http://www.flickr.com/photos/avalonstar/96542071/
+[16]: http://www.flickr.com/photos/avalonstar/96541155/

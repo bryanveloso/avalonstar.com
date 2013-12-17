@@ -1,0 +1,61 @@
+---
+layout: prose
+title: "Hello! Party"
+date: 2009-09-09 15:30
+comments: false
+
+version: 26
+summary: "This is the story of a guy, a girl and an event. Said event was a departure from events they held in the past and introduced them not only to a new world of attendees but a new way of dealing with the planning of parties altogether. Eyes are opened, friends are made and fun is had."
+---
+
+Let me start by saying that I live two lives.
+
+I'm a designer who loves Japanese Pop music in one, and a Japanese Pop fanatic who happens to design in the other. You may think there's overlap, but there is little. On one end, the number of designers I know who share my music tastes can be counted on one hand. On the other end, the number of J-pop fans who share my passion for design can also be counted on one hand. It's a lonely, but enjoyable existence.
+
+## The "Bonnie and Clyde" of Events
+
+Most of the people in the former group know that Jen and I have held three mildly-successful bowling events. But this July, we took a dive into holding an event for the latter group. Not only was it a challenge, it was quite the rewarding challenge. When our favorite [idol][1] group, [Morning Musume][2] announced that they would be choosing [Anime Expo][3] to make their American debut, Jen and I knew we had to do something to commemorate it. Jen always had the idea of holding an event that contained games that mimicked the games of a show called [Hello! Morning][4]. Our ulterior motive would be to use it as a vessel to market Revyver's first product, Hello! Ranking, which you may or may not have heard of. Needless to say, you really couldn't find a more perfect marketing opportunity. What did I do during the planning stages? Well, I [designed][5] [a][6] [few][7] [things][8]. Jen took point on everything else, including emceeing the event.
+
+You would think that our experience with holding the bowling events would carry over to holding this one; in reality, not much did. The difficulty of finding sponsors for instance in a niche music community like this one made finding sponsors for web events look like money was literally being placed in your lap. For the first time, I felt powerless, as I was almost 100% sure that even the [music-oriented][9] [of the sites in our industry][10] would pay no mind to a party being held for such a niche audience. It was a truly a wake up call that consisted of miscommunicated promises and contractual hand-tieing.
+
+## The Part Where You Lose Sleep
+
+Many times we were faced with the decision of canceling the party outright, but the community would have none of it. So many people wanted to see this party happen that they collectively donated to cover half of the party's expenses[^1]. it was a shocking move that took both of us completely off-guard, but made throwing the party even more of an honor. I saw not only great friends, but also great evangelists. Quite humorous how it took an event for me to realize just how confident I should be in the product we're building for them.
+
+## Cue a Sigh of Relief
+
+The party itself was a blast. As I said above, Jen emceed while I tried my best to recall my A/V days and take care of the... A/V. We held five games, that ranged from people running to a running Jen holding a microphone to identify a song to a game that required people to play "[Telephone]" with drawings. We were able to record about 80% of the event and what prompted this post was the fact that I finally uploaded everything. ;)
+
+So if you have a little time on your hands and would like a little view into "this life" of mine, here are the links (rather than a hell of a lot of <embeds>) to the videos (make sure to watch them in HD!).
+
+- [Guess That Song][12]
+- Trivia -- [Part 1][13] &middot; [Part 2][14] &middot; [Part 3][15] &middot; [Part 4][16]
+- Karaoke Battle -- [Part 1][17] &middot; [Part 2][18]
+- Telephone Drawing -- [Part 1][19] &middot; [Part 2][20]
+
+If you check out the playlist connected to these videos, you'll be able to see videos recorded by the attendees. Be forewarned, some of them are a little... odd to any person who doesn't know what's going on.
+
+We loved throwing Hello! Party and are eagerly starting to plan the next one. To the parties of interest out there, yes, it _is_ happening. I'm already working on the teaser trailer. ;)
+
+[^1]: Unfortunately, the same couldn't be said for bowling. An event that charged $15 to bowl didn't look so appealing to people who could also go to a free event sponsored by Facebook or Tumblr. It showed in the numbers, you just can't compete against that. :/ Two people can't take on entire companies with party budgets.
+
+[1]: http://en.wikipedia.org/wiki/Japanese_idol
+[2]: http://j-ongaku.org/wiki/Morning_Musume
+[3]: http://www.anime-expo.org/
+[4]: http://en.wikipedia.org/wiki/Hello!_Morning
+[5]: http://party.hello-ranking.com/
+[6]: http://www.flickr.com/photos/avalonstar/3770623951/
+[7]: http://www.flickr.com/photos/avalonstar/3783538192/
+[8]: http://www.flickr.com/photos/avalonstar/3770623941/
+[9]: http://virb.com/
+[10]: http://last.fm/
+[11]: http://en.wikipedia.org/wiki/Chinese_whispers
+[12]: http://www.youtube.com/watch?v=cPpxPuITjxI
+[13]: http://www.youtube.com/watch?v=I486fUdhEc4
+[14]: http://www.youtube.com/watch?v=gl8hyzQZTnU
+[15]: http://www.youtube.com/watch?v=X_8hOwC7p8o
+[16]: http://www.youtube.com/watch?v=3BSL0lAGNDg
+[17]: http://www.youtube.com/watch?v=9Rp9qZ27G_U
+[18]: http://www.youtube.com/watch?v=bg3rCcOMhjw
+[19]: http://www.youtube.com/watch?v=TrFd6BWhD7c
+[20]: http://www.youtube.com/watch?v=OgP8qDdJW8w

@@ -1,0 +1,70 @@
+---
+layout: prose
+title: "Birthdays and Test Tubes"
+date: 2008-06-30 21:30
+comments: false
+
+version: 25
+summary: "This is the story of a guy and his company. After taking the level of seriousness to an all time high, he felt it was time to lighten up the mood a little bit and announce what he's been meaning to all week. Might not be *that* special, but it could very well help a lot of people."
+---
+
+After a night of spilling my guts out for all to see, I felt it was high time to perk up the mood and talk about the announcement I alluded to [a few nights ago][1].
+
+Long time readers will remember that some time ago, I released archives of hand-picked Photoshop documents for all to see and play with. The response was very positive and I eventually released a total of three archives, one for 2004, 2005 and 2006. However, since I have a tendency of nuking the domain and starting fresh with each release, not to mention the numerous server moves, files I host don't usually survive. This is mostly because I forget. The same thing happened with [ChaoticSoul][2], my beloved [WordPress][3] theme.
+
+A few weeks ago, after getting an email asking about the archives, I said to myself, "I really got to get these back up." With that motivation in tow, I was able to kick something out that I hope all of you will be able to enjoy to some degree.
+
+With that, I'm very proud to introduce, [Revyver Labs][4] which you can find at [labs.revyver.com][4]. To make a potentially long story a lot shorter, this is where I will release all of my works for now on. It's obviously on a domain, lovingly taken care of by [Media Temple][5], that's *far far away* from the reach of my nuking button.
+
+[<img src="http://farm4.static.flickr.com/3047/2626835621_e3cf4bbc02.jpg" width="371" height="500" alt="Revyver Labs" />][20]
+
+Everything on the Labs is provided as a sort of [donation ware][6], so buy us some [boba milk tea][7] if you want to say thanks. But you wonâ€™t only be helping us help you. **Fifty-percent (50%)** of all donations will go towards the [American Society for the Prevention of Cruelty to Animals][8], or the ASPCA. So you'll be helping animals, [much like our own cats (2 of which are rescues)][9] find loving homes. But in the end, it's not about the money at all, it's about me wanting to help people learn and grow in my own special way (read: I can't teach for crap, I leave that to people like [Andy][10] and [Dan][11]).
+
+Along with the launch of the Labs comes a refresh of [Revyver][12], so I encourage you to check both out (and make sure to switch your tabs quickly between them). Well, the entry could technically end here, but for more, *read on*!
+
+## Batteries Included?
+
+Let's talk about what's actually in the Labs. There'll be a few things you recognize and a few things you won't. At the current moment, the downloads are split up into three categories, **WordPress themes**, the **Photoshop archives**, and **source code**.
+
+## The WordPress Themes
+
+> But wait, you don't use WordPress anymore.
+
+That I don't, well, not here at least. However, I have been keeping up with development and the releases. For months I've had the desire to release a few more themes like ChaoticSoul and Labs will provide me with the avenue to do so. So you'll see ChaoticSoul as well as its future twin, AngelicSoul. You'll be able to not only download the current releases, but also follow any work I do on the themes from their new home on [GitHub][13].
+
+## The Photoshop Archives
+
+The beloved archives have undergone a few changes. First, they're now strictly Photoshop documents. I've removed all the markup, InDesign and Illustrator documents for placement in a future category. Second, I've thrown in the **2007** archive. Third, I've revised each of the archives to include documents I didn't release in the past. Three of these files making their inaugural appearance in the archive are [version 19][14] and the [4th prototype][15] of this version of Avalonstar as well as the [first version of Revyver][16]. It was quite the inner battle--to release works so close to me--but I ultimately decided to include them as centerpieces of my work for each of the archives.
+
+## The Source Code
+
+As of right now, the only project you'll find there is [Django Plugables][17], since that's the only project that I've decided to release the source code for. More are in the pipeline, including planned releases of the backend that runs Avalonstar as well as a few other ideas up my sleeve. All of these projects, wether Django related or not, will be hosted on [GitHub][13] in case you'd like to follow along.
+
+## Need assistance? Get Satisfaction!
+
+Finally, at the center of all these releases is the help system powered by [Get Satisfaction][18]. I've long wanted to redirect all the requests for support to **one central location** and the platform provided at [Get Satisfaction][19] will fulfill that need perfectly. So all requests for help or even ideas and comments should go there! I'll be able to address issues a lot easier and a lot quicker. :)
+
+All-in-all, I **really hope** you enjoy the Labs. I hope to keep them updated with new projects as often as I can. Also, do feel free to poke me if I haven't. As I've said in the past, a swift kick in the ass does wonders sometimes.
+
+Finally, **happy birthday Revyver**, this beer's for you. :)
+
+[1]: http://avalonstar.com/blog/2008/jun/29/revyver-week/
+[2]: http://www.bloggingpro.com/archives/2006/03/23/wordpress-theme-chaoticsoul/
+[3]: http://en.blog.wordpress.com/2006/10/26/new-theme-chaoticsoul/
+[4]: http://labs.revyver.com/
+[5]: http://www.mediatemple.net/go/order/?refdom=revyver.com
+[6]: http://en.wikipedia.org/wiki/Donationware
+[7]: http://en.wikipedia.org/wiki/Bubble_tea
+[8]: http://aspca.org/
+[9]: http://www.flickr.com/photos/avalonstar/sets/152607/
+[10]: http://www.stuffandnonsense.co.uk/
+[11]: http://simplebits.com/
+[12]: http://revyver.com/
+[13]: http://github.com/revyver/
+[14]: http://flickr.com/photos/lisamac/26246348/
+[15]: http://avalonstar.com/blog/2008/mar/30/design-distortion/
+[16]: http://flickr.com/photos/avalonstar/179187596/
+[17]: http://github.com/revyver/django-plugables/tree/
+[18]: http://getsatisfaction.com/revyver/products/revyver_revyver_labs/
+[19]: http://getsatisfaction.com/
+[20]: http://www.flickr.com/photos/avalonstar/2626835621/

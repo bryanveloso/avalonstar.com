@@ -1,0 +1,27 @@
+---
+layout: prose
+title: "Welcome Back DDR"
+date: 2006-01-25 17:15
+comments: false
+
+version: 21
+---
+
+Why don't I start a meme, post something that nobody knows about you (that's been a big part of your life for *x* number of years) and then pass it on. Okay, time to make a fool out of myself.
+
+> The first arcade version of the best-selling dance video game series to be released in North America in more than six years, DDR SuperNOVA uses a completely new hardware engine that has been refined to deliver vibrant 3D backgrounds, cool music videos and crisp high-resolution graphics. With the worldwide success and established fan base of DDR at its highest level ever, DDR returns to its arcade roots with DDR SuperNOVA, the largest game in the series with over 300 songs and 2,000 dance patterns available.
+
+Okay folks, I'm beside myself. Five years and one month ago (almost to the day), I started playing a game that set the course of a lot of events in my life. From being the first connection between my fiance and I to being one of the first games I was ever good at, [Dance Dance Revolution][1] has been a gigantic part of my life. For those of you who have known me since I started, you'll know just *how* important this game is to me. Wow, just sitting here, I can think back to what my life was back then and how different it would have been if I never had touched the game. Okay, enough of being nostalgic. It's time to bring out the incriminating items. **Click on the photo to download the video that accompanies it.**
+
+[<img src="http://static.flickr.com/34/91269595_40e27571cf_m.jpg" width="257" height="239" alt="Bryan Dances" class="posted" />][2] [<img src="http://static.flickr.com/15/91269594_315812e804_o.png" width="240" height="239" alt="Bryan Dances Again" class="posted" />][3]
+
+Please consider my bravery when posting these. The videos above are about two to three **years** old and are from two different tournaments, one in Newport, Rhode Island and the other in San Bernardino, California. I believe the 2nd one is the newer of the two. No, I don't have that haircut anymore, and I actually had a good body structure back then. Anyway, if you're interested in knowing what the hell the above two videos are about - they're called "freestyle," which as you can see by the videos, it's more about style than the technical aspect. In no way am I saying that I'm a good dancer, I just happen to be pretty good at this (Out of 7 tournaments, I have only placed out of the top 3 once, and placed 1st the other six times.). Okay, moving away from this as quickly as possible.
+
+What makes me happy about this whole move is that Konami actually listened the fans in the states by releasing this new mix. If you've ever seen or played [DDR USA][4], then you know of the crap I speak of. If not, then it's the old story of Japan getting the crazy shit and the states (and Europe) getting plain shit. Finally, Konami saw the sheer size of the following in the US and thankfully didn't abandon their arcade machine business. Now if only more Japanese companies saw how much we love their products, we wouldn't have to import things from behind their backs anymore (for the most part).
+
+Anyway, hopefully this post hasn't been a complete lost and you can at least laugh at the debacle that is my freestyling ability. If you never come again, I'd like to thank you for putting up with me before I finally scare you away. As for me, I'm going to retire into my little cubby hole and wonder why the hell I ever did this. But in the meantime, I'll be looking for arcades that'll be carrying the new DDR mix so I can finally get back into the shape I was in those above photos.
+
+[1]: http://ddrfreak.com/
+[2]: http://avalonstar.com/projects/videos/longtrainrunnin.wmv
+[3]: http://avalonstar.com/projects/videos/mikenekorock.wmv
+[4]: http://www.gamespot.com/arcade/puzzle/dancedancerevolutionusa/
