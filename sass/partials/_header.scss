@@ -18,7 +18,7 @@
     font-family: $font-family-secondary;
   }
   .ss-icon {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 .show-left [role="navigation"] {
@@ -38,19 +38,6 @@
   }
 }
 
-.site-logotype {
-  @include position(absolute, 0px 0px 0 0px);
-  width: 100%;
-  z-index: 0;
-
-  color: #161B21;
-  font-family: $font-family-tertiary;
-  letter-spacing: -3px;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(#FFF, 0.05);
-}
-
 .header {
   @include position(relative);
   background: linear-gradient(#272E37, #161B21);
@@ -59,6 +46,11 @@
   margin-top: -1.777rem;
 
   a { text-decoration: none; }
+  .site-logotype {
+    @include position(absolute, 20% 0px 0 0px);
+    width: 100%;
+    z-index: 0;
+  }
   .ss-icon {
     color: #FFF;
     font-size: 32px;
@@ -81,6 +73,15 @@
 }
 .site-logo.sans-star {
   background-image: url('../images/phoenix-sans-star.png');
+}
+.site-logotype {
+  color: #161B21;
+  font-family: $font-family-logotype;
+  letter-spacing: -1rem;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(#FFF, 0.05);
+  text-transform: uppercase;
 }
 
 .toggle {
