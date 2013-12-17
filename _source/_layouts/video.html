@@ -9,33 +9,44 @@ single: true
 
   <header class="entry-header">
     <div class="wrapper">
-      <div class="embed-container">
-        <iframe src="http://youtube.com/embed/{{ page.ytid }}?vq=hd720&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
-      </div>
       <h1 class="entry-title">{{ page.title | widont }}</h1>
+      <span class="entry-category">{{ page.category }}</span>
+      <span class="ss-icon ss-navigatedown"></span>
     </div>
   </header>
 
-  <div class="entry-content">{{ content | widont }}</div>
+  <div class="video-wrapper">
+    <div class="embed-container">
+      <iframe src="http://youtube.com/embed/{{ page.ytid }}?vq=hd720&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="entry-metadata js-yt-metadata">
+    <div class="entry-meta entry-views">
+      <span class="ss-icon ss-tv"></span>
+      <span class="entry-meta-detail"><span class="js-yt-views"></span> <span class="metadata-prefix">Views</span></span>
+    </div>
+    {% if page.series and page.episode %}
+    <div class="entry-meta entry-episode">
+      <span class="ss-icon ss-clapboard"></span>
+      <span class="entry-meta-detail"><span class="metadata-prefix">{{ page.series }}</span> #{{ page.episode }}</span>
+    </div>
+    {% endif %}
+    <div class="entry-meta entry-likes">
+      <span class="ss-icon ss-heart"></span>
+      <span class="entry-meta-detail"><span class="js-yt-comments"></span> <span class="metadata-prefix">Likes</span></span>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="entry-content">
+    {{ content | widont }}
+  </div>
 
   <footer class="entry-metadata js-yt-metadata">
     <div class="entry-meta entry-published">
       <span class="ss-icon ss-calendar"></span>
       <time class="entry-meta-detail"><span class="metadata-prefix">Uploaded</span> {{ page.date | date: "%B %-d, %Y" }}</time>
-    </div>
-    {% if page.episode %}
-    <div class="entry-meta entry-episode">
-      <span class="ss-icon ss-clapboard"></span>
-      <span class="entry-meta-detail"><span class="metadata-prefix">Episode</span> {{ page.episode }}</span>
-    </div>
-    {% endif %}
-    <div class="entry-meta entry-views">
-      <span class="ss-icon ss-tv"></span>
-      <span class="entry-meta-detail"><span class="js-yt-views"></span> <span class="metadata-prefix">Views</span></span>
-    </div>
-    <div class="entry-meta entry-likes">
-      <span class="ss-icon ss-heart"></span>
-      <span class="entry-meta-detail"><span class="js-yt-comments"></span> <span class="metadata-prefix">Likes</span></span>
     </div>
   </footer>
   <!--
