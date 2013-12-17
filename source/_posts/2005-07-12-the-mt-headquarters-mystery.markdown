@@ -1,0 +1,47 @@
+---
+layout: prose
+title: "The (mt) Headquarters Mystery"
+date: 2005-07-12 08:45
+comments: false
+
+version: 20
+summary: "This is the story of a guy and a hosting company. The guy travels to sunny Santa Monica, CA and tries to find the hosting company's office. Instead, he finds a mailbox. Is it a hoax? Is he just being naive? All-in-all, it's simply a fanboy trying to find the people who keep his site alive."
+---
+
+Our story begins on a sunny Thursday afternoon while I was looking around Media Temple's website — intereted in their new hosting plans. Everybody and their dog either hosts with [Dreamhost][1] or (mt), so I thought:
+
+> "Why not? Maybe they're worth the price."
+
+Besides, I was starting to feel bad leeching off [my friend][2] who had faithfully be paying for [our little venture's][3] hosting. I had some time on my hands that day, so I started to dig around the site. Eventually, I came upon their contact page and found this:
+
+<address>
+  **(mt) Media Temple, Inc**
+Main Headquarters
+410-B Broadway
+Santa Monica, CA 90401
+</address>
+
+(Yes, there's a data center address too, but I wasn't going to go all the way to Downtown LA just to see a bunch of servers.)
+
+"Wow," I thought. "That's right near Jen's place." You see, one of my favorite places to hang out with my sweetheart is the [Santa Monica Pier][4] and the [Third Street Promenade][5], so I looked it up on [Google Maps][6] I know what you're thinking, "Okay buddy, what's the big deal, so they have an address. Big deal."
+
+Being the type of person that I am, wanting to believe that companies on the internet also exist in real life, I was pretty excited to actually see where Media Temple was located. Maybe walk into the office and say, "You! I want hosting," or something obnoxious like that. Maybe I wanted to see the famous (mt) logo on an actual window. So the story continues to Friday, when my sweetheart and I spent the night strolling the pier and the promenade. We drive to the corner of Broadway and 4th, and I ask her to look around for anything that says "Media Temple", she finds nothing. I thought to myself, "Well that's weird, I guess I'll come check it out later."
+
+So after shopping a bit, and spending some time at the Apple Store, we grabbed some frappuccinos and headed back to the car after a fun night. Then I remembered to check the same building since we were coming from the other direction. We found ourselves kitty-corner from the place, and all I saw were shops. I was sure that the address was correct. Wanting to take a closer look, we ran across the street and then Jen pointed to a shop that had the number **410**, but it wasn't Media Temple:
+
+[<img src="http://photos23.flickr.com/25505216_682628e4e2_m.jpg" width="240" height="180" alt="(mt) = Fashion Store?" class="posted" />][7][<img src="http://photos23.flickr.com/25505170_db70164c98_o.jpg" width="240" height="180" alt="Media Temple's Headquarters?" class="posted" />][8]
+
+"**A fashion store?** This can't be right," I thought. But there it was, *410 Broadway*, but there was no "B" no second floor, no nothing. Jen and I just sort of hung around there, looked to one side of the building, and then the address of the side of the of the building that did have a second floor, which was on *4th Street*. So we went back to the fashion store and looked again and found 3 mailboxes, *410, 410B* and *410C*. Just as quick as a Japanese man would say "Nani?" I thought, "This is nuts!"
+
+But there it was, **410B**. Couldn't deny it. "So people get their hosting from a mailbox," I said, not trying to be serious or anything — the whole matter was pretty funny as it stood, "At least they could have gotten their mailbox from a UPS Store or something." Laughing it off, we headed back to the car and so the story ends there. The moral? There is none. This was just a funny exercise in trying to find out the whereabouts of one of the internet's top hosting companies. Hope you enjoyed it.[^1]
+
+[^1]: This post is in no way defacing Media Temple, and was never intended to. If you were offended by this post, you shouldn't have read it. Media Temple is a great hosting company, and I too have been hosted by them in the past. But there's no harm in fun and a good laugh. If you disagree with that, go to your local doctor to get the stick pulled out of your ass.
+
+[1]: http://www.dreamhost.com
+[2]: http://alex.imaznation.com
+[3]: http://www.directpixel.com
+[4]: http://www.santamonicapier.org/
+[5]: http://www.downtownsm.com/
+[6]: http://maps.google.com/maps?q=410-B+Broadway,+Santa+Monica,+CA
+[7]: http://www.flickr.com/photos/avalonstar/25505216/ "Photo Sharing"
+[8]: http://www.flickr.com/photos/avalonstar/25505170/ "Photo Sharing"

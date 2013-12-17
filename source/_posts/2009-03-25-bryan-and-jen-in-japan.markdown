@@ -1,0 +1,29 @@
+---
+layout: prose
+title: "Bryan and Jen in Japan"
+date: 2009-03-25 12:15
+comments: false
+
+version: 25
+summary: "This is the story of a guy, his future wife and a dream. The dream was to someday visit the country that serves as the source of a lot of happiness for the couple. This is the story of the beginning of their journey there, and how you can follow along -- if you wish. :)"
+---
+
+If you've been following along for a while, you'll already know that I'm a big fan of Japan and Japanese culture. While I was a bit of a casual fan in years past, it wasn't until I met Jen that my exposure to all things Japan suddenly spiked. The culmination of that happens today, as we wait at Vancouver Airport for Air Canada 001 bound for Tokyo.
+
+We've been looking forward to this trip for a long time. For a while we weren't even sure if it was going to happen, but a lot of hard work led to where we are now. For me, it's my first non-family vacation ever. For Jen, it's her first trip across the Pacific.
+
+I've been a bit at a loss at what to feel, even now. It's a sort of excitement, a feeling I equated to the moments passing as you're getting lifted on a roller coaster. It's a very real feeling, but it hasn't hit me yet that our final destination is Japan. We were joking earlier that I'd all of a sudden come out of the plane at Narita Airport and proclaim, "Shit! This ain't Austin!" (or something silly like that). Many things are going to be new to me this week, and the word "excited" can't even begin to describe my anxiousness to get started.
+
+## But wait! There's more!
+
+We wanted to save and share our memories of this first trip, so with the help of Jen's discerning eye, I took some time this week to skin a [Tumblr][1] for it. The domain it sits at, [konokoi.com][2], is one I bought long ago when Jen and I first met. It'll serves as a suitable spot for the blog before it gives way to our wedding site in the coming months. :)
+
+[<img src="http://farm4.static.flickr.com/3614/3384846080_cea497a303.jpg" width="500" height="431" alt="Konokoi" />][5]
+
+If you're interested in keeping up, by all means follow us through the [Tumblr blog][2], [RSS][3] or [my Flickr account][4]. Other than updating the blog or Flickr, I'm going to (obviously) try and keep my Internetage to a minimum. With that said, see you on the other end! :D
+
+[1]: http://tumblr.com/
+[2]: http://konokoi.com/
+[3]: http://konokoi.com/rss/
+[4]: http://flickr.com/photos/avalonstar/
+[5]: http://www.flickr.com/photos/avalonstar/3384846080/
