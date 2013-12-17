@@ -52,7 +52,7 @@ $width: ms(13);
   }
   .ss-navigatedown {
     color: #FFF;
-    font-size: 36px;
+    font-size: 32px;
     padding-top: 2.369rem;
   }
 }
@@ -95,4 +95,9 @@ $width: ms(13);
 .entry p {
   margin: ms(2) auto;
   width: ms(13);
+}
+
+// Styles for external widgets.
+.entry .twitter-tweet-rendered {
+  margin: 1rem auto !important;
 }
