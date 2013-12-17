@@ -5,7 +5,11 @@ date: 2012-02-29 23:50
 comments: false
 ---
 
-<iframe src="http://player.vimeo.com/video/37719413" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe>
+<div class="video-wrapper">
+    <div class="embed-container">
+        <iframe src="http://player.vimeo.com/video/37719413" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe>
+    </div>
+</div>
 
 I've been on a mounting spree as of late. First, my TV. Then my microphone. Now, my iMac. This, _[the Humanscale M8][1]_, is the last piece of the puzzle I alluded to in my [last post][2]. While I didn't have the best luck with actually getting it—it took me nearly a month to receive it since it was on backorder—it was definitely worth the wait.
 

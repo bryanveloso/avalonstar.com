@@ -4,28 +4,23 @@ title: "On Fandoms and Analysis Paralysis"
 date: 2012-01-27 23:00
 comments: false
 ---
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 When you're sitting down in between tasks, eating pizza and drinking soda that you didn't order, you get weird ideas. So tonight, I asked my pool of Twitter followers a question:
 
 <blockquote class="twitter-tweet"><p>Okay tech people, tell me about your fandoms. The not-tech-related ones. So, Apple products and @<a href="https://twitter.com/zeldman">zeldman</a>'s beanie don't count.</p>&mdash; Bryan Veloso (@bryanveloso) <a href="https://twitter.com/bryanveloso/status/163155853178974208" data-datetime="2012-01-28T07:06:01+00:00">January 28, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I asked this with reservations. I could've either gotten a lot of great responses or I would've gotten no responses and a lot of unfollows. Thankfully, it was the former and I wasn't disappointed:
 
-<blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/bryanveloso">bryanveloso</a> vampires? ^,..,^</p>&mdash; jina (@jina) <a href="https://twitter.com/jina/status/163157067702607872" data-datetime="2012-01-28T07:10:50+00:00">January 28, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none"><p>@<a href="https://twitter.com/bryanveloso">bryanveloso</a> vampires? ^,..,^</p>&mdash; jina (@jina) <a href="https://twitter.com/jina/status/163157067702607872" data-datetime="2012-01-28T07:10:50+00:00">January 28, 2012</a></blockquote>
 
-<blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/bryanveloso">bryanveloso</a> Dr Who, LotR, Temeraire, GoT, whiskey, cameras.</p>&mdash; timoni west (@timoni) <a href="https://twitter.com/timoni/status/163157821158981632" data-datetime="2012-01-28T07:13:50+00:00">January 28, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none"><p>@<a href="https://twitter.com/bryanveloso">bryanveloso</a> Dr Who, LotR, Temeraire, GoT, whiskey, cameras.</p>&mdash; timoni west (@timoni) <a href="https://twitter.com/timoni/status/163157821158981632" data-datetime="2012-01-28T07:13:50+00:00">January 28, 2012</a></blockquote>
 
-<blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/bryanveloso">bryanveloso</a> Gundams…definitely Gundams.Also really terrible Japanese horror flicks.</p>&mdash; Bermon Painter (@bermonpainter) <a href="https://twitter.com/bermonpainter/status/163158605309292544" data-datetime="2012-01-28T07:16:57+00:00">January 28, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none"><p>@<a href="https://twitter.com/bryanveloso">bryanveloso</a> Gundams…definitely Gundams.Also really terrible Japanese horror flicks.</p>&mdash; Bermon Painter (@bermonpainter) <a href="https://twitter.com/bermonpainter/status/163158605309292544" data-datetime="2012-01-28T07:16:57+00:00">January 28, 2012</a></blockquote>
 
-<blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/bryanveloso">bryanveloso</a> glee and twilight have been my most recent. I am a 'Friends' TV show addict as well.</p>&mdash; Candi Ligutan (@candiRSX) <a href="https://twitter.com/candiRSX/status/163159163952824320" data-datetime="2012-01-28T07:19:10+00:00">January 28, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none"><p>@<a href="https://twitter.com/bryanveloso">bryanveloso</a> glee and twilight have been my most recent. I am a 'Friends' TV show addict as well.</p>&mdash; Candi Ligutan (@candiRSX) <a href="https://twitter.com/candiRSX/status/163159163952824320" data-datetime="2012-01-28T07:19:10+00:00">January 28, 2012</a></blockquote>
 
-<blockquote class="twitter-tweet"><p>@<a href="https://twitter.com/bryanveloso">bryanveloso</a> ancestral diets, basketball, the mandolin (really music in general), cats. my list goes on with more odd specifics.</p>&mdash; Luke Hatcher (@lukeman) <a href="https://twitter.com/lukeman/status/163162828713377794" data-datetime="2012-01-28T07:33:44+00:00">January 28, 2012</a></blockquote>
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none"><p>@<a href="https://twitter.com/bryanveloso">bryanveloso</a> ancestral diets, basketball, the mandolin (really music in general), cats. my list goes on with more odd specifics.</p>&mdash; Luke Hatcher (@lukeman) <a href="https://twitter.com/lukeman/status/163162828713377794" data-datetime="2012-01-28T07:33:44+00:00">January 28, 2012</a></blockquote>
 
 And now for something completely different...
 
