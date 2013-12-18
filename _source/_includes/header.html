@@ -1,9 +1,9 @@
 <header class="header">
   <a class="toggle" href="#left"><span class="ss-icon ss-menu"></span></a>
-  <h1 class="site-logo {% if page.category %}sans-star{% endif %}">Avalonstar</h1>
-  <div class="site-logotype">Avalonstar</div>
+  <div class="site-logo {% if page.category %}sans-star{% endif %}"></div>
+  <a href="{{ root_path }}" class="site-logotype">Avalonstar</a>
   <div class="icon-contain">
     {% if page.category == "prose" %}<span class="ss-icon ss-notebook"></span>{% endif %}
-    {% if page.category == "video" %}<span class="ss-icon ss-video"></span>{% endif %}
+    {% if page.category == "video" %}<span class="ss-icon ss-clapboard"></span>{% endif %}
   </div>
 </header>
