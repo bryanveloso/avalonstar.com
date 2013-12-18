@@ -13,11 +13,10 @@ body_class: home
       <a href="{{ root_path }}" class="site-logotype">Avalonstar</a>
       <div class="site-tagline">A journal. A playground. An identity.</div>
     </div>
-    <div class="most-recents">
+    <div class="hero-posts">
       <div class="recent-item recent-prose">
       {% for post in site.categories.prose limit:1 %}
         <span class="ss-icon ss-notebook"></span>
-        <!-- <span class="recent-category entry-category">Recent {{ post.category }}</span> -->
         <h2 class="recent-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <time class="recent-published">{{ post.date | date: "%B %-d, %Y" }}</time>
       {% endfor %}
@@ -25,7 +24,6 @@ body_class: home
       <div class="recent-item recent-video">
       {% for post in site.categories.video limit:1 %}
         <span class="ss-icon ss-clapboard"></span>
-        <!-- <span class="recent-category entry-category">Recent {{ post.category }}</span> -->
         <h2 class="recent-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <time class="recent-published">{{ post.date | date: "%B %-d, %Y" }}</time>
       {% endfor %}
@@ -36,13 +34,15 @@ body_class: home
 </div>
 
 <div id="content" role="main">
-  {% include navigation.html %}
+  <!-- {% include navigation.html %} -->
 
-  <div class="recents">
-    <span class="ss-icon ss-clock"></span>
+  <div class="recent-posts home-section">
+    <header class="home-section-header">
+      <span class="ss-icon ss-clock"></span>
+    </header>
     <ul class="recent-list">
     {% for post in site.posts limit:10 %}
-      <li class="recent-list-item">
+      <li class="recent-list-item recent-{{ post.layout }}">
         <div>
           <h2 class="recent-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
           <time class="recent-published">{{ post.layout }} &middot; {{ post.date | date: "%B %-d, %Y" }}</time>
@@ -53,43 +53,48 @@ body_class: home
     {% endfor %}
     </ul>
   </div>
-
-  <div class="home-video">
-    <div class="video-type youtube">
-      <div class="embed-container">
-        <iframe id="ytplayer" src="http://www.youtube.com/embed/?vq=hd720&amp;listType=playlist&amp;list=PLD47E8E769D01C633&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  <div class="home-videos home-section">
+    <header class="home-section-header">
+      <span class="ss-icon ss-video"></span>
+    </header>
+    <div class="video-list">
+      <div class="video-type youtube">
+        <div class="video-statistics">
+          <a class="video-link" href="http://youtube.com/bryanveloso">Avalonstar <i>on YouTube</i></a>
+          <a class="subscriber-link" href="http://youtube.com/user/bryanveloso/subscribers"><span class="js-youtube-subscriber-count"></span></a>
+          <span class="ss-icon ss-smile"></span>
+        </div>
+        <div class="embed-container">
+          <iframe id="ytplayer" src="http://www.youtube.com/embed/?vq=hd720&amp;listType=playlist&amp;list=PLD47E8E769D01C633&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="background">
+          <!-- <h1><a class="js-recent-youtube-link" href="">Questions &amp; Answers: Passion, Drive and eSports Commentating</a></h1> -->
+          <p>Avalonstar started life as a portfolio. As the years passed, it turned into a blog. Writing happened, for a while. But as with all things, writing took a back seat. <strong>Avalonstar.tv</strong> is an attempt to rekindle the magic I found in blogging, only now with video.</p>
+        </div>
       </div>
-      <div class="video-statistics">
-        <a class="video-link" href="http://youtube.com/bryanveloso">Avalonstar <i>on YouTube</i></a>
-        <a class="subscriber-link" href="http://youtube.com/user/bryanveloso/subscribers"><b class="js-youtube-subscriber-count"></b></a>
-        <span class="ss-icon ss-tv"></span>
-      </div>
-      <div class="background">
-        <!-- <h1><a class="js-recent-youtube-link" href="">Questions &amp; Answers: Passion, Drive and eSports Commentating</a></h1> -->
-        <p>Avalonstar started life as a portfolio. As the years passed, it turned into a blog. Writing happened, for a while. But as with all things, writing took a back seat. <strong>Avalonstar.tv</strong> is an attempt to rekindle the magic I found in blogging, only now with video.</p>
-      </div>
-    </div>
-    <div class="video-type twitch">
-      <div class="embed-container">
-        <object type="application/x-shockwave-flash" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=avalonstartv" bgcolor="#000000">
-          <param name="allowFullScreen" value="true">
-          <param name="allowScriptAccess" value="always">
-          <param name="allowNetworking" value="all">
-          <param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf">
-          <param name="flashvars" value="hostname=www.twitch.tv&amp;channel=avalonstartv&amp;auto_play=true&amp;start_volume=25" />
-        </object>
-        <div class="video-error">Twitch doesn't support iFrame embedding... yet. But don't worry, download <a href="http://itunes.apple.com/us/app/twitchtv/id460177396?mt=8&uo=4" target="itunes_store">Twitch</a> and search for <strong>AvalonstarTV</strong>!</div>
-      </div>
-      <div class="video-statistics">
-        <a class="video-link" href="http://twitch.tv/vlogalonstar">Avalonstar Live <i>on Twitch</i></a>
-        <a class="subscriber-link" href="http://youtube.com/user/bryanveloso/subscribers"><b class="js-twitch-subscriber-count">45</b></a>
-        <span class="ss-icon ss-tv"></span>
-      </div>
-      <div class="background">
-        <!-- <h1><a class="js-recent-twitch-link" href="">Bryan &amp; Jen Play TERA</a></h1> -->
-        <p>Once upon a time, I started gaming. Years later, I was still gaming. Fast foward just a bit, I found myself stumbling on a phenomenon called <em>shoutcasting</em>. <strong>Avalonstar Live</strong> is my hilarious attempt at becoming a game streamer and shoutcaster.</p>
+      <div class="video-type twitch">
+        <div class="video-statistics">
+          <a class="video-link" href="http://twitch.tv/vlogalonstar">Avalonstar Live <i>on Twitch</i></a>
+          <a class="subscriber-link" href="http://youtube.com/user/bryanveloso/subscribers"><span class="js-twitch-subscriber-count">45</span></a>
+          <span class="ss-icon ss-smile"></span>
+        </div>
+        <div class="embed-container">
+          <object type="application/x-shockwave-flash" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=avalonstartv" bgcolor="#000000">
+            <param name="allowFullScreen" value="true">
+            <param name="allowScriptAccess" value="always">
+            <param name="allowNetworking" value="all">
+            <param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf">
+            <param name="flashvars" value="hostname=www.twitch.tv&amp;channel=avalonstartv&amp;auto_play=true&amp;start_volume=25" />
+          </object>
+          <div class="video-error">Twitch doesn't support iFrame embedding... yet. But don't worry, download <a href="http://itunes.apple.com/us/app/twitchtv/id460177396?mt=8&uo=4" target="itunes_store">Twitch</a> and search for <strong>AvalonstarTV</strong>!</div>
+        </div>
+        <div class="background">
+          <!-- <h1><a class="js-recent-twitch-link" href="">Bryan &amp; Jen Play TERA</a></h1> -->
+          <p>Once upon a time, I started gaming. Years later, I was still gaming. Fast foward just a bit, I found myself stumbling on a phenomenon called <em>shoutcasting</em>. <strong>Avalonstar Live</strong> is my hilarious attempt at becoming a game streamer and shoutcaster.</p>
+        </div>
       </div>
     </div>
   </div>
 
+  {% include footer.html %}
 </div>
