@@ -41,4 +41,10 @@ OffCanvasToggle =
 
 $(document).ready ->
   OffCanvasToggle.init $('.toggle')
+
+
+# Other Things
+#
+$(document).ready ->
   $('.header > .site-logotype').fitText 1.2
+  $('.scroll-target').smoothScroll()
