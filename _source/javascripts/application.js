@@ -51,7 +51,7 @@
 
   $(document).ready(function() {
     OffCanvasToggle.init($('.toggle'));
-    return $('.site-logotype').fitText(0.7);
+    return $('.header > .site-logotype').fitText(1.2);
   });
 
 }).call(this);
