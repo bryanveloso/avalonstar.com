@@ -50,8 +50,12 @@
   };
 
   $(document).ready(function() {
-    OffCanvasToggle.init($('.toggle'));
-    return $('.header > .site-logotype').fitText(1.2);
+    return OffCanvasToggle.init($('.toggle'));
+  });
+
+  $(document).ready(function() {
+    $('.header > .site-logotype').fitText(1.2);
+    return $('.scroll-target').smoothScroll();
   });
 
 }).call(this);
