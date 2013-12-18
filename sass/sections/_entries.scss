@@ -29,7 +29,6 @@ $width: ms(13);
   }
 }
 .entry-header {
-  margin-bottom: 1.333rem;
   padding-top: 4.209rem; padding-bottom: 2.369rem;
   background-color: #161B21;
 
@@ -50,7 +49,7 @@ $width: ms(13);
     letter-spacing: -1px;
     line-height: 0.9;
   }
-  .ss-navigatedown {
+  .scroll-target {
     color: #FFF;
     font-size: 32px;
     padding-top: 2.369rem;
@@ -59,6 +58,10 @@ $width: ms(13);
 .entry-category {
   font-family: $font-family-secondary;
   font-size: ms(-1);
+}
+
+.entry-content {
+  padding-top: 1.333rem;
 }
 
 .entry-metadata {

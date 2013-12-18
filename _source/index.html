@@ -29,14 +29,14 @@ body_class: home
       {% endfor %}
       </div>
     </div>
-    <span class="ss-icon ss-navigatedown"></span>
+    <a class="scroll-target" href="#top"><span class="ss-icon ss-navigatedown"></span></a>
   </div>
 </div>
 
 <div id="content" role="main">
-  <!-- {% include navigation.html %} -->
+  {% include navigation.html %}
 
-  <div class="recent-posts home-section">
+  <div id="top" class="recent-posts home-section">
     <header class="home-section-header">
       <span class="ss-icon ss-clock"></span>
     </header>

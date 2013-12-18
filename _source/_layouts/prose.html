@@ -10,10 +10,10 @@ single: true
     <div class="wrapper">
       <h1 class="entry-title">{{ page.title | widont }}</h1>
       <span class="entry-category">{{ page.category }}</span>
-      <span class="ss-icon ss-navigatedown"></span>
+      <a class="scroll-target" href="#top"><span class="ss-icon ss-navigatedown"></span></a>
     </div>
   </header>
-  <div class="entry-content">{{ content | widont }}</div>
+  <div id="top" class="entry-content">{{ content | widont }}</div>
   <footer class="entry-metadata">
     <div class="entry-meta">
       <span class="ss-icon ss-calendar"></span>
