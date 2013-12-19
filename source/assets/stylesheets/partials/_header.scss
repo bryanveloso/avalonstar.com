@@ -3,7 +3,7 @@
   background: linear-gradient(#272E37, #161B21);
   text-align: center;
 
-  margin-top: -1.777em;
+  margin-top: -1.777rem;
 
   a { text-decoration: none; }
   .site-logotype {
@@ -19,7 +19,7 @@
 .site-logo {
   @include position(relative);
   margin: 0;
-  height: 23.612em;
+  height: 23.612rem;
 
   text-indent: 100%;
   white-space: nowrap;
@@ -36,7 +36,7 @@
 .site-logotype {
   color: #161B21;
   font-family: $font-family-logotype;
-  letter-spacing: -1em;
+  letter-spacing: -1rem;
   text: {
     align: center;
     decoration: none;
@@ -48,7 +48,7 @@
 [role="navigation"] {
   margin-top: calc(-146px - 1.777em);
   background-color: #272E37;
-  padding-bottom: 1.777em;
+  padding-bottom: 1.777rem;
 
   text-align: center;
   transition: all 250ms ease;
@@ -57,7 +57,7 @@
   i, span {
     display: block;
     color: #828B96;
-    font-size: 0.75em;
+    font-size: 0.75rem;
   }
   strong {
     color: #FFF;
@@ -79,15 +79,15 @@
 
   li {
     flex: 1;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 }
 
 .toggle {
   display: block;
   @include position(absolute);
-  padding-top: 1.777em;
+  padding-top: 1.777rem;
   width: 100%;
   z-index: 100;
 }
