@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Don't Clobber The Web"
 date: 2012-02-09 12:00

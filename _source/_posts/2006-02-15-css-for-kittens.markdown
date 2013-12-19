@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "CSS for Kittens"
 date: 2006-02-15 19:45

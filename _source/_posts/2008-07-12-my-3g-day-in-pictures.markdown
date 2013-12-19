@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "My 3G Day in Pictures"
 date: 2008-07-12 19:45

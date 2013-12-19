@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "On Fandoms and Analysis Paralysis"
 date: 2012-01-27 23:00

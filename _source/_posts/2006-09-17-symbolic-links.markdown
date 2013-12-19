@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Symbolic Links"
 date: 2006-09-17 12:15

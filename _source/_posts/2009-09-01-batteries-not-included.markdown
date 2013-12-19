@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Batteries Not Included"
 date: 2009-09-01 15:30

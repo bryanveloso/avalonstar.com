@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Hype, The Business Model"
 date: 2005-11-02 20:00

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Reminiscing"
 date: 2005-09-11 16:15

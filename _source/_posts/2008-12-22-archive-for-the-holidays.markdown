@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Archive for the Holidays"
 date: 2008-12-22 16:00

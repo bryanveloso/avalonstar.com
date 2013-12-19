@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Short Blog Posts"
 date: 2005-11-09 07:00

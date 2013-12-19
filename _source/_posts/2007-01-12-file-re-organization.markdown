@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "File (Re-)Organization"
 date: 2007-01-12 10:00

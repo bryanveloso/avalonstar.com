@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "On Removing Barriers to Writing"
 date: 2012-02-22 20:00

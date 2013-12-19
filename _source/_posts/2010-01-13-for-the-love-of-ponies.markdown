@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "For the Love of Ponies"
 date: 2010-01-13 14:30

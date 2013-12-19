@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Weekend with Z Shell"
 date: 2012-01-16 12:30

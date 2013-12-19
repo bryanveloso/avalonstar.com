@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "'Tis the Season to Take it Easy"
 date: 2005-12-04 07:45

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "\"The Internet Revolution\""
 date: 2008-10-01 13:30

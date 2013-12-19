@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Happy Halloween"
 date: 2006-10-30 18:45

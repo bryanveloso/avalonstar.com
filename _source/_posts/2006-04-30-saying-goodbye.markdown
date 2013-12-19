@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Saying Goodbye"
 date: 2006-04-30 11:30

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Back to Square One"
 date: 2005-06-30 10:30

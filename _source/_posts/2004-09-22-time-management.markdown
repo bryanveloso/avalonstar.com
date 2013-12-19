@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Time Management"
 date: 2004-09-22 18:15

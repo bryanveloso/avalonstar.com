@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Obsessive OS Rearranging"
 date: 2008-04-13 09:15

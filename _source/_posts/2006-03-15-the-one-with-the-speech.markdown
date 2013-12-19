@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The One With the Speech"
 date: 2006-03-15 17:00

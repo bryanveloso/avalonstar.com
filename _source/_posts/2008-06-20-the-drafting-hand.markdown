@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Drafting Hand"
 date: 2008-06-20 10:00

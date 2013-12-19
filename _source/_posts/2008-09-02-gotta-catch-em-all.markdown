@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Gotta Catch 'Em All"
 date: 2008-09-02 11:15

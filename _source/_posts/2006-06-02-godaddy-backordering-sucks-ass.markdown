@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "GoDaddy Backordering Sucks Ass"
 date: 2006-06-02 09:45

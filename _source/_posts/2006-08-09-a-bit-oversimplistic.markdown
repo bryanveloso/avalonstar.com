@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Bit Oversimplistic?"
 date: 2006-08-09 09:30

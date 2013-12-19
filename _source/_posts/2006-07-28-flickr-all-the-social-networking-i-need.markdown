@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Flickr: All the Social Networking I Need"
 date: 2006-07-28 09:15

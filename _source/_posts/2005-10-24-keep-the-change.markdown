@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Keep the Change"
 date: 2005-10-24 20:45

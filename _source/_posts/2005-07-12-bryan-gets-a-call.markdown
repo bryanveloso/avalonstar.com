@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Bryan Gets a Call"
 date: 2005-07-12 13:30

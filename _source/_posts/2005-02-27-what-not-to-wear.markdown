@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "What NOT to Wear"
 date: 2005-02-27 15:30

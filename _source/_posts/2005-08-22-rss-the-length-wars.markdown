@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "RSS: The Length Wars"
 date: 2005-08-22 21:00

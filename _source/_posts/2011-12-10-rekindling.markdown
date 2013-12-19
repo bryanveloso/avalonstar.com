@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Rekindling"
 date: 2011-12-10 21:00

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Return of ChaoticSoul"
 date: 2007-01-26 19:15

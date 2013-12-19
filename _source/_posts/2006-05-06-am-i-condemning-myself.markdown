@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Am I Condemning Myself?"
 date: 2006-05-06 09:30

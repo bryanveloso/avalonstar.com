@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Leaving Silicon For Seattle"
 date: 2007-07-07 20:30

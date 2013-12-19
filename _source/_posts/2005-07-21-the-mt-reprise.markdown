@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The (mt) Reprise"
 date: 2005-07-21 12:30

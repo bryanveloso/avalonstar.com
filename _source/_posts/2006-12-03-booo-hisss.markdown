@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Booo Hisss"
 date: 2006-12-03 20:00

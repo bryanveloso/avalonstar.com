@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Zoomed"
 date: 2009-01-28 15:15

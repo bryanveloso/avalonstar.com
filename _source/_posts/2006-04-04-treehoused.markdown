@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Treehouse'd"
 date: 2006-04-04 10:15

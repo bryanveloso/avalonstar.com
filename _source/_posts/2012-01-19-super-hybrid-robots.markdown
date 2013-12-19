@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Super Hybrid Robots"
 date: 2012-01-19 13:00

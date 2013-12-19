@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "That's 1,000 Companies to You, Mister"
 date: 2006-05-03 08:00

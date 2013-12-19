@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Spreading the Knowledge"
 date: 2005-11-22 23:15

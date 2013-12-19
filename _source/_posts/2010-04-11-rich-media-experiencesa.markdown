@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Rich Media Experiencesâ„¢"
 date: 2010-04-11 15:00

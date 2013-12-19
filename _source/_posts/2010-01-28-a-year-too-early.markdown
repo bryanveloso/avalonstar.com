@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Year Too Early"
 date: 2010-01-28 07:30

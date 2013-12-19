@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Pressing for Change"
 date: 2006-12-07 11:30

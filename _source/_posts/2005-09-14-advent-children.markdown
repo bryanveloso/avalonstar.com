@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Advent Children"
 date: 2005-09-14 00:00

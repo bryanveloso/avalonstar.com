@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Bringing \"The 101\" Home"
 date: 2006-02-08 20:45

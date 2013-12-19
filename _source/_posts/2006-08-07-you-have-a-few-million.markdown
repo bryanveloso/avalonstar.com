@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "You Have a Few Million?"
 date: 2006-08-07 13:45

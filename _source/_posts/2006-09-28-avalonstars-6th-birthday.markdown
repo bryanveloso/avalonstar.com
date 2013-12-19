@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Avalonstar's 6th Birthday"
 date: 2006-09-28 09:00

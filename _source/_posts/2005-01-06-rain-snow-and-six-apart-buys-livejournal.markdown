@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Rain, Snow and Six Apart Buys LiveJournal"
 date: 2005-01-06 14:30

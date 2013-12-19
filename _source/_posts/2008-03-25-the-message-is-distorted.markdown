@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Message is Distorted"
 date: 2008-03-25 21:00

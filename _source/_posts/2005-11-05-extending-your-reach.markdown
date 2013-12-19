@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Extending Your Reach"
 date: 2005-11-05 13:00

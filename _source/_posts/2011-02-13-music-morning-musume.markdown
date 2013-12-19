@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Music & Morning Musume"
 date: 2011-02-13 23:07

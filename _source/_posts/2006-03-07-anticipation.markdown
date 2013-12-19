@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Anticipation"
 date: 2006-03-07 22:45

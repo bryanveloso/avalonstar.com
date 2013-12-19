@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "For Those Wondering About bbPress"
 date: 2006-09-13 10:30

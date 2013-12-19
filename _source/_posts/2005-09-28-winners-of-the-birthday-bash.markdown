@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Winners of the Birthday Bash"
 date: 2005-09-28 20:30

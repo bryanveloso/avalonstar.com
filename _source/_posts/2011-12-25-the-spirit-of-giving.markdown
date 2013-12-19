@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Spirit of Giving"
 date: 2011-12-25 00:00

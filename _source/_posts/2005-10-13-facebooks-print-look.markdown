@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Facebook's Print Look"
 date: 2005-10-13 15:45

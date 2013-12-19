@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "\"Geek\" Motivation"
 date: 2009-01-21 10:45

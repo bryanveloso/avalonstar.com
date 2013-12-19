@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Oh Crap, Books."
 date: 2005-07-20 21:15

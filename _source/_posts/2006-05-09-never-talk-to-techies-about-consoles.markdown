@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Never Talk to Techies About Consoles"
 date: 2006-05-09 15:00

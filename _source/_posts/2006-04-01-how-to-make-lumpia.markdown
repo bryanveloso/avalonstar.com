@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "How to Make Lumpia"
 date: 2006-04-01 09:00

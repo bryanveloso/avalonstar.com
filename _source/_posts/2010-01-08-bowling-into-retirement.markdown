@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Bowling into Retirement"
 date: 2010-01-08 12:30

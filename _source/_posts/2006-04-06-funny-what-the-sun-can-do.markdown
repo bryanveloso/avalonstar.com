@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Funny What the Sun Can Do"
 date: 2006-04-06 16:30

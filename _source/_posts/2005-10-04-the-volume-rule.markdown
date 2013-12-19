@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Volume Rule"
 date: 2005-10-04 08:00

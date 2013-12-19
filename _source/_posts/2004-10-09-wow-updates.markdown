@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Wow. Updates."
 date: 2004-10-09 23:30

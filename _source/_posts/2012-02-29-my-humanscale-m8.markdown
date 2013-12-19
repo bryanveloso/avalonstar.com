@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "My Humanscale M8"
 date: 2012-02-29 23:50

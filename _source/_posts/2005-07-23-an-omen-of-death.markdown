@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "An Omen of Death?"
 date: 2005-07-23 13:00

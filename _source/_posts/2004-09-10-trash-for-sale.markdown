@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Trash for Sale"
 date: 2004-09-10 10:15

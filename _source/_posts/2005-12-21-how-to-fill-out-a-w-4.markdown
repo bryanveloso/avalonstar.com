@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "How to Fill Out a W-4"
 date: 2005-12-21 15:30

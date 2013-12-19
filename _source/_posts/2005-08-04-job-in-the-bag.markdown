@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Job in the Bag"
 date: 2005-08-04 14:30

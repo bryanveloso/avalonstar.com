@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Rolling Your Own Honeyfund"
 date: 2011-08-07 17:07

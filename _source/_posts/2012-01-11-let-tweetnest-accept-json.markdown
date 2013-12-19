@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Let TweetNest Accept JSON"
 date: 2012-01-11 19:25

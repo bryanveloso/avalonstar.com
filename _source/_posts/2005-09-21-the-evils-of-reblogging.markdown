@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Evils of Reblogging"
 date: 2005-09-21 15:00

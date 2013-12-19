@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Sidebar Creative: Year Two"
 date: 2008-04-09 18:30

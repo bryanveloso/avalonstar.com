@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Free Lunches"
 date: 2009-09-12 20:45

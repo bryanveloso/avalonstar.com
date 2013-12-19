@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Stuff Compensation"
 date: 2010-04-30 12:00

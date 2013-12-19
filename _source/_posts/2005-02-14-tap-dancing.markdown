@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Tap Dancing?"
 date: 2005-02-14 09:15

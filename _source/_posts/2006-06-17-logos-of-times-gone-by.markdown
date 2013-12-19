@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Logos of Times Gone By"
 date: 2006-06-17 07:45

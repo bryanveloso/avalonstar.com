@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "In the Big Scheme of Things"
 date: 2004-11-09 12:30

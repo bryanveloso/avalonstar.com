@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Soft Launch"
 date: 2009-08-24 21:45

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Re-Designer"
 date: 2010-03-23 15:00

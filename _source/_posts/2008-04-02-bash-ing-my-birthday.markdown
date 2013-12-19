@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "BASH-ing My Birthday"
 date: 2008-04-02 08:15

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Stark Contrast"
 date: 2006-08-05 07:30

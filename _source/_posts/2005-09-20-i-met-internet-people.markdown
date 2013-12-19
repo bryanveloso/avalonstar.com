@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "I Met Internet People"
 date: 2005-09-20 08:15

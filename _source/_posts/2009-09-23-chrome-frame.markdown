@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Chrome Frame"
 date: 2009-09-23 07:15

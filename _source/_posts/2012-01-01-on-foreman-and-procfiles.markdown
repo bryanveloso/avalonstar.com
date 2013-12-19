@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "On Foreman and Procfiles"
 date: 2012-01-01 16:00

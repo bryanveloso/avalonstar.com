@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Vanity Plate Bit"
 date: 2006-03-19 17:00

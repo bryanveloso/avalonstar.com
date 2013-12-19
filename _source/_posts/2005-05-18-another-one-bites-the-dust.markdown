@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Another One Bites the Dust"
 date: 2005-05-18 16:00

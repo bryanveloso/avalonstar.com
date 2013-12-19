@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "SXSWi Web Award Finalist"
 date: 2006-02-03 15:30

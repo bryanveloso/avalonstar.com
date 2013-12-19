@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Bryan and Jen in Japan"
 date: 2009-03-25 12:15

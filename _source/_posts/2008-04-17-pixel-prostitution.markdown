@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Pixel Prostitution"
 date: 2008-04-17 09:30

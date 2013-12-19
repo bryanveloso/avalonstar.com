@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Revyver Week"
 date: 2008-06-28 23:45

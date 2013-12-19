@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Monster is Dead"
 date: 2005-09-05 00:00

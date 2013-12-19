@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Widget Apart"
 date: 2008-07-09 19:15

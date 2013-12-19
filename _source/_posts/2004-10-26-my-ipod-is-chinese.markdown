@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "My iPod is Chinese"
 date: 2004-10-26 08:00

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Can Haz Assimilation?"
 date: 2008-07-02 08:15

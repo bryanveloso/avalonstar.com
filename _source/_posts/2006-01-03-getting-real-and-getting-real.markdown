@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "\"Getting Real\" and Getting Real"
 date: 2006-01-03 11:00

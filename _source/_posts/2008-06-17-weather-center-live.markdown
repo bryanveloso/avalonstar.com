@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Weather Center Live"
 date: 2008-06-17 10:15

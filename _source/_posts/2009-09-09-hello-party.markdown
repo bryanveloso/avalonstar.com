@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Hello! Party"
 date: 2009-09-09 15:30

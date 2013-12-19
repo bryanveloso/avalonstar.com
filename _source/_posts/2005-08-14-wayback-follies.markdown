@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Wayback Follies"
 date: 2005-08-14 14:30

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "I Want My Life Back"
 date: 2005-10-13 07:30

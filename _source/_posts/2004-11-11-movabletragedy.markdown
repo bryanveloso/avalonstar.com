@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "MovableTragedy"
 date: 2004-11-11 14:45

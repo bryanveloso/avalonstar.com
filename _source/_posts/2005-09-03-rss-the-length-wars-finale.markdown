@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "RSS: The Length Wars (Finale)"
 date: 2005-09-03 09:15

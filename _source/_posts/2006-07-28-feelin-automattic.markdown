@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Feelin' Automattic"
 date: 2006-07-28 19:30

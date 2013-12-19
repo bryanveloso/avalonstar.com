@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Google Analytics (The Play)"
 date: 2005-11-15 19:45

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Decade Comes With Some Celebration"
 date: 2010-10-14 15:25

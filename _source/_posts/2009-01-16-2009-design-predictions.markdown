@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "2009 Design Predictions"
 date: 2009-01-16 09:30

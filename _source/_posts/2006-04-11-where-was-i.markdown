@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Where Was I?"
 date: 2006-04-11 20:45

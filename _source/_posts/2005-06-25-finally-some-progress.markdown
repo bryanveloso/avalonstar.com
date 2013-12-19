@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Finally, Some Progress"
 date: 2005-06-25 16:30

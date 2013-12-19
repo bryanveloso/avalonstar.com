@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "University Employment"
 date: 2004-10-28 15:00

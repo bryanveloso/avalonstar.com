@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Kitty Break"
 date: 2007-01-14 00:15

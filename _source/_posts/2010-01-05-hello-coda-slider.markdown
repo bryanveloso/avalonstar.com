@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Hello! Coda Slider"
 date: 2010-01-05 08:00
