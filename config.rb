@@ -52,7 +52,7 @@ end
 activate :directory_indexes
 
 # Reload the browser automatically whenever files change
-activate :livereload
+activate :livereload, :host => '127.0.0.1'
 
 # Autoprefixer configuration
 activate :autoprefixer, browsers: ['last 3 versions', 'ie 8', 'ie 9']
