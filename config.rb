@@ -6,9 +6,9 @@ Time.zone = 'America/Los_Angeles'
 
 activate :blog do |blog|
   blog.default_extension = '.markdown'
-  blog.layout = 'post'
-  blog.permalink = '{year}/{title}.html'
-  blog.sources = 'posts/:year-:month-:day-:title.html'
+  blog.layout = 'dummy'  # This intentionally doesn't exist.
+  blog.permalink = 'journal/:year/:title'
+  blog.sources = 'posts/:year-:month-:day-:title'
 end
 
 ###
