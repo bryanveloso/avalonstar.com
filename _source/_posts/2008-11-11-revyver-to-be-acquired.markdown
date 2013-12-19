@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Revyver to be Acquired"
 date: 2008-11-11 10:15

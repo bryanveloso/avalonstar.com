@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Ripping Apart LinkedIn"
 date: 2005-09-15 22:30

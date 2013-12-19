@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "My Rules for Commenting"
 date: 2006-04-10 19:15

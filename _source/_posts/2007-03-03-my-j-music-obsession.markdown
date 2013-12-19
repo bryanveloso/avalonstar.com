@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "My J-Music Obsession"
 date: 2007-03-03 21:30

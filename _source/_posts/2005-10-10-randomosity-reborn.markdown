@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Randomosity Reborn"
 date: 2005-10-10 23:15

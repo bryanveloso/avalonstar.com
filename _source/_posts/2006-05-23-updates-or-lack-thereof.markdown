@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Updates or Lack Thereof"
 date: 2006-05-23 20:30

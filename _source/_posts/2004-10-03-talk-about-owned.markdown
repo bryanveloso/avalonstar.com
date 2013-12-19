@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Talk About \"Owned\""
 date: 2004-10-03 09:30

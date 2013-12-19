@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Peace Officers"
 date: 2006-01-10 21:30

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Mobile Assimilation"
 date: 2008-07-15 15:00

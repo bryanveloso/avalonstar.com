@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Birthdays and Test Tubes"
 date: 2008-06-30 21:30

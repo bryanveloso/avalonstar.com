@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Style Playground"
 date: 2004-09-16 09:30

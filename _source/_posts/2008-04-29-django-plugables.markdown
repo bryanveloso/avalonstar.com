@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Django Plugables"
 date: 2008-04-29 13:30

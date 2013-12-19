@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Kitty Lickage"
 date: 2005-02-07 17:45

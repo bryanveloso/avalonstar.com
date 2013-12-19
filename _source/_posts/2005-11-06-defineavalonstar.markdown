@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "define:Avalonstar"
 date: 2005-11-06 11:45

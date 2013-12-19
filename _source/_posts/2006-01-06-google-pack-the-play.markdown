@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Google Pack (The Play)"
 date: 2006-01-06 23:30

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "WebVisions 2006 Wrap Up"
 date: 2006-07-23 09:30

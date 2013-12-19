@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The First 30 Days"
 date: 2008-12-10 09:45

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Aries Project"
 date: 2005-12-14 22:30

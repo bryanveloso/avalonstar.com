@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "It's Quite Hard to Explain"
 date: 2006-08-20 19:00

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Fashionable Mail Icons"
 date: 2006-05-29 11:00

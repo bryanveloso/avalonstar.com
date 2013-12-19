@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Xbox 360 / Best Buy Fiasco"
 date: 2005-11-22 17:00

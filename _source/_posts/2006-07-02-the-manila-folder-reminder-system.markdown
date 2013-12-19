@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Manila Folder Reminder System"
 date: 2006-07-02 23:00

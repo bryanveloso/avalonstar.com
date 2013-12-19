@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Thrifty, Enterprise and the \"Under 25\" Crowd"
 date: 2006-01-31 15:15

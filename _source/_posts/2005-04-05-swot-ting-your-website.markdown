@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "SWOT-ting Your Website"
 date: 2005-04-05 15:00

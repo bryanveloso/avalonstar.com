@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "I Love My Readers"
 date: 2005-10-19 22:00

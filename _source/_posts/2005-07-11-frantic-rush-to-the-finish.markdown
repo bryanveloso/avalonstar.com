@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Frantic Rush to the Finish"
 date: 2005-07-11 22:00

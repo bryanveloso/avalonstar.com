@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Wishing for a Wash"
 date: 2006-03-31 16:45

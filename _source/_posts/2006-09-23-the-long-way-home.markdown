@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Long Way Home"
 date: 2006-09-23 20:15

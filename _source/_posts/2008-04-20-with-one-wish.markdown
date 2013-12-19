@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "With One Wish"
 date: 2008-04-20 00:15

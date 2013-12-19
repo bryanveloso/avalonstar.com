@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Revyver Grows By One"
 date: 2007-06-21 12:30

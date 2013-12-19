@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Staring Down Graduation"
 date: 2005-05-14 09:45

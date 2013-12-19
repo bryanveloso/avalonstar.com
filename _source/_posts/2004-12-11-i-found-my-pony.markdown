@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "I Found My Pony"
 date: 2004-12-11 06:30

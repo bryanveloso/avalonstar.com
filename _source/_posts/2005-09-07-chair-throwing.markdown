@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Chair Throwing"
 date: 2005-09-07 17:00

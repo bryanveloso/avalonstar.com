@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Stylegala and Semantics"
 date: 2005-07-16 21:00

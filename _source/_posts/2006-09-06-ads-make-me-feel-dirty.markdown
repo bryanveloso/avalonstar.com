@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Ads Make Me Feel Dirty"
 date: 2006-09-06 16:30

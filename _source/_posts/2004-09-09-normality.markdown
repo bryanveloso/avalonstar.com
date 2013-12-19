@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Normality"
 date: 2004-09-09 18:30

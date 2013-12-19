@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "On Weddings and Websites"
 date: 2011-07-28 19:00

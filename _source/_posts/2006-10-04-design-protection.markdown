@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Design Protection"
 date: 2006-10-04 11:45

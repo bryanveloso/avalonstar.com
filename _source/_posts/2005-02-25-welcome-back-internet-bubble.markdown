@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Welcome Back Internet Bubble"
 date: 2005-02-25 10:45

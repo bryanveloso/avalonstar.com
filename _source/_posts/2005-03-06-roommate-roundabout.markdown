@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Roommate Roundabout"
 date: 2005-03-06 22:45

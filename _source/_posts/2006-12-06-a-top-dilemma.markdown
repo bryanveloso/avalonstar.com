@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A *top Dilemma"
 date: 2006-12-06 01:00

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Talking Outside the Box"
 date: 2005-02-15 22:30

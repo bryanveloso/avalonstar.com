@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "User Created Competition"
 date: 2006-01-04 21:15

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Looking Ahead to 2006"
 date: 2005-12-31 00:30

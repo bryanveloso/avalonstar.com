@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "My Process is Circular"
 date: 2011-12-13 17:00

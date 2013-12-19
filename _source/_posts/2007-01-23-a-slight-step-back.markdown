@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Slight Step Back"
 date: 2007-01-23 11:45

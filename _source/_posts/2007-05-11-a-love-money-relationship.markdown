@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Love-Money Relationship"
 date: 2007-05-11 19:45

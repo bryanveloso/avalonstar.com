@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Perceived Inferiority"
 date: 2007-02-25 22:30

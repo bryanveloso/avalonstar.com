@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Fit of Absent Mindedness"
 date: 2006-12-11 12:45

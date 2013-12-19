@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Community Woes"
 date: 2004-10-05 16:15

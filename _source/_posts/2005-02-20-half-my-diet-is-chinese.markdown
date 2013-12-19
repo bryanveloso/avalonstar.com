@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Half My Diet is Chinese"
 date: 2005-02-20 16:00

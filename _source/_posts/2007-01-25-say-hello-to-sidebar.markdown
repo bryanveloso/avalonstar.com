@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Say Hello to Sidebar"
 date: 2007-01-25 15:15

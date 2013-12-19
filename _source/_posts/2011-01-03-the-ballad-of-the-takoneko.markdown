@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Ballad of the Takoneko"
 date: 2011-01-03 12:41

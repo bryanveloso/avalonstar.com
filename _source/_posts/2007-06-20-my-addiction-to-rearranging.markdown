@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "My Addiction to Rearranging"
 date: 2007-06-20 20:00

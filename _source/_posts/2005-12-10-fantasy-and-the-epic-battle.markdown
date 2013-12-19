@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Fantasy and the Epic Battle"
 date: 2005-12-10 22:30

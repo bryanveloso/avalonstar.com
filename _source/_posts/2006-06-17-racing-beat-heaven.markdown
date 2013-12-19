@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Racing Beat Heaven"
 date: 2006-06-17 11:45

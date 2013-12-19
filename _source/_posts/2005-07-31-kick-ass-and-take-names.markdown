@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Kick Ass and Take Names"
 date: 2005-07-31 15:00

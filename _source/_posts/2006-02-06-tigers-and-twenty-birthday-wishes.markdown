@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Tigers and Twenty Birthday Wishes"
 date: 2006-02-06 21:15

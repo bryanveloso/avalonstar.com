@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Addictionary"
 date: 2008-08-17 12:15

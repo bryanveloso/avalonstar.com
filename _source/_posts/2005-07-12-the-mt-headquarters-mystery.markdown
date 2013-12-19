@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The (mt) Headquarters Mystery"
 date: 2005-07-12 08:45

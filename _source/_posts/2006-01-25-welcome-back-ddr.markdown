@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Welcome Back DDR"
 date: 2006-01-25 17:15

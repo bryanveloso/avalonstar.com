@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Change of Pace"
 date: 2006-01-13 07:15

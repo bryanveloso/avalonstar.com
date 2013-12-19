@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Power of the Mundane"
 date: 2009-10-15 11:00

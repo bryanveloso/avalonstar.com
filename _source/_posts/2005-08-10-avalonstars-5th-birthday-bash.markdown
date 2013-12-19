@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Avalonstar's 5th Birthday Bash"
 date: 2005-08-10 13:30

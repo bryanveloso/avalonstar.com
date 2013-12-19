@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The First 48 Hours"
 date: 2005-08-16 23:00

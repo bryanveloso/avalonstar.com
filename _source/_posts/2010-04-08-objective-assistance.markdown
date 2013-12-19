@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "\"Objective\" Assistance"
 date: 2010-04-08 15:00

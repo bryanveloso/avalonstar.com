@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Best. Year. Ever."
 date: 2011-12-31 12:00

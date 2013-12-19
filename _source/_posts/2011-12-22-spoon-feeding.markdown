@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Spoon-feeding"
 date: 2011-12-22 16:00

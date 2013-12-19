@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Swift (Design) Kick In the Ass"
 date: 2006-11-28 22:45

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Crappy Chefs"
 date: 2005-02-18 20:00

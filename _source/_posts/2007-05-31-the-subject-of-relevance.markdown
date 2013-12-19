@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Subject of Relevance"
 date: 2007-05-31 21:00

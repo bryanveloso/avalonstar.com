@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Twenty Twenty Two"
 date: 2008-09-11 11:15

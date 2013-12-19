@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Election Day"
 date: 2004-11-02 10:45

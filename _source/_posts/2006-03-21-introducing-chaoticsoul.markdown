@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Introducing ChaoticSoul"
 date: 2006-03-21 22:15

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Belated Eighth"
 date: 2008-09-30 20:30

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Trying Again"
 date: 2005-07-26 23:00

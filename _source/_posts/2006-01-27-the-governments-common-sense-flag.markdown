@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Government's Common Sense Flag"
 date: 2006-01-27 14:15

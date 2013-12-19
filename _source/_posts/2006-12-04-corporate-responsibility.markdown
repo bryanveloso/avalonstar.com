@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Corporate Responsibility"
 date: 2006-12-04 10:00

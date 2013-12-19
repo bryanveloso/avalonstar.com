@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "My Rules for IMs"
 date: 2006-03-28 10:15

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Mimeo and the Kleptopus' Ringtones"
 date: 2010-03-05 16:00

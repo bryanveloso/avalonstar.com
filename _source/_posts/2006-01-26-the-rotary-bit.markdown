@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Rotary Bit"
 date: 2006-01-26 18:45

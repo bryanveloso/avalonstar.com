@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Diary of a Linux Noob (Part 1)"
 date: 2006-05-10 16:45

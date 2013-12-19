@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Success That Was ABX"
 date: 2007-03-17 14:00

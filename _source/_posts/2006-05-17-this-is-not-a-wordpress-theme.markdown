@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "This is NOT a WordPress Theme"
 date: 2006-05-17 14:30

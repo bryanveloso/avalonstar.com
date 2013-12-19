@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Tagged to the Fourth"
 date: 2006-01-22 21:15

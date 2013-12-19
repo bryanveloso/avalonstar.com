@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Facebook's Colophon"
 date: 2005-08-24 09:00

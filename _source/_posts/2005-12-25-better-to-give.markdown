@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Better to Give"
 date: 2005-12-25 13:00

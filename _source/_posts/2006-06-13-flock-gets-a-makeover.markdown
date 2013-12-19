@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Flock Gets a Makeover"
 date: 2006-06-13 16:00

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Web Framework for Ponies"
 date: 2008-09-08 22:00

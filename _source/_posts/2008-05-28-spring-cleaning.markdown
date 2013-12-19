@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Spring Cleaning"
 date: 2008-05-28 18:15

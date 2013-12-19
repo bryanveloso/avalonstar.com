@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Jolly Green Bryan"
 date: 2005-02-27 13:30

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Terror of Feed Readers"
 date: 2006-04-18 09:15

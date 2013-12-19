@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "One Year Strong"
 date: 2006-11-25 19:00

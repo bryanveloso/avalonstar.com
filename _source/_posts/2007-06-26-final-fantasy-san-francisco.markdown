@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Final Fantasy San Francisco"
 date: 2007-06-26 20:15

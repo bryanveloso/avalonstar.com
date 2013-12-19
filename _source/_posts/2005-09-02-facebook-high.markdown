@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Facebook High"
 date: 2005-09-02 09:45

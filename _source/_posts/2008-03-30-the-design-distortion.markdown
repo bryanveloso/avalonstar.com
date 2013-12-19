@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Design Distortion"
 date: 2008-03-30 15:30

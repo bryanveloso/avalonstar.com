@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Brown's Losing It"
 date: 2004-09-24 18:00

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "GoDaddy Made Me Eat My Words"
 date: 2006-06-07 12:00

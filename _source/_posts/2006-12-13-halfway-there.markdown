@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Halfway There"
 date: 2006-12-13 10:00

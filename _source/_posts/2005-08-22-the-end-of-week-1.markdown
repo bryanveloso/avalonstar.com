@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The End of Week 1"
 date: 2005-08-22 00:15

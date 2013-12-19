@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The New Online Identity"
 date: 2006-06-01 13:30

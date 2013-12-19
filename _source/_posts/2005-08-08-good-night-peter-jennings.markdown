@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Good Night Peter Jennings"
 date: 2005-08-08 07:30

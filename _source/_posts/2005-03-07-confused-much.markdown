@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Confused Much?"
 date: 2005-03-07 21:00

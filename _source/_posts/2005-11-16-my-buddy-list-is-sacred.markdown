@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "My Buddy List is Sacred"
 date: 2005-11-16 09:30

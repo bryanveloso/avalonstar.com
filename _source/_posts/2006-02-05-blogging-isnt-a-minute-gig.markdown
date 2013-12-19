@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Blogging Isn't a Minute Gig"
 date: 2006-02-05 06:00

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Getting There"
 date: 2005-06-06 08:15

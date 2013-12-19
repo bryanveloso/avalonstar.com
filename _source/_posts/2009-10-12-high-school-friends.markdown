@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "High School Friends"
 date: 2009-10-12 10:15

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "All Puffed Up"
 date: 2004-11-19 17:00

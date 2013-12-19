@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Mint > Mentos"
 date: 2005-09-05 14:30

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Firefox Family"
 date: 2004-11-28 02:00

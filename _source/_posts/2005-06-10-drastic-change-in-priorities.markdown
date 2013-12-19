@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Drastic Change in Priorities"
 date: 2005-06-10 00:00

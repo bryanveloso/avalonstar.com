@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "I Failed at Freelancing"
 date: 2008-08-20 19:30

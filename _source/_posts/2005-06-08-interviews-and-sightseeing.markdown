@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Interviews and Sightseeing"
 date: 2005-06-08 19:15

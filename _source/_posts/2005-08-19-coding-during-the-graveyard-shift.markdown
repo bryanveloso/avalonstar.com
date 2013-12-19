@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Coding During the Graveyard Shift"
 date: 2005-08-19 10:30

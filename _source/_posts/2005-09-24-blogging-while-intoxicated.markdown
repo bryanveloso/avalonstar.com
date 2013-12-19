@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Blogging While Intoxicated"
 date: 2005-09-24 21:00

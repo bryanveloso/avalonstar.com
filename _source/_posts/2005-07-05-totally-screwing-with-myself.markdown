@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Totally Screwing with Myself"
 date: 2005-07-05 22:15

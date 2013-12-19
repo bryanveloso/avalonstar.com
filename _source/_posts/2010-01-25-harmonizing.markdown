@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Harmonizing"
 date: 2010-01-25 09:45

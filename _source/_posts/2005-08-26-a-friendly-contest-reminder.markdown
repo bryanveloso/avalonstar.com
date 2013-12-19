@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Friendly Contest Reminder"
 date: 2005-08-26 09:00

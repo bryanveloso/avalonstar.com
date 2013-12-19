@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Say Hello to Aries"
 date: 2006-04-30 21:00

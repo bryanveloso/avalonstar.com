@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Turkey Trip Time"
 date: 2004-11-24 00:30

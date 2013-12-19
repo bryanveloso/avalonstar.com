@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "\"Smashed\" into Apathy"
 date: 2008-09-08 10:00

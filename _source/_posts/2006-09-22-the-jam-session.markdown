@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "The Jam Session"
 date: 2006-09-22 19:00

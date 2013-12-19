@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "A Place We Call Home"
 date: 2005-09-26 21:00

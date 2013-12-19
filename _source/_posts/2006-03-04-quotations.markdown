@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Quotations"
 date: 2006-03-04 20:30

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Getting to Know You"
 date: 2004-10-25 15:30

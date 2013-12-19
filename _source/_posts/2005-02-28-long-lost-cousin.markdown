@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Long Lost Cousin"
 date: 2005-02-28 23:00

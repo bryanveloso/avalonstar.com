@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Compliance"
 date: 2004-09-11 15:30

@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Asking the Right Questions"
 date: 2011-12-14 20:50

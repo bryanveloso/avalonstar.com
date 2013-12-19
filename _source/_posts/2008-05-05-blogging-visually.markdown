@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Blogging Visually"
 date: 2008-05-05 23:15

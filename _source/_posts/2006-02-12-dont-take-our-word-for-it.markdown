@@ -1,4 +1,5 @@
 ---
+category: prose
 layout: prose
 title: "Don't Take Our Word For It"
 date: 2006-02-12 16:30
