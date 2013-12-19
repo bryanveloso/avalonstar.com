@@ -8,3 +8,16 @@ title: Welcome to Middleman
     <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
   </p><!-- .doc -->
 </div><!-- .welcome -->
+
+<% blog.articles[0...5].each do |article| %>
+  <article>
+    <h1>
+      <a href="<%= article.url %>"><%= article.title %></a>
+      <time><%= article.date.strftime('%b %e %Y') %></time>
+    </h1>
+
+    <%= article %>
+
+    <a href="<%= article.url %>">Read more</a>
+  </article>
+<% end %>
