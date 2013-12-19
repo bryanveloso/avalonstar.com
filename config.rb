@@ -1,4 +1,13 @@
 ###
+# Components
+###
+
+# Activate blog functionality
+activate :blog do |blog|
+  blog.sources = 'posts/:year-:month-:day-:title.html'
+end
+
+###
 # Compass
 ###
 
