@@ -1,0 +1,22 @@
+<% if current_page.previous_article || current_page.next_article %>
+<div class="jukes">
+  <% if current_page.previous_article %>
+  <div class="juke juke-previous">
+    <a class="left" href="<%= current_page.previous_article.url %>" title="Previous: <%= current_page.previous_article.title %>">
+      <span class="ss-icon ss-navigateleft"></span>
+      <h2><%= current_page.previous_article.title %></h2>
+      <span class="next-up">Previously, a <%= current_page.previous_article.data.category %>.</span>
+    </a>
+  </div>
+  <% end %>
+  <% if current_page.next_article %>
+  <div class="juke juke-next">
+    <a class="right" href="<%= current_page.next_article.url %>" title="Previous: <%= current_page.next_article.title %>">
+      <span class="ss-icon ss-navigateleft"></span>
+      <h2><%= current_page.next_article.title %></h2>
+      <span class="next-up">Previously, a <%= current_page.next_article.data.category %>.</span>
+    </a>
+  </div>
+  <% end %>
+</div>
+<% end %>
