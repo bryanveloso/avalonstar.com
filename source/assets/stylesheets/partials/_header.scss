@@ -1,7 +1,54 @@
+.header {
+  @include position(relative);
+  background: linear-gradient(#272E37, #161B21);
+  text-align: center;
+
+  margin-top: -1.777em;
+
+  a { text-decoration: none; }
+  .site-logotype {
+    @include position(absolute, 20% 0px 0 0px);
+    width: 100%;
+    z-index: 0;
+  }
+  .ss-icon {
+    color: #FFF;
+    font-size: 32px;
+  }
+}
+.site-logo {
+  @include position(relative);
+  margin: 0;
+  height: 23.612em;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background-image: url('../images/phoenix.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  z-index: 5;
+}
+.site-logo.sans-star {
+  background-image: url('../images/phoenix-sans-star.png');
+}
+.site-logotype {
+  color: #161B21;
+  font-family: $font-family-logotype;
+  letter-spacing: -1em;
+  text: {
+    align: center;
+    decoration: none;
+    shadow: 0 1px 0 rgba(#FFF, 0.05);
+    transform: uppercase;
+  };
+}
+
 [role="navigation"] {
-  margin-top: calc(-146px - 1.777rem);
+  margin-top: calc(-146px - 1.777em);
   background-color: #272E37;
-  padding-bottom: 1.777rem;
+  padding-bottom: 1.777em;
 
   text-align: center;
   transition: all 250ms ease;
@@ -10,7 +57,7 @@
   i, span {
     display: block;
     color: #828B96;
-    font-size: ms(-1);
+    font-size: 0.75em;
   }
   strong {
     color: #FFF;
@@ -29,71 +76,24 @@
   display: flex;
   margin: 0 auto;
   padding: 0;
-  ;
 
   li {
     flex: 1;
-    padding-bottom: ms(0);
-    padding-top: ms(0);
+    padding-bottom: 1em;
+    padding-top: 1em;
   }
-}
-
-.header {
-  @include position(relative);
-  background: linear-gradient(#272E37, #161B21);
-  text-align: center;
-
-  margin-top: -1.777rem;
-
-  a { text-decoration: none; }
-  .site-logotype {
-    @include position(absolute, 20% 0px 0 0px);
-    width: 100%;
-    z-index: 0;
-  }
-  .ss-icon {
-    color: #FFF;
-    font-size: 32px;
-  }
-}
-
-.site-logo {
-  @include position(relative);
-  margin: 0;
-  height: 23.612rem;
-
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-
-  background-image: url('../images/phoenix.png');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  z-index: 5;
-}
-.site-logo.sans-star {
-  background-image: url('../images/phoenix-sans-star.png');
-}
-.site-logotype {
-  color: #161B21;
-  font-family: $font-family-logotype;
-  letter-spacing: -1rem;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(#FFF, 0.05);
-  text-transform: uppercase;
 }
 
 .toggle {
   display: block;
   @include position(absolute);
-  padding-top: 1.777rem;
+  padding-top: 1.777em;
   width: 100%;
   z-index: 100;
 }
 
 .icon-contain {
-  @include position(absolute, 0 0 0rem 0);
+  @include position(absolute, 0 0 0em 0);
   width: 100%;
 
   .ss-icon {

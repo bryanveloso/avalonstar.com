@@ -13,17 +13,14 @@ body {
   line-height: $line-height-base;
 }
 
-a {
-  color: #272E37;
-}
+a { color: #272E37; }
 hr {
   display: block;
-  margin: ms(3) auto;
+  margin: 2.369rem auto;
   width: 25%;
 
   border: 0;
   border-top: 1px solid #DFE3E8;
 }
 
-.mobile-only { display: none !important; }
 .scroll-target { text-decoration: none; }
