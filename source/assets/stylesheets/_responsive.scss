@@ -1,0 +1,40 @@
+// Additional "mobile-first" styles.
+// While the site strives to be mobile-first, for ease of overriding, some
+// styling is deffered here.
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+  .desktop-only { display: none !important; }
+  .copyright {
+    margin-left: 1.777rem;
+    margin-right: 1.777rem;
+  }
+
+}
+
+// Desktop (and low-resolution display) styles and overrides.
+@media only screen and (min-width: 480px) {
+
+  .desktop-only { display: block !important; }
+  .mobile-only { display: none !important; }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .entry-content {
+    h1, h2, h3, p, ol, ul {
+      margin-left: auto;
+      margin-right: auto;
+      width: 41.955rem;
+    }
+  }
+
+  .lower-hero { width: 41.955rem; }
+  .lower-hero, .jukes {
+    flex-direction: row;
+  }
+
+}
+
+@media only screen and (min-width: 1140px) { }

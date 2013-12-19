@@ -1,0 +1,36 @@
+// Helper classes.
+
+// .metadata-*
+.metadata-display {
+  display: flex;
+  margin: {
+    top: 1.333em;
+    bottom: 1.333em;
+  };
+}
+.metadata-item {
+  @include position(relative);
+  flex: 1;
+  margin: {
+    top: 1em;
+    bottom: 1em;
+  };
+
+  font-family: $font-family-secondary;
+  font-size: 0.75em;
+  text-align: center;
+
+  .entry-dataitem-detail {
+    @include position(relative);
+    z-index: 10;
+    background-color: #FFF;
+  }
+  .metadata-prefix { color: #A1ABB6; }
+  .ss-icon {
+    @include position(absolute, -20px 0 0 50%);
+    margin-left: -21px;
+    z-index: 0;
+    color: #EBEFF5;
+    font-size: 42px;
+  }
+}
