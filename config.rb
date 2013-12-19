@@ -4,6 +4,8 @@
 
 # Activate blog functionality
 activate :blog do |blog|
+  blog.default_extension = '.markdown'
+  blog.layout = 'post'
   blog.sources = 'posts/:year-:month-:day-:title.html'
 end
 
