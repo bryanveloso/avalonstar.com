@@ -60,11 +60,9 @@ activate :autoprefixer, browsers: ['last 3 versions', 'ie 8', 'ie 9']
 #   end
 # end
 
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
 
 # Build-specific configuration
 configure :build do
