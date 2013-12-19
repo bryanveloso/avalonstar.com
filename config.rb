@@ -36,7 +36,7 @@
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# activate :livereload
+activate :livereload
 
 # Autoprefixer configuration
 activate :autoprefixer, browsers: ['last 3 versions', 'ie 8', 'ie 9']
