@@ -1,0 +1,51 @@
+// Mobile.
+@media screen and (max-width:500px) {
+  body { font-size: 14px !important; }
+
+  .main-navigation {
+    flex-direction: column;
+  }
+
+  .desktop-only { display: none !important; }
+
+  // Entries.
+  .entry-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .entry-header .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .entry-title {
+    font-size: ms(5) !important;
+  }
+  .entry-metadata {
+    flex-direction: column;
+  }
+  .entry-meta {
+    margin: 13rem 0;
+    padding: 1px;
+  }
+  .entry blockquote {
+    margin: 0 -1rem;
+  }
+
+
+  .lower-hero {
+    flex-direction: column;
+  }
+  .this-has-been,
+  .what-is {
+    margin-bottom: 1rem;
+    border: 0;
+    text-align: center;
+  }
+  .this-has-been img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .what-is > h1 {
+    order: 0;
+  }
+}
