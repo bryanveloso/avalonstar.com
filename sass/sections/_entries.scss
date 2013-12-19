@@ -1,16 +1,13 @@
-$width: ms(13);
 
 %container {
   margin-left: auto;
   margin-right: auto;
-  width: $width;
 }
 
 .entry {
   p {
     font-size: ms(1);
     margin: ms(2) auto;
-    // width: ms(13);
   }
   blockquote {
     margin: 0;
@@ -24,7 +21,6 @@ $width: ms(13);
     p {
       color: #828B96;
       font-size: ms(0);
-      // width: ms(13) + ms(4);
     }
   }
 }
@@ -97,7 +93,6 @@ $width: ms(13);
 
 .entry p {
   margin: ms(2) auto;
-  width: ms(13);
 }
 
 // Styles for external widgets.
