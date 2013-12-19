@@ -1,0 +1,18 @@
+<% wrap_layout :layout do %>
+
+<article class="entry hentry prose">
+  <header class="entry-header">
+    <h1 class="entry-title"><%= current_page.title %></h1>
+    <span class="entry-category"><%= current_page.data.category %></span>
+  </header>
+  <div id="top" class="entry-content">
+    <%= yield %>
+  </div>
+  <footer class="entry-footer">
+
+  </footer>
+</article>
+
+<%= partial "partials/juke" %>
+
+<% end %>
