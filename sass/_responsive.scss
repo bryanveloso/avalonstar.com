@@ -2,6 +2,10 @@
 @media screen and (max-width:500px) {
   body { font-size: 14px !important; }
 
+  [role="navigation"] {
+    margin-top: calc(-274px - 1.777rem);
+  }
+
   .main-navigation {
     flex-direction: column;
   }
@@ -23,12 +27,9 @@
   .entry-metadata {
     flex-direction: column;
   }
-  .entry-meta {
-    margin: 13rem 0;
-    padding: 1px;
-  }
   .entry blockquote {
     margin: 0 -1rem;
+    padding: 1.777rem;
   }
 
 
@@ -47,5 +48,13 @@
   }
   .what-is > h1 {
     order: 0;
+  }
+
+  .jukes {
+    flex-direction: column;
+  }
+  .copyright {
+    margin-left: 1.777rem;
+    margin-right: 1.777rem;
   }
 }
