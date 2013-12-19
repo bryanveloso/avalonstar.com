@@ -1,11 +1,13 @@
 ###
-# Components
+# Blog settings
 ###
 
-# Activate blog functionality
+Time.zone = 'America/Los_Angeles'
+
 activate :blog do |blog|
   blog.default_extension = '.markdown'
   blog.layout = 'post'
+  blog.permalink = '{year}/{title}.html'
   blog.sources = 'posts/:year-:month-:day-:title.html'
 end
 
