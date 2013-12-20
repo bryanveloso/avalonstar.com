@@ -5,6 +5,27 @@
        only screen and (min-resolution: 144dpi) {
 
   .desktop-only { display: none !important; }
+
+  .site-logo.sans-star {
+    background-image: url('../images/phoenix-sans-star@2x.png');
+    background-size: 398px;
+  }
+  .entry-title { font-size: 4.209rem !important; }
+
+  .this-has-been,
+  .what-is {
+    margin-bottom: 1rem;
+    border: 0;
+    text-align: center;
+  }
+  .this-has-been img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .what-is > h1 {
+    padding-bottom: 0.5rem;
+    order: 0;
+  }
   .copyright {
     margin-left: 1.777rem;
     margin-right: 1.777rem;
@@ -18,9 +39,16 @@
   .desktop-only { display: block !important; }
   .mobile-only { display: none !important; }
 
+  .header .ss-icon { @include position(relative, 4px 0 0 0); }
+  [role="navigation"] { margin-top: calc(-146px - 1.777rem); }
+
 }
 
 @media only screen and (min-width: 768px) {
+
+  .jukes, .lower-hero, .main-navigation {
+    flex-direction: row;
+  }
 
   .entry-content {
     h1, h2, h3, p, ol, ul {
@@ -31,9 +59,6 @@
   }
 
   .lower-hero { width: 41.955rem; }
-  .lower-hero, .jukes {
-    flex-direction: row;
-  }
 
 }
 
