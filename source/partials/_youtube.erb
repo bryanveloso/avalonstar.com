@@ -1,6 +1,6 @@
 <script type="text/javascript">
   $(function() {
-    $.getJSON("https://gdata.youtube.com/feeds/api/videos/{{ page.ytid }}?v=2&alt=jsonc", function(response) {
+    $.getJSON("https://gdata.youtube.com/feeds/api/videos/<%= current_page.data.ytid %>?v=2&alt=jsonc", function(response) {
       console.log(response.data);
 
       $('.js-yt-views').text(response.data.viewCount);
