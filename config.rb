@@ -47,6 +47,7 @@ end
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
 page '/feed.xml', :layout => false
+page '/sitemap.xml', :layout => false
 
 ###
 # Helpers
