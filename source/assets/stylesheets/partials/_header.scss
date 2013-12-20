@@ -46,7 +46,7 @@
 }
 
 [role="navigation"] {
-  margin-top: calc(-146px - 1.777em);
+  margin-top: calc(-146px - 1.777rem);
   background-color: #272E37;
   padding-bottom: 1.777rem;
 
@@ -76,6 +76,7 @@
   display: flex;
   margin: 0 auto;
   padding: 0;
+  list-style: none;
 
   li {
     flex: 1;
