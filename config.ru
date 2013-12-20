@@ -31,6 +31,10 @@ use Rack::Rewrite do
   r301 '/product', '/'
   r301 '/radio', '/'
 
+  # Feed redirection.
+  r301 '/blog/feed/', '/feed.xml'
+  r301 '/journal/feed/', '/feed.xml'
+
   # Miscellaneous redirections.
   r301 '/colophonics/', '/about/'
 
