@@ -3,6 +3,7 @@
 // .metadata-*
 .metadata-display {
   display: flex;
+  flex-direction: column;
   margin: {
     top: 1.333em;
     bottom: 1.333em;
@@ -12,14 +13,16 @@
   @include position(relative);
   flex: 1;
   margin: {
-    top: 1em;
-    bottom: 1em;
+    top: 2em;
+    bottom: 2em;
   };
 
   font-family: $font-family-secondary;
   font-size: 0.75em;
+  font-weight: 600;
   text-align: center;
 
+  &:last-child { margin-bottom: 0; }
   .entry-dataitem-detail {
     @include position(relative);
     z-index: 10;
