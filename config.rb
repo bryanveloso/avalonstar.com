@@ -9,8 +9,8 @@ Time.zone = 'America/Los_Angeles'
 activate :blog do |blog|
   blog.default_extension = '.markdown'
   blog.layout = 'dummy'  # This intentionally doesn't exist.
-  blog.permalink = 'journal/:year/:title'
-  blog.sources = 'posts/:year-:month-:day-:title'
+  blog.permalink = 'journal/:year/:title.html'
+  blog.sources = 'posts/:year-:title.html'
 end
 
 # Set Kramdown as our Markdown engine
