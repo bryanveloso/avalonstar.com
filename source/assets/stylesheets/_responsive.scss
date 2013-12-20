@@ -77,12 +77,24 @@
       width: 41.955rem;
     }
   }
+  .metadata-display {
+    flex-direction: row;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 41.955rem;
+
+    .metadata-item {
+      margin-top: 1.777em;
+      margin-bottom: 1em;
+    }
+  }
 
   .lower-hero,
   .recent-list {
     width: 41.955rem;
   }
-  .recent-list {
+  .recent-list,
+  .video-wrapper {
     margin-left: auto !important;
     margin-right: auto !important;
     width: 41.955rem;
