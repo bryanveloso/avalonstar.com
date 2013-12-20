@@ -31,7 +31,7 @@ The [Django Pony][2] is a character that needs no introduction, but it is one th
 >
 > Take care. :)
 >
-> Cheers,
+> Cheers,    
 > Bryan Veloso
 
 When I pressed send, I had the feeling that it would be one of those messages that would never see a reply. I was sorely mistaken as two weeks later, [Erik][11], aka _Mr E._ sent me a reply.
@@ -42,7 +42,7 @@ When I pressed send, I had the feeling that it would be one of those messages th
 >
 > I am very flattered and pleased the unicorn image has spoken to everyone and bought so much fun to the community. It's a real pleasure to get an email like this. Usually I have very little contact with customers who buy my stock art so in most cases I don't get to see how the art is finally used. But in this case I am lucky enough to see it, so thank you again!
 >
-> Best wishes,
+> Best wishes,    
 > Erik
 
 Hopefully it put a smile on your face as it did mine. As designers and developers, I'm sure a lot of us have been the recipients of messages from grateful consumers of our work--whether it be large or small. I felt showing Erik our support for his art was the least we could do to thank him.

@@ -22,21 +22,27 @@ Shut your face, that mentality is [_so_ yesterday][3]. I will prefer the Python 
 
 Alright, class is in session. Let me flip this around and show you my `Procfile` first, then explain what happens inside of it:
 
-    compass: compass watch static
-    db:      postgres -D /usr/local/var/postgres
-    redis:   redis-server /usr/local/etc/redis.conf
-    web:     python ranking/manage.py runserver
+~~~ shell
+compass: compass watch static
+db:      postgres -D /usr/local/var/postgres
+redis:   redis-server /usr/local/etc/redis.conf
+web:     python ranking/manage.py runserver
+~~~
 
 So what does it do? Instead of opening a tab in Terminal for each of those items _or_ starting them as a daemon, it allows me to concatenate the operation into one simple command:
 
-    foreman start -f Procfile.dev
+~~~ shell
+foreman start -f Procfile.dev
+~~~
 
 Why `.dev`? In my case, the sans-extension `Procfile` in my project is for Heroku with production-only commands. If you run `foreman` without the argument, it'll look for `Procfile` by default. After you run that command you'll be greeted by this lovely sight:
 
-    14:14:37 compass.1  | started with pid 3115
-    14:14:37 db.1       | started with pid 3116
-    14:14:37 redis.1    | started with pid 3117
-    14:14:37 web.1      | started with pid 3118
+~~~ shell
+14:14:37 compass.1  | started with pid 3115
+14:14:37 db.1       | started with pid 3116
+14:14:37 redis.1    | started with pid 3117
+14:14:37 web.1      | started with pid 3118
+~~~
 
 Like what you see? Great! If you've gotten this far, you should've already installed the Foreman gem by now and created a Procfile. Now, there are a few gotchas when working with your services in Foreman, especially if you're using [Homebrew][8], [Redis][9] and [PostgreSQL][10]:
 

@@ -25,7 +25,7 @@ You can grab the script at Github [http://github.com/revyver/hello-coda-slider][
 
 Hope you enjoyed that and your free "no-pixelization" preview of [Hello! Ranking][1].
 
-[^1]: Once again, since I'm not \[willing|able|rich enough\] at the current moment to spend the $60 for Vimeo Pro, I can only post a low resolution video here. I encourage you to head to the [video's page][1] and watch the HD version of the video. :)
+[^1]: Once again, since I'm not willing, able, or rich enough at the current moment to spend the $60 for Vimeo Pro, I can only post a low resolution video here. I encourage you to head to the [video's page][1] and watch the HD version of the video. :)
 
 [1]: http://hello-ranking.com/
 [2]: http://bitbucket.org/ubernostrum/django-registration/
