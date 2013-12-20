@@ -74,6 +74,9 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
+    middleman-syntax (1.2.1)
+      middleman-core (~> 3.0)
+      rouge (~> 0.3.0)
     multi_json (1.8.2)
     rack (1.5.2)
     rack-contrib (1.1.0)
@@ -89,6 +92,8 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.0)
       ffi (>= 0.5.0)
+    rouge (0.3.10)
+      thor
     ruby18_source_location (0.2)
     sass (3.2.12)
     sprockets (2.10.1)
@@ -124,6 +129,7 @@ DEPENDENCIES
   middleman-blog
   middleman-livereload (~> 3.1.0)
   middleman-minify-html
+  middleman-syntax
   rack-contrib
   rack-rewrite
   ruby18_source_location
