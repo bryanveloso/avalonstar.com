@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'middleman', '~>3.1.5'
+gem 'middleman', '~> 3.2.1'
 gem 'middleman-blog'
 
 # Live-reloading plugin
@@ -12,6 +12,9 @@ gem 'middleman-livereload', '~> 3.1.0'
 
 # Autoprefixer plugin
 gem 'middleman-autoprefixer', '~> 0.2.3'
+
+# HTML minification
+gem 'middleman-minify-html'
 
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
