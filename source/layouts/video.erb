@@ -39,7 +39,7 @@
   <footer class="entry-footer metadata-display">
     <div class="entry-dataitem metadata-item">
       <span class="ss-icon">&#x1F4C5;</span>
-      <time class="entry-dataitem-detail">
+      <time pubdate datetime="<%= current_page.date.strftime("%F") %>" class="entry-dataitem-detail">
         <span class="metadata-prefix">Uploaded</span> <%= current_page.date.strftime("%B %-d, %Y") %>
       </time>
     </div>
