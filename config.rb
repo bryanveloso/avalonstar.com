@@ -64,6 +64,9 @@ activate :autoprefixer, browsers: ['last 3 versions', 'ie 8', 'ie 9']
 #   end
 # end
 
+# Set the build directory to "/tmp" for Heroku's sake.
+set :build_dir, 'tmp'
+
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
