@@ -52,7 +52,7 @@
   .header .ss-icon { @include position(relative, 4px 0 0 0); }
   [role="navigation"] { margin-top: calc(-146px - 1.777rem); }
 
-  .recent-title { font-weight: 600; }
+  .recent-title { font-weight: 600 !important; }
   .recent-item { border-bottom: 1px solid #272E37; }
 
 }
@@ -78,7 +78,15 @@
     }
   }
 
-  .lower-hero { width: 41.955rem; }
+  .lower-hero,
+  .recent-list {
+    width: 41.955rem;
+  }
+  .recent-list {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 41.955rem;
+  }
 
 }
 
