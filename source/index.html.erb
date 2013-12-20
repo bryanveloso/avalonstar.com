@@ -1,0 +1,52 @@
+---
+title: Welcome
+---
+<div class="introductory-tile">
+  <div class="tile primary-introduction">
+    <div class="site-logo"></div>
+  </div>
+  <div class="tile secondary-introduction">
+    <div class="hero">
+      <span class="site-established">EST. 2000</span>
+      <a href="/" class="site-logotype">Avalonstar</a>
+      <div class="site-tagline">A journal. A playground. An identity.</div>
+    </div>
+    <div class="hero-posts">
+      <div class="recent-item recent-prose">
+        <% prose = blog.articles.select{ |a| a.data.category.include?("prose") }.shift %>
+        <span class="ss-icon">&#x1F4D3;</span>
+        <h2 class="recent-title"><a href="<%= prose.url %>"><%= prose.title %></a></h2>
+        <time class="recent-published"><%= prose.date.strftime("%B %-d, %Y") %></time>
+      </div>
+      <div class="recent-item recent-video">
+        <% video = blog.articles.select{ |a| a.data.category.include?("video") }.shift %>
+        <span class="ss-icon">&#x1F3AC;</span>
+        <h2 class="recent-title"><a href="<%= video.url %>"><%= video.title %></a></h2>
+        <time class="recent-published"><%= video.date.strftime("%B %-d, %Y") %></time>
+      </div>
+    </div>
+    <a class="scroll-target" href="#top"><span class="ss-icon ss-navigatedown"></span></a>
+  </div>
+</div>
+
+<main id="content" role="main">
+  <div id="top" class="recent-posts home-section">
+    <header class="home-section-header">
+      <span class="ss-icon ss-clock"></span>
+    </header>
+    <ul class="recent-list">
+    <% blog.articles[0...10].each do |article| %>
+      <li class="recent-list-item recent-<%= article.data.category %>">
+        <div>
+          <h2 class="recent-title"><a href="<%= article.url %>"><%= article.title %></a></h2>
+          <time class="recent-published"><%= article.data.category %> &middot; <%= article.date.strftime("%B %-d, %Y") %></time>
+        </div>
+        <% if article.data.category == "prose" %><span class="ss-icon">&#x1F4D3;</span><% end %>
+        <% if article.data.category == "video" %><span class="ss-icon">&#x1F3AC;</span><% end %>
+      </li>
+    <% end %>
+    </ul>
+  </div>
+  <%= partial "partials/videohero" %>
+  <%= partial "partials/footer" %>
+</main>

@@ -1,0 +1,27 @@
+<% wrap_layout :layout do %>
+
+<article class="entry hentry prose">
+  <header class="entry-header">
+    <div class="entry-wrapper wrapper">
+      <h1 class="entry-title"><%= current_page.title %></h1>
+      <span class="entry-category"><%= current_page.data.category %></span>
+      <a class="scroll-target" href="#top"><span class="ss-icon ss-navigatedown"></span></a>
+    </div>
+  </header>
+  <div id="top" class="entry-content">
+    <%= yield %>
+  </div>
+  <footer class="entry-footer metadata-display">
+    <div class="entry-dataitem metadata-item">
+      <span class="ss-icon">&#x1F4C5;</span>
+      <time class="entry-dataitem-detail">
+        <span class="metadata-prefix">Published</span> <%= current_page.date.strftime("%B %-d, %Y") %>
+      </time>
+    </div>
+  </footer>
+</article>
+
+<%= partial "partials/footer" %>
+<%= partial "partials/juke" %>
+
+<% end %>

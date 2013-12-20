@@ -1,0 +1,81 @@
+.entry-header {
+  padding-top: 4.209rem; padding-bottom: 2.369rem;
+  background-color: #161B21;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .entry-title {
+    flex: 1;
+    margin: 0;
+    padding: 0 1.777rem;
+
+    color: #FFF;
+    font-family: $font-family-tertiary;
+    font-size: 5.61rem;
+    font-weight: 200;
+    letter-spacing: -1px;
+    line-height: 0.9;
+  }
+  .scroll-target {
+    color: #FFF;
+    font-size: 32px;
+    padding-top: 2.369rem;
+  }
+}
+.entry-category {
+  font-family: $font-family-secondary;
+  font-size: 0.75rem;
+}
+.entry-content {
+  padding-top: 1.333rem;
+
+  blockquote {
+    margin: 0;
+    padding: 1.333rem;
+    background: #F9FAFC;
+
+    cite, cite a {
+      color: #828B96;
+      font-size: 1rem;
+    }
+    p {
+      color: #828B96;
+      font-size: 1rem;
+    }
+  }
+
+  p, ol, ul {
+    font-size: 1.333rem;
+    margin: 1.777em 1.333rem;  // Default, "mobile-first" style for paragraphs.
+  }
+  pre {
+    margin: 1.777em 1.333rem;  // Default, "mobile-first" style for paragraphs.
+    overflow: auto;
+  }
+
+  li > p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.footnotes {
+  padding: 1rem 0;
+
+  a, li, p {
+    color: #828B96;
+    font-size: 1rem;
+  }
+  ol { padding-left: 1.333rem; }
+  li > p { margin: 0; }
+}
+
+
+
+// Styles for external widgets.
+.entry .twitter-tweet-rendered {
+  margin: 1rem auto !important;
+}

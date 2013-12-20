@@ -1,0 +1,38 @@
+$base-size: 16px !default;
+
+// Let's start out with some variables. Here, we determine what kind of CSS
+// we want Compass to write, because we don't want EVERYTHING.
+$legacy-support-for-ie: false;
+$support-for-original-webkit-gradients: false;
+$experimental-support-for-opera: false;
+$experimental-support-for-khtml: false;
+
+// Susy grid variables.
+// Defining a mobile-first grid. Keeping the default grid sizes; just
+// changing the number of columns used.
+$total-columns: 4;
+$column-width: 4em;
+$gutter-width: 1em;
+$grid-padding: $gutter-width;
+
+// Typographic variables.
+// Lovingly inspired by Bootstrap's type scaffolding library.
+// (http://getbootstrap.com)
+$font-family-primary: 'Whitney SSm A', 'Whitney SSm B';
+$font-family-secondary: 'Gotham SSm A', 'Gotham SSm B';
+$font-family-tertiary: 'Tungsten A', 'Tungsten B';
+$font-family-logotype: 'Idlewild SSm A', 'Idlewild SSm B';
+
+$font-size-base: $base-size;
+$font-size-large: 1.333rem !default;
+$font-size-small: 0.75rem !default;
+
+$line-height-base: 1.5 !default;
+$line-height-computed: floor($font-size-base * $line-height-base) !default;
+
+// Temporary color variable placement.
+$body-font-color: #454D57 !default;
+$headings-font-color: #272E37 !default;
+
+$brand-twitch: #6441a5;
+$brand-youtube: #c4302b;

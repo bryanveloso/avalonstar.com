@@ -1,0 +1,10 @@
+<%= partial "partials/navigation" %>
+<header class="header">
+  <a class="toggle" href="#left"><span class="ss-icon ss-menu"></span></a>
+  <div class="site-logo <%= 'sans-star' if current_page.data.category %>"></div>
+  <a class="site-logotype desktop-only" href="/">Avalonstar</a>
+  <div class="icon-contain">
+    <% if current_page.data.category == "prose" %><span class="ss-icon">&#x1F4D3;</span><% end %>
+    <% if current_page.data.category == "video" %><span class="ss-icon">&#x1F3AC;</span><% end %>
+  </div>
+</header>
