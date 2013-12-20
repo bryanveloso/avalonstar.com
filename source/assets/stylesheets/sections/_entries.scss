@@ -19,15 +19,19 @@
     letter-spacing: -1px;
     line-height: 0.9;
   }
+  .entry-category {
+    font-family: $font-family-secondary;
+    font-size: 0.75rem;
+  }
+  [rel="author"] {
+    color: #828B96;
+    text-decoration: none;
+  }
   .scroll-target {
     color: #FFF;
     font-size: 32px;
     padding-top: 2.369rem;
   }
-}
-.entry-category {
-  font-family: $font-family-secondary;
-  font-size: 0.75rem;
 }
 .entry-content {
   padding-top: 1.333rem;
@@ -72,8 +76,6 @@
   ol { padding-left: 1.333rem; }
   li > p { margin: 0; }
 }
-
-
 
 // Styles for external widgets.
 .entry .twitter-tweet-rendered {
