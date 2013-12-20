@@ -46,7 +46,7 @@ end
 ###
 
 # Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+activate :automatic_image_sizes
 
 # Use pretty URLs
 activate :directory_indexes
