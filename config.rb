@@ -11,6 +11,9 @@ activate :blog do |blog|
   blog.sources = 'posts/:year-:month-:day-:title'
 end
 
+# Set Kramdown as our Markdown engine
+set :markdown_engine, :kramdown
+
 ###
 # Compass
 ###
@@ -59,6 +62,9 @@ activate :livereload, :host => '127.0.0.1'
 
 # Autoprefixer configuration
 activate :autoprefixer, browsers: ['last 3 versions', 'ie 8', 'ie 9']
+
+# Middleman syntax-highlighting support
+activate :syntax
 
 # Methods defined in the helpers block are available in templates
 # helpers do
