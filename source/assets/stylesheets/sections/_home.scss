@@ -141,67 +141,71 @@
   .recent-published { color: #A1ABB6; }
 }
 
-// //
-// .home-videos {
-// }
-// .video-list {
-//   display: flex;
+//
+.video-list {
+  display: flex;
+  flex-direction: column;
 
-//   .embed-container { margin: 1rem 0 1rem; }
-// }
-// .video-type {
-//   flex: 1;
+  .embed-container { margin: 1rem 0 1rem; }
+}
+.video-type {
+  flex: 1;
+  margin-left: 1.333rem;
+  margin-right: 1.333rem;
 
-//   &.twitch { margin-left: 1rem; }
-//   &.youtube { margin-right: 1rem; }
-// }
+  &.youtube { padding-bottom: 1.777rem; }
+}
+.video-statistics {
+  align-items: flex-start;
+  display: flex;
+  padding-top: 0.75rem;
 
-// .video-statistics {
-//   align-items: flex-start;
-//   display: flex;
-//   padding-top: 0.75rem;
+  border-top: 1px solid #EBEFF5;
+  font-family: $font-family-secondary;
+  font-size: 0.75rem;
 
-//   border-top: 1px solid #EBEFF5;
-//   font-family: $font-family-secondary;
-//   font-size: ms(-1);
+  a { text-decoration: none; }
+  .ss-icon {
+    @include position(relative, -3px 0 0 0);
+    padding-left: 3px;
+    color: #CBD1D8;
+    font-size: 16px;
+  }
+}
+.subscriber-link {
+  @include position(relative, -2px 0 0 0);
+  color: #A1ABB6;
+  font-weight: 700;
+}
+.video-link {
+  flex: 1;
 
-//   a { text-decoration: none; }
-//   .ss-icon {
-//     @include position(relative, -1px 0 0 0);
-//     padding-left: 3px;
-//     color: #CBD1D8;
-//     font-size: 16px;
-//   }
-// }
-// .subscriber-link {
-//   color: #A1ABB6;
-//   font-weight: 700;
-// }
-// .video-link {
-//   flex: 1;
+  color: #A1ABB6;
+  font-family: $font-family-logotype;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.video-link i {
+  display: block;
 
-//   color: #A1ABB6;
-//   font-family: $font-family-logotype;
-//   font-size: 14px;
-//   font-weight: 600;
-//   line-height: 1.2;
-// }
-// .video-link i {
-//   display: block;
+  font-family: $font-family-secondary;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0;
 
-//   font-family: $font-family-secondary;
-//   font-size: 10px;
-//   font-style: normal;
-//   font-weight: 300;
-//   letter-spacing: 0;
-
-//   .twitch & { color: rgba($brand-twitch, 0.75); }
-//   .youtube & { color: rgba($brand-youtube, 0.75); }
-// }
-// .background p {
-//   font-size: ms(-1);
-//   margin: 0;
-// }
+  .twitch & { color: rgba($brand-twitch, 0.75); }
+  .youtube & { color: rgba($brand-youtube, 0.75); }
+}
+.video-error {
+  padding-left: 1.333rem;
+  padding-right: 1.333rem;
+}
+.background p {
+  font-size: 0.75rem;
+  margin: 0;
+}
 
 // Landing page-specific overrides.
 .index {
