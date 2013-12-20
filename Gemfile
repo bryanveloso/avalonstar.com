@@ -5,7 +5,10 @@ source 'http://rubygems.org'
 ruby '2.0.0'
 
 gem 'middleman', '~> 3.2.1'
+
+# Middleman's blog functionality
 gem 'middleman-blog'
+gem 'builder'
 gem 'nokogiri'
 
 # Live-reloading plugin

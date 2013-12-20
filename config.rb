@@ -1,3 +1,5 @@
+require 'builder'
+
 ###
 # Blog settings
 ###
