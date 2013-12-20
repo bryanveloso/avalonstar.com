@@ -39,7 +39,7 @@ title: Welcome
       <li class="recent-list-item recent-<%= article.data.category %>">
         <div>
           <h2 class="recent-title"><a href="<%= article.url %>"><%= article.title %></a></h2>
-          <time pubdate datetime="<%= prose.date.strftime("%F") %>" class="recent-published"><%= article.data.category %> &middot; <%= article.date.strftime("%B %-d, %Y") %></time>
+          <time pubdate datetime="<%= article.date.strftime("%F") %>" class="recent-published"><%= article.data.category %> &middot; <%= article.date.strftime("%B %-d, %Y") %></time>
         </div>
         <% if article.data.category == "prose" %><span class="ss-icon">&#x1F4D3;</span><% end %>
         <% if article.data.category == "video" %><span class="ss-icon">&#x1F3AC;</span><% end %>
