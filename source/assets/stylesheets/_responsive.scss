@@ -10,6 +10,16 @@
     background-image: url('../images/phoenix-sans-star@2x.png');
     background-size: 398px;
   }
+  .site-logotype {
+    font-size: 1.333rem !important;
+    margin-top: 0.317rem !important;
+  }
+  .site-tagline { font-size: 0.75rem !important; }
+  .hero-posts {
+    align-items: stretch;
+    margin-top: 1.777rem;
+  }
+
   .entry-title { font-size: 4.209rem !important; }
 
   .this-has-been,
@@ -42,12 +52,22 @@
   .header .ss-icon { @include position(relative, 4px 0 0 0); }
   [role="navigation"] { margin-top: calc(-146px - 1.777rem); }
 
+  .recent-title { font-weight: 600; }
+  .recent-item { border-bottom: 1px solid #272E37; }
+
 }
 
 @media only screen and (min-width: 768px) {
 
-  .jukes, .lower-hero, .main-navigation {
+  .jukes,
+  .lower-hero,
+  .hero-posts,
+  .main-navigation {
     flex-direction: row;
+  }
+
+  .introductory-tile {
+    width: 100%; height: 100%;
   }
 
   .entry-content {
