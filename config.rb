@@ -94,9 +94,6 @@ configure :build do
   # Automatic HTML minification
   activate :minify_html
 
-  # Favicon generation
-  activate :favicon_maker
-
   # Enable cache buster
   # activate :asset_hash
 
