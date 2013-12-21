@@ -56,9 +56,6 @@ page '/sitemap.xml', :layout => false
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
-# Automatic HTML minification
-activate :minify_html
-
 # Use pretty URLs
 activate :directory_indexes
 
@@ -95,6 +92,9 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
+
+  # Automatic HTML minification
+  activate :minify_html
 
   # Enable cache buster
   # activate :asset_hash
