@@ -71,6 +71,9 @@ activate :autoprefixer, browsers: ['last 3 versions', 'ie 8', 'ie 9']
 # Middleman syntax-highlighting support
 activate :syntax
 
+# Image optimization at build time
+activate :imageoptim
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
