@@ -28,6 +28,7 @@ gem 'middleman-favicon-maker', '~> 3.2'
 
 # Image optimization
 gem 'middleman-imageoptim', '~> 0.1.3'
+gem 'image_optim_bin'
 gem 'rmagick'
 
 # For faster file watcher updates on Windows:

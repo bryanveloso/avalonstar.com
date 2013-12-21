@@ -41,6 +41,7 @@ GEM
       image_size (~> 1.1.2)
       in_threads (~> 1.2.0)
       progress (~> 3.0.0)
+    image_optim_bin (0.0.4)
     image_size (1.1.4)
     in_threads (1.2.0)
     kgio (2.8.1)
@@ -153,6 +154,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder
+  image_optim_bin
   middleman (~> 3.2.1)
   middleman-autoprefixer (~> 0.2.3)
   middleman-blog
