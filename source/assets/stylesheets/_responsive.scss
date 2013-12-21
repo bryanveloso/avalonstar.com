@@ -137,6 +137,17 @@
   .subscriber-link { top: 0; }
   .video-link { font-size: 14px; }
 
+  .social {
+    justify-content: space-between;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 41.955rem;
+
+    // Ugh, this is so dirty. D:
+    .ss-icon { font-size: 32px; }
+    a { color: #CBD1D8; }
+  }
+
 }
 
 @media only screen and (min-width: 1140px) { }

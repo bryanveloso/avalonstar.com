@@ -14,18 +14,18 @@ title: Welcome
     <div class="hero-posts">
       <div class="recent-item recent-prose">
         <% prose = blog.articles.select{ |a| a.data.category.include?("prose") }.shift %>
-        <span class="ss-icon">&#x1F4D3;</span>
+        <span class="ss-icon ss-air">&#x1F4D3;</span>
         <h2 class="recent-title"><a href="<%= prose.url %>"><%= prose.title %></a></h2>
         <time pubdate datetime="<%= prose.date.strftime("%F") %>" class="recent-published"><%= prose.date.strftime("%B %-d, %Y") %></time>
       </div>
       <div class="recent-item recent-video">
         <% video = blog.articles.select{ |a| a.data.category.include?("video") }.shift %>
-        <span class="ss-icon">&#x1F3AC;</span>
+        <span class="ss-icon ss-air">&#x1F3AC;</span>
         <h2 class="recent-title"><a href="<%= video.url %>"><%= video.title %></a></h2>
         <time pubdate datetime="<%= video.date.strftime("%F") %>" class="recent-published"><%= video.date.strftime("%B %-d, %Y") %></time>
       </div>
     </div>
-    <a class="scroll-target" href="#top"><span class="ss-icon ss-navigatedown"></span></a>
+    <a class="scroll-target" href="#top"><span class="ss-icon ss-air ss-navigatedown"></span></a>
   </div>
 </div>
 
@@ -41,8 +41,8 @@ title: Welcome
           <h2 class="recent-title"><a href="<%= article.url %>"><%= article.title %></a></h2>
           <time pubdate datetime="<%= article.date.strftime("%F") %>" class="recent-published"><%= article.data.category %> &middot; <%= article.date.strftime("%B %-d, %Y") %></time>
         </div>
-        <% if article.data.category == "prose" %><span class="ss-icon">&#x1F4D3;</span><% end %>
-        <% if article.data.category == "video" %><span class="ss-icon">&#x1F3AC;</span><% end %>
+        <% if article.data.category == "prose" %><span class="ss-icon ss-air">&#x1F4D3;</span><% end %>
+        <% if article.data.category == "video" %><span class="ss-icon ss-air">&#x1F3AC;</span><% end %>
       </li>
     <% end %>
     </ul>

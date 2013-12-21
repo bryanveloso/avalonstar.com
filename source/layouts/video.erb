@@ -5,7 +5,7 @@
     <div class="entry-wrapper wrapper">
       <h1 class="entry-title"><%= current_page.title %></h1>
       <span class="entry-category"><%= current_page.data.category %></span>
-      <a class="scroll-target" href="#top"><span class="ss-icon ss-navigatedown"></span></a>
+      <a class="scroll-target" href="#top"><span class="ss-icon ss-air ss-navigatedown"></span></a>
     </div>
   </header>
   <div id="top" class="entry-content">
@@ -17,17 +17,17 @@
     <% if current_page.data.ytid %>
     <div class="metadata-display js-yt-metadata">
       <div class="metadata-item entry-views">
-        <span class="ss-icon">&#x1F4FA;</span>
+        <span class="ss-icon ss-air">&#x1F4FA;</span>
         <span class="entry-dataitem-detail"><span class="js-yt-views"></span> <span class="metadata-prefix">Views</span></span>
       </div>
       <% if current_page.data.series && current_page.data.episode %>
       <div class="metadata-item entry-episode">
-        <span class="ss-icon">&#x1F3AC;</span>
+        <span class="ss-icon ss-air">&#x1F3AC;</span>
         <span class="entry-dataitem-detail"><span class="metadata-prefix"><%= current_page.data.series %></span> #<%= current_page.data.episode %></span>
       </div>
       <% end %>
       <div class="metadata-item entry-likes">
-        <span class="ss-icon">&#x2665;</span>
+        <span class="ss-icon ss-air">&#x2665;</span>
         <span class="entry-dataitem-detail"><span class="js-yt-comments"></span> <span class="metadata-prefix">Likes</span></span>
       </div>
     </div>
@@ -38,7 +38,7 @@
   </div>
   <footer class="entry-footer metadata-display">
     <div class="entry-dataitem metadata-item">
-      <span class="ss-icon">&#x1F4C5;</span>
+      <span class="ss-icon ss-air">&#x1F4C5;</span>
       <time pubdate datetime="<%= current_page.date.strftime("%F") %>" class="entry-dataitem-detail">
         <span class="metadata-prefix">Uploaded</span> <%= current_page.date.strftime("%B %-d, %Y") %>
       </time>
