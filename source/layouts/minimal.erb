@@ -31,13 +31,6 @@
   <% end %>
 </head>
 <body class="<%= page_classes %>">
-<% if current_page.url != "/" %>
-  <main id="main" role="main">
-    <%= partial "partials/header" %>
-    <%= yield %>
-  </main>
-<% else %>
-  <%= yield %>
-<% end %>
+<%= yield %>
 </body>
 </html>
