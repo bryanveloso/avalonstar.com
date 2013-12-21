@@ -10,17 +10,19 @@ When one runs into a problem with something—say, designing—one tends to over
 
 Granted I haven't attended many design talks over the past few years, so my views may be antiquated. Whenever process was brought up as a talking point, it was usually presented as a linear process:
 
-    $ ./start_designing
-    Developing idea.............................. done.
-    Sketching thumbnails......................... done.
-    Converting sketches to wireframes............ done.
-    Adding detail in Photoshop................... done.
-    Unsuspecting developer to pass this onto? [n/n]: N
-    Code it yourself? [y/y]: __
+~~~ shell
+$ ./start_designing
+Developing idea.............................. done.
+Sketching thumbnails......................... done.
+Converting sketches to wireframes............ done.
+Adding detail in Photoshop................... done.
+Unsuspecting developer to pass this onto? [n/n]: N
+Code it yourself? [y/y]: __
+~~~
 
 Script done, job done. Well, not for me it seems.
 
-[![](/assets/4ee81579dabe9d0e9c01fbf1/blog/mpicsketch.jpg)][1]
+[![](/journal/2011/my-process-is-circular/mpicsketch.jpg)][1]
 
 (I don't usually sketch, but when I do, I take _way_ too long on them.)
 

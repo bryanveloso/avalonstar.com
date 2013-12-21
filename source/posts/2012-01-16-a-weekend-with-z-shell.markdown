@@ -14,7 +14,7 @@ Fast forward to the beginning of this year and I ran into this article, "[My Com
 
 Here's what I came up with in pretty picture form:
 
-[![](http://avalonstar.com/assets/4f1483f8dabe9d7f760011fc/blog/path.png)][8]
+[![](/journal/2012/a-weekend-with-z-shell/path.png)][8]
 
 (The font I use is [Inconsolata][10].)
 
@@ -29,6 +29,6 @@ If you're interested in seeing the code behind this, [you can take a look at my 
 [5]: http://peepcode.com/
 [6]: https://github.com/robbyrussell/oh-my-zsh
 [7]: http://planetargon.com/who-we-are/robby-russell
-[8]: http://avalonstar.com/assets/4f1483f8dabe9d7f760011fc/path.png
+[8]: http://avalonstar.com/journal/2012/a-weekend-with-z-shell/path.png
 [9]: https://github.com/bryanveloso/dotfiles/blob/master/files/.zsh/prompt
 [10]: http://levien.com/type/myfonts/inconsolata.html

@@ -30,7 +30,7 @@ Let's start from the beginning. Quite a few games have been hitting their silver
 
 I thought to myself, "What if I marathoned all of those games on the day of their release for charity?"
 
-<img src="/assets/4ef6eaaddabe9d6c11006af5/blog/tsogwallpaper.jpg">
+![](/journal/2011/the-spirit-of-giving/tsogwallpaper.jpg)
 
 Crazy? Of course. Sure, [the idea certainly isn't new][4]. But what better way to not only _show my appreciation for the 25th birthday of a legendary gaming series_ but also _give to those in need_ as well?
 

@@ -10,7 +10,7 @@ comments: false
 
 It's quite unbelievable how much we managed to fit in and it's equally unbelievable that we've come out unscathed. So let's start from the beginning.
 
-![](/assets/4efed99edabe9d7073006e7e/blog/collabocats.jpg)
+![](/journal/2011/best-year-ever/collabocats.jpg)
 
 On January 3rd, [I joined GitHub][1] as a _Creative Badass_. What started out as a reply to a retweet [Kyle's][2] made from the [@githubjobs][3] account was quickly followed by my first surprise interview (while inebriated, I might add) ever followed by an offer letter... in a _Gist_. The very next day, [I had designed my first logo for them][4], then quickly established the branding for what would later be known as [CodeConf][5]. A few weeks later, [I joined them][6] in beautiful Sonoma County, California for an amazing retreat, wherein I presented on the topic of [Morning Musume for the first time][7].
 
@@ -24,7 +24,11 @@ It was definitely normal for us: _normal_ entailing lots of boba. Design wise? A
 
 March came and things started to pick up. Right off the bat I was on a plane to my first [PyCon][12]. Thanks to GitHub I was able to go to Atlanta and take in my very first developer-focused conference. I saw a lot of people I knew of from the Internet—some [old friends][13] and and a lot of [new ones][14]. After touching back down at LAX, preparations for the wedding started accelerating quickly. Jen and I jumped [right into our Save-the-Dates][15] and thanks to the guys at [Aardvark Letterpress][16], they looked (and felt) amazing. Hell, we even got video of the process:
 
-<div class="embed-container"> <iframe src="http://player.vimeo.com/video/22378198?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe> </div>
+<div class="video-wrapper">
+    <div class="embed-container">
+        <iframe src="http://player.vimeo.com/video/22378198?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe>
+    </div>
+</div>
 
 Yet even with all this, I considered this the proverbial "_calm before the storm._"
 
@@ -32,7 +36,7 @@ I nicknamed April, "_the month from hell_," with my final reprieve being my birt
 
 Hmm… a new paragraph must mean a new month. **NOPE.** Our trip home from San Francisco gave us only a few weeks time until we would head back up the Pacific coast to our favorite city in the union, Seattle, for [SakuraCon 2011][23], [Berryz Koubou][24] and [Hello! Party 2][25]. Time for Bryan's fandom cap. When Morning Musume came to Los Angeles in 2009, Jen and I (but mostly Jen) threw a very well-received fan party, so by the time the group's little sisters were slated to come to the states, people were asking for the sequel. Despite the usual hitches and technical difficulties, [we were able to hold another successful event][26]. As for the conference itself, SakuraCon was amazing and we met a huge number of fans who we quickly befriended. We even… [rioted][27]. _(If you'd like to see the author of this blog in a completely different light, he urges you to watch that video.)_
 
-![](/assets/4efedb5cdabe9d707300724c/blog/hellopartysignatures.jpg)
+![](/journal/2011/best-year-ever/hellopartysignatures.jpg)
 
 _But the real kicker?_ We were able to get the [promotional posters I created signed by the group][29].
 
@@ -50,7 +54,11 @@ I'm not evil… _really_.
 
 August. Well, [a video's worth a million words][41]:
 
-<div class="embed-container"> <iframe src="http://player.vimeo.com/video/33142742?byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe> </div>
+<div class="video-wrapper">
+    <div class="embed-container">
+        <iframe src="http://player.vimeo.com/video/33142742?byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe>
+    </div>
+</div>
 
 **Best. Day. Ever.** So much love and excitement in the company of family and friends—both [designer][42] and [wota][43] alike. Also, [an _@!$%#_ R8][44].
 
@@ -60,15 +68,23 @@ But enough sap! ;) There was a [honeymoon][45] (and [Hubot's new home][46]) to c
 
 Months back, [when the sequel to a small Irish conference was announced][47], I decided it would be the perfect place to start our honeymoon. Neither of us had either been across the Atlantic Ocean and it'd be a chance to get a taste of Europe. But like the wedding, this is best described in a video:
 
-<div class="embed-container"> <iframe src="http://player.vimeo.com/video/33201079?byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe> </div>
+<div class="video-wrapper">
+    <div class="embed-container">
+        <iframe src="http://player.vimeo.com/video/33201079?byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe>
+    </div>
+</div>
 
 After Ireland, our trip took us to London and then onto Japan:
 
-<div class="embed-container"> <iframe src="http://player.vimeo.com/video/33203390?byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe> </div>
+<div class="video-wrapper">
+    <div class="embed-container">
+        <iframe src="http://player.vimeo.com/video/33203390?byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe>
+    </div>
+</div>
 
 **71 days.** It was the longest I had ever been out of the country. As I write this, it was only a month ago that we were packing up our small apartment in Tokyo, getting ready to head home from our home-away-from-home. After getting back, I recovered from the honeymoon hangover and got right back to work. What exactly it is I'm working on will have to wait. But I'll be awesome, I promise. ^_^;
 
-![](/assets/4efede55dabe9d70730087d8/blog/veloso530.jpg)
+![](/journal/2011/best-year-ever/veloso530.jpg)
 
 **So that was my year.** Fun, right? :D I've become exhausted just remembering it all.
 
