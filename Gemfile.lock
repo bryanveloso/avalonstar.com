@@ -118,6 +118,7 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.0)
       ffi (>= 0.5.0)
+    rmagick (2.13.2)
     rouge (0.3.10)
       thor
     ruby18_source_location (0.2)
@@ -164,6 +165,7 @@ DEPENDENCIES
   nokogiri
   rack-contrib
   rack-rewrite
+  rmagick
   ruby18_source_location
   unicorn
   wdm (~> 0.1.0)
