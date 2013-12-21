@@ -17,11 +17,11 @@ Throughout the last year, we've been planning said wedding. Honestly I don't kno
 
 But I digress. This is supposed to be about design, of course, and [ren.ai][2], our newly launched wedding site.
 
-![](http://avalonstar.com/assets/4e32248ddabe9d02f900ed10/blog/owawsite.png)
+![](/journal/2011/on-weddings-and-websites/owawsite.png)
 
 As Jen puts it:
 
-> â€œRenaiâ€ (æ‹æ„›) is a Japanese word for romantic love. It is composed of two symbols that each separately also represent love—â€koiâ€ (æ‹) and â€œaiâ€ (æ„›)—with subtle nuanced differences in their meaning. We liked the domain Ren.ai because it is one whole word and two separate words at the same time, but no matter how you choose to divide it, it will always mean love.
+> "Renai" (恋愛) is a Japanese word for romantic love. It is composed of two symbols that each separately also represent love—"koi" (恋) and "ai" (愛)—with subtle nuanced differences in their meaning. We liked the domain Ren.ai because it is one whole word and two separate words at the same time, but no matter how you choose to divide it, it will always mean love.
 
 (Still in shock that we were able to get it.)
 
@@ -104,7 +104,7 @@ As if he was an angel sent from on high, [Edward Scherf][14], a very talented ic
 
 ## Designing yourself out of designer's bankruptcy.
 
-![](http://avalonstar.com/assets/4e322069dabe9d2e50003723/blog/owawframe.png)
+![](/journal/2011/on-weddings-and-websites/owawframe.png)
 
 I had a header.
 
@@ -114,21 +114,21 @@ At the time, I had abandoned [the honeyfund section][16], since coming up with a
 
 I took more time to ponder about what this site stood for. Instagrams carry a sort of informality about them, and their square shape lends itself well to a consistent design. So while it was nothing novel, I felt that having the pictures stuck to the paper-textured content area felt natural and the idea of lined paper for the description clicked quickly afterwards.
 
-![](http://avalonstar.com/assets/4e3221fadabe9d1c8800686c/blog/owawblog.png)
+![](/journal/2011/on-weddings-and-websites/owawblog.png)
 
 When something clicks like that did, it feels like you just parted the Red Sea. So the blog was the first page I managed to finish. I applied that same mentality to the [story section][18]. In that case, the desire to not have one piece of lined paper stretch the entire height of the page led to driving the content to be more of a series of short stories rather than one large monolithic one. It ultimately served to compliment the  videos we had recorded for our invitation's DVD rather than be exclusive.
 
 The venue section followed suit as I made my way back to the honeyfund. The original idea behind the honeyfund was to have the two countries be simple headers. That's easy right? But easy never felt right.
 
-![](http://avalonstar.com/assets/4e322431dabe9d3473002884/blog/owawgoogleireland.png)
+![](/journal/2011/on-weddings-and-websites/owawgoogleireland.png)
 
 I struggled with elements like flags, silhouette of the countries themselves—but of course, nothing *felt* right. By this time in the process, Jen was almost urging me to compromise with myself, rightfully so. I was running out of time and I was beginning to spend every waking hour I was not working on items for GitHub trying to figure out these design elements.
 
-![](http://avalonstar.com/assets/4e3223cfdabe9d02f900e76d/blog/owawcelticcrosses.png)
+![](/journal/2011/on-weddings-and-websites/owawcelticcrosses.png)
 
 Then I took a breather. When you're working with something for so long, there are times where you read text on the screen for what it *says*, rather than what it *means*. I took that and thought about the word "Ireland." What immediately came to mind was "celtic" and I started educating myself. I ultimately found the whimsical designs of the celtic cross appealing and decided that instead of being so literal with my depiction of each country, I would use elements from their cultures to be that graphical tie I was looking for.
 
-![](http://avalonstar.com/assets/4e3226d6dabe9d02f9010300/blog/owawhoneyfund.png)
+![](/journal/2011/on-weddings-and-websites/owawhoneyfund.png)
 
 For Japan, I wanted to be a bit more creative than just throwing a gigantic red dot in the header. Sakura or the cherry blossom was [something I had already used][19] in an earlier version our of Japan blog, [Konokoi][12]. Then I remembered there was another flower that was important to the Japanese, [the chrysanthemum][20]. It stands as a symbol of the serving emperor of Japan in addition to the imperial family and the highest order in Japanese society, [the Order of the Chrysanthemum][21].
 
@@ -144,7 +144,7 @@ At first, it just sat like that as text on the home page. Again, I fell into the
 
 Then I drew three boxes, randomly. By that point I had pretty much completely bought into the fact that I was enjoying using the lined paper idea and that it should carry on here in some fashion to get me out of this slump. Honestly I had declared design bankruptcy on my current situation. But the random boxes helped, go figure!
 
-![](http://avalonstar.com/assets/4e3220bbdabe9d02f900d784/blog/owawheader.png)
+![](/journal/2011/on-weddings-and-websites/owawheader.png)
 
 I then proceeded to split up the above text into four sections: the title, the date, the venue and the time. But I kept the order, so technically you could still read it from left-to-right in the order I had originally intended. Each element was a small experience gain for me, as I had never attempted drawing any of them before. :)
 
