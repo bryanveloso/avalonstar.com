@@ -98,9 +98,7 @@ configure :build do
   activate :imageoptim
 
   # Favicon generation
-  activate :favicon_maker,
-    :favicon_maker_input_dir => 'source/assets/images/',
-    :favicon_maker_base_image => 'phoenix-favicon.png'
+  activate :favicon_maker
 
   # Enable cache buster
   # activate :asset_hash
