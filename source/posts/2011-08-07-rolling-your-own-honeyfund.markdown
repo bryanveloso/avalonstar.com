@@ -55,11 +55,11 @@ Historically, time has never been much of an issue when it came to personal proj
 
 As aforementioned, [Harmony][6] was to be the object of my attention for the given week and the only option I had was to bend it to my will. If you're unfamiliar with Harmony, it's a super-powered CMS with two primary types of content to be managed: time-based and static. Or blogs and pages, if you will. Blogs can have archives, pages can be hierarchal, all that jazz.
 
-![](http://avalonstar.com/assets/4e3f2f0adabe9d43bf007b03/blog/byohftemplatedata.png)
+![](/journal/2011/rolling-your-own-honeyfund/byohftemplatedata.png)
 
 What makes Harmony, "super-powered" is the fact that you can give every template you're using it's own schema or *template data* in their terms. This'll all become clear as your fingers continue to scroll. Continuing on, for some reason I had forgotten the latter point and I started to build the honeyfund using a blog. After realizing what drug I was on and consequently stopping its use, I backtracked and started nesting pages:
 
-![](http://avalonstar.com/assets/4e3f30a8dabe9d2cb6007ee2/blog/byohfnesting.png)
+![](/journal/2011/rolling-your-own-honeyfund/byohfnesting.png)
 
 The nesting has an effect on the permalinks, so I nested each gift under a parent country to prevent any duplicate URLs such as "dinner for two," for example. But it doesn't stop there, the hierarchies mean something and you can use this to your advantage via the APIs that Harmony provides in its templating engine. Each honeyfund item was given it's own template data with the fields I required above.
 
