@@ -94,6 +94,9 @@ configure :build do
   # Automatic HTML minification
   activate :minify_html
 
+  # Gzipping functionality
+  activate :gzip
+
   # Enable cache buster
   # activate :asset_hash
 

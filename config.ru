@@ -51,6 +51,9 @@ end
 # Enable proper HEAD responses
 use Rack::Head
 
+# Deflate Gzip things
+use Rack::Deflater
+
 # Attempt to serve static HTML files
 use Rack::TryStatic,
   :root => 'tmp',
