@@ -46,7 +46,7 @@
 }
 
 [role="navigation"] {
-  margin-top: calc(-274px - 1.777rem);
+  margin-top: calc(-368px - 1.777rem);
   background-color: #272E37;
   padding-bottom: 1.777rem;
 
@@ -73,6 +73,7 @@
 }
 
 .main-navigation {
+  align-items: center;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -83,6 +84,19 @@
     flex: 1;
     padding-bottom: 1rem;
     padding-top: 1rem;
+  }
+}
+.section-home {
+  align-self: stretch;
+  margin-bottom: 1rem;
+
+  color: #DFE3E8;
+  background: #161B21;
+  box-shadow: 0 1px 0 rgba(#FFF, 0.05);
+
+  .ss-icon {
+    display: block;
+    height: 40px;
   }
 }
 

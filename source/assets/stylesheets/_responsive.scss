@@ -64,6 +64,26 @@
   $desktop-width: 41.955rem;
 
   [role="navigation"] { margin-top: calc(-146px - 1.777rem); }
+  .section-home {
+    align-self: center;
+    order: 2;
+    background: transparent;
+    box-shadow: none;
+
+    .ss-icon {
+      display: inline-block;
+      height: auto;
+      margin-bottom: 0;
+      padding: 8px 11px 0;
+
+      color: #DFE3E8;
+      background: #161B21;
+      border-radius: 4px;
+      box-shadow: 0 1px 0 rgba(#FFF, 0.05);
+    }
+  }
+  .section-journal { order: 1; }
+  .section-about { order: 3; }
 
   .desktop-only { display: block !important; }
 
