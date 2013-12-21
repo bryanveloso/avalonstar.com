@@ -94,9 +94,6 @@ configure :build do
   # Automatic HTML minification
   activate :minify_html
 
-  # Image optimization
-  activate :imageoptim
-
   # Favicon generation
   activate :favicon_maker
 
