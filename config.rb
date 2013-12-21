@@ -15,6 +15,7 @@ end
 
 # Set Kramdown as our Markdown engine
 set :markdown_engine, :kramdown
+set :markdown, :smartypants => true
 
 ###
 # Compass
