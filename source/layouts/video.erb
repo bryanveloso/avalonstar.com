@@ -1,17 +1,21 @@
 <% wrap_layout :layout do %>
 
-<article class="entry hentry prose">
+<article class="entry hentry video" itemscope itemtype="http://schema.org/BlogPosting">
+  <meta content="<%= current_page.url %>" itemprop="url">
   <header class="entry-header">
     <div class="entry-wrapper wrapper">
-      <h1 class="entry-title"><%= current_page.title %></h1>
-      <span class="entry-category"><%= current_page.data.category %></span>
+      <h1 class="entry-title" itemprop="headline"><%= current_page.title %></h1>
+      <span class="entry-category">
+        <span itemprop="articleSection"><%= current_page.data.category %></span>, by
+        <a class="vcard author" href="https://twitter.com/bryanveloso" rel="author" itemprop="creator">Bryan Veloso</a>
+      </span>
       <a class="scroll-target" href="#top"><span class="ss-icon ss-air ss-navigatedown"></span></a>
     </div>
   </header>
-  <div id="top" class="entry-content">
+  <div id="top" class="entry-content" itemprop="articleBody">
     <div class="video-wrapper">
       <div class="embed-container">
-        <iframe src="http://youtube.com/embed/<%= current_page.data.ytid %>?vq=hd720&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+        <iframe src="http://youtube.com/embed/<%= current_page.data.ytid %>?vq=hd720&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen itemprop="video"></iframe>
       </div>
     </div>
     <% if current_page.data.ytid %>
@@ -39,7 +43,7 @@
   <footer class="entry-footer metadata-display">
     <div class="entry-dataitem metadata-item">
       <span class="ss-icon ss-air">&#x1F4C5;</span>
-      <time pubdate datetime="<%= current_page.date.strftime("%F") %>" class="entry-dataitem-detail">
+      <time pubdate datetime="<%= current_page.date.strftime("%F") %>" class="entry-dataitem-detail date updated" itemprop="datePublished">
         <span class="metadata-prefix">Uploaded</span> <%= current_page.date.strftime("%B %-d, %Y") %>
       </time>
     </div>

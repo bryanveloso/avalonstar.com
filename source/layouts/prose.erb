@@ -7,7 +7,7 @@
       <h1 class="entry-title" itemprop="headline"><%= current_page.title %></h1>
       <span class="entry-category">
         <span itemprop="articleSection"><%= current_page.data.category %></span>, by
-        <a href="https://twitter.com/bryanveloso" rel="author" itemprop="creator">Bryan Veloso</a>
+        <a class="vcard author" href="https://twitter.com/bryanveloso" rel="author" itemprop="creator">Bryan Veloso</a>
       </span>
       <a class="scroll-target" href="#top"><span class="ss-icon ss-air ss-navigatedown"></span></a>
     </div>
@@ -18,7 +18,7 @@
   <footer class="entry-footer metadata-display">
     <div class="entry-dataitem metadata-item">
       <span class="ss-icon ss-air">&#x1F4C5;</span>
-      <time pubdate datetime="<%= current_page.date.strftime("%F") %>" class="entry-dataitem-detail" itemprop="datePublished">
+      <time pubdate datetime="<%= current_page.date.strftime("%F") %>" class="entry-dataitem-detail date updated" itemprop="datePublished">
         <span class="metadata-prefix">Published</span> <%= current_page.date.strftime("%B %-d, %Y") %>
       </time>
     </div>
