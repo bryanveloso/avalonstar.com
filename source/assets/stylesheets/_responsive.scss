@@ -144,8 +144,12 @@
     width: 41.955rem;
 
     // Ugh, this is so dirty. D:
-    .ss-icon { font-size: 32px; }
     a { color: #CBD1D8; }
+    .ss-icon {
+      display: block;
+      height: 40px;
+      font-size: 32px;
+    }
   }
 
 }
