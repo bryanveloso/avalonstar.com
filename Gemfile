@@ -23,7 +23,10 @@ gem 'middleman-minify-html'
 # Syntax-highlighting support
 gem 'middleman-syntax'
 
-# Image optimization at build time
+# Favicon generation
+gem 'middleman-favicon-maker', '~> 3.2'
+
+# Image optimization
 gem 'middleman-imageoptim', '~> 0.1.3'
 
 # For faster file watcher updates on Windows:

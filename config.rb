@@ -94,8 +94,13 @@ configure :build do
   # Automatic HTML minification
   activate :minify_html
 
-  # Image optimization at build time
+  # Image optimization
   activate :imageoptim
+
+  # Favicon generation
+  activate :favicon_maker,
+    :favicon_maker_input_dir => 'source/assets/images/',
+    :favicon_maker_base_image => 'phoenix-favicon.png'
 
   # Enable cache buster
   # activate :asset_hash
