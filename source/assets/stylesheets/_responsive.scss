@@ -61,6 +61,7 @@
 }
 
 @media only screen and (min-width: 768px) {
+  $desktop-width: 41.955rem;
 
   [role="navigation"] { margin-top: calc(-146px - 1.777rem); }
 
@@ -80,18 +81,18 @@
   pre, .entry-title {
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 41.955rem;
+    width: $desktop-width;
   }
   .entry-content {
     h1, h2, h3, p, ol, table, ul {
       margin-left: auto;
       margin-right: auto;
-      width: 41.955rem;
+      width: $desktop-width;
     }
     img, .gist {
       margin-left: auto;
       margin-right: auto;
-      max-width: 41.955rem;
+      max-width: $desktop-width;
     }
     .gist pre {
       width: 100%;
@@ -102,7 +103,7 @@
     flex-direction: row;
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 41.955rem;
+    width: $desktop-width;
 
     .metadata-item {
       margin-top: 1.777em;
@@ -112,14 +113,14 @@
 
   .lower-hero,
   .recent-list {
-    width: 41.955rem;
+    width: $desktop-width;
   }
   .hero-posts { align-items: flex-end; }
   .recent-list,
   .video-wrapper {
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 41.955rem;
+    width: $desktop-width;
   }
 
   .video-type {
@@ -141,7 +142,7 @@
     justify-content: space-between;
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 41.955rem;
+    width: $desktop-width;
 
     // Ugh, this is so dirty. D:
     a { color: #CBD1D8; }
