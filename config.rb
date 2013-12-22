@@ -1,4 +1,5 @@
 require 'builder'
+require 'sanitize'
 
 ###
 # Blog settings
@@ -70,11 +71,12 @@ activate :autoprefixer, browsers: ['last 3 versions', 'ie 8', 'ie 9']
 activate :syntax
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  # Strip all HTML tags from string
+  def strip_tags(html)
+    Sanitize.clean(html.strip).strip
+  end
+end
 
 # Set the build directory to "/tmp" for Heroku's sake.
 set :build_dir, 'tmp'

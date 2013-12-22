@@ -9,6 +9,7 @@ gem 'middleman', '~> 3.2.1'
 gem 'middleman-blog'
 gem 'builder'
 gem 'nokogiri'
+gem 'sanitize'
 
 # Live-reloading plugin
 gem 'middleman-livereload', '~> 3.1.0'

@@ -100,6 +100,8 @@ GEM
     rouge (0.3.10)
       thor
     ruby18_source_location (0.2)
+    sanitize (2.0.6)
+      nokogiri (>= 1.4.4)
     sass (3.2.12)
     sprockets (2.10.1)
       hike (~> 1.2)
@@ -141,5 +143,6 @@ DEPENDENCIES
   rack-contrib
   rack-rewrite
   ruby18_source_location
+  sanitize
   unicorn
   wdm (~> 0.1.0)

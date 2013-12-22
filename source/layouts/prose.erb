@@ -1,4 +1,5 @@
 <% wrap_layout :default do %>
+<% content_for :description do %><% strip_tags(current_page.summary(150, '...')) %><% end %>
 
 <article class="entry hentry prose" itemscope itemtype="http://schema.org/BlogPosting">
   <meta content="<%= current_page.url %>" itemprop="url">

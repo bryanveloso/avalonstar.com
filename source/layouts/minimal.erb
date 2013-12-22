@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width">
   <meta name="author" content="<%= data.site.creator %>">
   <meta name="copyright" content="<%= data.site.creator %>">
-  <meta name="description" content="<%= data.site.description %>">
+  <meta name="description" content="<% if content_for?(:description) %><%= yield_content :description %><% else %><%= data.site.description %><% end %>">
   <meta name="ICBM" content="34.023411,-118.403607">
   <meta name="verify-v1" content="BvvtENncdNqVXB6atrkLVq6ctSy/9OFH9qfIfyK2wZ0=">
   <meta name="google-site-verification" content="RGOtILy_e7f-Rppoau74G0yzA-pejrlqz2dODnxk8oU">
