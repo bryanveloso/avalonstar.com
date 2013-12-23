@@ -1,5 +1,8 @@
 require 'builder'
+require 'dotenv'
 require 'sanitize'
+
+Dotenv.load
 
 ###
 # Blog settings

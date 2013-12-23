@@ -18,6 +18,7 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    dotenv (0.9.0)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
@@ -132,6 +133,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder
+  dotenv
   middleman (~> 3.2.1)
   middleman-autoprefixer (~> 0.2.3)
   middleman-blog

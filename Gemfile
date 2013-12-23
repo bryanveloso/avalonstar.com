@@ -32,6 +32,7 @@ platforms :mri_18 do
 end
 
 # Deployment-related plugins
+gem 'dotenv'
 gem 'newrelic_rpm'
 gem 'rack-contrib'
 gem 'rack-rewrite'
