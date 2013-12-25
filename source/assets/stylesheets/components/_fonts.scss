@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+$host: 'http://d1su2wsglqk7in.cloudfront.net/static/fonts/' !default;
+
 /*
 * Symbolset
 * www.symbolset.com
@@ -12,11 +14,11 @@
 
 @font-face {
   font-family: "SSAir";
-  src: url('../fonts/ss-air.eot');
-  src: url('../fonts/ss-air.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/ss-air.woff') format('woff'),
-       url('../fonts/ss-air.ttf')  format('truetype'),
-       url('../fonts/ss-air.svg#SSAir') format('svg');
+  src: url('#{$host}ss-air.eot');
+  src: url('#{$host}ss-air.eot?#iefix') format('embedded-opentype'),
+       url('#{$host}ss-air.woff') format('woff'),
+       url('#{$host}ss-air.ttf')  format('truetype'),
+       url('#{$host}ss-air.svg#SSAir') format('svg');
   font-weight: 400;
   font-style: normal;
 }
@@ -61,11 +63,11 @@ html:hover [class^="ss-"]{-ms-zoom: 1;}
 
 @font-face {
   font-family: "SSSocialRegular";
-  src: url('../fonts/ss-social-regular.eot');
-  src: url('../fonts/ss-social-regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/ss-social-regular.woff') format('woff'),
-       url('../fonts/ss-social-regular.ttf')  format('truetype'),
-       url('../fonts/ss-social-regular.svg#SSSocialRegular') format('svg');
+  src: url('#{$host}ss-social-regular.eot');
+  src: url('#{$host}ss-social-regular.eot?#iefix') format('embedded-opentype'),
+       url('#{$host}ss-social-regular.woff') format('woff'),
+       url('#{$host}ss-social-regular.ttf')  format('truetype'),
+       url('#{$host}ss-social-regular.svg#SSSocialRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
