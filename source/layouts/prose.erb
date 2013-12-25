@@ -19,8 +19,8 @@
   <footer class="entry-footer metadata-display">
     <div class="entry-dataitem metadata-item">
       <span class="ss-icon ss-air">&#x1F4C5;</span>
-      <time pubdate datetime="<%= current_page.date.strftime("%F") %>" class="entry-dataitem-detail date updated" itemprop="datePublished">
-        <span class="metadata-prefix">Published</span> <%= current_page.date.strftime("%B %-d, %Y") %>
+      <time pubdate datetime="<%= current_page.date.strftime("%F") %>" class="entry-dataitem-detail" itemprop="datePublished">
+        <span class="metadata-prefix">Published</span> <span class="date updated"><%= current_page.date.strftime("%B %-d, %Y") %></span>
       </time>
     </div>
   </footer>
