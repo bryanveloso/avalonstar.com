@@ -1,0 +1,38 @@
+---
+category: prose
+layout: prose
+title: "My Ambition is Dead, Long Live Ambition"
+date: 2014-01-06 14:29 PST
+comments: false
+published: false
+---
+
+![](http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_528a8fb8a276d_1.JPG)
+
+I remember when I was 10 and wanted to be an astronaut.    
+I remember when I was 20 and wanted to head a design agency.    
+I remember when I was 30... remembering when I was ambitious.    
+
+This April, I turn 31. By the time that happens, I will either have been a hobbyist or professionally active in the web industry for *17* years.
+
+I've always been ambitious, I would say that it's the one trait I've carried verbatim from my childhood. I dream big and I work to make those dreams a reality. However, over the course of those 17 years, the dreams stayed dreams. For some reason or another, the things that I can't change about myself have "stood in the way" of realizing many of my dreams. My looks, my insecurities, my persona, my hobbies, and my likes alike have contributed to both the greatest achievements and failures of my life.
+
+From that aforementioned design agency, to wanting to be a beloved speaker, or that pleasant video personality--I dreamt big, but the barriers (personal, social, *and* environmental) proved insurmountable. All those trials and tribulations have given me a belief in balance. But balance comes at the cost of something. For me, that was my ambition. The ambition to become somebody worth remembering in an industry I've devoted more than half my life to.
+
+---
+
+Change is the hardest when--in your heart of hearts--you're not ready. The writing's been on the wall. I am the *has-been*, lost amongst a sea of dribbbles, tweets, and memories. I am the teacher in which every student has surpassed. I was the inspiration to the people whose current skill I could only dream of possessing.
+
+As a designer, I peaked years ago and have been in denial of it ever since. However, years of professional history have proven very hard to simply walk away from. To actively prevent myself from regaining my ambition in this industry has been one of the hardest internal challenges I've faced.
+
+---
+
+Despite all of the gloom, the entire experience thus far has been melancholy. Trials and errors knock you down and give you focus. Where ambitions have died, more focused ones have arisen. My skillset is no longer my focus, now rightfully used as a means to these new ends. I no longer want to be the "web professional that likes gaming and J-pop," I want to be the "gamer and J-pop fan that *[has a very particular set of skills; skills I have acquired over a very long career][1]*." ;)
+
+So ambition lives.
+
+It lives as I struggle to transition and it will continue to live after that. These new ambitions are both smaller in scope and at a grander scale and I'm seeing them through as we speak. Best of all, these new ambitions don't depend on the things I have no control over.
+
+In hindsight, I wish it didn't take me so long to realize this.
+
+[1]: http://www.youtube.com/watch?v=KgmO32IdwuE
