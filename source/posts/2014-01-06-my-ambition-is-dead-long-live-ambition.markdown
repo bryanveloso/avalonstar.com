@@ -4,7 +4,6 @@ layout: prose
 title: "My Ambition is Dead, Long Live Ambition"
 date: 2014-01-06 14:29 PST
 comments: false
-published: false
 ---
 
 ![](http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_528a8fb8a276d_1.JPG)
