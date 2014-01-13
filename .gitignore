@@ -19,3 +19,6 @@
 # Ignore the temp directory
 /tmp
 /log
+
+# Ignore .env file
+.env
