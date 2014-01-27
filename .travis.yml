@@ -7,7 +7,6 @@ notifications:
   email: false
 deploy:
   provider: heroku
-  strategy: git
   api_key:
     secure: GMs/Qtk6RpSHBX6Bitw3KL4N44mFfVZ2q1JEbc1yAcs3egmPXOmTQrP7nPvgvTXPuhWHk//UL7FXxSsni9ynRhroNcB354GsFuCXo8tg4yS+l2gfqIukqvmtdEQjX2ZwmNOfpFi0mwAbnQV8qgdK3UTqmxzgWqDBnTkuSo9fO0s=
   app: avalonstar
