@@ -1,5 +1,5 @@
 status = ->
-  $.getJSON "https://api.twitch.tv/kraken/streams/avalonstartv/?callback=?", (response) ->
+  $.getJSON "https://api.twitch.tv/kraken/streams/avalonstar/?callback=?", (response) ->
     console.log response
 
     if response.stream != null
@@ -11,6 +11,6 @@ setInterval status, 60000
 
 
 $ ->
-  $.getJSON "https://api.twitch.tv/kraken/channels/avalonstartv/?callback=?", (response) ->
+  $.getJSON "https://api.twitch.tv/kraken/channels/avalonstar/?callback=?", (response) ->
     console.log response
     console.log response.name
