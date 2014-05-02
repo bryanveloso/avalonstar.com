@@ -2,7 +2,7 @@
 category: prose
 layout: prose
 title: "Slides for the Back of the Room"
-date: 2014-05-02 12:51 PST
+date: 2014-05-02 00:51 PST
 comments: false
 ---
 
