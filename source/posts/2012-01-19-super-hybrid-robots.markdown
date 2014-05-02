@@ -19,7 +19,7 @@ Oh yes, my presentation. I found a lot of parallels to two of the greatest serie
 
 <div class="embed-container"> <iframe src="http://player.vimeo.com/video/35558445?byline=0&amp;portrait=0" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe> </div>
 
-<script src="http://speakerdeck.com/embed/4f187c6bac94e8008c00e33b.js"> </script>
+<div class="speakerdeck-container"><script src="http://speakerdeck.com/embed/4f187c6bac94e8008c00e33b.js"> </script></div>
 
 Finally, [go be a fan!][9] (o^_^)b
 

@@ -14,8 +14,8 @@ You see, I had sat near the back of the hall to work on my slides. While it was 
 
 > "For the benefit of the people in the back, I refrained from putting anything here."
 
-<script async class="speakerdeck-embed" data-id="4f5e1b78ad819b0022022b6d" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-
 It surprised me how many people took notice of it, even moreso that they went out of their way to find me and comment on it. But like all things, if there is a sizble effect on one's user experience, they'll be vocal about it.
+
+<div class="speakerdeck-container"><script async class="speakerdeck-embed" data-id="4f5e1b78ad819b0022022b6d" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"> </script></div>
 
 So when you're creating your next presentation, make sure to keep your surroundings in mind too.
