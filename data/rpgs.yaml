@@ -1,4 +1,9 @@
 top:
   - game: Final Fantasy IV
+    nostalgic: true
+  - game: Chrono Trigger
+    nostalgic: true
+  - game: Phantasy Star IV
+    nostalgic: true
 
 played:
