@@ -7,3 +7,8 @@ top:
     nostalgic: true
 
 played:
+  - series: Final Fantasy
+    games:
+      - game: Final Fantasy
+      - game: Final Fantasy II
+      - game: Final Fantasy III
