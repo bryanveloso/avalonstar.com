@@ -12,3 +12,26 @@ played:
       - game: Final Fantasy
       - game: Final Fantasy II
       - game: Final Fantasy III
+      - game: Final Fantasy IV
+      - game: "Final Fantasy IV: The After Years"
+        platforms:
+          - PlayStation Portable
+      - game: Final Fantasy V
+        platforms:
+          - SNES [Translated ROM]
+          - PlayStation One
+      - game: Final Fantasy VI
+      - game: Final Fantasy VII
+      - game: Final Fantasy VIII
+      - game: Final Fantasy IX
+      - game: Final Fantasy X
+      - game: Final Fantasy X-2
+      - game: Final Fantasy XII
+      - game: Final Fantasy XIII
+      - game: Final Fantasy XIII-2
+      - game: Final Fantasy Mystic Quest
+      - game: Final Fantasy Tactics
+      - game: "Final Fantasy Tactics: War of the Lions"
+        platforms:
+          - PlayStation Portable (Remake)
+      - game: "Lightning Returns: Final Fantasy XIII"
