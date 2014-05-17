@@ -35,3 +35,12 @@ played:
         platforms:
           - PlayStation Portable (Remake)
       - game: "Lightning Returns: Final Fantasy XIII"
+  - series: Tales of Series
+    games:
+      - game: Tales of Legendia
+      - game: Tales of the Abyss
+      - game: Tales of Graces
+      - game: Tales of Symphonia
+      - game: "Tales of Symphonia: Dawn of the New World"
+      - game: Tales of Vesperia
+      - game: Tales of Xillia
