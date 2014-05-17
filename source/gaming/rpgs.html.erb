@@ -1,0 +1,16 @@
+---
+title: RPGs
+---
+
+<% data.rpgs.played.each do |series| %>
+  <%= series.series %>
+  <ul>
+  <% series.games.each do |game| %>
+    <li>
+        <%= game.game %>
+        <%= game.platforms %>
+        <%= game.comment %>
+    </li>
+  <% end %>
+  </ul>
+<% end %>
