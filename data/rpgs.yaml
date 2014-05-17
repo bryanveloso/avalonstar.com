@@ -44,3 +44,15 @@ played:
       - game: "Tales of Symphonia: Dawn of the New World"
       - game: Tales of Vesperia
       - game: Tales of Xillia
+  - series: Chrono Series
+    games:
+      - game: Chrono Trigger
+      - game: Chrono Cross
+  - series: Phantasy Star
+    games:
+      - game: Phantasy Star III
+      - game: Phantasy Star IV
+  - series: Kingdom Hearts Series
+    games:
+      - game: Kingdom Hearts
+      - game: Kingdom Hearts II
