@@ -7,9 +7,9 @@ title: RPGs
   <ul>
   <% series.games.each do |game| %>
     <li>
-        <%= game.game %>
-        <%= game.platforms %>
-        <%= game.comment %>
+        <span class="js-game-name game-name"><%= game.game %></span>
+        <span class="game-platforms"><%= game.platforms %></span>
+        <span class="game-comment"><%= game.comment %></span>
     </li>
   <% end %>
   </ul>
