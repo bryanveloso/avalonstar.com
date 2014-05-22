@@ -3,7 +3,7 @@ title: RPGs
 ---
 
 <% data.rpgs.played.each do |series| %>
-  <%= series.series %>
+  <h1 class="series-name"><%= series.series %></h1>
   <ul>
   <% series.games.each do |game| %>
     <li>
