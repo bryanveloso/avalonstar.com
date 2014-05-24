@@ -5,7 +5,7 @@ title: RPGs
 <% data.rpgs.played.each do |series| %>
 <div class="series">
   <h1 class="series-name"><%= series.series %></h1>
-  <ul>
+  <ul class="series-games">
   <% series.games.each do |game| %>
     <li>
         <span class="js-game-name game-name"><%= game.game %></span>
