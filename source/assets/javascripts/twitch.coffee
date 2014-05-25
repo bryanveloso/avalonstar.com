@@ -9,8 +9,7 @@ status()
 
 setInterval status, 60000
 
-
+# Follower count.
 $ ->
   $.getJSON "https://api.twitch.tv/kraken/channels/avalonstar/?callback=?", (response) ->
-    console.log response
-    console.log response.name
+    ($ '.js-twitch-subscriber-count').html response.followers
