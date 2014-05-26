@@ -1,0 +1,18 @@
+---
+title: RPGs
+---
+
+{% for series in data.rpgs.played %}
+<div class="series">
+  <h1 class="series-name">{{ series.series }}</h1>
+  <ul class="series-games">
+  {% for game in series.games %}
+    <li>
+        <span class="js-game-name game-name">{{ game.game }}</span>
+        <span class="game-platforms">{{ game.platforms }}</span>
+        <span class="game-comment">{{ game.comment }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+{% endfor %}
