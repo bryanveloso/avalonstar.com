@@ -107,6 +107,10 @@ played:
       - game: The Last Story
         platform: Wii
         comments: "Completed Both NA and Japanese Veresions. First Untranslated Completion."
+  - series: Supergiant Games
+    games:
+      - game: Bastion
+      - game: Transistor
   - series: Other Square-Enix Games
     games:
       - game: Secret of Mana
