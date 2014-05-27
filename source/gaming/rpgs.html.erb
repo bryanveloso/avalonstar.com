@@ -3,7 +3,7 @@ title: RPGs
 ---
 
 <% data.rpgs.played.each do |series| %>
-<div class="series">
+<div class="series series-<%= slugify(series.series) %>">
   <h1 class="series-name"><%= series.series %></h1>
   <ul class="series-games">
   <% series.games.each do |game| %>
