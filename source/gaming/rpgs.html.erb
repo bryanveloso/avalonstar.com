@@ -1,13 +1,17 @@
 ---
 title: RPGs
 ---
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<%= javascript_include_tag  "rpgs" %>
+
+<h1 class="total-rpgs">Total RPGs <span class="total-rpg-count js-total-rpg-count"></span></h1>
 
 <% data.rpgs.played.each do |series| %>
 <div class="series series-<%= slugify(series.series) %>">
   <h1 class="series-name"><%= series.series %></h1>
   <ul class="series-games">
   <% series.games.each do |game| %>
-    <li>
+    <li class="series-game">
         <span class="js-game-name game-name"><%= game.game %></span>
         <span class="game-platforms"><%= game.platforms %></span>
         <span class="game-comment"><%= game.comment %></span>
