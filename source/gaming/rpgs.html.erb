@@ -6,6 +6,13 @@ title: RPGs
 
 <div class="rpg-lists">
   <section class="rpg-favorites">
+    <ol>
+    <% data.rpgs.top.each do |game| %>
+      <li>
+        <%= game.game %>
+      </li>
+    <% end %>
+    </ol>
   </section>
 
   <section class="rpg-list">
