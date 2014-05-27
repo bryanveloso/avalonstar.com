@@ -1,6 +1,7 @@
 require 'builder'
 require 'dotenv'
 require 'sanitize'
+require 'slugify'
 
 Dotenv.load
 
@@ -78,6 +79,11 @@ helpers do
   # Strip all HTML tags from string
   def strip_tags(html)
     Sanitize.clean(html.strip).strip
+  end
+
+  # Slugify a string
+  def slugify(string)
+    string.slugify
   end
 end
 
