@@ -1,0 +1,8 @@
+<% wrap_layout :minimal do %>
+<% content_for :stylesheets do %><%= stylesheet_link_tag "normalize", "live" %><% end %>
+
+<main id="main" role="main">
+  <%= yield %>
+</main>
+
+<% end %>
