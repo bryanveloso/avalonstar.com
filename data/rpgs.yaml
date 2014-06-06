@@ -1,23 +1,40 @@
 top:
   - game: Final Fantasy IV
+    gbid: 3030-20829
     nostalgic: true
   - game: Chrono Trigger
+    gbid: 3030-9249
     nostalgic: true
   - game: Phantasy Star IV
+    gbid: 3030-13493
     nostalgic: true
   - game: The Last Story
+    gbid: 3030-29904
   - game: Final Fantasy Tactics
+    gbid: 3030-19864
   - game: Secret of Mana
+    gbid: 3030-19507
   - game: Tales of Vesperia
+    gbid: 3030-20836
   - game: Lost Odyssey
+    gbid: 3030-2719
   - game: Tales of the Abyss
+    gbid: 3030-14210
   - game: "Super Mario RPG: Legend of the Seven Stars"
+    gbid: 3030-7358
   - game: Final Fantasy VI
+    gbid: 3030-6336
   - game: Final Fantasy VII
+    gbid: 3030-13053
   - game: Kingdom Hearts II
+    gbid: 3030-4763
   - game: Earthbound
+    gbid: 3025-170
+    nostalgic: true
   - game: Xenoblade Chronicles
+    gbid: 3030-26920
   - game: Bravely Default
+    gbid: 3030-36396
 
 played:
   - series: Final Fantasy
