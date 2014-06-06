@@ -1,4 +1,5 @@
 <% wrap_layout :minimal do %>
+<% content_for :stylesheets do %><%= stylesheet_link_tag "normalize", "syntax", "screen" %><% end %>
 
 <main id="main" role="main">
   <%= partial "partials/header" %>
