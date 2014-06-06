@@ -1,14 +1,20 @@
 ---
 title: RPGs
+layout: live
 ---
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <%= javascript_include_tag  "rpgs" %>
 
+<header>
+  <h1>My Visual Storybook</h1>
+  <p>Some children grew up on storybooks. I grew up on role-playing games.</p>
+</header>
+
 <div class="rpg-lists">
   <section class="rpg-favorites">
-    <ol>
+    <ol class="rpg-favorite-list">
     <% data.rpgs.top.each do |game| %>
-      <li>
+      <li class="rpg-favorite" data-gbid="<%= game.gbid %>">
         <%= game.game %>
       </li>
     <% end %>
