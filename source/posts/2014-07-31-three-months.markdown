@@ -1,0 +1,37 @@
+---
+category: prose
+layout: prose
+title: "Three Months"
+date: 2014-07-31 10:49 PDT
+comments: false
+---
+
+I honestly feel like I'm in a different world right now. Either that or I've been transported to one.
+
+![](https://s3.amazonaws.com/ooomf-com-files/F9g2FiPUSyC7IybhyI2p_09.jpg)
+
+---
+
+Three months ago, I joined the amazing team at [Twitch][1]. When my friends heard that I was able to grab a job at at the streaming giant, the often used phrase was that it was a "dream come true." 
+
+Being me, I'd laugh it off. Design for a gaming-related company sounded like the dream job for me, but it was way too early for me to tell. 
+
+Sure, I came into the job excited and I tried to hit the ground running, but I didn't want to get ahead of myself. _Would this work out?_ Could I _really_ make the switch from a structureless company (at the time) like GitHub to a more traditional structure in Twitch? If I said it was a hard transition, I'd be understating things.
+
+To be frank—with a quarter year down, I feel like I've gotten somewhere. I feel like I've adapted to the structure that comes with the job and have unexpectedly grown because of it. I -never- ever thought that structure was in my blood. Hell, I rebelled against it in my Facebook and Automattic years. But after all almost a decade in the industry, structure has finally decided to work with me instead of against me.
+
+It's been slow and at times frustrating, I'll admit that much. Being Twitch's first remote designer required me to step up my communication game. A lot of meetings that I'm not used to. A lot of specs. Tracking things. Status meetings. What may be commonplace for you has been a struggle for me. But a good team makes everything better and I have to thank the amazing and diverse group of designers I get to work with daily: [Jarques][2], [Allen][3], [Kat][4], [David][5], [Elsie][6], Thomas, and [Jacob][7].
+
+---
+
+A concise post had escaped me it seems. I have a lot to look forward to though as there's been an entirely new experience that has taken shape over the past months. 
+
+I'll talk about that in a post to come, but for the first time I feel like I'm a gamer that designs, rather than a designer who games.
+
+[1]: http://twitch.tv/
+[2]: https://twitter.com/jarques
+[3]: https://twitter.com/allenhklee
+[4]: https://twitter.com/herine_
+[5]: https://twitter.com/mucx
+[6]: https://twitter.com/omgelsie
+[7]: https://twitter.com/squelch
