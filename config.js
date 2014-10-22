@@ -14,13 +14,8 @@ config = {
         mail: {},
         database: {
             client: 'postgres',
-            connection: {
-                host: process.env.POSTGRES_HOST,
-                user: process.env.POSTGRES_USER,
-                password: process.env.POSTGRES_PASS,
-                database: process.env.POSTGRES_DB,
-                port: process.env.POSTGRES_PORT
-            }
+            connection: process.env.DATABASE_URL,
+            ssl: true
         },
         aws: {
             accessKeyId: process.env.AWS_ACCESS_ID,
@@ -52,7 +47,8 @@ config = {
         },
         paths: {
             contentPath: path.join(__dirname, '/content/')
-        }
+        },
+        fileStorage: false
     },
 
     // **Developers only need to edit below here**
