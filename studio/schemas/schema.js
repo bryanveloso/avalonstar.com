@@ -7,6 +7,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // Document schemas
 import author from './documents/author'
 import entry from './documents/entry'
+import siteSettings from './documents/siteSettings'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
@@ -22,6 +23,7 @@ export default createSchema({
     // Documents
     author,
     entry,
+    siteSettings,
 
     // Objects
     bodyPortableText,

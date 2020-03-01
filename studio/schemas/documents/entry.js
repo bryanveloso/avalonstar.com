@@ -1,4 +1,5 @@
-import { format } from 'date-fns'
+import format from 'date-fns/format'
+import parseISO from 'date-fns/parseISO'
 
 export default {
   name: 'entry',
@@ -67,15 +68,16 @@ export default {
       title: 'title',
       publishedAt: 'publishedAt',
       slug: 'slug',
-      media: 'coverImage'
+      media: 'coverImage',
     },
-    prepare ({ title = 'Untitled', publishedAt, slug = {}, media }) {
-      const dateSegment = format(publishedAt, 'YYYY')
+    prepare(selection) {
+      const { title = 'Untitled', publishedAt, slug, media } = selection
+      const dateSegment = format(parseISO(publishedAt), 'yyyy')
       const path = `/${dateSegment}/${slug.current}/`
       return {
         title,
+        subtitle: publishedAt ? path : 'Missing published date',
         media,
-        subtitle: publishedAt ? path : 'Missing publishing date'
       }
     }
   }
