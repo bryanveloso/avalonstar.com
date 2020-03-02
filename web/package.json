@@ -1,7 +1,6 @@
 {
-  "name": "avalonstar-com",
+  "name": "avalonstar-gasby",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "2020.03.01",
   "author": "Bryan Veloso <bryan@avalonstar.com>",
   "dependencies": {
