@@ -14,6 +14,15 @@ export default {
       type: 'string'
     },
     {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'company',
+        maxLength: 96
+      }
+    },
+    {
       name: 'date',
       title: 'date',
       type: 'date'
