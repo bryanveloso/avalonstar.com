@@ -1,0 +1,6 @@
+{
+  "eslint.workingDirectories": [
+    { "directory": "./studio", "changeProcessCWD": true },
+    { "directory": "./web", "changeProcessCWD": true }
+  ]
+}
