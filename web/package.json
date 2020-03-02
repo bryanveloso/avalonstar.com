@@ -4,8 +4,11 @@
   "version": "2020.03.01",
   "author": "Bryan Veloso <bryan@avalonstar.com>",
   "dependencies": {
+    "gatsby-image": "^2.2.39"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
     "gatsby": "^2.19.7",
-    "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
@@ -16,10 +19,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
-  },
-  "devDependencies": {
-    "dotenv": "^8.2.0",
+    "react-helmet": "^5.2.1",
     "prettier": "^1.19.1"
   },
   "keywords": [
