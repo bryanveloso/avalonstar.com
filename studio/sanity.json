@@ -14,7 +14,8 @@
     "@sanity/default-login",
     "@sanity/desk-tool",
     "markdown",
-    "dashboard-widget-netlify"
+    "dashboard-widget-netlify",
+    "@sanity/dashboard"
   ],
   "env": {
     "development": {
