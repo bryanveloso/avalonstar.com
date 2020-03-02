@@ -41,38 +41,16 @@ export default {
       name: 'projects',
       title: 'Projects',
       type: 'array',
-      of: [
-        { 
-          type: 'object',
-          fields: [
-            {
-              name: 'isActive',
-              title: 'Active Project?',
-              type: 'boolean',
-              description: 'Is this version of the project still live?',
-              options: {
-                layout: 'checkbox'
-              }
-            },
-            {
-              name: 'name',
-              title: 'Name',
-              type: 'string'
-            },
-            {
-              name: 'url',
-              title: 'URL',
-              type: 'url'
-            },
-          ]
-        }
-      ]
+      of: [{
+        type: 'reference',
+        to: [{ type: 'project' }]
+      }]
     }
   ],
   preview: {
     select: {
       title: 'company',
-      subtitle: 'title',
+      subtitle: 'title'
     }
   }
 };

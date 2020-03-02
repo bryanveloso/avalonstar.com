@@ -9,6 +9,15 @@ export default {
       type: 'string'
     },
     {
+      name: 'isFeatured',
+      title: 'Featured',
+      type: 'boolean',
+      description: 'Is this project featured?',
+      options: {
+        layout: 'checkbox'
+      }
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -37,6 +46,25 @@ export default {
       name: 'body',
       title: 'Body',
       type: 'bodyPortableText'
+    },
+    {
+      name: 'announcementUrl',
+      title: 'Announcement URL',
+      type: 'url'
+    },
+    {
+      name: 'projectUrl',
+      title: 'Project URL',
+      type: 'url'
+    },
+    {
+      name: 'isActive',
+      title: 'Active Project?',
+      type: 'boolean',
+      description: 'Is this version of the project still live?',
+      options: {
+        layout: 'checkbox'
+      }
     }
   ]
 };
