@@ -1,3 +1,12 @@
+// Load variables from `.env` as soon as possible
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV || 'development'}`
+})
+
+const clientConfig = require('./client-config')
+
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -28,10 +37,12 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-sanity",
+      resolve: 'gatsby-source-sanity',
       options: {
-        projectId: "5k911b60",
-        dataset: "production",
+        ...clientConfig.sanity,
+        token: process.env.SANITY_READ_TOKEN,
+        watchMode: !isProd,
+        overlayDrafts: !isProd,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
