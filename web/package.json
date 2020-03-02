@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "avalonstar-com",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "version": "2020.03.01",
+  "author": "Bryan Veloso <bryan@avalonstar.com>",
   "dependencies": {
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
@@ -28,12 +28,11 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean-cache": "gatsby clean",
+    "dev": "npm run clean-cache && gatsby develop",
+    "lint": "eslint .",
+    "format": "prettier-eslint --write \"**/*.js\" \"!.cache/**\" \"!node_modules/**\" \"!public/**\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
     "type": "git",
