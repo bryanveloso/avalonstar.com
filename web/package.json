@@ -4,10 +4,22 @@
   "version": "2020.03.01",
   "author": "Bryan Veloso <bryan@avalonstar.com>",
   "dependencies": {
-    "gatsby-image": "^2.2.39"
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.19.7",
+    "gatsby-image": "^2.2.39",
+    "gatsby-plugin-manifest": "^2.2.39",
+    "gatsby-plugin-offline": "^3.0.32",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sharp": "^2.4.3",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-source-sanity": "^5.0.6",
+    "gatsby-transformer-sharp": "^2.3.13",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
@@ -16,20 +28,8 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.18.3",
-    "gatsby": "^2.19.7",
-    "gatsby-plugin-manifest": "^2.2.39",
-    "gatsby-plugin-offline": "^3.0.32",
-    "gatsby-plugin-react-helmet": "^3.1.21",
-    "gatsby-plugin-sharp": "^2.4.3",
-    "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-source-sanity": "^5.0.6",
-    "gatsby-transformer-sharp": "^2.3.13",
     "prettier": "^1.19.1",
-    "prettier-eslint-cli": "^5.0.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "prettier-eslint-cli": "^5.0.0"
   },
   "keywords": [
     "gatsby"
