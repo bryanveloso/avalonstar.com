@@ -33,7 +33,7 @@ async function createEntryPages(graphql, actions) {
 
       createPage({
         path,
-        component: require.resolve('./src/templates/entry-page.template.jsx'),
+        component: require.resolve('./src/templates/entry-page.template.tsx'),
         context: { id },
       })
     })
