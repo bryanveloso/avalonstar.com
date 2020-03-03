@@ -43,7 +43,7 @@ export default {
     {
       name: 'coverImage',
       title: 'Cover',
-      type: 'captionedImage',
+      type: 'mainImage',
     },
     {
       name: 'body',

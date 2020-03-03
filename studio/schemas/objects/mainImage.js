@@ -1,9 +1,9 @@
 export default {
-  name: 'captionedImage',
+  name: 'mainImage',
   title: 'Image',
   type: 'image',
   options: {
-    hotspot: true
+    hotspot: true,
   },
   fields: [
     {
@@ -11,22 +11,22 @@ export default {
       title: 'Caption',
       type: 'string',
       options: {
-        isHighlighted: true
-      }
+        isHighlighted: true,
+      },
     },
     {
       name: 'alt',
       title: 'Alternative Text',
       type: 'string',
       options: {
-        isHighlighted: true
-      }
-    }
+        isHighlighted: true,
+      },
+    },
   ],
   preview: {
     select: {
       imageUrl: 'asset.url',
-      title: 'caption'
-    }
-  }
+      title: 'caption',
+    },
+  },
 }

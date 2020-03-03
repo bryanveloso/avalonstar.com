@@ -14,7 +14,7 @@ import siteSettings from './documents/siteSettings'
 
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
-import captionedImage from './objects/captionedImage'
+import mainImage from './objects/mainImage'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -33,6 +33,6 @@ export default createSchema({
 
     // Objects
     bodyPortableText,
-    captionedImage
-  ])
+    mainImage,
+  ]),
 })

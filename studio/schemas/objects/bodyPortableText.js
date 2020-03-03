@@ -8,8 +8,8 @@ export default {
       type: 'block',
     },
     {
-      type: 'captionedImage',
-      options: { hotspot: true }
-    }
-  ]
+      type: 'mainImage',
+      options: { hotspot: true },
+    },
+  ],
 }
