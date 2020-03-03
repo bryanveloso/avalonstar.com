@@ -6,6 +6,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   extends: ['airbnb-typescript', 'prettier/@typescript-eslint'],
   rules: {
+    'import/prefer-default-export': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-props-no-spreading': 'off',
   },
@@ -13,8 +14,9 @@ module.exports = {
     'import/resolver': {
       alias: {
         map: [
-          ['@/containers', './src/containers'],
           ['@/components', './src/components'],
+          ['@/containers', './src/containers'],
+          ['@/hooks', './src/hooks'],
           ['@/', './src'],
         ],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
