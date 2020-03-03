@@ -10,6 +10,16 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
   },
   settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@/containers', './src/containers'],
+          ['@/components', './src/components'],
+          ['@/', './src'],
+        ],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
     react: {
       version: 'detect',
     },
