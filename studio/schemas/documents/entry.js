@@ -9,7 +9,7 @@ export default {
     {
       name: 'title',
       title: 'Title',
-      type: 'string'
+      type: 'string',
     },
     {
       name: 'isFeatured',
@@ -17,8 +17,8 @@ export default {
       type: 'boolean',
       description: 'Is this post featured?',
       options: {
-        layout: 'checkbox'
-      }
+        layout: 'checkbox',
+      },
     },
     {
       name: 'slug',
@@ -26,18 +26,24 @@ export default {
       type: 'slug',
       options: {
         source: 'title',
-        maxLength: 96
-      }
+        maxLength: 96,
+      },
     },
     {
       name: 'publishedAt',
       title: 'Publish Date',
-      type: 'datetime'
+      type: 'datetime',
+    },
+    {
+      name: 'author',
+      title: 'Author',
+      type: 'reference',
+      to: [{ type: 'author' }],
     },
     {
       name: 'coverImage',
       title: 'Cover',
-      type: 'captionedImage'
+      type: 'captionedImage',
     },
     {
       name: 'body',
@@ -51,17 +57,17 @@ export default {
       name: 'publishingDateAsc',
       by: [
         { field: 'publishedAt', direction: 'asc' },
-        { field: 'title', direction: 'asc' }
-      ]
+        { field: 'title', direction: 'asc' },
+      ],
     },
     {
       title: 'Publishing date old->new',
       name: 'publishingDateDesc',
       by: [
         { field: 'publishedAt', direction: 'desc' },
-        { field: 'title', direction: 'asc' }
-      ]
-    }
+        { field: 'title', direction: 'asc' },
+      ],
+    },
   ],
   preview: {
     select: {
@@ -79,6 +85,6 @@ export default {
         subtitle: publishedAt ? path : 'Missing published date',
         media,
       }
-    }
-  }
-};
+    },
+  },
+}
