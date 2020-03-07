@@ -17,6 +17,7 @@ module.exports = {
           ['@/components', './src/components'],
           ['@/containers', './src/containers'],
           ['@/hooks', './src/hooks'],
+          ['@/lib', './src/lib'],
           ['@/', './src'],
         ],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
@@ -26,4 +27,12 @@ module.exports = {
       version: 'detect',
     },
   },
+  overrides: [
+    {
+      files: ['**/*.tsx'],
+      rules: {
+        'react/prop-types': 'off',
+      },
+    },
+  ],
 }
