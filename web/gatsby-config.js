@@ -27,6 +27,20 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.svg$/,
+          omitKeys: [
+            'xmlnsDc',
+            'xmlnsCc',
+            'xmlnsRdf',
+            'xmlnsSvg',
+          ],
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: { typekit: { id: 'ead1rfn' } },
     },
