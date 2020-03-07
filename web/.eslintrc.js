@@ -9,6 +9,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/jsx-fragments': 'off',
   },
   settings: {
     'import/resolver': {
@@ -17,6 +18,7 @@ module.exports = {
           ['@/components', './src/components'],
           ['@/containers', './src/containers'],
           ['@/hooks', './src/hooks'],
+          ['@/images', './src/images'],
           ['@/lib', './src/lib'],
           ['@/', './src'],
         ],

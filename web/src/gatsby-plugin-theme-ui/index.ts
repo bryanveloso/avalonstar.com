@@ -1,7 +1,9 @@
 /* eslint-disable prefer-destructuring */
+import { alpha } from '@theme-ui/color'
+
 import colors from './colors'
 
-const breakpoints = ['880px', '1200px', '1600px', '1920px']
+const breakpoints = ['600px', '900px', '1200px', '1800px']
 breakpoints.sm = breakpoints[0]
 breakpoints.md = breakpoints[1]
 breakpoints.lg = breakpoints[2]
@@ -106,13 +108,27 @@ const text = {
 const links = {
   nav: {
     color: 'inherit',
+    boxShadow: '0 0 1px rgba(0, 0, 0, 0)',
     fontFamily: 'freight',
     fontSize: 1,
     fontWeight: 900,
-    letterSpacing: '0.01em',
-    pl: 5,
+    ml: 5,
+    position: 'relative',
+    pt: 1,
     textTransform: 'uppercase',
     textDecoration: 'none',
+    transform: 'perspective(1px) translateZ(0)',
+    transition: 'color 0.3s ease-out',
+    '&:before': {
+      content: '""',
+      position: 'absolute',
+      left: 0,
+      top: 0,
+      right: '100%',
+      backgroundColor: 'main.avablue',
+      height: 2,
+      zIndex: -1,
+    },
     '&.active': { color: 'main.avablue' },
     '&:hover': { color: 'main.avablue' },
   },
@@ -194,9 +210,12 @@ const styles = {
   blockquote: {
     boxShadow: 'inset 8px 0 0 0',
     color: 'muted.lightgreen',
+    fontSize: [2, 2, 3, 3],
     fontStyle: 'italic',
     mx: 0,
-    px: 4,
+    my: 6,
+    px: 6,
+    py: 3,
   },
   hr: {
     border: 0,
@@ -212,7 +231,21 @@ const styles = {
   },
 }
 
+const buttons = {
+  menu: {
+    display: ['block', 'none'],
+  },
+}
+
 const structure = {
+  caption: {
+    borderBottom: '1px solid',
+    borderColor: alpha('muted.bluegrey', 0.20),
+    color: 'muted.bluegrey',
+    fontSize: 0,
+    p: 2,
+    textAlign: 'right',
+  },
   metadata: {
     fontSize: 1,
     textTransform: 'uppercase',
@@ -225,10 +258,11 @@ const sizes = {
 
 const layout = {
   container: {
-    maxWidth: [256, 704, 960, 1280, 1536],
+    maxWidth: [480, 720, 960, 1440],
     mx: 'auto',
   },
   entry: {
+    maxWidth: [480, 720, 960],
     mx: 'auto',
   },
 }
@@ -264,6 +298,7 @@ export default {
   text,
   links,
   styles,
+  buttons,
   structure,
   cards,
   layout,
