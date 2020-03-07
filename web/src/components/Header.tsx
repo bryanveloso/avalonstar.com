@@ -1,42 +1,27 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+/** @jsx jsx */
+import { Link } from 'gatsby'
+import {
+ jsx, Box, Container, Flex,
+} from 'theme-ui'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+import { NavLink } from '@/components'
+import Logotype from '@/images/logotype.svg'
+
+const Header = () => (
+  <Container as="header" sx={{ mx: 'auto', px: 4, py: 5 }}>
+    <Flex sx={{ alignItems: 'baseline' }}>
+      <Box sx={{ flex: '1 1 auto' }}>
+        <Link to="/">
+          <Logotype sx={{ height: '36px' }} />
         </Link>
-      </h1>
-    </div>
-  </header>
+      </Box>
+      <Box as="nav">
+        <NavLink to="/history/">History</NavLink>
+        <NavLink to="/portfolio/">Portfolio</NavLink>
+        <NavLink to="/blog/">Blog</NavLink>
+      </Box>
+    </Flex>
+  </Container>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
