@@ -10,6 +10,7 @@ import entry from './documents/entry'
 import event from './documents/event'
 import position from './documents/position'
 import project from './documents/project'
+import route from './documents/route'
 import siteSettings from './documents/siteSettings'
 
 // Object types
@@ -29,6 +30,7 @@ export default createSchema({
     event,
     position,
     project,
+    route,
     siteSettings,
 
     // Objects
