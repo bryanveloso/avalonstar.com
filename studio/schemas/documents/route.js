@@ -16,6 +16,16 @@ export default {
         source: 'title',
       },
     },
+    {
+      name: 'heading',
+      title: 'Heading',
+      type: 'string',
+    },
+    {
+      name: 'subheading',
+      title: 'Subheading',
+      type: 'string',
+    },
   ],
   preview: {
     select: {
