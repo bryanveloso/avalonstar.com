@@ -2,6 +2,8 @@
 import { jsx, Box } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
+import { PositionList, ProjectList } from '@/components/partials/portfolio'
+
 
 export const PortfolioPageTemplate = (props) => {
   const { title, heading, subheading } = props
@@ -10,6 +12,8 @@ export const PortfolioPageTemplate = (props) => {
     <Box as="section">
       <SEO title={title} />
       <PageHeader title={heading} subtitle={subheading} />
+      <ProjectList />
+      <PositionList />
     </Box>
   )
 }
