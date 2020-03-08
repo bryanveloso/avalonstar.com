@@ -18,7 +18,7 @@ const Footer = () => {
         }}
       >
         <Box>...</Box>
-        <Box>Desinging bold and writing code for ## years.</Box>
+        <Box>Designing bold and writing code for ## years.</Box>
         <Flex>
           <Box>
             <Flex as="ul">

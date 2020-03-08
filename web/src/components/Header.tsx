@@ -4,8 +4,9 @@ import {
  jsx, Box, Container, Flex, MenuButton,
 } from 'theme-ui'
 
-import { NavLink } from '@/components'
 import Logotype from '@/images/logotype.svg'
+
+import NavLink from './NavLink'
 
 const Header = () => (
   <Container as="header" sx={{ mx: 'auto', px: 4, py: [4, 5] }}>
