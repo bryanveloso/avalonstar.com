@@ -20,9 +20,9 @@ export default {
       description: 'What does this event pertain to?',
       options: {
         list: [
-          { title: 'Bryan', value: 'bryan' },
-          { title: 'Company', value: 'company' },
-          { title: 'Website', value: 'website' },
+          { title: 'The Person', value: 'person' },
+          { title: 'The Company', value: 'company' },
+          { title: 'The Website', value: 'website' },
         ],
       },
     },
