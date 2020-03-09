@@ -6,30 +6,36 @@ export default {
     {
       name: 'name',
       title: 'Name',
-      type: 'string'
+      type: 'string',
     },
     {
       name: 'date',
       title: 'date',
-      type: 'date'
+      type: 'date',
     },
     {
       name: 'subject',
       title: 'Subject',
-      type: 'array',
+      type: 'string',
       description: 'What does this event pertain to?',
-      of: [{ type: 'string' }],
       options: {
         list: [
           { title: 'Bryan', value: 'bryan' },
-          { title: 'Avalonstar', value: 'avalonstar' }
-        ]
-      }
+          { title: 'Company', value: 'company' },
+          { title: 'Website', value: 'website' },
+        ],
+      },
     },
     {
       name: 'body',
       title: 'Body',
-      type: 'bodyPortableText'
-    }
-  ]
-};
+      type: 'bodyPortableText',
+    },
+  ],
+  preview: {
+    select: {
+      title: 'name',
+      subtitle: 'date',
+    },
+  },
+}
