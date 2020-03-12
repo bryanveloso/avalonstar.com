@@ -16,7 +16,8 @@
     "markdown",
     "dashboard-widget-netlify",
     "@sanity/dashboard",
-    "dashboard-widget-document-list"
+    "dashboard-widget-document-list",
+    "@sanity/google-maps-input"
   ],
   "env": {
     "development": {

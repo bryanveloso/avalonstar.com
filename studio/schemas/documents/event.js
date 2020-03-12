@@ -31,6 +31,11 @@ export default {
       title: 'Body',
       type: 'bodyPortableText',
     },
+    {
+      name: 'location',
+      title: 'Location',
+      type: 'geopoint',
+    },
   ],
   preview: {
     select: {
