@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { jsx, Styled } from "theme-ui"
-// import Figure from './Figure'
+import { jsx, Styled } from 'theme-ui'
+import Figure from './Figure'
 
 const serializers = {
   types: {
@@ -25,12 +25,10 @@ const serializers = {
       }
     },
     authorReference: ({ node }) => <span>{node.author.name}</span>,
-    // mainImage: Figure,
+    mainImage: Figure,
   },
   marks: {
-    link: ({ children, mark }) => (
-      <Styled.a href={mark.href}>{children}</Styled.a>
-    ),
+    link: ({ children, mark }) => <Styled.a href={mark.href}>{children}</Styled.a>,
   },
 }
 
