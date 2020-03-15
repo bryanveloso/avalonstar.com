@@ -80,6 +80,19 @@ const text = {
     lineHeight: ['2.5rem', '3.5rem', '4rem', null],
   },
 
+  history: {
+    date: {
+      fontWeight: 'book',
+      fontSize: 1,
+      textTransform: 'uppercase',
+    },
+    title: {
+      fontFamily: 'freight',
+      fontSize: [3, 3, 5, null],
+      fontWeight: 'bold',
+    },
+  },
+
   // ...
   date: {
     color: 'main.avagreen',
@@ -240,7 +253,7 @@ const buttons = {
 const structure = {
   caption: {
     borderBottom: '1px solid',
-    borderColor: alpha('muted.bluegrey', 0.20),
+    borderColor: alpha('muted.bluegrey', 0.2),
     color: 'muted.bluegrey',
     fontSize: 0,
     p: 2,
