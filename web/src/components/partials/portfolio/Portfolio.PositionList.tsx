@@ -1,6 +1,7 @@
 /** @jsx jsx */
-import { jsx, Box, Card, Grid, Link, Text, Heading, Container } from 'theme-ui'
+import { jsx, Box, Card, Grid, Link, Text, Heading } from 'theme-ui'
 
+import { PortableText } from '@/components'
 import { usePositionData } from '@/hooks'
 
 import Avalonstar from '@/images/avalonstar.svg'
@@ -9,7 +10,6 @@ import Facebook from '@/images/facebook.svg'
 import GitHub from '@/images/github.svg'
 import Revyver from '@/images/revyver.svg'
 import Twitch from '@/images/twitch.svg'
-import PortableText from '@/components/PortableText'
 
 const getLogo = (height = '60px') => ({
   automattic: <Automattic sx={{ height }} />,
