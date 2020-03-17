@@ -36,6 +36,11 @@ export default {
       title: 'Location',
       type: 'geopoint',
     },
+    {
+      name: 'coverImage',
+      title: 'Cover',
+      type: 'mainImage',
+    },
   ],
   preview: {
     select: {
