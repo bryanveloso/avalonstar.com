@@ -10,6 +10,13 @@ const QUERY = graphql`
           name
           date(formatString: "MMMM DD, YYYY")
           subject
+          coverImage {
+            asset {
+              fluid(maxWidth: 1024) {
+                ...GatsbySanityImageFluid
+              }
+            }
+          }
         }
       }
     }
