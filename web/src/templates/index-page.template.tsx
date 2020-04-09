@@ -3,7 +3,7 @@ import { jsx, Box } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
 
-export const IndexPageTemplate = (props) => {
+export const IndexPageTemplate = props => {
   const { title, subtitle } = props
 
   return (

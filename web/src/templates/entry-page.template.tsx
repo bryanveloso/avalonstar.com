@@ -2,18 +2,14 @@
 import { alpha } from '@theme-ui/color'
 import { formatDistanceStrict, differenceInDays, format } from 'date-fns'
 import { graphql } from 'gatsby'
-import {
- jsx, Box, Container, Heading, Text,
-} from 'theme-ui'
+import { jsx, Box, Container, Heading, Text } from 'theme-ui'
 
 import { EntryLayout } from '@/containers'
 import { Cover, PortableText, SEO } from '@/components'
 import { buildImageObj, imageUrlFor } from '@/lib'
 
-const Entry = (props) => {
-  const {
- _rawBody, author, coverImage, publishedAt, title,
-} = props
+const Entry = props => {
+  const { _rawBody, author, coverImage, publishedAt, title } = props
   return (
     <Box as="article">
       {coverImage && coverImage.asset && (
@@ -74,7 +70,7 @@ const Entry = (props) => {
   )
 }
 
-const EntryPageTemplate = (props) => {
+const EntryPageTemplate = props => {
   const { data, errors } = props
   const entry = data && data.entry
   return (
@@ -86,7 +82,7 @@ const EntryPageTemplate = (props) => {
   )
 }
 
-const EntryPage = (props) => <EntryPageTemplate {...props} />
+const EntryPage = props => <EntryPageTemplate {...props} />
 
 export default EntryPage
 

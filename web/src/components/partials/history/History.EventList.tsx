@@ -1,7 +1,8 @@
 /** @jsx jsx */
+import Img from 'gatsby-image'
 import _ from 'lodash'
 import { Fragment } from 'react'
-import { jsx, Box, Text, Container, Grid, Heading } from 'theme-ui'
+import { jsx, AspectRatio, Box, Text, Grid, Heading } from 'theme-ui'
 import { darken } from '@theme-ui/color'
 
 import { PortableText } from '@/components'
@@ -14,7 +15,7 @@ const CompanyEvent = props => {
   const { _rawBody, date, name } = props
   return (
     <Fragment>
-      <Box sx={{ gridColumn: '1', py: 1 }}>
+      <Box sx={{ gridColumn: '1' }}>
         <StartupLaunch sx={{ color: 'main.avayellow' }} />
       </Box>
       <Box sx={{ gridColumn: '2', pl: 4, pb: 4 }}>
@@ -27,13 +28,27 @@ const CompanyEvent = props => {
 }
 
 const PersonEvent = props => {
-  const { _rawBody, date, name } = props
+  const { _rawBody, coverImage, date, name } = props
   return (
     <Fragment>
-      <Box sx={{ gridColumn: '1', py: 1 }}>
+      <Box sx={{ gridColumn: '1' }}>
         <SingleNeutralFocus sx={{ color: 'muted.lightbluegrey' }} />
       </Box>
       <Box color="muted.lightbluegrey" sx={{ fontSize: 1, gridColumn: '2', pl: 4, pb: 4 }}>
+        {coverImage && (
+          <Box
+            sx={{
+              borderColor: 'muted.lightbluegrey',
+              borderTop: '1px solid',
+              mb: 2,
+              pt: 1,
+            }}
+          >
+            <AspectRatio ratio={16 / 9} sx={{ objectFit: 'cover', width: '100%', height: '100%' }}>
+              <Img fluid={coverImage.asset.fluid} />
+            </AspectRatio>
+          </Box>
+        )}
         <Text variant="history.date">{date}</Text>
         <Text variant="history.title">{name}.</Text>
         {_rawBody && <PortableText blocks={_rawBody} />}
@@ -46,7 +61,7 @@ const WebsiteEvent = props => {
   const { _rawBody, date, name } = props
   return (
     <Fragment>
-      <Box sx={{ gridColumn: '1', py: 1 }}>
+      <Box sx={{ gridColumn: '1' }}>
         <BrowserPageAccount sx={{ color: 'main.avagreen' }} />
       </Box>
       <Box sx={{ gridColumn: '2', pl: 4, pb: 4 }}>

@@ -3,7 +3,7 @@ import { jsx, Box } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
 
-export const ColophonPageTemplate = (props) => {
+export const ColophonPageTemplate = props => {
   const { title, heading, subheading } = props
 
   return (

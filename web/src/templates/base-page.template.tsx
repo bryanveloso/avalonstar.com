@@ -14,7 +14,7 @@ const templateMap = {
   portfolio: PortfolioPage,
 }
 
-const BaseTemplate = (props) => {
+const BaseTemplate = props => {
   const { path } = props
   const templateKey = path.replace('/', '')
   const Page = templateMap[templateKey]

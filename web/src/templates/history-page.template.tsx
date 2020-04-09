@@ -2,8 +2,6 @@
 import { jsx, Box, Container } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
-
-import BookStar from '@/images/book-star.svg'
 import { EventList } from '@/components/partials/history'
 
 export const HistoryPageTemplate = props => {
