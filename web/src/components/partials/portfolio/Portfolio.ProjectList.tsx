@@ -1,23 +1,26 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+/** @jsx jsx */
+import { jsx, Box, Card, Grid, Link, Text, Heading } from 'theme-ui'
+
+import { PortableText } from '@/components'
+import { useProjectData } from '@/hooks'
 
 const ComponentName = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allSanityProject(filter: { isFeatured: { eq: true } }) {
-        edges {
-          node {
-            id
-            projectUrl
-            announcementUrl
-            _rawSummary(resolveReferences: { maxDepth: 10 })
-            _rawBody(resolveReferences: { maxDepth: 10 })
-          }
-        }
-      }
-    }
-  `)
-  return <pre>{JSON.stringify(data, null, 4)}</pre>
+  const data = useProjectData()
+  return (
+    <Grid as="section" sx={{ mb: 6 }}>
+      {data.map(({ node }) => {
+        const { _rawSummary, announcementUrl, date, name, id, position, projectUrl } = node
+        return (
+          <Card key={id}>
+            <Text variant="date">{date}</Text>
+            <Heading sx={{}}>{name}</Heading>
+            for {position.company}
+            <Grid>{_rawSummary && <PortableText blocks={_rawSummary} />}</Grid>
+          </Card>
+        )
+      })}
+    </Grid>
+  )
 }
 
 export default ComponentName
