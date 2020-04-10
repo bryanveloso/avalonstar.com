@@ -15,8 +15,8 @@ const templateMap = {
 }
 
 const BaseTemplate = props => {
-  const { path } = props
-  const templateKey = path.replace('/', '')
+  const { location } = props
+  const templateKey = location.pathname.replace('/', '')
   const Page = templateMap[templateKey]
 
   return (
