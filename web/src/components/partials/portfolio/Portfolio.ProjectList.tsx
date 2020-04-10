@@ -4,7 +4,7 @@ import { jsx, Box, Card, Grid, Link, Text, Heading } from 'theme-ui'
 import { PortableText } from '@/components'
 import { useProjectData } from '@/hooks'
 
-const ComponentName = () => {
+const ProjectList = () => {
   const data = useProjectData()
   return (
     <Grid as="section" sx={{ mb: 6 }}>
@@ -23,4 +23,4 @@ const ComponentName = () => {
   )
 }
 
-export default ComponentName
+export default ProjectList

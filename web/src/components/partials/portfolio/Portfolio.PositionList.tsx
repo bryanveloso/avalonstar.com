@@ -50,7 +50,7 @@ const ProjectList = ({ projects }) => (
   </Box>
 )
 
-const ComponentName = () => {
+const PositionList = () => {
   const data = usePositionData()
   return (
     <Grid as="section" gap={4} columns={[1, null, 2]}>
@@ -76,4 +76,4 @@ const ComponentName = () => {
   )
 }
 
-export default ComponentName
+export default PositionList
