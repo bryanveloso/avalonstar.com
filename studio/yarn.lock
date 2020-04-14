@@ -1078,10 +1078,10 @@
     rxjs "^6.5.3"
     string-hash "^1.1.3"
 
-"@sanity/core@^1.149.2":
-  version "1.149.11"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-1.149.11.tgz#d51dae52b18fde1b631ed171894baf7188803fc3"
-  integrity sha512-+c58K8QuEgRALcr5cgJAJW6YUuV0yl6FGfTurcNT3a4ZFS71JxKt+P0fzJ8zknGXgSNJ9PQJp/wAMsbvu1DkOA==
+"@sanity/core@^1.149.12":
+  version "1.149.12"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-1.149.12.tgz#36a8f7f88ce10918ae2f73c6f95f4516292c3f1d"
+  integrity sha512-vzdBvP6sV+o3aA3LNQ0jy1hcNbKRiaJTooJPiMlVVj1cTVVRxjgoPCj8/gRo8zrQkpqTQySvm7GVdpMHpOiOvw==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.4"
     "@babel/preset-env" "^7.7.4"
