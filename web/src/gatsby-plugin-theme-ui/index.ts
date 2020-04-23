@@ -237,6 +237,10 @@ const styles = {
   img: {
     maxWidth: '100%',
   },
+  li: {
+    fontSize: [1, 1, 2, 2],
+    lineHeight: [1.7, 1.7, 2, 2],
+  },
   p: {
     fontSize: [1, 1, 2, 2],
     lineHeight: [1.7, 1.7, 2, 2],

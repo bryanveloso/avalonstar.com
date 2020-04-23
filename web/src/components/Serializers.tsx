@@ -30,6 +30,7 @@ const serializers = {
   marks: {
     link: ({ children, mark }) => <Styled.a href={mark.href}>{children}</Styled.a>,
   },
+  listItem: ({ children }) => <Styled.li>{children}</Styled.li>,
 }
 
 export default serializers
