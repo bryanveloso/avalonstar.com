@@ -65,6 +65,12 @@ module.exports = {
         overlayDrafts: !isProd,
       },
     },
+    {
+      resolve: `gatsby-transform-portable-text`,
+      options: {
+        extendTypes: [{ typeName: `SanityEntry`, contentFieldName: 'body' }]
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
