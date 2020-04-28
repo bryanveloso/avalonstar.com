@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box } from 'theme-ui'
+import { jsx, Box, Container } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
 import { EntryList } from '@/components/partials'
@@ -11,7 +11,9 @@ export const BlogPageTemplate = props => {
     <Box as="section">
       <SEO title={title} />
       <PageHeader title={heading} subtitle={subheading} />
-      <EntryList />
+      <Container sx={{ p: 4 }}>
+        <EntryList />
+      </Container>
     </Box>
   )
 }

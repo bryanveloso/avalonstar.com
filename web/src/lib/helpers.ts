@@ -1,4 +1,6 @@
-import { format, isFuture } from 'date-fns'
+import format from 'date-fns/format'
+import isFuture from 'date-fns/isFuture'
+import parseISO from 'date-fns/parseISO'
 
 export function cn(...args) {
   return args.filter(Boolean).join(' ')
@@ -6,7 +8,7 @@ export function cn(...args) {
 
 export function mapEdgesToNodes(data) {
   if (!data.edges) return []
-  return data.edges.map((edge) => edge.node)
+  return data.edges.map(edge => edge.node)
 }
 
 export function filterOutDocsWithoutSlugs({ slug }) {
@@ -14,11 +16,11 @@ export function filterOutDocsWithoutSlugs({ slug }) {
 }
 
 export function filterOutDocsPublishedInTheFuture({ publishedAt }) {
-  return !isFuture(publishedAt)
+  return !isFuture(parseISO(publishedAt))
 }
 
 export function getBlogUrl(publishedAt, slug) {
-  return `/blog/${format(publishedAt, 'YYYY/MM')}/${slug.current || slug}/`
+  return `/blog/${format(parseISO(publishedAt), 'yyyy')}/${slug.current || slug}/`
 }
 
 export function buildImageObj(source = { asset: {} }) {
@@ -37,11 +39,11 @@ export function toPlainText(blocks) {
     return ''
   }
   return blocks
-    .map((block) => {
+    .map(block => {
       if (block._type !== 'block' || !block.children) {
         return ''
       }
-      return block.children.map((child) => child.text).join('')
+      return block.children.map(child => child.text).join('')
     })
     .join('\n\n')
 }

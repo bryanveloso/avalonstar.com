@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui'
+import External from '@/images/external.svg'
 import Figure from './Figure'
 
 const serializers = {
@@ -34,6 +35,7 @@ const serializers = {
       return blank ? (
         <Styled.a href={href} target="_blank" rel="noopener">
           {children}
+          <External sx={{ height: '1.0rem', pl: 1 }} />
         </Styled.a>
       ) : (
         <Styled.a href={href}>{children}</Styled.a>

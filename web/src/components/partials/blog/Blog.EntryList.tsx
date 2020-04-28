@@ -1,29 +1,55 @@
-import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+/** @jsx jsx */
+import format from 'date-fns/format'
+import parseISO from 'date-fns/parseISO'
+import { Link } from 'gatsby'
+import numeral from 'numeral'
+import { jsx, Box, Heading, Styled, Text, Grid } from 'theme-ui'
 
-const ComponentName = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allSanityEntry {
-        edges {
-          node {
-            id
-            isFeatured
-            publishedAt
-            title
-            _rawBody(resolveReferences: { maxDepth: 10 })
-            coverImage {
-              _key
-              _type
-              caption
-              alt
-            }
-          }
-        }
-      }
-    }
-  `)
-  return <pre>{JSON.stringify(data, null, 4)}</pre>
+import { useEntryData } from '@/hooks'
+import { getBlogUrl } from '@/lib/helpers'
+
+const EntryList = () => {
+  const data = useEntryData()
+  return (
+    <Box
+      as="section"
+      sx={{
+        borderTop: '2px solid',
+        borderColor: 'gradient.lighter',
+      }}
+    >
+      {data.map(({ node }) => {
+        const { coverImage, id, isFeatured, number, publishedAt, slug, title } = node
+        return (
+          <Grid
+            columns={['auto auto 1fr']}
+            key={id}
+            sx={{
+              alignItems: 'baseline',
+              borderBottom: '1px solid',
+              borderColor: 'gradient.lighter',
+              pb: 4,
+              pt: 3,
+            }}
+          >
+            {number > 0 && (
+              <Text sx={{ color: 'muted.midgrey' }}>{numeral(number).format('000')}</Text>
+            )}
+            <Text variant="date">{format(parseISO(publishedAt), 'MMMM d, yyyy')}</Text>
+            <Heading as="h2">
+              <Link
+                to={getBlogUrl(publishedAt, slug.current)}
+                sx={{ variant: 'styles.a', color: 'white' }}
+              >
+                {title}
+              </Link>
+            </Heading>
+            {/* {isFeatured && <Styled.p>{excerpt}</Styled.p>} */}
+          </Grid>
+        )
+      })}
+    </Box>
+  )
 }
 
-export default ComponentName
+export default EntryList

@@ -1,4 +1,5 @@
 export * from './use-author-data'
+export * from './use-entry-data'
 export * from './use-event-data'
 export * from './use-position-data'
 export * from './use-project-data'

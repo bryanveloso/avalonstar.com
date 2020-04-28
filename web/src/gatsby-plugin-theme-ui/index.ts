@@ -188,6 +188,19 @@ const styles = {
     ':hover': {
       textDecoration: 'underline',
     },
+    ':visited': {
+      opacity: 0.75,
+    },
+  },
+  blockquote: {
+    boxShadow: 'inset 8px 0 0 0',
+    color: 'muted.lightgreen',
+    fontSize: [3, 3, 4, 4],
+    fontStyle: 'italic',
+    mx: 0,
+    my: 6,
+    px: 6,
+    py: 3,
   },
   h1: {
     variant: 'text.heading',
@@ -220,16 +233,6 @@ const styles = {
     fontSize: [1, 2, 3, null],
     lineHeight: '1.5rem',
   },
-  blockquote: {
-    boxShadow: 'inset 8px 0 0 0',
-    color: 'muted.lightgreen',
-    fontSize: [2, 2, 3, 3],
-    fontStyle: 'italic',
-    mx: 0,
-    my: 6,
-    px: 6,
-    py: 3,
-  },
   hr: {
     border: 0,
     borderBottom: '1px solid',
@@ -238,12 +241,19 @@ const styles = {
     maxWidth: '100%',
   },
   li: {
-    fontSize: [1, 1, 2, 2],
-    lineHeight: [1.7, 1.7, 2, 2],
+    fontSize: [2, 2, 3, 3],
+    lineHeight: ['2rem', '2rem', '2.5rem', null],
+    pl: 2,
   },
   p: {
-    fontSize: [1, 1, 2, 2],
-    lineHeight: [1.7, 1.7, 2, 2],
+    fontSize: [2, 2, 3, 3],
+    lineHeight: ['2rem', '2rem', '2.5rem', null],
+    mb: 4,
+  },
+  strong: {
+    color: 'muted.green',
+  },
+  ul: {
     mb: 4,
   },
 }

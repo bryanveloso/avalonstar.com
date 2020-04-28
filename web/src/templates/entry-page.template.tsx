@@ -28,8 +28,8 @@ const Entry = props => {
       <Container variant="entry" sx={{ mx: 'auto', my: [6, 7, 8], px: 4 }}>
         <Box variant="structure.metadata">
           <Text as="time" variant="time">
-            {differenceInDays(new Date(publishedAt), new Date()) > 3
-              ? formatDistanceStrict(new Date(publishedAt), new Date())
+            {differenceInDays(new Date(), new Date(publishedAt)) < 3
+              ? `${formatDistanceStrict(new Date(publishedAt), new Date())} ago`
               : format(new Date(publishedAt), 'MMMM dd, yyyy')}
           </Text>
         </Box>
@@ -37,6 +37,9 @@ const Entry = props => {
           {title}
           <span sx={{ color: 'main.avagreen' }}>.</span>
         </Heading>
+      </Container>
+      <Container>
+        <Box sx={{ bg: 'muted.lightbluegrey', mx: 4, height: 2, width: '20%' }} />
       </Container>
       <Container
         variant="entry"
