@@ -21,6 +21,11 @@ export default {
       },
     },
     {
+      name: 'number',
+      title: 'Number',
+      type: 'string',
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
