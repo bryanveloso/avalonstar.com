@@ -25,6 +25,7 @@
     "gatsby-transform-portable-text": "^0.0.2",
     "gatsby-transformer-sharp": "^2.4.4",
     "lodash": "^4.17.15",
+    "numeral": "^2.0.6",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
