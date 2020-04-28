@@ -27,7 +27,8 @@ const serializers = {
     authorReference: ({ node }) => <span>{node.author.name}</span>,
     mainImage: Figure,
   },
-  maarks: {
+  marks: {
+    em: ({ children }) => <Styled.em>{children}</Styled.em>,
     link: ({ children, mark }) => {
       const { blank, href } = mark
       return blank ? (
@@ -38,7 +39,9 @@ const serializers = {
         <Styled.a href={href}>{children}</Styled.a>
       )
     },
+    strong: ({ children }) => <Styled.strong>{children}</Styled.strong>,
   },
+  list: ({ children }) => <Styled.ul>{children}</Styled.ul>,
   listItem: ({ children }) => <Styled.li>{children}</Styled.li>,
 }
 
