@@ -1,7 +1,10 @@
+import { RiChatHeartLine } from 'react-icons/ri'
+
 export default {
   name: 'quote',
   title: 'Quote',
   type: 'document',
+  icon: RiChatHeartLine,
   fields: [
     {
       name: 'name',
