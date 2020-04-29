@@ -10,6 +10,7 @@ import entry from './documents/entry'
 import event from './documents/event'
 import position from './documents/position'
 import project from './documents/project'
+import quote from './documents/quote'
 import route from './documents/route'
 import siteSettings from './documents/siteSettings'
 
@@ -30,6 +31,7 @@ export default createSchema({
     event,
     position,
     project,
+    quote,
     route,
     siteSettings,
 
