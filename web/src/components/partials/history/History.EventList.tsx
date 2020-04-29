@@ -3,7 +3,6 @@ import Img from 'gatsby-image'
 import _ from 'lodash'
 import { Fragment } from 'react'
 import { jsx, AspectRatio, Box, Text, Grid, Heading } from 'theme-ui'
-import { darken } from '@theme-ui/color'
 
 import { PortableText } from '@/components'
 import { useEventData } from '@/hooks'
@@ -98,7 +97,7 @@ const Section = props => {
   )
 }
 
-const ComponentName = () => {
+const EventList = () => {
   const data = useEventData()
   const dataByYear = _.groupBy(data, datum => datum.date.substr(datum.date.length - 4))
 
@@ -111,4 +110,4 @@ const ComponentName = () => {
   )
 }
 
-export default ComponentName
+export default EventList

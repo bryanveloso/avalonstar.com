@@ -22,7 +22,7 @@ const EntryList = () => {
         const { coverImage, id, isFeatured, number, publishedAt, slug, title } = node
         return (
           <Grid
-            columns={['auto auto 1fr']}
+            columns={['auto 1fr auto']}
             key={id}
             sx={{
               alignItems: 'baseline',
@@ -32,18 +32,23 @@ const EntryList = () => {
               pt: 3,
             }}
           >
-            {number > 0 && (
-              <Text sx={{ color: 'muted.midgrey' }}>{numeral(number).format('000')}</Text>
-            )}
-            <Text variant="date">{format(parseISO(publishedAt), 'MMMM d, yyyy')}</Text>
-            <Heading as="h2">
-              <Link
-                to={getBlogUrl(publishedAt, slug.current)}
-                sx={{ variant: 'styles.a', color: 'white' }}
-              >
-                {title}
-              </Link>
-            </Heading>
+            <Box>
+              {number > 0 && (
+                <Text sx={{ color: 'muted.lightbluegrey' }}>{numeral(number).format('000')}</Text>
+              )}
+            </Box>
+            <Box>
+              <Heading as="h2">
+                <Link
+                  to={getBlogUrl(publishedAt, slug.current)}
+                  sx={{ variant: 'styles.a', color: 'white' }}
+                >
+                  {title}
+                  <span sx={{ color: 'main.avagreen' }}>.</span>
+                </Link>
+              </Heading>
+              <Text variant="date">{format(parseISO(publishedAt), 'MMMM d, yyyy')}</Text>
+            </Box>
             {/* {isFeatured && <Styled.p>{excerpt}</Styled.p>} */}
           </Grid>
         )

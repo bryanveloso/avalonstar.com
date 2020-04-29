@@ -2,6 +2,7 @@
 import { alpha } from '@theme-ui/color'
 import { formatDistanceStrict, differenceInDays, format } from 'date-fns'
 import { graphql } from 'gatsby'
+import numeral from 'numeral'
 import { jsx, Box, Container, Heading, Text } from 'theme-ui'
 
 import { EntryLayout } from '@/containers'
@@ -9,7 +10,7 @@ import { Cover, PortableText, SEO } from '@/components'
 import { buildImageObj, imageUrlFor } from '@/lib'
 
 const Entry = props => {
-  const { _rawBody, author, coverImage, publishedAt, title } = props
+  const { _rawBody, author, coverImage, number, publishedAt, title } = props
   return (
     <Box as="article">
       {coverImage && coverImage.asset && (
@@ -26,7 +27,13 @@ const Entry = props => {
         />
       )}
       <Container variant="entry" sx={{ mx: 'auto', my: [6, 7, 8], px: 4 }}>
-        <Box variant="structure.metadata">
+        <Box variant="structure.metadata" sx={{ display: 'inline-flex' }}>
+          {number > 0 && (
+            <Text sx={{ color: 'muted.midgrey' }}>
+              {numeral(number).format('000')}
+              <span sx={{ px: 2 }}>&ndash;</span>
+            </Text>
+          )}
           <Text as="time" variant="time">
             {differenceInDays(new Date(), new Date(publishedAt)) < 3
               ? `${formatDistanceStrict(new Date(publishedAt), new Date())} ago`
@@ -38,8 +45,8 @@ const Entry = props => {
           <span sx={{ color: 'main.avagreen' }}>.</span>
         </Heading>
       </Container>
-      <Container>
-        <Box sx={{ bg: 'muted.lightbluegrey', mx: 4, height: 2, width: '20%' }} />
+      <Container variant="entry" sx={{ mx: 'auto', px: 4 }}>
+        <Box sx={{ bg: 'muted.lightbluegrey', height: 2, width: '20%' }} />
       </Container>
       <Container
         variant="entry"
@@ -117,6 +124,7 @@ export const query = graphql`
           _id
         }
       }
+      number
       title
       slug {
         current

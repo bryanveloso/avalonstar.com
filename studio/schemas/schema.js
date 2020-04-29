@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import author from './documents/author'
 import entry from './documents/entry'
 import event from './documents/event'
+import page from './documents/page'
 import position from './documents/position'
 import project from './documents/project'
 import quote from './documents/quote'
@@ -17,6 +18,8 @@ import siteSettings from './documents/siteSettings'
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
 import mainImage from './objects/mainImage'
+import portableText from './objects/portableText'
+import textSection from './objects/textSection'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -29,6 +32,7 @@ export default createSchema({
     author,
     entry,
     event,
+    page,
     position,
     project,
     quote,
@@ -38,5 +42,7 @@ export default createSchema({
     // Objects
     bodyPortableText,
     mainImage,
+    portableText,
+    textSection,
   ]),
 })

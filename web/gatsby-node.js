@@ -48,8 +48,6 @@ async function createRoutePages(graphql, actions) {
         edges {
           node {
             id
-            heading
-            subheading
             title
             slug {
               current
@@ -66,11 +64,11 @@ async function createRoutePages(graphql, actions) {
 
   routeEdges
     .forEach((edge, index) => {
-      const { id, slug = {}, title, heading, subheading } = edge.node
+      const { id, slug = {}, title } = edge.node
       createPage({
-        path: `/${slug.current}`,
+        path: slug.current === '/' ? '/' : `/${slug.current}`,
         component: require.resolve('./src/templates/base-page.template.tsx'),
-        context: { id, title, heading, subheading },
+        context: { id, title },
       })
     })
 }

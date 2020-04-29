@@ -1,8 +1,8 @@
 import RiLinksLine from 'react-icons/ri'
 
 export default {
-  name: 'bodyPortableText',
-  title: 'Body',
+  name: 'portableText',
+  title: 'Text',
   type: 'array',
   of: [
     {

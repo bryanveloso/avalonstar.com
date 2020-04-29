@@ -1,11 +1,25 @@
 /** @jsx jsx */
+import { useStaticQuery, graphql } from 'gatsby'
 import { jsx, Box, Container } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
 import { EntryList } from '@/components/partials'
 
+const QUERY = graphql`
+  {
+    sanityPage(title: { eq: "Blog" }) {
+      id
+      subheading
+      heading
+    }
+  }
+`
+
 export const BlogPageTemplate = props => {
-  const { title, heading, subheading } = props
+  const { title } = props
+  const {
+    sanityPage: { heading, subheading },
+  } = useStaticQuery(QUERY)
 
   return (
     <Box as="section">
