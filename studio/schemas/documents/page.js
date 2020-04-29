@@ -1,7 +1,10 @@
+import { RiFileListLine } from 'react-icons/ri'
+
 export default {
   name: 'page',
   title: 'Page',
   type: 'document',
+  icon: RiFileListLine,
   fields: [
     {
       name: 'title',

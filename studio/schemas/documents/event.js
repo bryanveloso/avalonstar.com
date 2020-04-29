@@ -1,7 +1,10 @@
+import { RiCalendar2Line } from 'react-icons/ri'
+
 export default {
   name: 'event',
   title: 'Event',
   type: 'document',
+  icon: RiCalendar2Line,
   fields: [
     {
       name: 'name',

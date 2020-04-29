@@ -1,13 +1,16 @@
+import { RiSettings3Line } from 'react-icons/ri'
+
 export default {
   name: 'siteSettings',
   title: 'Site Settings',
   type: 'document',
+  icon: RiSettings3Line,
   __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'title',
       title: 'Title',
-      type: 'string'
+      type: 'string',
     },
     {
       name: 'description',
@@ -22,14 +25,14 @@ export default {
       descrption: 'Add descriptive keywords for the site.',
       of: [{ type: 'string' }],
       options: {
-        layout: 'tags'
-      }
+        layout: 'tags',
+      },
     },
     {
       name: 'author',
       title: 'Author',
       type: 'reference',
-      to: [{ type: 'author' }]
-    }
-  ]
+      to: [{ type: 'author' }],
+    },
+  ],
 }

@@ -1,7 +1,10 @@
+import { RiUser3Line } from 'react-icons/ri'
+
 export default {
   name: 'author',
   title: 'Author',
   type: 'document',
+  icon: RiUser3Line,
   __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fieldsets: [{ name: 'social', title: 'Social Networks' }],
   fields: [

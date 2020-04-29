@@ -1,10 +1,12 @@
 import format from 'date-fns/format'
 import parseISO from 'date-fns/parseISO'
+import { RiQuillPenLine } from 'react-icons/ri'
 
 export default {
   name: 'entry',
   title: 'Entry',
   type: 'document',
+  icon: RiQuillPenLine,
   fields: [
     {
       name: 'title',

@@ -1,17 +1,20 @@
+import { RiBriefcaseLine } from 'react-icons/ri'
+
 export default {
   name: 'position',
   title: 'Position',
   type: 'document',
+  icon: RiBriefcaseLine,
   fields: [
     {
       name: 'company',
       title: 'Company',
-      type: 'string'
+      type: 'string',
     },
     {
       name: 'title',
       title: 'Job Title',
-      type: 'string'
+      type: 'string',
     },
     {
       name: 'slug',
@@ -19,38 +22,40 @@ export default {
       type: 'slug',
       options: {
         source: 'company',
-        maxLength: 96
-      }
+        maxLength: 96,
+      },
     },
     {
       name: 'date',
       title: 'date',
-      type: 'date'
+      type: 'date',
     },
     {
       name: 'summary',
       title: 'Summary',
-      type: 'bodyPortableText'
+      type: 'bodyPortableText',
     },
     {
       name: 'body',
       title: 'Body',
-      type: 'bodyPortableText'
+      type: 'bodyPortableText',
     },
     {
       name: 'projects',
       title: 'Projects',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: [{ type: 'project' }]
-      }]
-    }
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'project' }],
+        },
+      ],
+    },
   ],
   preview: {
     select: {
       title: 'company',
-      subtitle: 'title'
-    }
-  }
-};
+      subtitle: 'title',
+    },
+  },
+}
