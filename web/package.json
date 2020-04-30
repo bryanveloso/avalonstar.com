@@ -8,6 +8,7 @@
     "@sanity/image-url": "^0.140.18",
     "@theme-ui/color": "^0.3.1",
     "@theme-ui/match-media": "^0.3.1",
+    "@types/react-helmet": "^5.0.15",
     "date-fns": "^2.10.0",
     "dotenv": "^8.2.0",
     "gatsby": "^2.20.25",
