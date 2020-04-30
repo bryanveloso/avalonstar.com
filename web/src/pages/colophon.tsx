@@ -2,6 +2,7 @@
 import { jsx, Box } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
+import { Layout } from '@/containers'
 
 export const ColophonPageTemplate = props => {
   const { title, heading, subheading } = props
@@ -14,6 +15,10 @@ export const ColophonPageTemplate = props => {
   )
 }
 
-const ColophonPage = ({ pageContext }) => <ColophonPageTemplate {...pageContext} />
+const ColophonPage = ({ pageContext }) => (
+  <Layout>
+    <ColophonPageTemplate {...pageContext} />
+  </Layout>
+)
 
 export default ColophonPage

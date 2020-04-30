@@ -4,27 +4,30 @@ import { jsx, Box, Container } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
 import { EntryList } from '@/components/partials'
+import { Layout } from '@/containers'
 
 const QUERY = graphql`
-  {
-    sanityPage(title: { eq: "Blog" }) {
-      id
-      subheading
-      heading
+  query {
+    sanityRoute(slug: { current: { eq: "blog" } }) {
+      page {
+        id
+        heading
+        subheading
+      }
+      title
     }
   }
 `
 
-export const BlogPageTemplate = props => {
-  const { title } = props
+export const BlogPageTemplate = () => {
   const {
-    sanityPage: { heading, subheading },
+    sanityRoute: { page, title },
   } = useStaticQuery(QUERY)
 
   return (
     <Box as="section">
       <SEO title={title} />
-      <PageHeader title={heading} subtitle={subheading} />
+      <PageHeader title={page.heading} subtitle={page.subheading} />
       <Container sx={{ p: 4 }}>
         <EntryList />
       </Container>
@@ -32,6 +35,10 @@ export const BlogPageTemplate = props => {
   )
 }
 
-const BlogPage = ({ pageContext }) => <BlogPageTemplate {...pageContext} />
+const BlogPage = ({ pageContext }) => (
+  <Layout>
+    <BlogPageTemplate {...pageContext} />
+  </Layout>
+)
 
 export default BlogPage

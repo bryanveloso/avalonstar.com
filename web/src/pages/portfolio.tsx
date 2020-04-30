@@ -4,27 +4,30 @@ import { jsx, Box, Container } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
 import { PositionList, ProjectList } from '@/components/partials/portfolio'
+import { Layout } from '@/containers'
 
 const QUERY = graphql`
-  {
-    sanityPage(title: { eq: "Portfolio" }) {
-      id
-      subheading
-      heading
+  query {
+    sanityRoute(slug: { current: { eq: "portfolio" } }) {
+      page {
+        id
+        heading
+        subheading
+      }
+      title
     }
   }
 `
 
-export const PortfolioPageTemplate = props => {
-  const { title } = props
+export const PortfolioPageTemplate = () => {
   const {
-    sanityPage: { heading, subheading },
+    sanityRoute: { page, title },
   } = useStaticQuery(QUERY)
 
   return (
     <Box as="section">
       <SEO title={title} />
-      <PageHeader title={heading} subtitle={subheading} />
+      <PageHeader title={page.heading} subtitle={page.subheading} />
       <Container sx={{ p: 4 }}>
         <ProjectList />
         <PositionList />
@@ -33,6 +36,10 @@ export const PortfolioPageTemplate = props => {
   )
 }
 
-const PortfolioPage = ({ pageContext }) => <PortfolioPageTemplate {...pageContext} />
+const PortfolioPage = ({ pageContext }) => (
+  <Layout>
+    <PortfolioPageTemplate {...pageContext} />
+  </Layout>
+)
 
 export default PortfolioPage

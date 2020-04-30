@@ -4,27 +4,30 @@ import { jsx, Box, Container } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
 import { EventList } from '@/components/partials/history'
+import { Layout } from '@/containers'
 
 const QUERY = graphql`
   {
-    sanityPage(title: { eq: "History" }) {
-      id
-      subheading
-      heading
+    sanityRoute(slug: { current: { eq: "history" } }) {
+      page {
+        id
+        heading
+        subheading
+      }
+      title
     }
   }
 `
 
-export const HistoryPageTemplate = props => {
-  const { title } = props
+export const HistoryPageTemplate = () => {
   const {
-    sanityPage: { heading, subheading },
+    sanityRoute: { page, title },
   } = useStaticQuery(QUERY)
 
   return (
     <Box as="section">
       <SEO title={title} />
-      <PageHeader title={heading} subtitle={subheading} />
+      <PageHeader title={page.heading} subtitle={page.subheading} />
       <Container sx={{ p: 4 }}>
         <EventList />
       </Container>
@@ -32,6 +35,10 @@ export const HistoryPageTemplate = props => {
   )
 }
 
-const HistoryPage = ({ pageContext }) => <HistoryPageTemplate {...pageContext} />
+const HistoryPage = ({ pageContext }) => (
+  <Layout>
+    <HistoryPageTemplate {...pageContext} />
+  </Layout>
+)
 
 export default HistoryPage

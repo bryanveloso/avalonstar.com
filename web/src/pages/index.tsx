@@ -2,33 +2,38 @@
 import { useStaticQuery, graphql } from 'gatsby'
 import { jsx, Box, Container } from 'theme-ui'
 
-import { SEO } from '@/components'
-import { QuoteList } from '@/components/partials/home'
+import { SEO, PortableText } from '@/components'
+import { EntryList, QuoteList } from '@/components/partials/home'
 import { Layout } from '@/containers'
 
 const QUERY = graphql`
-  {
-    sanityPage(title: { eq: "Home" }) {
-      id
+  query {
+    sanityRoute(slug: { current: { eq: "/" } }) {
+      title
     }
   }
 `
 
 export const IndexPageTemplate = () => {
-  const { sanityPage } = useStaticQuery(QUERY)
+  const {
+    sanityRoute: { title },
+  } = useStaticQuery(QUERY)
 
   return (
-    <Layout>
-      <Box as="section">
-        <SEO title="Welcome" />
-        <Container sx={{ p: 4 }}>
-          <QuoteList />
-        </Container>
-      </Box>
-    </Layout>
+    <Box as="section">
+      <SEO title={title} />
+      <Container sx={{ p: 4 }}>
+        <EntryList />
+        <QuoteList />
+      </Container>
+    </Box>
   )
 }
 
-const IndexPage = () => <IndexPageTemplate />
+const IndexPage = () => (
+  <Layout>
+    <IndexPageTemplate />
+  </Layout>
+)
 
 export default IndexPage
