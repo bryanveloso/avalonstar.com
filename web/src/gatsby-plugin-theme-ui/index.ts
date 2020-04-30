@@ -88,7 +88,7 @@ const text = {
     },
     title: {
       fontFamily: 'freight',
-      fontSize: [3, 3, 5, null],
+      fontSize: [4, 4, 6, null],
       fontWeight: 'bold',
     },
   },
@@ -151,6 +151,21 @@ const links = {
     fontSize: 1,
     fontWeight: 'bold',
     textDecoration: 'none',
+  },
+
+  // ...
+  socials: {
+    variant: 'styles.a',
+    fontSize: 1,
+    fontWeight: 'bold',
+    svg: {
+      verticalAlign: 'middle',
+    },
+    span: {
+      display: ['none', 'inline'],
+      pl: 2,
+      fontSize: 0,
+    },
   },
 
   // ...
