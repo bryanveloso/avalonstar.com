@@ -7,7 +7,6 @@ import { jsx, Box, Container, Heading, Text } from 'theme-ui'
 
 import { EntryLayout } from '@/containers'
 import { Cover, PortableText, SEO } from '@/components'
-import { buildImageObj, imageUrlFor } from '@/lib'
 
 const Entry = props => {
   const { _rawBody, author, coverImage, number, publishedAt, title } = props
@@ -16,12 +15,7 @@ const Entry = props => {
       {coverImage && coverImage.asset && (
         <Cover
           ratio={2.39 / 1}
-          url={imageUrlFor(buildImageObj(coverImage))
-            .width(1200)
-            .height(Math.floor((9 / 16) * 1200))
-            .fit('crop')
-            .auto('format')
-            .url()}
+          asset={coverImage.asset.fluid}
           alt={coverImage.alt}
           caption={coverImage.caption}
         />
@@ -104,24 +98,10 @@ export const query = graphql`
       coverImage {
         alt
         caption
-        crop {
-          _key
-          _type
-          top
-          bottom
-          left
-          right
-        }
-        hotspot {
-          _key
-          _type
-          x
-          y
-          height
-          width
-        }
         asset {
-          _id
+          fluid(maxWidth: 1080) {
+            ...GatsbySanityImageFluid
+          }
         }
       }
       number

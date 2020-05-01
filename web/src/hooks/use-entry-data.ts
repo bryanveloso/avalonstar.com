@@ -17,10 +17,11 @@ const QUERY = graphql`
             current
           }
           coverImage {
-            _key
-            _type
-            caption
-            alt
+            asset {
+              fluid(maxWidth: 1080) {
+                ...GatsbySanityImageFluid
+              }
+            }
           }
         }
       }
