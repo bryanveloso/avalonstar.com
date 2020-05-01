@@ -4,7 +4,10 @@ const QUERY = graphql`
   {
     allSanityEntry(
       sort: { fields: publishedAt, order: DESC }
-      filter: { publishedAt: { gt: "2020-01-01T00:00:00.000Z" } }
+      filter: {
+        publishedAt: { gt: "2020-01-01T00:00:00.000Z", ne: "null" }
+        slug: { current: { ne: "null" } }
+      }
     ) {
       edges {
         node {
