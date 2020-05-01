@@ -8,7 +8,7 @@ import { jsx, Box, Container, Heading, Text } from 'theme-ui'
 import { EntryLayout } from '@/containers'
 import { Cover, PortableText, SEO } from '@/components'
 
-const Entry = props => {
+const Entry = (props) => {
   const { _rawBody, author, coverImage, number, publishedAt, title } = props
   return (
     <Box as="article">
@@ -74,19 +74,19 @@ const Entry = props => {
   )
 }
 
-const EntryPageTemplate = props => {
+const EntryPageTemplate = (props) => {
   const { data, errors } = props
   const entry = data && data.entry
   return (
     <EntryLayout>
       {errors && <SEO title="GraphQL Error" />}
-      {entry && <SEO title={entry.title || 'Untitled'} />}
+      {entry && <SEO title={entry.title || 'Untitled'} description={entry.excerpt} />}
       {entry && <Entry {...entry} />}
     </EntryLayout>
   )
 }
 
-const EntryPage = props => <EntryPageTemplate {...props} />
+const EntryPage = (props) => <EntryPageTemplate {...props} />
 
 export default EntryPage
 
@@ -113,6 +113,8 @@ export const query = graphql`
       author {
         name
       }
+      excerpt
+      readingTimeInMinutes
     }
   }
 `
