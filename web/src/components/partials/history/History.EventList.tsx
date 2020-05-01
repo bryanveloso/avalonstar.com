@@ -44,7 +44,7 @@ const PersonEvent = props => {
             }}
           >
             <AspectRatio ratio={16 / 9} sx={{ objectFit: 'cover', width: '100%', height: '100%' }}>
-              <Img fluid={coverImage.asset.fluid} />
+              <Img fluid={coverImage.asset.fluid} alt={coverImage.alt} />
             </AspectRatio>
           </Box>
         )}

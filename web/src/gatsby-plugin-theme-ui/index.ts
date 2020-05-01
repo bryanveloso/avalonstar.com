@@ -63,6 +63,13 @@ const text = {
   heading: {
     fontFamily: 'heading',
   },
+  primary: {},
+  secondary: {
+    color: 'muted.lightbluegrey',
+    fontFamily: 'adelle',
+    fontWeight: 'book',
+    fontStyle: 'italic',
+  },
   hero: {
     variant: 'styles.h1',
     fontWeight: 'black',
@@ -97,7 +104,7 @@ const text = {
   date: {
     color: 'main.avagreen',
     fontWeight: 'book',
-    fontSize: 1,
+    fontSize: [0, 1],
     textTransform: 'uppercase',
   },
 

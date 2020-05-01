@@ -1,8 +1,10 @@
 /** @jsx jsx */
-import { useStaticQuery, graphql } from 'gatsby'
-import { jsx, Box, Container } from 'theme-ui'
+/* eslint-disable no-underscore-dangle */
 
-import { SEO, PortableText } from '@/components'
+import { useStaticQuery, graphql, Link } from 'gatsby'
+import { jsx, Box, Container, Grid } from 'theme-ui'
+
+import { SEO } from '@/components'
 import { EntryList, QuoteList } from '@/components/partials/home'
 import { Layout } from '@/containers'
 
@@ -24,7 +26,26 @@ export const IndexPageTemplate = () => {
       <SEO title={title} />
       <Container sx={{ p: 4 }}>
         <EntryList />
-        <QuoteList />
+        <Grid as="section" columns={[1, null, 2]} sx={{ mt: 4 }}>
+          <Box sx={{ fontSize: 1, lineHeight: ['1.5rem'] }}>
+            <p>
+              Hello, my name is Bryan Veloso and I've been around the web for a bit. Since I bought
+              this domain in 2000, Avalonstar has been one of the longest-running constants in my
+              life. It has managed to change in both form and function as much as I have, going from
+              personal site, to blog, to online moniker, to company namesake, and back again.
+            </p>
+            <p>
+              Avalonstar is an extension of me: the designer, the developer, the gamer, the content
+              creator, the entrepreneur, and whatever else the next 20 or so years have to offer.
+            </p>
+            <p>
+              <Link to="/history/" sx={{ variant: 'links.primaryButton' }}>
+                Take a look back
+              </Link>
+            </p>
+          </Box>
+          <QuoteList />
+        </Grid>
       </Container>
     </Box>
   )

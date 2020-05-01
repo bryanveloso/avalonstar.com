@@ -2,7 +2,10 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 const QUERY = graphql`
   {
-    allSanityEntry(sort: { fields: publishedAt, order: DESC }) {
+    allSanityEntry(
+      sort: { fields: publishedAt, order: DESC }
+      filter: { publishedAt: { gt: "2020-01-01T00:00:00.000Z" } }
+    ) {
       edges {
         node {
           id
