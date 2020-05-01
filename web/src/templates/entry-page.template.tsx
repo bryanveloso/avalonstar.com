@@ -14,7 +14,7 @@ const Entry = props => {
     <Box as="article">
       {coverImage && coverImage.asset && (
         <Cover
-          ratio={2.39 / 1}
+          ratio={4 / 1}
           asset={coverImage.asset.fluid}
           alt={coverImage.alt}
           caption={coverImage.caption}
