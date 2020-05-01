@@ -13,6 +13,7 @@
     "dotenv": "^8.2.0",
     "gatsby": "^2.20.25",
     "gatsby-image": "^2.2.39",
+    "gatsby-plugin-feed": "^2.5.0",
     "gatsby-plugin-manifest": "^2.3.5",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.2.1",
