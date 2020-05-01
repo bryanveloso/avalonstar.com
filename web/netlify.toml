@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/journal/*"
+  to = "/blog/:splat"
+  sttatus = 301
+  force = true
