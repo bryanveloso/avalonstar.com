@@ -3,6 +3,7 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV || 'development'}`,
 })
 
+const differenceInYears = require('date-fns/differenceInYears')
 const clientConfig = require('./client-config')
 
 const {
@@ -17,9 +18,13 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Avalonstar`,
+    siteUrl: `https://www.avalonstar.com`,
+    description: `Avalonstar is the ${differenceInYears(
+      new Date(),
+      new Date(2000, 9, 28),
+    )}-year-old personal website of Bryan Veloso: content creator, retired professional user interface designer, and compass of purpose.`,
+    author: `@avalonstar`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -54,20 +59,20 @@ module.exports = {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [{ userAgent: '*' }]
+            policy: [{ userAgent: '*' }],
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
             sitemap: null,
-            host: null
+            host: null,
           },
           'deploy-preview': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
             sitemap: null,
-            host: null
-          }
-        }
-      }
+            host: null,
+          },
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
