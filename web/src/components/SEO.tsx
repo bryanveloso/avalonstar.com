@@ -17,6 +17,7 @@ const QUERY = graphql`
       description
       author {
         name
+        twitter
       }
     }
   }
@@ -38,7 +39,8 @@ function SEO({ description, lang, meta, title, children }) {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@avalonstar" />
       <meta name="twitter:creator" content={site.author.name} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
