@@ -82,12 +82,14 @@ const EntryPageTemplate = (props) => {
     <EntryLayout>
       {errors && <SEO title="GraphQL Error" />}
       {entry && (
-        <SEO title={entry.title || 'Untitled'} description={entry.excerpt}>
-          <meta
-            name="twitter:image"
-            content={entry.coverImage.asset.url}
-          />
-        </SEO>
+        <SEO
+          title={entry.title || 'Untitled'}
+          description={entry.excerpt}
+          meta={[
+            { name: `twitter:image`, content: entry.coverImage.asset.url },
+            { name: `twitter:image:alt`, content: entry.coverImage.alt },
+          ]}
+        />
       )}
       {entry && <Entry {...entry} />}
     </EntryLayout>

@@ -17,13 +17,12 @@ const QUERY = graphql`
       description
       author {
         name
-        twitter
       }
     }
   }
 `
 
-function SEO({ description, lang, meta, title, children }) {
+function SEO({ description, lang, meta, title }) {
   const { sanitySiteSettings: site } = useStaticQuery(QUERY)
   const metaDescription = description || site.description
 
@@ -34,18 +33,18 @@ function SEO({ description, lang, meta, title, children }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.title}`}
-    >
-      <meta name="description" content={metaDescription} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={metaDescription} />
-      <meta property="og:type" content="website" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@avalonstar" />
-      <meta name="twitter:creator" content={site.author.name} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={metaDescription} />
-      {children}
-    </Helmet>
+      meta={[
+        { name: `description`, content: metaDescription },
+        { property: `og:title`, content: title },
+        { property: `og:description`, content: metaDescription },
+        { property: `og:type`, content: `website` },
+        { name: `twitter:card`, content: `summary_large_image`},
+        { name: `twitter:site`, content: `@avalonstar`},
+        { name: `twitter:creator`, content: site.author.name },
+        { name: `twitter:title`, content: title },
+        { name: `twitter:description`, content: metaDescription },
+      ].concat(meta)}
+    />
   )
 }
 
@@ -60,7 +59,6 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  children: PropTypes.node,
 }
 
 export default SEO
