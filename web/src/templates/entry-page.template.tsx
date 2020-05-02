@@ -49,14 +49,15 @@ const Entry = (props) => {
           px: 4,
           'p:first-of-type': {
             color: 'muted.lightbluegrey',
-            fontSize: [4, null, 5, null],
+            fontSize: [3, 5],
             fontStyle: 'italic',
-            lineHeight: ['2rem', null, '2.5rem', null],
+            lineHeight: ['2rem', '2.5rem'],
           },
         }}
       >
         {_rawBody && <PortableText blocks={_rawBody} />}
         {author && (
+          // TODO: Figure something out with this.
           <Box
             sx={{
               display: 'none',
@@ -80,7 +81,14 @@ const EntryPageTemplate = (props) => {
   return (
     <EntryLayout>
       {errors && <SEO title="GraphQL Error" />}
-      {entry && <SEO title={entry.title || 'Untitled'} description={entry.excerpt} />}
+      {entry && (
+        <SEO title={entry.title || 'Untitled'} description={entry.excerpt}>
+          <meta
+            name="twitter:image"
+            content={entry.coverImage.asset.url}
+          />
+        </SEO>
+      )}
       {entry && <Entry {...entry} />}
     </EntryLayout>
   )
@@ -99,6 +107,7 @@ export const query = graphql`
         alt
         caption
         asset {
+          url
           fluid(maxWidth: 1080) {
             ...GatsbySanityImageFluid
           }
