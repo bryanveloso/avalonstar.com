@@ -1,0 +1,37 @@
+---
+title: "Diary of a Linux Noob (Part 2)"
+date: 2006-09-04T08:45:00Z
+---
+
+Well, let me catch you up on everything that's happened since I last wrote about this. Granted, I'm still a n00b at 'nix, but there are a few things I've learned since then. After the whole (mt) PHP5 fiasco, ([and later the guys at Media Temple actually wrote][1] about how to install MySQL 4 and PHP 5 on their (dv)'s anyway [as well as Ruby on Rails][2]) I sort of got apathetic towards the whole thing. This was mostly because it was the server that Avalonstar was hosted on, and if I did anything cruel and unusual to it, then I'd be pretty mad at myself.
+
+So after leaving the 'nix front for a while, I suddenly found myself back to it when I gathered the idea of creating a private server for a game I love to play. So I called up (mt) for a fresh (dv) and started tinkering with it a bit last night. Since I was only able to use the command line (SSH'ing and stuff), I had to learn how to use mySQL via command line and I started getting a lot more acquainted with **vi** and **nano**. Unfortunately, learning those two programs made my life even harder as I would go to say, Textmate and totally screw something up (the whole CTRL vs command-key thing, the constant OS X/XP switching contributed to that as well).
+
+## Time to Screen
+
+But there happened to be one problem I ran into that I couldn't find a solution to: when I successfully launched the server, I had three terminal windows open. How would I go back to Mac without shutting it down? Answer: **screen**, which creates a virtual terminal that you can attach (view, manipulate) and detach (almost like minimizing an application in Windows).
+
+Now, I'm sure a bunch of you Linux gods are laughing right now, but this is something that I found extremely useful. So before I go, I'll touch on this a bit.
+
+**So to create a screen you simply type:** `screen -R [name]`
+:   The -R will re-attach any existing screen with the given name or if the name doesn't exist, it will create the screen you want. This will give you an empty command line, so now you can run your first piece of software that you need to run in the background. But now how would you get out to do this again? Easy.
+
+**To detach a screen:** Press "CTRL + SHIFT + a" then "d" (obviously for, detach).
+:   After that it'll say [detached] and bring you back to your original command prompt, and you can repeat the steps above for anything else you'd like to run. Once you detach them, they'll run in the background until you end them. If you're still unsure about if they're still running, you can type `top` and check them out there.
+
+**To reattach a screen:** Just type `screen -R [name]`.
+:   Look familiar? ;) But remember that capitalization counts. -R and -r are different.
+
+**To close a screen:**
+:   Simply type `exit` or hit CTRL + SHIFT + D from within a screen.
+
+**Finally, here are a couple of commands that could come in handy:**
+:   `screen -ls` will list all screens.
+:   `screen -wipe` deletes all dead screens.
+:   `screen -r` attaches a screen using its full name, including number (available from `screen -ls`).
+:   `screen -dR` will force attach the screen if somebody else happens to be using it.
+
+Hopefully you can find use for this. If not, then at least you still learned something today. :)
+
+[1]: http://kb.mediatemple.net/article.php?id=127
+[2]: http://kb.mediatemple.net/article.php?id=128

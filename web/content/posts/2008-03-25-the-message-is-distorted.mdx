@@ -1,0 +1,52 @@
+---
+title: "The Message is Distorted"
+date: 2008-03-25T21:00:00Z
+---
+
+It's been 7 years, 5 months and 23 days. **Never** have I felt so drained after preparing a website for this domain before, but this really brings light to the phrase, "you get what you put in." I've had long hiatuses before. However, none have seemed as long or drawn out as this one, and with this post and this new design I am proud **to put an end to it**. So, let's start at the top shall we? I'm sure you'd like to know a little more about the 25th version of Avalonstar I call *Distortion*.
+
+Project *Distortionâ€™s* formation was fueled sheer anger I had towards the last version of the namesake, which ironically, has found its way off the internet. You'll hear it straight from the Filipino's mouth--**that version was a copout**. I knew I could do better than that and I realized that Avalonstar had fallen into a pit it couldn't find it's way out of. As a designer, I too was in a pit; taking my newfound loves of grid design and [Django][1] and hastily putting it in front of the crowd like something fresh out of Dr. Frankenstein's closet. I had to refine both skills before I could ultimately bring all of it back to Avalonstar, tour-de-force fashion.
+
+**Note:** The purpose of this post is more of an overview than anything, specifics will be touched on in the coming days (*or weeks, it all depends... maybe*).
+
+**I gave myself some guidelines:** I had to have complete Photoshop documents of each view. I forced myself to not touch any CSS until the corresponding Photoshop versions were complete. The process had to be flawless.
+
+The first try at the design was pretty basic and I quickly got tired of it after finishing the header. Actually, to be honest, all the first revision contained was a black header, a white content background, the first version of the navigation and some yellow placeholder text. I left it alone for a while and went back to other work, but my mind didnâ€™t feel complete with the utter lack of an Avalonstar. However, I needed to keep my own promise and not budge until I was finished. Time passed and my design abilities began to suffer. Out came a second revision that was scrapped just as fast as the first revision, only improving on the first by adding some texture and lightening the black background. Again, time passed and the design started to gather dust. A third revision wouldnâ€™t appear until at least a month later and the  only element that the design had added was the rest of a entry page.
+
+Things didnâ€™t start getting interesting until I hit the fourth revision, fresh off of a design â€œhighâ€ I experienced while working on a hypothetical 5th version of my now defunct [Ragnarok Online private server][2], Nyxsis. I took the header, which was a picture of [Juno][3]—one of the gameâ€™s central locations—and an inverted picture of the night sky and threw it onto a duplicate version of revision three. A few layer duplications, gaussian blurs and overlay modes later, I found the green tint and the beginnings of a header I wanted. I pulled out the font I had used for the Nyxsis logo, [Cabourg][4] and applied that to the headers. The navigation was finalized, the section headers materialized and the quirky sayings were born. **I was getting somewhere.** I promptly designed the content (which honestly wasnâ€™t that hard, designing copy isnâ€™t one of my strengths), and a few dummy comments and a comment form, which was very... square. A home page started to materialize as well, and then I got stuck.
+
+Where? On the home page of course. So I said to myself, â€œscrew the guidelines,â€ and I started to code it. Then I hit roadblock number *two*. I had broken my own rule and designed it within the bounds of Photoshopâ€™s canvas.
+
+*Cue headdesk.*
+
+It was almost scrapped like all of the others, but I had put in so much work that I didnâ€™t want to stop there. So after spilling my thoughts to Jen, I decided to iterate. Keeping revision four open, the first part of revision five would be the boundaries to the left and right of the content area. The rest... seemed to come together quite quickly. Quickly—in the sense of a week or so in comparison to the months it had taken me to get to this point. After removing the picture of Juno, I settled on a header that introduced the shade of red that you now see. The â€œpillsâ€ and the rest of the content elements would stay the same; the only elements dying under the knife being the comment list layout and comment form layout. I was personally glad for that, since I really disliked the conventional box method from revision four. The shadows came in, everywhere. Then the opacity was played with. Then the grunge was thrown in. Then the transparent PNGs.
+
+The production version was finally taking shape. My heart soon of leapt into my throat. Blog page: **down**, home page: **down**, about page... *sort-of down*, archives page: **down**.
+
+**I was ready to code.**
+
+Code. I quickly gave the first [Django][1] version of Avalonstarâ€™s codebase a look and spat at it. It was the exact same feeling a person would get after looking at the first site they made—coded in tables. The thing needed a complete rewrite. And so it began, model-by-model, view-by-view. It needed to be leaner, more modular. I was finding myself questioning fields that I put in, asking if they would retain any information that would be worthwhile in the future. It was quite odd. Iâ€™m not a programmer, but I certainly was questioning my own code like one. This blog application was the easiest part. Then the topic application came along; actually being pulled from the original codebase. The rest? I couldnâ€™t have done any of it without the spectacular knowledge of [Blue Flavorâ€™s][5] [Jeff Croft][6], the very person who got me interested in the framework in the first place. He introduced me to features and applications that I had wished for while I was developing projects like Nyxsis. Inlines, geocoding, media handling and his many examples gave me a better understanding of APIs; knowledge that seems to be essential when building a blog. Why he hasnâ€™t killed me for asking him so many questions, I donâ€™t know. Iâ€™m inviting him to my little birthday bash next month, maybe heâ€™ll pull the trigger then. ;)
+
+Although, even after all this work, my attention turned elsewhere and the eventual completion of two other personal projects would fuel the final tank I needed to get to where I am now.
+
+Those projects are obviously [bryanveloso.com][7] and [Revyver][8]. It had been a good half-a-year since I had released anything, and releasing the newly designed [Tubmlr-based][9] site quickly led to the release of the new Revyver. Now there was nothing left for me to redesign, no personal projects left to work on, I **had** to finish Avalonstar. Nudges from Dan Oliver at [.net Magazine][10], [Kory Twaites][11], and [Rob Goodlatte][12] signaled the beginning of the end.
+
+So since then, I have been grateful that I have a bit of control over my workload. Avalonstar leapt to being a top priority and I began to code day and night to finish it. I put my server administration knowledge to the test, building a stack of Django being served by [mod_python][13] behind a [nginx][14] proxy which served the media. I even spent hours debugging Javascript, something that I would always scrap and throw away as being too hard for me (honestly, reverse engineering the [jQuery][15] demos helped tons). Ninety percent of my waking hours for the last week have been spent coding, slicing, breaking, testing and re-coding *Distortion*. Never have I put so much time into something which a good number of people perceived to be an inconsequential or needless part of my life. Maybe working on it so hard was me trying to prove how important a site that has taken almost *seven-and-a-half years* of my life is to me. But itâ€™s more than just that, itâ€™s experience Iâ€™ll take with me to future projects. Iâ€™m still quite the jack-of-all-trades, but Iâ€™ve gotten that much better in all of them. All I have to say is thank you to Nobuo Uematsu, Morning Musume, Â°C-ute, Hans Zimmer and Kimura Kaela for the utterly spectacular music that (while on repeat-once) helped me to survive hours upon hours of development.
+
+After all of this, I made a vow. A vow that from now on Avalonstar will never reflect my style at the time of release. Avalonstar will always be an experiment and an exploration, just like it was always meant to be. It is an experiment in more than just design, but in process and in personality. With that, I welcome you to **avalonstar:distortion**.
+
+[1]: http://djangoproject.com/
+[2]: http://eathena.ws/
+[3]: http://irowiki.org/wiki/Juno
+[4]: http://www.t26.com/fonts/Cabourg/
+[5]: http://blueflavor.com/
+[6]: http://jeffcroft.com/
+[7]: http://bryanveloso.com/
+[8]: http://revyver.com/
+[9]: http://tumblr.com/
+[10]: http://www.netmag.co.uk/
+[11]: http://krazykory.com/
+[12]: http://robgoodlatte.com/
+[13]: http://www.modpython.org/
+[14]: http://nginx.net/
+[15]: http://jquery.com/

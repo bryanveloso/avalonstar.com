@@ -1,0 +1,34 @@
+---
+title: "BASH-ing My Birthday"
+date: 2008-04-02T08:15:00Z
+---
+
+Usually, I'd write a post related to adding one year onto my age and stuff like that. Twenty-five. Well, now I don't have to pay the underage fee to rent a car anymore! And my insurance should go down right? RIGHT?
+
+Anyway, I'm sure those posts were boring to everybody else but me, so here's something completely different:
+
+    extract () {
+        if [ -f $1 ] ; then
+            case $1 in
+                *.tar.bz2)  tar xjf $1      ;;
+                *.tar.gz)   tar xzf $1      ;;
+                *.bz2)      bunzip2 $1      ;;
+                *.rar)      rar x $1        ;;
+                *.gz)       gunzip $1       ;;
+                *.tar)      tar xf $1       ;;
+                *.tbz2)     tar xjf $1      ;;
+                *.tgz)      tar xzf $1      ;;
+                *.zip)      unzip $1        ;;
+                *.Z)        uncompress $1   ;;
+                *)          echo "'$1' cannot be extracted via extract()" ;;
+            esac
+        else
+            echo "'$1' is not a valid file"
+        fi
+    }
+
+This should go in your `.bash_profile` -- **now**.
+
+Did you do it yet? If you do have it, then isn't it awesome? If not, then it'll save you the hassle of trying to remember how to extract `.tar`, `.tar.gz`, `bz2`-whatever and `.zip` files on the command line! Sure, you might be a master with the `tar zxvf` stuff, but this is a must for those absent minded folk such as myself. :P
+
+Well, with that I shall go celebrate being 25... and pondering how to get this geeky CLI feeling out of my system.

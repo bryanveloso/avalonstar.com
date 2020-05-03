@@ -1,0 +1,25 @@
+---
+title: "Facebook's Colophon"
+date: 2005-08-24T09:00:00Z
+---
+
+Although we were three hours behind schedule, we still got it out. As you have probably guessed from the image above, [Facebook's][1] facelift is now complete. Over a span of 94 hours, I have coded, debugged, designed and tested. If you have followed since the beginning, you already know how weird of an experience that this has been.
+
+## The Launch
+
+I have to say that this has been one of the best (non-Avalonstar) web experiences of my career. Let me explain why. First, simply put, when you freelance and finish a site, it's only you giving that sigh of relief when you upload that final FTP file. There's no excitement in it. Add a few people and you'll get together and be happy for a job well done, and that's if you're all together when you press the button. Now, if you have about 14 other people with you at 2:00 AM, all hell breaks loose. Not only do you find yourself rushing to meet the deadline, but you start absorbing the emotions of your peers as they do the same with yours. All of a sudden you have this giant vat of emotion that will explode at any time. It's this balance of pressure and excitement that can't be replicated in many other environments. For example, finding bugs that you thought you fixed or that somebody else clobbered 2 minutes before the deadline. Usually, one would get pretty frustrated. But the sheer fact that everybody is so anxious makes everybody burst out into laughter at every comment, threat and insult. Needless to say I both gave and received my share of each.
+
+## The Site
+
+Now, let's talk about the site. The facelift was primarily a cosmetic change, allowing some room for the think tanks to edit and add new features that were either rushed into the first version or never made it out of the concept stage. Small stuff included putting errors in error type boxes, while larger things consisted of the changing of the wall (which according to the team was never supposed to be what it was in version one anyway). Aaron, the UI designer there, designed the new site before I was hired (so if you run into his profile on Facebook, give him props for a job well done). He had about half the site built by the time he had to leave for France, and the rest was taken care of by myself, Mark (Mr. CEO) and Darien. I specialized in answering CSS questions and IE bug smashing as Mark and Darian focused on making sure it functioned correctly.
+
+All data gathering was put into a `.php` file, and any presentation layer code was put into the respective `.phpt` file. All functions that were used across multiple pages were put in display libraries according to the pages they were used on. In the beginning I had no idea what these functions did, I just knew how to cut and paste them. But since I was pretty much made to create my own functions in time of need, I was able to not only work on the site faster, but also learn some more PHP in the process. Facelift was developed using Subversion, as I have mentioned before, and went through about 1610 revisions before we finally put it live. The revisions continue as more testing goes on.
+
+The site itself is powered by 30+ servers (which are co-located) to handle the upwards of 70 million hits a day (and up to 110 million hits a day) by a growing user base of 3.3 million. Unfortunately more schools aren't being added because capacity isn't even close enough to handle the traffic, and with the introduction of a *whole new feature*, it'd be better to wait to expand operations.
+
+From a web standards point of view, I did the best I could trying to clean up the code. However, don't even try to see if it validates, because it doesn't. That's not the goal we were running for and sometimes validation junkies have to understand that. Maybe in the future I can work on the code here and there, but I'm not going to spend a lifetime on it. (To that effect, we got an email concerning web standards that was read out loud and I started laughing, everybody else was clueless as to web standards were, but that didn't stop me.) I don't even have full control over the site, as different parts are run by different teams, like the ad network for instance. Also, I'm not about to be going around teaching people how to code "right." Honestly, as for the amount of users that'll care about it being compliant, I think that number is less than 1%.
+
+So there you have it, as much as I can tell you about the facelift without being lynched. We've gotten our share of hate mails, as well as our share of compliments. I know some people at [some root place][2] don't really like it, but people love being critics. I'm just glad it's done, and now I can move on to other things in and around the company. Hopefully, I won't have to work another 94 hours to get a site done for a long time. Until then, "whew."
+
+[1]: http://www.facebook.com/
+[2]: http://theroot42.org/

@@ -4,10 +4,6 @@ import { alpha } from '@theme-ui/color'
 import colors from './colors'
 
 const breakpoints = ['600px', '900px', '1200px', '1800px']
-breakpoints.sm = breakpoints[0]
-breakpoints.md = breakpoints[1]
-breakpoints.lg = breakpoints[2]
-breakpoints.xl = breakpoints[3]
 
 const space = [
   0,
@@ -220,9 +216,14 @@ const links = {
 
 const styles = {
   root: {
-    color: 'main.light',
     fontFamily: 'body',
     fontWeight: 'book',
+    pt: 1,
+    backgroundColor: 'gradient.dark',
+    backgroundImage: 'linear-gradient(#1a1f23, #0d0a11 512px)',
+    backgroundRepeat: 'no-repeat',
+    borderTop: '0.25rem solid',
+    borderColor: 'muted.dark',
   },
   a: {
     color: 'main.avablue',
@@ -242,41 +243,25 @@ const styles = {
     mx: 0,
     my: 6,
     px: 6,
-    py: 3,
-  },
-  h1: {
-    variant: 'text.heading',
-    fontSize: [6, 9, 10, null],
-    lineHeight: ['2.5rem', '3.5rem', '4rem', null],
   },
   h2: {
     variant: 'text.heading',
-    fontWeight: 'black',
-    fontSize: [6, 8, 9, null],
-    lineHeight: ['2.0rem', '3rem', '3.5rem', null],
-  },
-  h3: {
-    variant: 'text.heading',
-    fontSize: [5, 7, 8, null],
+    fontSize: [5, 5, 8, null],
     fontVariantNumeric: 'lining-nums',
     fontWeight: 'black',
     lineHeight: ['2rem', '2.5rem', '3rem', null],
     textTransform: 'uppercase',
   },
+  h3: {
+    variant: 'text.heading',
+    fontWeight: 'black',
+    fontSize: [3, 5, 7, null],
+    lineHeight: ['2.0rem', '3rem', '3.5rem', null],
+  },
   h4: {
     variant: 'text.heading',
     fontSize: [3, 5, 7, null],
     lineHeight: ['1.5rem', '2rem', '2.5rem', null],
-  },
-  h5: {
-    variant: 'text.heading',
-    fontSize: [2, 3, 5, null],
-    lineHeight: ['1.5rem', '1.5rem', '2rem', null],
-  },
-  h6: {
-    variant: 'text.heading',
-    fontSize: [1, 2, 3, null],
-    lineHeight: '1.5rem',
   },
   hr: {
     border: 0,
@@ -332,6 +317,7 @@ const layout = {
   entry: {
     maxWidth: [480, 720, 960],
     mx: 'auto',
+    px: 4,
   },
 }
 

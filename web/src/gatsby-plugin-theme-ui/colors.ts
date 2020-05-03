@@ -1,7 +1,8 @@
 const colors = {
   // ...
-  background: '#0d0a11',
   text: '#ffffff',
+  background: '#0d0a11',
+  primary: '#1cdaf4',
   highlight: 'rgba(255, 255, 255, 0.2)',
 
   // ...

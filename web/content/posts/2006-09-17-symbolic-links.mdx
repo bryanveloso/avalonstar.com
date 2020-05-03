@@ -1,0 +1,22 @@
+---
+title: "Symbolic Links"
+date: 2006-09-17T12:15:00Z
+---
+
+Another programming tutorial? No, not at all. Well, could be.
+
+I've always had a hard time understanding symbolic links, well a harder time remembering how to create them. I always had to ask one of my coworkers and even then I'd forget it within a day. `ln`, `ls`, pfft, whatever. For those of you who don't know what symlinks are, they serve as a reference to another file or directory. Think of shortcuts and aliases in XP and OS X respectively. You'll have to dig into the command line to use this, but here's a simple way to get started:
+
+    ln -s /path/to/directory/or/file symlink-name
+
+Now what does this do for you? Well, let me give you the example that sprouted this idea.
+
+## Uh oh, a monologue.
+
+I've been working a redesign to a certain personal project of mine, but instead of styling WordPress like I usually would, I had 3 software packages to work with - WordPress, bbPress and MediaWiki. Quite a trio if you ask me. So obviously, I work on what's easiest first, and that's WordPress. Halfway into theming and uploading images, I thought to myself how I'd keep the styles updated as I developed. Say, if I uploaded an image, I'd have to upload it three times into each one of the template directories for each respective program. Considering it was 3AM at the time, I didn't want to bother doing that. Here's where my symlink came in. I navigated to the theme directories of both bbPress and MediaWiki and did the following.
+
+    ln -s ../../wp-content/themes/(theme name)/images images
+
+What that did was create a symbolic link to the images directory in my WordPress theme folder. So what happens now? You can have your images in one directory (or even your stylesheets if you want to go that far) and you'll (hopefully) never have to upload multiple copies of your images or change the references to those images in your CSS.
+
+Again, like my last article about screens, this could be something that's totally second nature to you - but revelations are fun to post. ;)

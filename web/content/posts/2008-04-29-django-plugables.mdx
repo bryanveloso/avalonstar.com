@@ -1,0 +1,101 @@
+---
+title: "Django Plugables"
+date: 2008-04-29T13:30:00Z
+---
+
+For those of you who haven't heard or have been living under the proverbial rock, [Revyver][1] released its first "application" about three weeks ago. And yes, only now am I getting around to writing about [Django Plugables][2]. I put application in quotes mainly because it's [more of a *utility* than a <del>social network</del>][3] <ins>application</ins>[^1].
+
+So here it is, "The story of Django Plugables" or "How I built something in 5 days."
+
+## **Day 1**: Find what's pissing me off
+
+This story starts with a problem. Every story has to start out with a problem, right? "Boy gets dumped by girl, fights to get her back," or "Evil emperor using midgets to enslave humankind, only one dwarf can save them." This story can be summed up with this:
+
+> Guy gets frustrated trying to keep his applications up to date by visiting code hosting site, wants to build something that aggregates everything.
+
+Not **as** exciting, but you get the picture.
+
+So our lovely free code hosting companion, [Google Code][4], is the source of our problem. Note, before I go on, I have nothing against Google Code. I think it's an awesome idea and super easy to get going. However, like most free services, it doesn't do quite as much as one would like it to nor does it adapt to any specific need. Now before I even got the idea to try and build an application out of it, I thought of my options:
+
+1. Dedicate a browser window to Google Code. All the pluggable applications I used would technically be in one place. A little annoying, not very reliable though.
+2. Set up a `cron` script to automatically `svn up` all the downloaded apps. The fact that I use [Piston][5] to manage my externals doesn't help the case, nor does the fact that it'd also be slightly annoying to maintain.
+3. RSS feeds! Travel over to Google Code though and you'll find they don't supply RSS feeds for changesets. I later asked about this as being the basis for Django Plugables, where I was politely told that such features weren't sought after.
+
+I was out of ideas after those three, so TextMate was immediately opened and I started to code.
+
+## **Day 2**: Kicking feature creep's ass
+
+After conquering some of the basics, I asked myself,
+
+> So what do I want this thing to do?
+
+I didn't want it to do much. My mission was to provide a place where people could see what applications were updated and when. I didn't necessarily want it to be an *interactive* application, just a *utility*. Things like comments, tagging and voting were all features that I felt didn't need to be there to start out.
+
+The quirky features that are currently there stemmed out of ideas I got while coding. Simple things, like the [repository list][6], which came to be because I disliked going to Google Code to copy and paste all of the repository URLs. However, after inputting a lot of the initial data, I found that Google Code had a simple naming scheme.
+
+    http://project-name.googlecode.com/svn/trunk/
+    http://code.google.com/p/project-name/
+
+This actually helped when inputting the first batch of projects, but it was still a process I wanted to make a lot easier.
+
+Features and coding progressed in tandem and the first hurdle I had to jump over was the problem of actually importing the changesets from every single repository. Luckily, the answer was right in front of my face in the form of [Jacob Kaplan-Moss][7]' `[jellyroll][8]` application which imported all of Jacob's [commits for Django][9], among other things like his [Flickr photos][10], [last.fm playlists][7] and even his [Google searches][11].
+
+Obviously, the relatively hidden Subversion features of `jellyroll` were just what I needed to base Django Plugables on, not to mention that it was the only implementation of its type out there. While `jellyroll` focused on a single person and their commits, I changed it to just grab anything and everything. Highlight, delete, and move on.
+
+The rest of the night was spent actually inputting all of the data on the different projects and the authors related to those projects. Remember that Google Code doesn't have any sort of useful APIs to do this. It took me about 4 hours; mostly due to the fact that I had 50 pages of results to go through many of which ended up being repeats and projects that merely stated the name, django.
+
+## **Day 3**: Some green and a logo with one "G"
+
+So the code was on my development PC and working, the initial data imported; it was time to design! From the day I came up with the name, I knew the logo was going to have something to do with either a plug or an outlet. So, I decided to search for the outlet first. I eventually came upon a few on iStockPhoto and created [this][12] from it. Didn't need to be any more complicated than that.
+
+When it came to doing the logotype, it took me a little longer to decide on what I wanted to do. I really didn't want to take the normal route which consisted of having the "django" part of the name set in the official Django font. So I tried the usual suspects, Helvetica, Trade Gothic and Interstate, but didn't think the look felt right. Perusing through my list of fonts a second time yielded [Dispose][13] from [TypeTrust][14], a font that I had bought for a client project last year. I liked it immediately, but something bothered Jen about it. Jen said that it would look better if the 2nd "G" in "pluggables" was removed. I had already bought `djangopluggables.com`, but welcomed the thought and took out the "G". I liked it as well and subsequently bought the misspelled `djangoplugables.com`.
+
+The plug between the two words was a corny idea that turned out to work really well. Gave the logotype a little more *umph*. :)
+
+Unlike the sheer length of time it took me to lay out *Distortion*, this layout seemed to come together by itself with the help of [Nathan Smith][15]'s [960.gs][16] and the 16-unit grid template inside it. Since this was going to be a relatively simple layout, I was happy stopping with a finished homepage design before moving back to TextMate to code the templates.
+
+## **Day 4**: Let [960.gs][17] make my job easy
+
+After coding *Distortion* which was to say the least, complex, it was a nice balance to again, design while coding. Using [960.gs][16] in the template stage however was foreign to me. I loved using Nathan's PSDs for designing, but it took me an hour or so of experimenting with the different `container`, `grid`, `prefix` and `suffix` classes before actually jumping into the thick of things. I do have to say though that designing through class names is both an odd and an interesting feeling at the same time.
+
+Special thanks to [Mr. Rubin][17] for helping me tame the outlet at the bottom of the page.
+
+## **Day 5**: Twitter launch
+
+People that know me and my tendencies know that I'm not the person who understands the meaning of the word "wait." So after I set up the server, with a pseudo-clone of the configuration that runs this site (and the addition of a few `cron` scripts for great justice) [I decided to Twitter-launch it][18]. That in addition to the ensuing "Sidebar Slam" was all the site needed to get itself off the ground and into the crosshairs of the Django community.
+
+The launch however didn't come without an ensuing mini-firestorm from an active group of people in the community. I'm going to refrain from going into detail about this here, mainly because it'd be kicking an already dead and decomposed horse. If you would like to read a synopsis of what happened after the launch, [Eric Florenzano][19] wrote his thoughts on it.
+
+I have since teamed up with the group to further the development of Django Plugables and I've already learned a hell of a lot from them. That and it's always interesting to see developers talk about design. :)
+
+## Time to plan for tomorrow
+
+To me, Django Plugables as I launched it, is feature complete. There was nothing that I had to put off or cut in order to get it out the door, but there are definitely things I'll be working to support in the near future. Things like support for Git and other version control system repositories, graphs of developer activity and the aforementioned comments and voting capabilities.
+
+The project is also *technically* an open-source project and by open-source I mean strictly the code--templates and design not included. Swing by the [GitHub repository][20] if you'd like to take a look. If you have any suggestions, problems or comments about the project, definitely comment or head over to [Revyver's shiny new GetSatisfaction page][21]!
+
+Getting Django Plugables out was a great first step in Revyver's new direction a direction that I really hope to touch on soon enough. It was also a way to test my own skills and get involved in the community as a whole.
+
+[^1]: Sorry, couldn't avoid sounding like Zuck for a sec there.
+
+[1]: http://revyver.com/
+[2]: http://djangoplugables.com/
+[3]: http://www.google.com/search?q=more%20of%20a%20utility%20than%20a%20social%20network
+[4]: http://googlecode.com/
+[5]: http://piston.rubyforge.org/
+[6]: http://djangoplugables.com/repositories/
+[7]: http://www.jacobian.org/
+[8]: http://jellyroll.googlecode.com/
+[9]: http://www.jacobian.org/coding/
+[10]: http://www.jacobian.org/viewing/
+[11]: http://www.jacobian.org/searching/
+[12]: http://www.flickr.com/photos/avalonstar/2396900204/
+[13]: http://www.typetrust.com/fonts/font.php?id=MTA=
+[14]: http://www.typetrust.com/
+[15]: http://sonspring.com/
+[16]: http://960.gs/
+[17]: http://superfluousbanter.org/
+[18]: http://twitter.com/bryanveloso/statuses/786062959/
+[19]: http://eflorenzano.com/blog/post/lessions-learned/
+[20]: http://github.com/revyver/django-plugables/tree/master/
+[21]: http://getsatisfaction.com/revyver/products/revyver_django_plugables/

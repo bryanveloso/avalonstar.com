@@ -1,0 +1,31 @@
+---
+title: "A Weekend with Z Shell"
+date: 2012-01-16T12:30:00Z
+---
+
+Almost a year ago, I was introduced to the Z Shell (or `zsh`), an alternative shell to `bash`, through [Kenneth Reitz][1]. Unfortunately, at the time it felt way too foreign. The uphill battle to configure the damn thing outweighed the pros that `zsh` was meant to provide. Also, I was too entrenched with the default command line shell that had been spoon-fed to me ever since I installed Ubuntu for the first time.
+
+So I left it at that.
+
+Fast forward to the beginning of this year and I ran into this article, "[My Command Line Prompt][2]," by [Geoffrey Grosenbach][3] of [topfunky][4] and [PeepCode][5] fame. I gained interest almost instantly. Why? The _visuals_ of course. It was a great mini-tutorial on what `zsh` could do. So over the weekend, I grabbed [oh-my-zsh][6], a wonderful starter kit from [Robby Russell][7] and went to work on the train to and from my parent's place.
+
+Here's what I came up with in pretty picture form:
+
+[![](/journal/2012/a-weekend-with-z-shell/path.png)][8]
+
+(The font I use is [Inconsolata][10].)
+
+This is an amalgamation of ideas from Kenneth's `oh-my-zsh` theme and the aforementioned blog post by Geoffrey. It moves everything but the current directory to the right side of the prompt, also including the current `virtualenv` or `rbenv` when applicable. It has an easter egg as well, mainly for my own giggling satisfaction when a command boards a ship to fail.
+
+If you're interested in seeing the code behind this, [you can take a look at my new `dotfiles` repository][9]. (There are a few goodies in there which are beyond the scope of this post.)
+
+[1]: http://kennethreitz.com/
+[2]: http://blog.peepcode.com/blog/2012/my-command-line-prompt
+[3]: https://twitter.com/topfunky
+[4]: http://topfunky.com/
+[5]: http://peepcode.com/
+[6]: https://github.com/robbyrussell/oh-my-zsh
+[7]: http://planetargon.com/who-we-are/robby-russell
+[8]: http://avalonstar.com/journal/2012/a-weekend-with-z-shell/path.png
+[9]: https://github.com/bryanveloso/dotfiles/blob/master/files/.zsh/prompt
+[10]: http://levien.com/type/myfonts/inconsolata.html

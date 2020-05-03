@@ -1,0 +1,105 @@
+---
+title: "Rolling Your Own Honeyfund"
+date: 2011-08-07T17:07:00Z
+---
+
+I've been engaged for over 8 years—and in 14 days, I'll finally be tying the proverbial knot [with a woman that has truly given me way more than I could ever return][1].
+
+Throughout the last year, we've been planning said wedding, today's subject being the "honeyfund." Up until the beginning of the year, I had no idea what a honeyfund was. But from the very moment the planning started, the questions of registries and gifts came up.
+
+## Thank you for the china.
+
+I remember going to a [CB2][2], which is the more modern arm of the [Crate & Barrel][3] brand, and taking time to look for one of those registry kiosks. Jen and I wondered if we needed to start registering ourselves, but it was obviously a bit early. We didn't even have a venue at the time. Priorities, eh?
+
+Oh well, the first thing we did when this all started was get our wedding bands. ;)
+
+When the registry subject came up again I thought of my sister, who had gotten married in 2009. A baby shower was thrown for her before my nephew, Levi, was born and I remember her telling us about how many gifts they hadn't opened from their wedding. Jen and I are a bit nomadic when it comes to humble abodes and the thought of getting blenders, china sets and silverware didn't strike us as a wise decision. We wanted our families to know their gifts were going to be *used* and *enjoyed*. But we couldn't ask for money—there's obviously a cold stigma and a veil of uncertainty when it comes to it.
+
+So the research started.
+
+Now, when it comes to researching, there are those who research and those who *RESEARCH* as in *thoroughly*. Jen falls into the latter category and let's not get into where I fall in. About halfway through the process she happened [on a site that pitched couples the option][4] of offering a honeymoon registry to their guests. Instead of buying silverware or china, guests would have the option of buying the newlyweds dinners-for-two or even a trip to China! The short-name was of course—a honeyfund. With this option available, it was a no-brainer. With a honeyfund, we knew guests would be choosing an experience for us, rather than just giving us money to spend.
+
+There was only one problem.
+
+## What? THAT's all they offer for templates?
+
+By the time Jen had found [Honeyfund(.com)][4], I already had a preconceived notion that I was going to build—what would become—[ren.ai][5] in. That of course, was [Harmony][6].
+
+Now Honeyfund runs on a freemium model. The free level only allowed you to input short descriptions of the gifts requested. The paid level—in this case, $30—offered the choice of 4 templates and provided custom stock photography. When Jen showed me the sample templates, my heart dropped. They were *hideous*. I immediately felt uncomfortable tying our wedding site—even though I didn't even have an idea at the time as to what it would look like—to *that*. We'd be paying $30 for mediocrity? Chalk it up to designer's pride, stubbornness or arrogance.
+
+But wait, I'm a hybrid. Or, rather, I'd like to call myself that. After a few days of pondering the situation, when Jen asked whether or not to go forward with Honeyfund, my developer side spoke and uttered the following as if it were the Hyde to my designer's Jekyll:
+
+> We can build our own!
+
+Uh oh.
+
+## Fitting a honeyfund peg in a harmony-shaped hole.
+
+First things first, in order to replicate Honeyfund, I needed the following:
+
+1. A list of gifts separated by country.
+2. An uploadable picture for each gift and a place for a short description.
+3. Numerical fields showing the quantity of each gift that was desired as well as already purchased.
+4. A price.
+5. A way to pay.
+
+Historically, time has never been much of an issue when it came to personal projects. Either the project was small enough not to require a lot of time in the first place, I never finished the project, [or the project was put on a *rolling* deadline][7]. ;) [Obviously, that wasn't the case here][8]. So even if I wanted to build [ren.ai][5] on say, Django, there wasn't enough time. Yes, I know Django's motto is "the web framework for perfectionists with deadlines," but this perfectionist sucks at being fast. So my apologies, [my beloved pony][9].
+
+As aforementioned, [Harmony][6] was to be the object of my attention for the given week and the only option I had was to bend it to my will. If you're unfamiliar with Harmony, it's a super-powered CMS with two primary types of content to be managed: time-based and static. Or blogs and pages, if you will. Blogs can have archives, pages can be hierarchal, all that jazz.
+
+![](/journal/2011/rolling-your-own-honeyfund/byohftemplatedata.png)
+
+What makes Harmony, "super-powered" is the fact that you can give every template you're using it's own schema or *template data* in their terms. This'll all become clear as your fingers continue to scroll. Continuing on, for some reason I had forgotten the latter point and I started to build the honeyfund using a blog. After realizing what drug I was on and consequently stopping its use, I backtracked and started nesting pages:
+
+![](/journal/2011/rolling-your-own-honeyfund/byohfnesting.png)
+
+The nesting has an effect on the permalinks, so I nested each gift under a parent country to prevent any duplicate URLs such as "dinner for two," for example. But it doesn't stop there, the hierarchies mean something and you can use this to your advantage via the APIs that Harmony provides in its templating engine. Each honeyfund item was given it's own template data with the fields I required above.
+
+Other than the final design of the related pages, the only major hurdle to get over was the payment "gateway." Honeyfund allowed you to do a few things using their primary interface:
+
+- Change quantities.
+- Choose to pay via cash or check (mailed or delivered on the day of the wedding) or PayPal.
+
+By this point, it was trivial to write Harmony off and figure that there was no way I could possibly create a system that accepted PayPal and allowed for changes in quantity without some sort of advanced logic. But, as often is the case with these types of dilemmas, it should've never gotten to the level of *dilemma* in the first place. Doing some research of my own, I figured out that I could fake the advanced logic that I thought I needed through the tools that PayPal already provided me.
+
+PayPal provides you with a few ways to accept payments. (Of course, you may hate PayPal with a passion, but that's moot at this point so humor me for a bit.) I needed to treat each honeyfund item as an item that could be "put in a cart," per se. Knowing that, PayPal's [Buy Now][10] button *felt* like the best fit. The wizard they provided was cumbersome and ambiguous, giving me at least an hour of grief while playing with the different options. The main points to take home are these:
+
+- With the "Buy Now" button, it allows you to change quantities once you're on PayPal's site. So delegate that duty and save yourself some grief with regards to form building. This is an optional feature so remember to *allow* your guests to change quantities.
+- Don't worry about customizing the button. It ultimately creates a `<input type="image">` tag, which you can (and should) replace later.
+- Upon first glance you probably don't think you'll need a shipping address, but it'll help once it comes time to thank your guests for their wonderful honeyfund gifts.
+- When you're provided with the final snippet of code, make sure it's **not** encrypted.
+
+For the sake of clarity, here's the code I used for [ren.ai][5]'s honeyfund:
+
+<script src="https://gist.github.com/1130902.js"></script>
+
+Note the variables (wrapped in curly braces).  The `title` of the honeyfund item as well as its `price` is sent over to PayPal for processing when the button is clicked. Also, I chose to disable the button and display a sold out sign when we no longer needed any more of the gift. The only thing in this entire *hack* that isn't automated is the decrementing of the aforementioned `needed` value when an item was bought, but that was far from a deal-breaker for me. Unless you plan to have more than say, 50+ honeyfund items with high volumes of traffic on a daily basis, it shouldn't be a deal-breaker for you either.
+
+So there you have it, [a working honeyfund][11], built in [Harmony][6]. As of this post, it's been two weeks since we released [ren.ai][5] to the world and surprisingly the honeyfund is the most visited page other than the home page.
+
+On top of that, we've gotten *so much support* from our friends and family and the whole system has worked without a single hitch. It's definitely encouraged us to do something really special for those awesome individuals when we actually use their gifts during our honeymoon in September (and beyond). So, if you're one of those people and you're reading this—**thank you immensely from the bottom of our hearts**. Every gift that comes in makes us that much more excited for our journey to come. [Hopefully, you'll follow along too!][12] :)
+
+## So, how can I build this using my favorite CMS?
+
+This isn't specific to Harmony, as you could probably build your own honeyfund in WordPress or Expression Engine. How you'd go about doing that is up to you. Even if you're building a comparable system that isn't a honeyfund, keep in mind that you can do things like this using the tools given to you by your CMS (such as [custom posts in WordPress for example][13]) as long as you know what hooks you have to *hack* into.
+
+## Wow, that's all a bit too much...
+
+I don't recommend this for everybody, just for people with unreasonable and insurmountable urges to do things yourself, like myself. If you're looking for a service that does provide you a decent amount of customization options (including custom CSS), there is [buy-our-honeymoon.com][14]. They're a company based out of London that contacted me on the night of ren.ai's release who almost made me wish I had found them prior to diving into all of this.
+
+Whatever you end up doing, if a marriage is in your future, consider a honeyfund if you haven't already! :)
+
+[1]: http://facebook.com/iceymoon/
+[2]: http://cb2.com/
+[3]: http://crateandbarrel.com/
+[4]: http://honeyfund.com/
+[5]: http://ren.ai/
+[6]: http://harmonyapp.com/
+[7]: http://hello-ranking.com/
+[8]: http://avalonstar.com/blog/2011/jul/28/on-weddings-and-websites/
+[9]: http://avalonstar.com/blog/2008/sep/9/the-web-framework-for-ponies/
+[10]: https://www.paypal.com/pdn-item
+[11]: http://ren.ai/honeyfund/
+[12]: http://konokoi.co/
+[13]: http://codex.wordpress.org/Post_Types
+[14]: http://www.buy-our-honeymoon.com/

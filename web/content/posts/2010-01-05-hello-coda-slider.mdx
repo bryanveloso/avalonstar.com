@@ -1,0 +1,31 @@
+---
+title: "Hello! Coda Slider"
+date: 2010-01-05T08:00:00Z
+---
+
+Happy New Year!
+
+Let's start 2010 off right shall we? What better way to start it off than with some code! But first, a little filler.
+
+There haven't been many times where I've had to do a good amount of work to make a script or a pluggable work the way I wanted it to during the development of [Hello! Ranking][1]. So far, there have only been two instances. The first was a melting pot of Facebook Connect and Twitter OAuth scripts in an attempt to get user authentication to work with [James Bennett's django-registration][2]. Took me two days to get that working.
+
+Thankfully, the second one didn't take nearly as long. [Niall Doherty][3] has built an awesome jQuery script that mimics the panel behavior on [Panic's Coda][4] site--a [pretty popular effect][5] these days. Thinking outside of the box, my good friend [Greg][6] recommended that I used that script to handle a carousel on [Hello! Ranking][1]. It worked out of the box, but there were a few problems; the most glaring one being the fact that the script (as well as almost every other "carousel" type script out there) assumed that all the panels were the same size.
+
+So with [Steve's][7] help, I was able to modify the script so that it would handle any size panel. Well, enough of my typing, here's a little video example I put together[^1].
+
+<object width="510" height="287"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=8559024&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=8559024&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="510" height="287"></embed></object>
+
+You can grab the script at Github [http://github.com/revyver/hello-coda-slider][8]. Just remember that this is the first time I have ever dove this far into plugin code (which I'm sure is laughable) so I'm sure there could be a better way to go about this. Actually, if there is, feel free to fork and send me a pull request! That **is** what Github is for. ^_^
+
+Hope you enjoyed that and your free "no-pixelization" preview of [Hello! Ranking][1].
+
+[^1]: Once again, since I'm not willing, able, or rich enough at the current moment to spend the $60 for Vimeo Pro, I can only post a low resolution video here. I encourage you to head to the [video's page][1] and watch the HD version of the video. :)
+
+[1]: http://hello-ranking.com/
+[2]: http://bitbucket.org/ubernostrum/django-registration/
+[3]: http://www.ndoherty.biz/demos/coda-slider/2.0/
+[4]: http://panic.com/coda/
+[5]: http://appzapper.com/
+[6]: http://gregnewman.com/
+[7]: http://orderedlist.com/
+[8]: http://github.com/revyver/hello-coda-slider

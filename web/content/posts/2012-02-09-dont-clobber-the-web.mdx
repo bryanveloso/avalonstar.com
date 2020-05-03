@@ -1,0 +1,40 @@
+---
+title: "Don't Clobber The Web"
+date: 2012-02-09T12:00:00Z
+---
+
+_"Don't Clobber The Web."_
+
+Those words have lived with me since [Chris Wilson][1], who was on the Internet Explorer team at the time, uttered them at a [Webmaster Jam Session][2] a few years back. As much as the team wanted to tweak or improve on the standards they had set in the past (notice I didn't say "mistakes"), they couldn't.
+
+Why? _Developers._
+
+Microsoft owned so much market share at the time that they didn't want developers to upgrade to a more standards-compliant version of IE and have anything break. They were so apprehensive because the developers would blame the IE team for all of the changes to the legacy specifications and not take it upon themselves to make the necessary corrections to bring the site into compliance.
+
+I thought, _how could developers be so lazy?_
+
+But it made sense, "breaking" IE for developers would ultimately mean "clobbering the web" for users. Developers at the time would never consider their coding practices _wrong_. IE would _obviously_ be wrong.
+
+There's that cliché, "“those who fail to learn from history are doomed to repeat it," but it's intriguing to see _which_ parts of history are to be replayed.
+
+<blockquote class="twitter-tweet"><p>Huh? Implement a webkit vendor prefix to the CSS spec? Erm. Feels like 1999 again. And didn't we agree that was a bad thing?</p>&mdash; Mark Boulton (@markboulton) <a href="https://twitter.com/markboulton/status/167567713043091456" data-datetime="2012-02-09T11:17:10+00:00">February 9, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Before I went to bed this morning I caught sight that vendor prefixes would be the issue de jour when I woke up, as the CSS Working Group proposed to add `-webkit` as a prefix to the official spec.
+
+<blockquote class="twitter-tweet"><p>Sites relying on webkit vendor prefixes don't start breaking in other browsers. They were broken by design. Vendors have no obligation here.</p>&mdash; isofarro (@isofarro) <a href="https://twitter.com/isofarro/status/167548109268852737" data-datetime="2012-02-09T09:59:16+00:00">February 9, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+This might've not been the best tweet to use as another example, but it illustrates two points. One, how easy it is for people to choose sides. Two, how EASY it is for people to choose sides. Blame the developers or blame the vendors. Truth is, we all have our part in this. A response like this is exactly the same type of response Chris would've gotten in the past for wanting to move IE in a standards-compliant direction. It doesn't help. But I digress.
+
+I've never completely bought the idea of vendor prefixes. Yes, I know they hold intrinsic value when it comes to developing features that only matter to a certain browser—Mobile WebKit is a quick example, but they've become a crutch and they've lost their intended value. I had always seen them as placeholders to soften the blow for developers as browser vendors "quickly" iterated on their implementations of the spec. But now there are tens of properties that don't _need_ prefixes anymore as the implementations are now the same. Take `box-shadow` as an example.
+
+So as to not "clobber the web," the Working Group wants to make the our lives easier by allowing browser vendors (e.g. non-WebKit browsers) to implement `-webkit` prefixes in _their_ browsers. So as to not anger developers, they figure the only choice is to add a _prefix_ to the _spec_. This is insanity, we should be deprecating and dropping prefixes as implementations become solid and browsers that require them lose market share, not add them to the damn instruction booklet. We should be ready for and desire the _advancements_ that come down the pipe, but not this.
+
+Since the introduction of [Compass][3], I've cared about vendor prefixes progressively less, having Compass take care of all the proper prefixing for me. So granted, it's been a long time since I've talked CSS and I'm quite sure there are parts that have evolved that I lack the proper education in, but nothing about this feels right. Is the Working Group trying to help us? I'm sure, but I believe they're going about it in the wrong way. I lack a proper retort or alternate plan of action, so I've forgone cutting any heads off.
+
+So while I will continue to use Compass and its kin to ease my personal woes, as a spectator, `-webkit` shouldn't exist in the spec proper. Heed Chris' words and his story, because we shouldn't live in an era where stories like that have to occur anymore. As web developers and designers, it's our job and obligation to adapt or be left behind. This is no different, and I hope the Working Group eventually makes the right decision.
+
+[1]: http://twitter.com/cwilso
+[2]: http://webjamsession.com/
+[3]: http://compass-style.org/

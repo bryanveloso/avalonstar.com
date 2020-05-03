@@ -1,0 +1,97 @@
+---
+title: "Commits"
+date: 2010-03-02T15:00:00Z
+---
+
+1609 commits after I started development on [Hello! Ranking][1], we're finally sitting at the point in every application's life when its owners let people start stepping through the doors for the first time. Tonight marks our private beta release--my legs are shaking, my nerves are high, but according to [Steve][2]... that's okay. :)
+
+I've come to learn many things about myself "trying" to be a developer. One of those would be that I seem I talk to myself a lot in commit messages. The point of commit messages is usually to let _others_ know what code you're changing and why.
+
+So, when you're pretty much on your own, who reads those messages _other than you_? Yeah, exactly.
+
+That said, I'd like to commemorate today by posting just a sliver of the conversations I have with myself in Hello! Ranking's Git repository--well, at least the more memorable (read: failure ridden) ones.
+
+Oh, and as expected when things go wrong, expletives happen. You've been forewarned.
+
+* Mass debugging and fixing of stupid typos.
+* Fixing a minor error on the artist_detail template. Making the two list templates look awesome.
+* Flipping names for all the gaijin. :P
+* Adding some dummy views so the URLs won't cry.
+* Fixing another typo. Honestly have no idea how this happened.
+* Hopefully this is the final time I have to fix this.
+* THIS is the problem I hope I don't have to re-fix.
+* I say blah to test data. D:
+* Removed the slug field from the Story admin since it doesn't exist. D:
+* Damn typos. D:
+* DAMN TYPOS. D:
+* DAMN IMPORTS. D:
+* I could swear I did the feeds.py stuff. I'll look at that later.
+* I FOUND FEEDS.PY! IT WAS ELOPING WITH /NEWS/! D:
+* Forgot some things. D:
+* Forgot a comma. Geez.
+* Okay, seems like you can't have save_form() and save_model() coexisting if commit=False. Makes sense. I think.
+* Removing a comma.
+* Changing the range()... range.
+* Adding the required space in "Hello! Ranking."
+* I'm an idiot. I thought you had to chain order_by()s to get them to work. Hah.
+* We do not code in 1337-5p34k.
+* Forgot why I needed a README for a private project. :P
+* Let's make sure to GZip stuff, k? :)
+* LOTS of changes and fleshing out of admin-side things. Too many to count, so just look at the diff. :D
+* FINALLY fixed this stupid error with urlpatterns. Turns out I forgot "patterns" before the tuple. -_-;
+* This feels a little less... redundant.
+* Forgot a comma. Damnit. D:
+* Am I bored? All URL view calls are in quotes. Getting rid of all the unecessary imports. Watch me change this.
+* Silly trailing comma seems to ruin everything when it comes to JSON.
+* Stupidly subclassed a class that didn't exist.
+* Forgot a damn comma.
+* And.. why is this CleverCSS stuff still here?
+* Overhauling the navigation. Not done yet. I know I've done this before. :/
+* Making the managers more sane. D: What the hell was I doing?
+* PyFlakes cherry breaking.
+* De-stupified the groups application manager too. D:
+* ALL of these changes are thanks to PyFlakes. All inconsistencies have been repaired. Hopefully you won't see me going, "OH FUCK I FORGOT A COMMA," much anymore. :D
+* Removing esses.
+* Adding an email obfuscation templatetag for the awesome power of obfuscating emails. >_>
+* Massive DRY fail. D:
+* A case of "I should take my own advice." fail.
+* Choice? Who says we give users a choice? :P (Markup filters are now only bbCode and Markdown.)
+* Trying to do the impossible, merging the concepts of django-registration (with backends) and django-socialregistration. Things are crazy and awry. Much work to be done here. D:
+* Adding an admin file to accounts to get the app to shut up about it.
+* Things won't work if you name the URLs wrong. D:
+* Capitalizationizing.
+* Silly kwargs.
+* That's really outdated shit, man.
+* Updated H!R logo (read: bigger) and navigation sprite.
+* Doing some unholy wrapping with divs.
+* How did this get there? o_O
+* Made a whoopsie with the URL names.
+* New "little heart with plus sign" file. Replaces old "little heart with plus sign" file.
+* Funny, we don't even use feedfinder in the codebase.
+* Yeahhh... let's make sure to crop these large images. D:
+* Finally getting rid of the old stylesheet directory. Weights being lifted off of chests.
+* Syntax errrorrrz. D:
+* Renaming /comments/ to /replies/ for great justice.
+* MOAR syntax errorrz.
+* Moving /blogs/ to /topics/. If I don't want people to think the blogs are blogs, I shouldn't call them blogs. D:
+* Anal-comma-issues.
+* Apparently, registration wasn't in INSTALLED_APPS. o_O;
+* Baleteing old images.
+* Holy shit! Honest-to-god unit tests (for rankings)! And they pass too!
+* Forgot a period. That's a first.
+* Whoops. I only forgot the MAIN part of the new bulk-add/remove feature. :/
+* Moar verbage.
+* Renaming datetime.py to dateutils.py... since... it wasn't working.
+* So THIS is why I had "context['context']." I WROTE it like that. D: Ugh.
+* Gotta crop the minis.
+* The private-beta... or rather... just beta, home page. Finally this changes! :D (After like, a year and a half.)
+* Making the header not be pink.
+* The things I do to make sure whitespace is handled correctly. >_>
+* God damn I suck at typos.
+* HARK! The tests failed and I found a bug! Rejoice! o_O;
+* SUMMON THE GUNICORN! D:
+
+I plan to talk about Hello! Ranking in a manner that's a little less pointless... that is, if I survive this whole "beta" thing.
+
+[1]: http://hello-ranking.com/
+[2]: http://orderedlist.com/
