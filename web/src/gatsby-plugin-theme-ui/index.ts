@@ -82,9 +82,18 @@ const text = {
   },
 
   // ...
-  title: {
-    fontSize: [6, 9, 10, null],
-    lineHeight: ['2.5rem', '3.5rem', '4rem', null],
+  entry: {
+    title: {
+      fontSize: [7, 9],
+      lineHeight: ['2rem', '3rem'],
+      py: [2, 0],
+    },
+    navigation: {
+      color: 'muted.bluegrey',
+      fontSize: 1,
+      textTransform: 'uppercase',
+      mb: [2],
+    },
   },
 
   history: {
@@ -176,6 +185,16 @@ const links = {
   },
 
   // ...
+  entry: {
+    navigation: {
+      variant: 'styles.a',
+      fontFamily: 'heading',
+      fontSize: [5],
+      lineHeight: ['1.5rem'],
+    },
+  },
+
+  // ...
   button: {
     appearance: 'none',
     display: 'inline-block',
@@ -201,6 +220,7 @@ const links = {
 
 const styles = {
   root: {
+    color: 'main.light',
     fontFamily: 'body',
     fontWeight: 'book',
   },
@@ -232,13 +252,16 @@ const styles = {
   h2: {
     variant: 'text.heading',
     fontWeight: 'black',
-    fontSize: [5, 8, 9, null],
-    lineHeight: ['2rem', '3rem', '3.5rem', null],
+    fontSize: [6, 8, 9, null],
+    lineHeight: ['2.0rem', '3rem', '3.5rem', null],
   },
   h3: {
     variant: 'text.heading',
-    fontSize: [4, 7, 8, null],
+    fontSize: [5, 7, 8, null],
+    fontVariantNumeric: 'lining-nums',
+    fontWeight: 'black',
     lineHeight: ['2rem', '2.5rem', '3rem', null],
+    textTransform: 'uppercase',
   },
   h4: {
     variant: 'text.heading',
@@ -301,10 +324,6 @@ const structure = {
   },
 }
 
-const sizes = {
-  // container: 1536,
-}
-
 const layout = {
   container: {
     maxWidth: [480, 720, 960, 1440],
@@ -352,5 +371,4 @@ export default {
   cards,
   layout,
   shadows,
-  sizes,
 }

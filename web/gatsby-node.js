@@ -7,11 +7,15 @@ async function createEntryPages(graphql, actions) {
   const { createPage } = actions
   const result = await graphql(`
     query {
-      allSanityEntry(filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }) {
+      allSanityEntry(
+        filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
+        sort: { fields: publishedAt, order: ASC }
+      ) {
         edges {
           node {
             id
             publishedAt
+            title
             slug {
               current
             }
@@ -26,7 +30,7 @@ async function createEntryPages(graphql, actions) {
   const entryEdges = (result.data.allSanityEntry || {}).edges || []
 
   entryEdges
-    .filter(edge => !isFuture(parseISO(edge.node.publishedAt)))
+    .filter((edge) => !isFuture(parseISO(edge.node.publishedAt)))
     .forEach((edge, index) => {
       const { id, slug = {}, publishedAt } = edge.node
       const dateSegment = format(parseISO(publishedAt), 'yyyy')
@@ -35,7 +39,12 @@ async function createEntryPages(graphql, actions) {
       createPage({
         path,
         component: require.resolve('./src/templates/entry-page.template.tsx'),
-        context: { id },
+        context: {
+          id,
+          pathSlug: path,
+          prev: index === 0 ? null : entryEdges[index - 1].node,
+          next: index === (entryEdges.length - 1) ? null : entryEdges[index + 1].node,
+        },
       })
     })
 }

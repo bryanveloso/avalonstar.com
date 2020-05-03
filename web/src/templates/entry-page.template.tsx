@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { alpha } from '@theme-ui/color'
-import { formatDistanceStrict, differenceInDays, format } from 'date-fns'
-import { graphql } from 'gatsby'
+import { formatDistanceStrict, differenceInDays, format, parseISO } from 'date-fns'
+import { graphql, Link } from 'gatsby'
 import numeral from 'numeral'
-import { jsx, Box, Container, Heading, Text } from 'theme-ui'
+import { jsx, Box, Container, Grid, Heading, Text } from 'theme-ui'
 
 import { EntryLayout } from '@/containers'
 import { Cover, PortableText, SEO } from '@/components'
@@ -34,7 +34,7 @@ const Entry = (props) => {
               : format(new Date(publishedAt), 'MMMM dd, yyyy')}
           </Text>
         </Box>
-        <Heading variant="title">
+        <Heading variant="entry.title">
           {title}
           <span sx={{ color: 'main.avagreen' }}>.</span>
         </Heading>
@@ -75,8 +75,50 @@ const Entry = (props) => {
   )
 }
 
-const EntryPageTemplate = (props) => {
-  const { data, errors } = props
+const Navigation = ({ next, prev }) => {
+  return (
+    <Container variant="entry" sx={{ mx: 'auto', mt: 8, px: 4 }}>
+      <Grid
+        gap={8}
+        columns={[1, 2]}
+        sx={{
+          borderTop: '1px solid',
+          borderColor: alpha('muted.bluegrey', 0.2),
+          my: 6,
+          pt: 4,
+        }}
+      >
+        {prev && (
+          <Box>
+            <Text variant="entry.navigation">Previously</Text>
+            <Link
+              to={`/blog/${format(parseISO(prev.publishedAt), 'yyyy')}/${prev.slug.current}`}
+              sx={{ variant: 'links.entry.navigation' }}
+            >
+              {prev.title}
+              <span sx={{ color: 'white' }}>.</span>
+            </Link>
+          </Box>
+        )}
+        {next && (
+          <Box>
+            <Text variant="entry.navigation">Up Next</Text>
+            <Link
+              to={`/blog/${format(parseISO(next.publishedAt), 'yyyy')}/${next.slug.current}`}
+              sx={{ variant: 'links.entry.navigation' }}
+            >
+              {next.title}
+              <span sx={{ color: 'white' }}>.</span>
+            </Link>
+          </Box>
+        )}
+      </Grid>
+    </Container>
+  )
+}
+
+const EntryPageTemplate = ({ data, errors, pageContext }) => {
+  const { next, prev } = pageContext
   const entry = data && data.entry
   return (
     <EntryLayout>
@@ -92,6 +134,7 @@ const EntryPageTemplate = (props) => {
         />
       )}
       {entry && <Entry {...entry} />}
+      {entry && <Navigation {...pageContext} />}
     </EntryLayout>
   )
 }
