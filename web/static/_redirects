@@ -1,2 +1,3 @@
-/journal/								                /blog/:splat		    301
 /legacy/blog/:year/:month/:date/:slug/	/blog/:year/:slug/	301
+/blog/:year/:month/:date/:slug/         /blog/:year/:slug/	301
+/journal/*								              /blog/:splat		    301
