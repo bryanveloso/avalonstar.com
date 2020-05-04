@@ -103,8 +103,7 @@ async function createLegacyPages(graphql, actions) {
 }
 
 exports.createPages = async ({ graphql, actions }) => {
-  await createEntryPages(graphql, actions)
-  await createLegacyPages(graphql, actions)
+  await Promise.all([createLegacyPages(graphql, actions), createEntryPages(graphql, actions)])
 }
 
 exports.onCreateWebpackConfig = ({ actions }) => {

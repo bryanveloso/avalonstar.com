@@ -32,11 +32,19 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `content`,
+        path: `${__dirname}/content`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
     },
     `gatsby-plugin-theme-ui`,
+    `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -84,14 +92,6 @@ module.exports = {
         theme_color: `#1a1f23`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
-      },
-    },
-    `gatsby-plugin-mdx`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/content`,
       },
     },
     {
