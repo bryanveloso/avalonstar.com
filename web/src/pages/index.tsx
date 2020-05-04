@@ -6,7 +6,6 @@ import { jsx, Box, Container, Grid } from 'theme-ui'
 
 import { SEO } from '@/components'
 import { EntryList, QuoteList } from '@/components/partials/home'
-import { Layout } from '@/containers'
 
 const QUERY = graphql`
   query {
@@ -51,10 +50,6 @@ export const IndexPageTemplate = () => {
   )
 }
 
-const IndexPage = () => (
-  <Layout>
-    <IndexPageTemplate />
-  </Layout>
-)
+const IndexPage = () => <IndexPageTemplate />
 
 export default IndexPage

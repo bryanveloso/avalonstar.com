@@ -109,7 +109,12 @@ module.exports = {
         extendTypes: [{ typeName: `SanityEntry`, contentFieldName: 'body' }],
       },
     },
-    `gatsby-plugin-transition-link`,
+    {
+      resolve: `gatsby-plugin-transition-link`,
+      options: {
+        layout: require.resolve(`./src/containers/layout.container.tsx`)
+      }
+    },
     `gatsby-plugin-netlify`,
   ],
 }

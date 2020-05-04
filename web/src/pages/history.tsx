@@ -4,7 +4,6 @@ import { jsx, Box, Container } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
 import { EventList } from '@/components/partials/history'
-import { Layout } from '@/containers'
 
 const QUERY = graphql`
   {
@@ -35,10 +34,6 @@ export const HistoryPageTemplate = () => {
   )
 }
 
-const HistoryPage = ({ pageContext }) => (
-  <Layout>
-    <HistoryPageTemplate {...pageContext} />
-  </Layout>
-)
+const HistoryPage = ({ pageContext }) => <HistoryPageTemplate {...pageContext} />
 
 export default HistoryPage

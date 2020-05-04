@@ -4,7 +4,6 @@ import { jsx, Box, Container } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
 import { PositionList, ProjectList } from '@/components/partials/portfolio'
-import { Layout } from '@/containers'
 
 const QUERY = graphql`
   query {
@@ -36,10 +35,6 @@ export const PortfolioPageTemplate = () => {
   )
 }
 
-const PortfolioPage = ({ pageContext }) => (
-  <Layout>
-    <PortfolioPageTemplate {...pageContext} />
-  </Layout>
-)
+const PortfolioPage = ({ pageContext }) => <PortfolioPageTemplate {...pageContext} />
 
 export default PortfolioPage

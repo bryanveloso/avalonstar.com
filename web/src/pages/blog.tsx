@@ -4,7 +4,6 @@ import { jsx, Box, Container } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
 import { EntryList } from '@/components/partials'
-import { Layout } from '@/containers'
 
 const QUERY = graphql`
   query {
@@ -35,10 +34,6 @@ export const BlogPageTemplate = () => {
   )
 }
 
-const BlogPage = ({ pageContext }) => (
-  <Layout>
-    <BlogPageTemplate {...pageContext} />
-  </Layout>
-)
+const BlogPage = ({ pageContext }) => <BlogPageTemplate {...pageContext} />
 
 export default BlogPage

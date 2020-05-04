@@ -3,9 +3,9 @@ import { alpha } from '@theme-ui/color'
 import { formatDistanceStrict, differenceInDays, format, parseISO } from 'date-fns'
 import { graphql, Link } from 'gatsby'
 import numeral from 'numeral'
+import { Fragment } from 'react'
 import { jsx, Box, Container, Grid, Heading, Text } from 'theme-ui'
 
-import { EntryLayout } from '@/containers'
 import { Cover, PortableText, SEO } from '@/components'
 
 const Entry = (props) => {
@@ -123,7 +123,7 @@ const EntryPageTemplate = ({ data, errors, pageContext }) => {
   const { next, prev } = pageContext
   const entry = data && data.entry
   return (
-    <EntryLayout>
+    <Fragment>
       {errors && <SEO title="GraphQL Error" />}
       {entry && (
         <SEO
@@ -137,7 +137,7 @@ const EntryPageTemplate = ({ data, errors, pageContext }) => {
       )}
       {entry && <Entry {...entry} />}
       {entry && <Navigation {...pageContext} />}
-    </EntryLayout>
+    </Fragment>
   )
 }
 

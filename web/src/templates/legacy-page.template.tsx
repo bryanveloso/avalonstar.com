@@ -2,9 +2,9 @@
 import { format } from 'date-fns'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import { Fragment } from 'react'
 import { jsx, Box, Container, Heading, Text } from 'theme-ui'
 
-import { EntryLayout } from '@/containers'
 import { SEO } from '@/components'
 
 const Entry = (props) => {
@@ -53,11 +53,11 @@ const Entry = (props) => {
 const EntryPageTemplate = ({ data, errors }) => {
   const entry = data && data.entry
   return (
-    <EntryLayout>
+    <Fragment>
       {errors && <SEO title="GraphQL Error" />}
       {entry && <SEO title={entry.title || 'Untitled'} description={entry.excerpt} />}
       {entry && <Entry {...entry} />}
-    </EntryLayout>
+    </Fragment>
   )
 }
 
