@@ -110,9 +110,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-transition-link`,
+      resolve: `gatsby-plugin-layout`,
       options: {
-        layout: require.resolve(`./src/containers/layout.container.tsx`)
+        component: require.resolve(`./src/containers/layout.container.tsx`)
       }
     },
     `gatsby-plugin-netlify`,

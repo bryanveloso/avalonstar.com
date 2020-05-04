@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import Link from 'gatsby-plugin-transition-link'
+import { Link } from 'gatsby'
 import { jsx, Box, Container, Flex, MenuButton } from 'theme-ui'
 
 import Logotype from '@/images/logotype.svg'
