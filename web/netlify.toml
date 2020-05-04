@@ -1,5 +1,10 @@
 [[redirects]]
   from = "/journal/*"
   to = "/blog/:splat"
-  sttatus = 301
+  status = 301
+  force = true
+[[redirects]]
+  from = "/legacy/blog/:year/:month/:date/:slug/"
+  to = "/blog/:year/:slug/"
+  status = 301
   force = true
