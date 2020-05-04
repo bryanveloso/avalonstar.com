@@ -244,12 +244,17 @@ const styles = {
     my: 6,
     px: 6,
   },
+  h1: {
+    variant: 'text.heading',
+    fontSize: [6, 9, 10, null],
+    lineHeight: ['2.5rem', '3.5rem', '4rem', null],
+  },
   h2: {
     variant: 'text.heading',
-    fontSize: [5, 5, 8, null],
+    fontSize: [5, null, 8, null],
     fontVariantNumeric: 'lining-nums',
     fontWeight: 'black',
-    lineHeight: ['2rem', '2.5rem', '3rem', null],
+    lineHeight: ['2rem', null, '3rem', null],
     textTransform: 'uppercase',
   },
   h3: {
@@ -323,15 +328,18 @@ const layout = {
 
 const shadows = {
   box: 'inset 0 0 0 1px #fff',
+  card: {
+    xs: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+    sm: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
+    md: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+    lg: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
+    xl: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)',
+  },
 }
 
 const cards = {
   position: {
     mb: 5,
-  },
-  entry: {
-    borderRadius: 2,
-    overflow: 'hidden',
   },
   compact: {
     padding: 1,

@@ -11,8 +11,10 @@ export default ({ node }) => {
   if (!node || !node.asset || !node.asset._id) return null
   const fluidProps = getFluidGatsbyImage(node.asset._id, { maxWidth: 1200 }, clientConfig.sanity)
   return (
-    <figure sx={{ m: 0, mx: -24 }}>
-      <Img fluid={fluidProps} alt={node.alt} />
+    <figure sx={{ m: 0 }}>
+      <Box sx={{ boxShadow: 'card.md' }}>
+        <Img fluid={fluidProps} alt={node.alt} sx={{ borderRadius: 2 }} />
+      </Box>
       <Box sx={{ variant: 'structure.caption' }}>
         <figcaption>{node.caption}</figcaption>
       </Box>
