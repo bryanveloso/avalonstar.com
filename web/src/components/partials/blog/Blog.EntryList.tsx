@@ -3,7 +3,7 @@ import format from 'date-fns/format'
 import parseISO from 'date-fns/parseISO'
 import { Link } from 'gatsby'
 import numeral from 'numeral'
-import { jsx, Box, Heading, Styled, Text, Grid } from 'theme-ui'
+import { jsx, Box, Heading, Text, Grid } from 'theme-ui'
 
 import { useEntryData } from '@/hooks'
 import { getBlogUrl } from '@/lib/helpers'
@@ -38,7 +38,7 @@ const EntryList = () => {
               )}
             </Box>
             <Box>
-              <Heading as="h2">
+              <Heading>
                 <Link
                   to={getBlogUrl(publishedAt, slug.current)}
                   sx={{ variant: 'styles.a', color: 'white' }}

@@ -12,14 +12,16 @@ const Entry = (props) => {
   const { _rawBody, author, coverImage, number, publishedAt, title } = props
   return (
     <Box as="article">
-      {coverImage && coverImage.asset && (
-        <Cover
-          ratio={4 / 1}
-          asset={coverImage.asset.fluid}
-          alt={coverImage.alt}
-          caption={coverImage.caption}
-        />
-      )}
+      <Container variant="entry">
+        {coverImage && coverImage.asset && (
+          <Cover
+            ratio={4 / 1}
+            asset={coverImage.asset.fluid}
+            alt={coverImage.alt}
+            caption={coverImage.caption}
+          />
+        )}
+      </Container>
       <Container variant="entry" sx={{ mx: 'auto', my: [6, 7, 8], px: 4 }}>
         <Box variant="structure.metadata" sx={{ display: 'inline-flex' }}>
           {number > 0 && (
