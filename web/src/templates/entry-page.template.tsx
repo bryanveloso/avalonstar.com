@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { alpha } from '@theme-ui/color'
+import { useResponsiveValue } from '@theme-ui/match-media'
 import { formatDistanceStrict, differenceInDays, format, parseISO } from 'date-fns'
 import { graphql, Link } from 'gatsby'
 import numeral from 'numeral'
@@ -10,12 +11,13 @@ import { Cover, PortableText, SEO } from '@/components'
 
 const Entry = (props) => {
   const { _rawBody, author, coverImage, number, publishedAt, title } = props
+  const ratio = useResponsiveValue([2.39 / 1, 4 / 1])
   return (
     <Box as="article">
       <Container variant="entry">
         {coverImage && coverImage.asset && (
           <Cover
-            ratio={4 / 1}
+            ratio={ratio}
             asset={coverImage.asset.fluid}
             alt={coverImage.alt}
             caption={coverImage.caption}
@@ -53,7 +55,7 @@ const Entry = (props) => {
             color: 'muted.lightbluegrey',
             fontSize: [3, 5],
             fontStyle: 'italic',
-            lineHeight: ['2rem', '2.5rem'],
+            lineHeight: [1, 3],
           },
         }}
       >
