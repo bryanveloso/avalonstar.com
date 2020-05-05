@@ -43,12 +43,22 @@ export default {
     {
       name: 'summary',
       title: 'Summary',
-      type: 'bodyPortableText',
+      type: 'portableText',
+    },
+    {
+      name: 'involvement',
+      title: 'Involvement',
+      type: 'portableText',
     },
     {
       name: 'body',
       title: 'Body',
-      type: 'bodyPortableText',
+      type: 'portableText',
+    },
+    {
+      name: 'image',
+      title: 'Image',
+      type: 'image',
     },
     {
       name: 'announcementUrl',

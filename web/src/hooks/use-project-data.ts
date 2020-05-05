@@ -17,6 +17,7 @@ const QUERY = graphql`
           projectUrl
           announcementUrl
           _rawSummary(resolveReferences: { maxDepth: 10 })
+          _rawInvolvement(resolveReferences: { maxDepth: 10 })
           _rawBody(resolveReferences: { maxDepth: 10 })
         }
       }
