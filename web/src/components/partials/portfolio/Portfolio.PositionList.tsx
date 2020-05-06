@@ -33,8 +33,8 @@ const ProjectList = ({ projects }) => (
     >
       Projects
     </Heading>
-    <Box sx={{ lineHeight: 2 }}>
-      {projects.map(project => {
+    <Box>
+      {projects.map((project) => {
         const { announcementUrl, date, isActive, name, projectUrl } = project
         return projectUrl ? (
           <Link href={projectUrl} key={name} sx={{ display: 'block', opacity: isActive ? 1 : 0.5 }}>

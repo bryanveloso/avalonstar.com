@@ -1,7 +1,8 @@
 /* eslint-disable prefer-destructuring */
 import { alpha } from '@theme-ui/color'
 
-import colors from './colors'
+import { colors } from './colors'
+import { styles } from './mdx'
 
 const breakpoints = ['600px', '900px', '1200px', '1800px']
 
@@ -43,6 +44,8 @@ const fontSizes = [
   '3.5rem',
 ]
 
+const lineHeights = ['1.5rem', '2rem', '2.5rem', '3rem', '3.5rem', '4rem']
+
 const fontWeights = {
   light: 300,
   book: 400,
@@ -83,6 +86,15 @@ const text = {
       fontSize: [7, 9],
       lineHeight: ['2rem', '3rem'],
       py: [2, 0],
+    },
+    h3: {
+      variant: 'styles.h3',
+      textTransform: 'uppercase',
+    },
+    p: {
+      fontSize: 2,
+      lineHeight: 1,
+      mb: 4,
     },
     navigation: {
       color: 'muted.bluegrey',
@@ -191,6 +203,16 @@ const links = {
   },
 
   // ...
+  header: {
+    variant: 'styles.a',
+    border: 'none',
+    color: 'white',
+    '&:hover': {
+      color: 'main.avagreen',
+    },
+  },
+
+  // ...
   button: {
     appearance: 'none',
     display: 'inline-block',
@@ -211,85 +233,6 @@ const links = {
     variant: 'links.button',
     backgroundColor: 'main.avapurple',
     color: 'main.light',
-  },
-}
-
-const styles = {
-  root: {
-    fontFamily: 'body',
-    fontWeight: 'book',
-    pt: 1,
-    backgroundColor: 'gradient.dark',
-    backgroundImage: 'linear-gradient(#1a1f23, #0d0a11 512px)',
-    backgroundRepeat: 'no-repeat',
-    borderTop: '0.25rem solid',
-    borderColor: 'muted.dark',
-  },
-  a: {
-    color: 'main.avablue',
-    textDecoration: 'none',
-    ':hover': {
-      textDecoration: 'underline',
-    },
-    ':visited': {
-      opacity: 0.75,
-    },
-  },
-  blockquote: {
-    boxShadow: 'inset 8px 0 0 0',
-    color: 'muted.lightgreen',
-    fontSize: [3, 3, 4, 4],
-    fontStyle: 'italic',
-    mx: 0,
-    my: 6,
-    px: 6,
-  },
-  h1: {
-    variant: 'text.heading',
-    fontSize: [6, 9, 10, null],
-    lineHeight: ['2.5rem', '3.5rem', '4rem', null],
-  },
-  h2: {
-    variant: 'text.heading',
-    fontSize: [5, null, 8, null],
-    fontVariantNumeric: 'lining-nums',
-    fontWeight: 'black',
-    lineHeight: ['2rem', null, '3rem', null],
-    textTransform: 'uppercase',
-  },
-  h3: {
-    variant: 'text.heading',
-    fontWeight: 'black',
-    fontSize: [3, 5, 7, null],
-    lineHeight: ['2.0rem', '3rem', '3.5rem', null],
-  },
-  h4: {
-    variant: 'text.heading',
-    fontSize: [3, 5, 7, null],
-    lineHeight: ['1.5rem', '2rem', '2.5rem', null],
-  },
-  hr: {
-    border: 0,
-    borderBottom: '1px solid',
-  },
-  img: {
-    maxWidth: '100%',
-  },
-  li: {
-    fontSize: [2, 2, 3, 3],
-    lineHeight: ['2rem', '2rem', '2.5rem', null],
-    pl: 2,
-  },
-  p: {
-    fontSize: [2, 2, 3, 3],
-    lineHeight: ['2rem', '2rem', '2.5rem', null],
-    mb: 4,
-  },
-  strong: {
-    color: 'muted.green',
-  },
-  ul: {
-    mb: 4,
   },
 }
 
@@ -353,16 +296,21 @@ export default {
   breakpoints,
   space,
   radii,
-  colors,
   fonts,
   fontSizes,
   fontWeights,
+  lineHeights,
   text,
   links,
-  styles,
   buttons,
   structure,
   cards,
   layout,
   shadows,
+
+  // ...
+  colors,
+
+  // ...
+  styles,
 }

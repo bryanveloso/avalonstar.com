@@ -1,7 +1,7 @@
-const colors = {
+export const colors = {
   // ...
-  text: '#ffffff',
-  background: '#0d0a11',
+  text: '#efefef',
+  background: '#1a1f23',
   primary: '#1cdaf4',
   highlight: 'rgba(255, 255, 255, 0.2)',
 
@@ -29,5 +29,3 @@ const colors = {
     darker: '#1a1f23',
   },
 }
-
-export default colors

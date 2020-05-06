@@ -39,10 +39,7 @@ const EntryList = () => {
             </Box>
             <Box>
               <Heading>
-                <Link
-                  to={getBlogUrl(publishedAt, slug.current)}
-                  sx={{ variant: 'styles.a', color: 'white' }}
-                >
+                <Link to={getBlogUrl(publishedAt, slug.current)} sx={{ variant: 'links.header' }}>
                   {title}
                   <span sx={{ color: 'main.avagreen' }}>.</span>
                 </Link>

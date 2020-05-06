@@ -11,7 +11,7 @@ const Header = () => (
     <Flex sx={{ alignItems: 'baseline' }}>
       <Box sx={{ flex: '1 1 auto' }}>
         <Link to="/">
-          <Logotype sx={{ height: ['1.5rem', null, '2.5rem'] }} />
+          <Logotype sx={{ height: ['1.5rem', '2.0rem'] }} />
         </Link>
       </Box>
       <Box as="nav" sx={{ display: ['none', 'block'] }}>
