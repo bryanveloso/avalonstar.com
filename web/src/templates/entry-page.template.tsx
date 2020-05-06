@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import BlockContent from '@sanity/block-content-to-react'
 import { alpha } from '@theme-ui/color'
 import { useResponsiveValue } from '@theme-ui/match-media'
 import { formatDistanceStrict, differenceInDays, format, parseISO } from 'date-fns'
@@ -7,7 +8,10 @@ import numeral from 'numeral'
 import { Fragment } from 'react'
 import { jsx, Box, Container, Grid, Heading, Text } from 'theme-ui'
 
-import { Cover, PortableText, SEO } from '@/components'
+import { Cover, SEO } from '@/components'
+import serializers from '@/components/serializers/Entry'
+
+import clientConfig from '../../client-config'
 
 const Entry = (props) => {
   const { _rawBody, author, coverImage, number, publishedAt, title } = props
@@ -53,13 +57,15 @@ const Entry = (props) => {
           px: 4,
           'p:first-of-type': {
             color: 'muted.lightbluegrey',
-            fontSize: [3, 5],
+            fontSize: [3],
             fontStyle: 'italic',
-            lineHeight: [1, 3],
+            lineHeight: [1],
           },
         }}
       >
-        {_rawBody && <PortableText blocks={_rawBody} />}
+        {_rawBody && (
+          <BlockContent blocks={_rawBody} serializers={serializers} {...clientConfig.sanity} />
+        )}
         {author && (
           // TODO: Figure something out with this.
           <Box

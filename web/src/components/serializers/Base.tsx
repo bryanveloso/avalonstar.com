@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { jsx, Styled } from 'theme-ui'
+
+import Figure from '@/components/Figure'
 import External from '@/images/external.svg'
-import Figure from './Figure'
 
 const serializers = {
   types: {
