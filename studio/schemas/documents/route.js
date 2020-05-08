@@ -5,6 +5,12 @@ export default {
   title: 'Route',
   type: 'document',
   icon: RiLinksLine,
+  fieldsets: [
+    {
+      name: 'navigation',
+      title: 'Navigation',
+    },
+  ],
   fields: [
     {
       name: 'title',
@@ -29,6 +35,22 @@ export default {
           type: 'page',
         },
       ],
+    },
+    {
+      name: 'isVisible',
+      title: 'Visible',
+      description: 'Is this route visible in navigation?',
+      type: 'boolean',
+      fieldset: 'navigation',
+      options: {
+        layout: 'checkbox',
+      },
+    },
+    {
+      name: 'order',
+      title: 'Order',
+      type: 'number',
+      fieldset: 'navigation',
     },
   ],
   preview: {
