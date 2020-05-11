@@ -2,12 +2,9 @@ export const styles = {
   root: {
     fontFamily: 'body',
     fontWeight: 'book',
-    pt: 1,
     backgroundColor: 'gradient.darker',
-    backgroundImage: 'linear-gradient(#1a1f23, #0d0a11 512px)',
+    backgroundImage: 'linear-gradient(#1a1f23, #0d0a11 640px)',
     backgroundRepeat: 'no-repeat',
-    borderTop: '0.25rem solid',
-    borderColor: 'muted.dark',
   },
 
   // Headings.

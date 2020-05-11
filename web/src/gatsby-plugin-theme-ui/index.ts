@@ -145,32 +145,19 @@ const text = {
 const links = {
   nav: {
     color: 'inherit',
-    boxShadow: '0 0 1px rgba(0, 0, 0, 0)',
     fontFamily: 'freight',
     fontSize: 1,
-    fontWeight: 900,
-    ml: 5,
-    position: 'relative',
-    pt: 1,
-    textTransform: 'uppercase',
+    fontWeight: 'black',
     textDecoration: 'none',
-    transform: 'perspective(1px) translateZ(0)',
-    transition: 'color 0.3s ease-out',
-    '&:before': {
-      content: '""',
-      position: 'absolute',
-      left: 0,
-      top: 0,
-      right: '100%',
-      backgroundColor: 'main.avablue',
-      height: 2,
-      zIndex: -1,
-    },
+    textTransform: 'uppercase',
+    transition: 'all 300ms ease-out',
     '&.active': { color: 'main.avablue' },
-    '&:hover': { color: 'main.avablue' },
+    '&:hover': {
+      color: 'main.avablue',
+    },
   },
   title: {
-    color: '#ffffff',
+    color: 'white',
     fontFamily: 'freight',
     fontSize: 1,
     fontWeight: 'bold',
@@ -179,7 +166,7 @@ const links = {
 
   // ...
   socials: {
-    variant: 'styles.a',
+    color: 'main.avablue',
     fontSize: 1,
     fontWeight: 'bold',
     svg: {
@@ -242,6 +229,16 @@ const buttons = {
   },
 }
 
+const zIndices = {
+  '0': '0',
+  '10': '10',
+  '20': '20',
+  '30': '30',
+  '40': '40',
+  '50': '50',
+  auto: 'auto',
+}
+
 const structure = {
   caption: {
     borderBottom: '1px solid',
@@ -261,6 +258,7 @@ const layout = {
   container: {
     maxWidth: [480, 720, 960, 1440],
     mx: 'auto',
+    px: 4,
   },
   entry: {
     maxWidth: [480, 720, 960],
@@ -303,6 +301,7 @@ export default {
   text,
   links,
   buttons,
+  zIndices,
   structure,
   cards,
   layout,

@@ -1,27 +1,37 @@
 /** @jsx jsx */
+import { useBreakpointIndex } from '@theme-ui/match-media'
 import { Link } from 'gatsby'
-import { jsx, Box, Container, Flex, MenuButton } from 'theme-ui'
+import { jsx, Box, Container, Flex } from 'theme-ui'
 
+import Avalonstar from '@/images/avalonstar.svg'
 import Logotype from '@/images/logotype.svg'
 
-import NavLink from './NavLink'
+import MainNavigation from './MainNavigation'
+import MobileNavigation from './MobileNavigation'
 
-const Header = () => (
-  <Container as="header" sx={{ mx: 'auto', px: 4, py: [4, 5] }}>
-    <Flex sx={{ alignItems: 'baseline' }}>
-      <Box sx={{ flex: '1 1 auto' }}>
-        <Link to="/">
-          <Logotype sx={{ height: ['1.5rem', '2.0rem'] }} />
-        </Link>
-      </Box>
-      <Box as="nav" sx={{ display: ['none', 'block'] }}>
-        <NavLink to="/history/">History</NavLink>
-        <NavLink to="/portfolio/">Portfolio</NavLink>
-        <NavLink to="/blog/">Blog</NavLink>
-      </Box>
-      <MenuButton aria-label="Toggle Menu" />
-    </Flex>
-  </Container>
-)
+const Header = () => {
+  const breakpoint = useBreakpointIndex()
+  return (
+    <header
+      sx={{
+        borderTop: '0.25rem solid',
+        borderTopColor: 'muted.dark',
+        width: '100vw',
+      }}
+    >
+      <Container sx={{ py: 4 }}>
+        <Flex sx={{ alignItems: [null, 'center'], flexDirection: ['column', 'row'] }}>
+          <Flex sx={{ flex: '1 1 auto' }}>
+            <Link to="/" sx={{ alignItems: 'center', display: 'flex', flex: '1 1 auto' }}>
+              <Avalonstar sx={{ height: ['1.5rem', '2rem'], mr: 2 }} />
+              <Logotype sx={{ height: ['1.25rem', '1.75rem'] }} />
+            </Link>
+          </Flex>
+          <Box>{breakpoint === 0 ? <MobileNavigation /> : <MainNavigation />}</Box>
+        </Flex>
+      </Container>
+    </header>
+  )
+}
 
 export default Header
