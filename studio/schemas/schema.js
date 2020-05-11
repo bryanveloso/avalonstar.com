@@ -20,6 +20,7 @@ import bodyPortableText from './objects/bodyPortableText'
 import mainImage from './objects/mainImage'
 import portableText from './objects/portableText'
 import textSection from './objects/textSection'
+import youtube from './objects/youtube'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -44,5 +45,6 @@ export default createSchema({
     mainImage,
     portableText,
     textSection,
+    youtube,
   ]),
 })
