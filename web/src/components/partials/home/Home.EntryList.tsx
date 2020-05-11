@@ -48,7 +48,7 @@ const EntryList = () => {
                 <Heading sx={{ fontFamily: 'body', fontSize: [2, 2, 4, null] }}>
                   <Link
                     to={getBlogUrl(publishedAt, slug.current)}
-                    sx={{ variant: 'styles.a', color: 'white' }}
+                    sx={{ variant: 'styles.a', border: 'none', color: 'white' }}
                   >
                     {title}
                     <span sx={{ color: 'main.avagreen' }}>.</span>
