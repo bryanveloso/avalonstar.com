@@ -13,7 +13,7 @@
     "@types/react-helmet": "^5.0.15",
     "date-fns": "^2.10.0",
     "dotenv": "^8.2.0",
-    "framer-motion": "^1.10.3",
+    "framer-motion": "^2.0.0-beta.66",
     "gatsby": "^2.20.25",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-feed": "^2.5.0",
