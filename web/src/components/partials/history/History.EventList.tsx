@@ -10,7 +10,7 @@ import BrowserPageAccount from '@/images/browser-page-account.svg'
 import SingleNeutralFocus from '@/images/single-neutral-focus.svg'
 import StartupLaunch from '@/images/startup-launch.svg'
 
-const CompanyEvent = props => {
+const CompanyEvent = (props) => {
   const { _rawBody, date, name } = props
   return (
     <Fragment>
@@ -26,7 +26,7 @@ const CompanyEvent = props => {
   )
 }
 
-const PersonEvent = props => {
+const PersonEvent = (props) => {
   const { _rawBody, coverImage, date, name } = props
   return (
     <Fragment>
@@ -35,16 +35,18 @@ const PersonEvent = props => {
       </Box>
       <Box color="muted.lightbluegrey" sx={{ fontSize: 1, gridColumn: '2', pl: 4, pb: 4 }}>
         {coverImage && (
-          <Box
-            sx={{
-              borderColor: 'muted.lightbluegrey',
-              borderTop: '1px solid',
-              mb: 2,
-              pt: 1,
-            }}
-          >
+          <Box sx={{ mb: 2 }}>
             <AspectRatio ratio={16 / 9} sx={{ objectFit: 'cover', width: '100%', height: '100%' }}>
-              <Img fluid={coverImage.asset.fluid} alt={coverImage.alt} />
+              <Img
+                fluid={coverImage.asset.fluid}
+                alt={coverImage.alt}
+                sx={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  borderRadius: 2,
+                }}
+              />
             </AspectRatio>
           </Box>
         )}
@@ -56,7 +58,7 @@ const PersonEvent = props => {
   )
 }
 
-const WebsiteEvent = props => {
+const WebsiteEvent = (props) => {
   const { _rawBody, date, name } = props
   return (
     <Fragment>
@@ -78,7 +80,7 @@ const getEventDisplay = ({ id, ...rest }) => ({
   website: <WebsiteEvent key={id} {...rest} />,
 })
 
-const Section = props => {
+const Section = (props) => {
   const { data, year } = props
   return (
     <Fragment>
@@ -92,18 +94,18 @@ const Section = props => {
       >
         {year}
       </Heading>
-      {data.map(node => getEventDisplay(node)[node.subject])}
+      {data.map((node) => getEventDisplay(node)[node.subject])}
     </Fragment>
   )
 }
 
 const EventList = () => {
   const data = useEventData()
-  const dataByYear = _.groupBy(data, datum => datum.date.substr(datum.date.length - 4))
+  const dataByYear = _.groupBy(data, (datum) => datum.date.substr(datum.date.length - 4))
 
   return (
     <Grid gap={0} columns={['24px auto']} as="section" sx={{ position: 'relative' }}>
-      {Object.keys(dataByYear).map(key => (
+      {Object.keys(dataByYear).map((key) => (
         <Section key={key} year={key} data={dataByYear[key]} />
       ))}
     </Grid>
