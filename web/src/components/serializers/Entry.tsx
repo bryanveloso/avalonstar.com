@@ -1,5 +1,7 @@
 /** @jsx jsx */
-import { jsx, Styled } from 'theme-ui'
+import getYouTubeId from 'get-youtube-id'
+import YouTube from 'react-youtube'
+import { jsx, Embed, Styled } from 'theme-ui'
 
 import Figure from '@/components/Figure'
 import External from '@/images/external.svg'
@@ -28,6 +30,11 @@ const serializers = {
     },
     authorReference: ({ node }) => <span>{node.author.name}</span>,
     mainImage: Figure,
+    youtube: ({ node }) => {
+      const { url } = node
+      const id = getYouTubeId(url)
+      return <Embed src={`https://www.youtube.com/embed/${id}`} />
+    },
   },
   marks: {
     em: ({ children }) => <Styled.em>{children}</Styled.em>,
