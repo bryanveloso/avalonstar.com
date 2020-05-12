@@ -43,6 +43,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-emotion`,
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
