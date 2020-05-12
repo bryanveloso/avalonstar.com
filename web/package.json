@@ -71,7 +71,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "clean-cache": "gatsby clean",
     "dev": "npm run clean-cache && gatsby develop --host=0.0.0.0",
     "lint": "eslint .",
