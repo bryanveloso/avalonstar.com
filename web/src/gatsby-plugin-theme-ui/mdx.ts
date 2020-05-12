@@ -54,13 +54,10 @@ export const styles = {
 
   // Other blocks.
   blockquote: {
-    boxShadow: 'inset 8px 0 0 0',
-    color: 'muted.lightgreen',
-    fontSize: [3, 3, 4, 4],
-    fontStyle: 'italic',
-    mx: 0,
-    my: 6,
-    px: 6,
+    color: 'muted.green',
+    fontSize: [4],
+    fontFamily: 'freight',
+    lineHeight: ['2rem'],
   },
   hr: {
     border: 0,

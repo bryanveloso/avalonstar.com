@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import getYouTubeId from 'get-youtube-id'
-import YouTube from 'react-youtube'
-import { jsx, Embed, Styled } from 'theme-ui'
+import { jsx, Box, Embed, Flex, Styled } from 'theme-ui'
 
 import Figure from '@/components/Figure'
+import OpenQuote from '@/images/open-quote.svg'
 import External from '@/images/external.svg'
 
 const serializers = {
@@ -23,7 +23,19 @@ const serializers = {
         case 'h6':
           return <Styled.h6>{props.children}</Styled.h6>
         case 'blockquote':
-          return <Styled.blockquote>{props.children}</Styled.blockquote>
+          return (
+            <Flex
+              sx={{
+                mx: 0,
+                pb: 2,
+              }}
+            >
+              <Box sx={{ my: '1em', minWidth: '1rem' }}>
+                <OpenQuote sx={{ color: 'muted.lightgreen', height: '2.5rem' }} />
+              </Box>
+              <Styled.blockquote>{props.children}</Styled.blockquote>
+            </Flex>
+          )
         default:
           return <Styled.p sx={{ variant: 'text.entry.p' }}>{props.children}</Styled.p>
       }
