@@ -9,40 +9,42 @@ import NavLink from './NavLink'
 const MobileNavigation = () => {
   const data = useNavigationData()
   return (
-    <Flex as="nav" sx={{ alignItems: 'center', mt: 2 }}>
-      <Box mr={2} pr={2} sx={{ borderRight: '1px solid', borderColor: 'gradient.lighter' }}>
-        <NavigationMenu
+    <Box sx={{ display: ['block', 'none'] }}>
+      <Flex as="nav" sx={{ alignItems: 'center', mt: 2 }}>
+        <Box mr={2} pr={2} sx={{ borderRight: '1px solid', borderColor: 'gradient.lighter' }}>
+          <NavigationMenu
+            sx={{
+              color: 'muted.bluegrey',
+              height: '15px',
+              position: 'relative',
+              top: '1px',
+            }}
+          />
+        </Box>
+        <Flex
+          as="ul"
           sx={{
             color: 'muted.bluegrey',
-            height: '15px',
+            flex: '1 1 auto',
+            listStyle: 'none',
+            m: 0,
+            p: 0,
+            justifyContent: 'space-between',
             position: 'relative',
-            top: '1px',
+            top: '-1px',
           }}
-        />
-      </Box>
-      <Flex
-        as="ul"
-        sx={{
-          color: 'muted.bluegrey',
-          flex: '1 1 auto',
-          listStyle: 'none',
-          m: 0,
-          p: 0,
-          justifyContent: 'space-between',
-          position: 'relative',
-          top: '-1px',
-        }}
-      >
-        {data.map(({ node }) => {
-          const { title, slug } = node
-          return (
-            <Box as="li" key={slug.current}>
-              <NavLink to={`/${slug.current}`}>{title}</NavLink>
-            </Box>
-          )
-        })}
+        >
+          {data.map(({ node }) => {
+            const { title, slug } = node
+            return (
+              <Box as="li" key={slug.current}>
+                <NavLink to={`/${slug.current}`}>{title}</NavLink>
+              </Box>
+            )
+          })}
+        </Flex>
       </Flex>
-    </Flex>
+    </Box>
   )
 }
 

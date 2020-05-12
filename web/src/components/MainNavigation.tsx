@@ -12,7 +12,7 @@ const MainNavigation = () => {
   const [selected, setSelected] = useState(0)
   const data = useNavigationData()
   return (
-    <Box as="nav">
+    <Box as="nav" sx={{ display: ['none', 'block'] }}>
       <AnimateSharedLayout>
         <Flex
           as="ul"
