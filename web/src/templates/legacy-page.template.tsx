@@ -55,7 +55,7 @@ const EntryPageTemplate = ({ data, errors }) => {
   return (
     <Fragment>
       {errors && <SEO title="GraphQL Error" />}
-      {entry && <SEO title={entry.title || 'Untitled'} description={entry.excerpt} />}
+      {entry && <SEO title={entry.frontmatter.title || 'Untitled'} description={entry.excerpt} />}
       {entry && <Entry {...entry} />}
     </Fragment>
   )
