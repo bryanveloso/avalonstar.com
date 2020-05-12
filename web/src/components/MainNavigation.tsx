@@ -1,15 +1,11 @@
 /** @jsx jsx */
 import { motion, AnimateSharedLayout } from 'framer-motion'
 import { Link } from 'gatsby'
-import { useState } from 'react'
 import { jsx, Box, Flex } from 'theme-ui'
 
 import { useNavigationData } from '@/hooks'
 
-import NavLink from './NavLink'
-
 const MainNavigation = () => {
-  const [selected, setSelected] = useState(0)
   const data = useNavigationData()
   return (
     <Box as="nav" sx={{ display: ['none', 'block'] }}>
@@ -33,15 +29,8 @@ const MainNavigation = () => {
                   activeClassName="active"
                   partiallyActive
                   sx={{ variant: 'links.nav' }}
-                  onClick={() => setSelected(node.order)}
                 >
                   {title}
-                  {/* {node.order === selected && (
-                    <motion.div
-                      layoutId="underline"
-                      sx={{ width: '100%', height: 2, bg: 'main.avablue' }}
-                    />
-                  )} */}
                 </Link>
               </motion.li>
             )
