@@ -112,8 +112,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-layout`,
       options: {
-        component: require.resolve(`./src/containers/layout.container.tsx`)
-      }
+        component: require.resolve(`./src/containers/layout.container.tsx`),
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-fathom',
+      options: {
+        siteId: 'VVNUNPTY',
+        whitelistHostnames: ['avalonstar.com'],
+      },
     },
     `gatsby-plugin-netlify`,
   ],
