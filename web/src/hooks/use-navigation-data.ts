@@ -2,7 +2,10 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 const QUERY = graphql`
   query {
-    allSanityRoute(sort: { fields: order, order: ASC }, filter: { order: { ne: null } }) {
+    allSanityRoute(
+      sort: { fields: order, order: ASC }
+      filter: { order: { ne: null }, isVisible: { eq: true } }
+    ) {
       edges {
         node {
           id
