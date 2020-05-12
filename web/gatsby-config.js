@@ -57,10 +57,6 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: { typekit: { id: 'ead1rfn' } },
-    },
     `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-robots-txt',

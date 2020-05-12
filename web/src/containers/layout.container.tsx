@@ -4,6 +4,8 @@ import { jsx, Flex } from 'theme-ui'
 
 import { Footer, Header } from '@/components'
 
+import './layout.css'
+
 const duration = 0.3
 const variants = {
   initial: {
