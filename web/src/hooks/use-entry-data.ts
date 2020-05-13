@@ -18,7 +18,6 @@ const QUERY = graphql`
           number
           _rawBody(resolveReferences: { maxDepth: 10 })
           readingTimeInMinutes
-          excerpt
           slug {
             current
           }

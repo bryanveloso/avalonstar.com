@@ -19,17 +19,16 @@ const EntryList = () => {
       }}
     >
       {data.map(({ node }) => {
-        const { coverImage, id, isFeatured, number, publishedAt, slug, title } = node
+        const { coverImage, id, number, publishedAt, readingTimeInMinutes, slug, title } = node
         return (
           <Grid
-            columns={['auto 1fr auto']}
+            columns={['auto 1fr']}
             key={id}
             sx={{
               alignItems: 'baseline',
               borderBottom: '1px solid',
               borderColor: 'gradient.lighter',
-              pb: 4,
-              pt: 3,
+              py: 4,
             }}
           >
             <Box>
@@ -38,15 +37,16 @@ const EntryList = () => {
               )}
             </Box>
             <Box>
-              <Heading>
+              <Heading sx={{ lineHeight: '1.5rem' }}>
                 <Link to={getBlogUrl(publishedAt, slug.current)} sx={{ variant: 'links.header' }}>
                   {title}
                   <span sx={{ color: 'main.avagreen' }}>.</span>
                 </Link>
               </Heading>
-              <Text variant="date">{format(parseISO(publishedAt), 'MMMM d, yyyy')}</Text>
+              <Text variant="date" sx={{ pt: 1 }}>
+                {format(parseISO(publishedAt), 'MMMM d, yyyy')}
+              </Text>
             </Box>
-            {/* {isFeatured && <Styled.p>{excerpt}</Styled.p>} */}
           </Grid>
         )
       })}
