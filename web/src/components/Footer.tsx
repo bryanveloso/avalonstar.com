@@ -23,7 +23,6 @@ const Footer = () => {
       <Grid
         sx={{
           variant: 'layout.container',
-          px: 4,
           py: 6,
         }}
       >
@@ -86,7 +85,7 @@ const Footer = () => {
       <Grid
         gap={0}
         columns={['auto', 'auto auto']}
-        sx={{ px: 4, py: 4, color: 'muted.bluegrey', fontSize: 1, justifyContent: 'space-between' }}
+        sx={{ py: 4, color: 'muted.bluegrey', fontSize: 1, justifyContent: 'space-between' }}
       >
         <Box>
           © 2000–{new Date().getFullYear()} {title}. All rights reserved.

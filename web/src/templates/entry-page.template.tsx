@@ -28,7 +28,7 @@ const Entry = (props) => {
           />
         )}
       </Container>
-      <Container variant="entry" sx={{ mx: 'auto', my: [6, 7, 8], px: 4 }}>
+      <Container variant="entry" sx={{ mx: 'auto', my: [6, 7, 8] }}>
         <Box variant="structure.metadata" sx={{ display: 'inline-flex' }}>
           {number > 0 && (
             <Text sx={{ color: 'muted.midgrey' }}>
@@ -47,14 +47,12 @@ const Entry = (props) => {
           <span sx={{ color: 'main.avagreen' }}>.</span>
         </Heading>
       </Container>
-      <Container variant="entry" sx={{ mx: 'auto', px: 4 }}>
+      <Container variant="entry">
         <Box sx={{ bg: 'muted.lightbluegrey', height: 2, width: '20%' }} />
       </Container>
       <Container
         variant="entry"
         sx={{
-          mx: 'auto',
-          px: 4,
           'p:first-of-type': {
             color: 'muted.lightbluegrey',
             fontSize: [3],
@@ -87,7 +85,7 @@ const Entry = (props) => {
 
 const Navigation = ({ next, prev }) => {
   return (
-    <Container variant="entry" sx={{ mx: 'auto', mt: 8, px: 4 }}>
+    <Container variant="entry" sx={{ mx: 'auto', mt: 8 }}>
       <Grid
         gap={8}
         columns={[1, 2]}

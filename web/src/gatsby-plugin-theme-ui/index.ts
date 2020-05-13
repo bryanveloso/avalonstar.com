@@ -255,15 +255,18 @@ const structure = {
 }
 
 const layout = {
-  container: {
+  wrapper: {
     maxWidth: [480, 720, 960, 1440],
     mx: 'auto',
     px: 4,
   },
+  container: {
+    maxWidth: [480, 720, 960, 1440],
+    mx: 'auto',
+  },
   entry: {
     maxWidth: [480, 720, 960],
     mx: 'auto',
-    px: 4,
   },
 }
 

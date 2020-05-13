@@ -23,7 +23,7 @@ export const IndexPageTemplate = () => {
   return (
     <Box as="section">
       <SEO title={title} />
-      <Container sx={{ p: 4 }}>
+      <Container>
         <EntryList />
         <Grid as="section" columns={[1, null, 2]} sx={{ mt: 4 }}>
           <Box sx={{ fontSize: 1, lineHeight: ['1.5rem'] }}>

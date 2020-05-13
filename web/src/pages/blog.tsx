@@ -26,7 +26,7 @@ export const BlogPageTemplate = () => {
   return (
     <Box as="section">
       <SEO title={title} />
-      <Container sx={{ p: 4 }}>
+      <Container>
         <PageHeader title={page.heading} subtitle={page.subheading} />
         <EntryList />
       </Container>

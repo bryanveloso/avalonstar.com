@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { motion, AnimatePresence } from 'framer-motion'
-import { jsx, Flex } from 'theme-ui'
+import { jsx, Box, Flex } from 'theme-ui'
 
 import { Footer, Header } from '@/components'
 
@@ -26,22 +26,30 @@ const variants = {
 }
 
 const Layout = ({ children, location }) => (
-  <Flex sx={{ minHeight: '100vh', flexDirection: 'column' }}>
-    <Header />
-    <AnimatePresence initial={false}>
-      <motion.main
-        key={location.pathname}
-        variants={variants}
-        initial="initial"
-        animate="enter"
-        exit="exit"
-        sx={{ flexGrow: 1 }}
-      >
-        {children}
-      </motion.main>
-    </AnimatePresence>
-    <Footer />
-  </Flex>
+  <Box
+    sx={{
+      borderTop: '0.25rem solid',
+      borderTopColor: 'muted.dark',
+      width: '100vw',
+    }}
+  >
+    <Flex sx={{ variant: 'layout.wrapper', minHeight: '100vh', flexDirection: 'column' }}>
+      <Header />
+      <AnimatePresence initial={false}>
+        <motion.main
+          key={location.pathname}
+          variants={variants}
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          sx={{ flexGrow: 1 }}
+        >
+          {children}
+        </motion.main>
+      </AnimatePresence>
+      <Footer />
+    </Flex>
+  </Box>
 )
 
 export default Layout
