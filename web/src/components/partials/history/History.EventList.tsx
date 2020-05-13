@@ -59,13 +59,29 @@ const PersonEvent = (props) => {
 }
 
 const WebsiteEvent = (props) => {
-  const { _rawBody, date, name } = props
+  const { _rawBody, coverImage, date, name } = props
   return (
     <Fragment>
       <Box sx={{ gridColumn: '1' }}>
         <BrowserPageAccount sx={{ color: 'main.avagreen' }} />
       </Box>
       <Box sx={{ gridColumn: '2', pl: 4, pb: 4 }}>
+        {coverImage && (
+          <Box sx={{ mb: 2 }}>
+            <AspectRatio ratio={16 / 9} sx={{ objectFit: 'cover', width: '100%', height: '100%' }}>
+              <Img
+                fluid={coverImage.asset.fluid}
+                alt={coverImage.alt}
+                sx={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  borderRadius: 2,
+                }}
+              />
+            </AspectRatio>
+          </Box>
+        )}
         <Text variant="history.date">{date}</Text>
         <Text variant="history.title">{name}.</Text>
         {_rawBody && <PortableText blocks={_rawBody} />}
