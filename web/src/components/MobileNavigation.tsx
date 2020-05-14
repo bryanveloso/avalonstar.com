@@ -29,7 +29,6 @@ const MobileNavigation = () => {
             listStyle: 'none',
             m: 0,
             p: 0,
-            justifyContent: 'space-between',
             position: 'relative',
             top: '-1px',
           }}
@@ -37,7 +36,7 @@ const MobileNavigation = () => {
           {data.map(({ node }) => {
             const { title, slug } = node
             return (
-              <Box as="li" key={slug.current}>
+              <Box as="li" key={slug.current} pr={3}>
                 <NavLink to={`/${slug.current}`}>{title}</NavLink>
               </Box>
             )
