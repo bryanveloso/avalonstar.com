@@ -31,7 +31,7 @@ const Event = (props) => {
         gap={2}
         color={getHeaderColor()[subject]}
         columns={['auto', null, '1fr 2fr']}
-        sx={{ fontSize: 1, gridColumn: '2', pl: 4, mb: 4 }}
+        sx={{ fontSize: 1, gridColumn: '2', pl: 4, mb: 6 }}
       >
         {coverImage && (
           <Box sx={{ mb: 2 }}>
