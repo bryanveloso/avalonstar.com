@@ -74,7 +74,7 @@ const Section = (props) => {
         {year}
       </Heading>
       {data.map((node) => (
-        <Event {...node} />
+        <Event key={node.id} {...node} />
       ))}
     </Fragment>
   )
