@@ -64,7 +64,7 @@
     "eslint-plugin-react": "^7.18.3",
     "prettier": "2.0.4",
     "prettier-eslint-cli": "^5.0.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.2"
   },
   "keywords": [
     "gatsby"
