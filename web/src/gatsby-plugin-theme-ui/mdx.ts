@@ -3,7 +3,7 @@ export const styles = {
     fontFamily: 'body',
     fontWeight: 'book',
     backgroundColor: 'gradient.darker',
-    backgroundImage: 'linear-gradient(#1a1f23, #0d0a11 640px)',
+    backgroundImage: 'linear-gradient(#1a1f23, #0d0a11 512px)',
     backgroundRepeat: 'no-repeat',
   },
 

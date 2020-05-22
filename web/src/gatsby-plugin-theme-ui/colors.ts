@@ -3,7 +3,7 @@ export const colors = {
   text: '#efefef',
   background: '#1a1f23',
   primary: '#1cdaf4',
-  highlight: 'rgba(255, 255, 255, 0.2)',
+  highlight: 'rgba(255, 255, 255, 0.1)',
 
   // ...
   main: {

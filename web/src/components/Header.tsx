@@ -7,11 +7,13 @@ import Logotype from '@/images/logotype.svg'
 
 import MainNavigation from './MainNavigation'
 import MobileNavigation from './MobileNavigation'
+import TwitchStatus from './TwitchStatus'
 
 const Header = () => {
   return (
     <header>
-      <Container sx={{ pt: 6, pb: 4 }}>
+      <TwitchStatus />
+      <Container sx={{ variant: 'layout.wrapper', pt: [4, 6], pb: 4 }}>
         <Flex sx={{ alignItems: [null, 'center'], flexDirection: ['column', 'row'] }}>
           <Flex sx={{ flex: '1 1 auto' }}>
             <Link to="/" sx={{ alignItems: 'center', display: 'flex', flex: '1 1 auto' }}>

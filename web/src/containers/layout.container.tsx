@@ -33,8 +33,8 @@ const Layout = ({ children, location }) => (
       width: '100vw',
     }}
   >
+    <Header />
     <Flex sx={{ variant: 'layout.wrapper', minHeight: '100vh', flexDirection: 'column' }}>
-      <Header />
       <AnimatePresence initial={false}>
         <motion.main
           key={location.pathname}
