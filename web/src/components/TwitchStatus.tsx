@@ -5,6 +5,7 @@ import { jsx, Box, Flex, Link } from 'theme-ui'
 
 import External from '@/images/external.svg'
 import Twitch from '@/images/icon-twitch.svg'
+import { Fragment } from 'react'
 
 const TwitchStatus = () => {
   const [{ data, loading }] = useAxios({
@@ -15,8 +16,8 @@ const TwitchStatus = () => {
     },
   })
 
-  return (
-    <Box sx={{ backgroundColor: 'muted.dark', display: !loading && data !== [] ? 'none' : 'block' }}>
+  return !loading && data.data.length ? (
+    <Box sx={{ backgroundColor: 'muted.dark' }}>
       <Box py={3} sx={{ borderBottom: '1px solid', borderColor: 'gradient.lighter', fontSize: 0 }}>
         <Flex variant="layout.wrapper">
           <Box mr={2} sx={{ color: 'main.avapurple', height: '1rem' }}>
@@ -31,6 +32,8 @@ const TwitchStatus = () => {
         </Flex>
       </Box>
     </Box>
+  ) : (
+    <Fragment />
   )
 }
 
