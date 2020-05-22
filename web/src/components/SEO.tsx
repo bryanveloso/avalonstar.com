@@ -33,10 +33,7 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.title}`}
-      link={[
-        { rel: `preconnect`, href: `https://collect.usefathom.com` },
-        { rel: `stylesheet`, href: `https://use.typekit.net/ead1rfn.css` },
-      ]}
+      link={[{ rel: `preconnect`, href: `https://collect.usefathom.com` }]}
       meta={[
         { name: `description`, content: metaDescription },
         { property: `og:title`, content: title },
