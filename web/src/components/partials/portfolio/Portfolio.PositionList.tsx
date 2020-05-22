@@ -4,7 +4,7 @@ import { jsx, Box, Card, Grid, Link, Text, Heading } from 'theme-ui'
 import { PortableText } from '@/components'
 import { usePositionData } from '@/hooks'
 
-import Avalonstar from '@/images/avalonstar.svg'
+import Avalonstar from '@/images/avalonstar.png'
 import Automattic from '@/images/automattic.svg'
 import Facebook from '@/images/facebook.svg'
 import GitHub from '@/images/github.svg'
@@ -13,7 +13,7 @@ import Twitch from '@/images/twitch.svg'
 
 const getLogo = (height = '60px') => ({
   automattic: <Automattic sx={{ height }} />,
-  avalonstar: <Avalonstar sx={{ height }} />,
+  avalonstar: <img src={Avalonstar} alt="avalonstar" sx={{ height }} />,
   facebook: <Facebook sx={{ height }} />,
   github: <GitHub sx={{ height }} />,
   revyver: <Revyver sx={{ height }} />,
