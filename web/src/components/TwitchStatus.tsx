@@ -11,8 +11,8 @@ const TwitchStatus = () => {
   const [{ data, loading }] = useAxios({
     url: 'https://api.twitch.tv/helix/streams?user_login=avalonstar',
     headers: {
-      'Client-ID': process.env.TWITCH_CLIENT_ID,
-      Authorization: `Bearer ${process.env.TWITCH_OAUTH_TOKEN}`,
+      'Client-ID': process.env.GATSBY_TWITCH_CLIENT_ID,
+      Authorization: `Bearer ${process.env.GATSBY_TWITCH_OAUTH_TOKEN}`,
     },
   })
 
