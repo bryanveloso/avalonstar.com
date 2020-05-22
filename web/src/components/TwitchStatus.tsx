@@ -8,7 +8,7 @@ import Twitch from '@/images/icon-twitch.svg'
 import { Fragment } from 'react'
 
 const TwitchStatus = () => {
-  const [{ data, loading }] = useAxios({
+  const [{ data, loading, error }] = useAxios({
     url: 'https://api.twitch.tv/helix/streams?user_login=avalonstar',
     headers: {
       'Client-ID': process.env.GATSBY_TWITCH_CLIENT_ID,
@@ -16,7 +16,7 @@ const TwitchStatus = () => {
     },
   })
 
-  return !loading && data.data.length ? (
+  return !loading && !error && data.data.length ? (
     <Box sx={{ backgroundColor: 'muted.dark' }}>
       <Box py={3} sx={{ borderBottom: '1px solid', borderColor: 'gradient.lighter', fontSize: 0 }}>
         <Flex variant="layout.wrapper">
