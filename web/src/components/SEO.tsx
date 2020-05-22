@@ -33,13 +33,17 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.title}`}
+      link={[
+        { rel: `preconnect`, href: `https://collect.usefathom.com` },
+        { rel: `stylesheet`, href: `https://use.typekit.net/ead1rfn.css` },
+      ]}
       meta={[
         { name: `description`, content: metaDescription },
         { property: `og:title`, content: title },
         { property: `og:description`, content: metaDescription },
         { property: `og:type`, content: `website` },
-        { name: `twitter:card`, content: `summary_large_image`},
-        { name: `twitter:site`, content: `@avalonstar`},
+        { name: `twitter:card`, content: `summary_large_image` },
+        { name: `twitter:site`, content: `@avalonstar` },
         { name: `twitter:creator`, content: site.author.name },
         { name: `twitter:title`, content: title },
         { name: `twitter:description`, content: metaDescription },
