@@ -40,7 +40,12 @@ export default {
                 name: 'reference',
                 type: 'reference',
                 title: 'Reference',
-                to: [{ type: 'event' }, { type: 'position' }, { type: 'project' }],
+                to: [
+                  { type: 'entry' },
+                  { type: 'event' },
+                  { type: 'position' },
+                  { type: 'project' },
+                ],
               },
             ],
           },
