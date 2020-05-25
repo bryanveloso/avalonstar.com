@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { jsx, Box, Container } from 'theme-ui'
 
 import { PageHeader, SEO } from '@/components'
-import { EntryList } from '@/components/partials'
+import { EntryList, LegacyList } from '@/components/partials'
 
 const QUERY = graphql`
   query {
@@ -29,6 +29,7 @@ export const BlogPageTemplate = () => {
       <Container>
         <PageHeader title={page.heading} subtitle={page.subheading} />
         <EntryList />
+        <LegacyList />
       </Container>
     </Box>
   )

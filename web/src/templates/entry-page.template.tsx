@@ -20,12 +20,7 @@ const Entry = (props) => {
     <Box as="article">
       <Container variant="entry">
         {coverImage && coverImage.asset && (
-          <Cover
-            ratio={ratio}
-            asset={coverImage.asset.fluid}
-            alt={coverImage.alt}
-            caption={coverImage.caption}
-          />
+          <Cover ratio={ratio} asset={coverImage.asset.fluid} alt={coverImage.alt} caption={coverImage.caption} />
         )}
       </Container>
       <Container variant="entry" sx={{ mx: 'auto', my: [6, 7, 8] }}>
@@ -61,9 +56,7 @@ const Entry = (props) => {
           },
         }}
       >
-        {_rawBody && (
-          <BlockContent blocks={_rawBody} serializers={serializers} {...clientConfig.sanity} />
-        )}
+        {_rawBody && <BlockContent blocks={_rawBody} serializers={serializers} {...clientConfig.sanity} />}
         {author && (
           // TODO: Figure something out with this.
           <Box
@@ -126,7 +119,6 @@ const Navigation = ({ next, prev }) => {
 }
 
 const EntryPageTemplate = ({ data, errors, pageContext }) => {
-  const { next, prev } = pageContext
   const entry = data && data.entry
   return (
     <Fragment>

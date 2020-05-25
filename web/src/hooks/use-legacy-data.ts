@@ -12,7 +12,7 @@ const QUERY = graphql`
           }
           frontmatter {
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
           }
         }
       }
@@ -22,5 +22,11 @@ const QUERY = graphql`
 
 export const useLegacyData = () => {
   const { allMdx } = useStaticQuery(QUERY)
-  return allMdx.edges
+
+  const edges = []
+  allMdx.edges.forEach((edge) => {
+    const o = Object.values(edge)
+    edges.push(o)
+  })
+  return [].concat(...edges)
 }

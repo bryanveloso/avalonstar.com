@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import Img from 'gatsby-image'
-import _ from 'lodash'
+import groupBy from 'lodash/groupBy'
 import { Fragment } from 'react'
 import { jsx, AspectRatio, Box, Text, Grid, Heading } from 'theme-ui'
 
@@ -82,7 +82,7 @@ const Section = (props) => {
 
 const EventList = () => {
   const data = useEventData()
-  const dataByYear = _.groupBy(data, (datum) => datum.date.substr(datum.date.length - 4))
+  const dataByYear = groupBy(data, (datum) => datum.date.substr(datum.date.length - 4))
 
   return (
     <Grid gap={0} columns={['24px auto']} as="section" sx={{ position: 'relative' }}>

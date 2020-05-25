@@ -14,20 +14,20 @@ const Entry = (props) => {
   } = props
   return (
     <Box as="article">
-      <Box
+      <Container
+        variant="entry"
         p={4}
         mb={6}
-        mx={4}
         sx={{ border: '2px solid', borderColor: 'main.avayellow', borderRadius: 2 }}
       >
         <Text sx={{ color: 'muted.yellow', fontSize: 1, lineHeight: '1.5rem' }}>
-          The entry below is classified as a <strong sx={{ color: 'white' }}>LEGACY</strong> post,
-          meaning that it was written (well) before the current version of Avalonstar was released.
-          Although these posts have survived the numerous moves over years, there is no guarantee
-          that they&apos;ve survived the trip unscathed (especially the links).
+          The entry below is classified as a <strong sx={{ color: 'white' }}>LEGACY</strong> post, meaning that it was
+          written (well) before the current version of Avalonstar was released. Although these posts have survived the
+          numerous moves over years, there is no guarantee that they&apos;ve survived the trip unscathed (especially the
+          links).
         </Text>
-      </Box>
-      <Container variant="entry" sx={{ mx: 'auto', my: [6, 8], px: 4 }}>
+      </Container>
+      <Container variant="entry" sx={{ mx: 'auto', my: 6 }}>
         <Box variant="structure.metadata" sx={{ display: 'inline-flex' }}>
           <Text sx={{ color: 'muted.midgrey' }}>
             LEGACY
@@ -42,7 +42,17 @@ const Entry = (props) => {
           <span sx={{ color: 'main.avagreen' }}>.</span>
         </Heading>
       </Container>
-      <Container variant="entry">
+      <Container
+        variant="entry"
+        sx={{
+          'p:first-of-type': {
+            color: 'muted.lightbluegrey',
+            fontSize: [3],
+            fontStyle: 'italic',
+            lineHeight: [1],
+          },
+        }}
+      >
         <Box sx={{ bg: 'muted.lightbluegrey', height: 2, width: '20%' }} />
         <MDXRenderer>{body}</MDXRenderer>
       </Container>

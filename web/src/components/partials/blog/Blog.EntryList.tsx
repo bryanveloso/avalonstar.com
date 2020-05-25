@@ -29,12 +29,11 @@ const EntryList = () => {
               borderBottom: '1px solid',
               borderColor: 'gradient.lighter',
               py: 4,
+              '&:last-of-type': { borderBottomWidth: '2px' },
             }}
           >
             <Box>
-              {number > 0 && (
-                <Text sx={{ color: 'muted.lightbluegrey' }}>{numeral(number).format('000')}</Text>
-              )}
+              {number > 0 && <Text sx={{ color: 'muted.lightbluegrey' }}>{numeral(number).format('000')}</Text>}
             </Box>
             <Box>
               <Heading sx={{ lineHeight: '1.5rem' }}>
