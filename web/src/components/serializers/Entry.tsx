@@ -3,6 +3,7 @@ import getYouTubeId from 'get-youtube-id'
 import { jsx, Box, Embed, Flex, Styled } from 'theme-ui'
 
 import Figure from '@/components/Figure'
+import InternalLink from '@/components/internal-link'
 import OpenQuote from '@/images/open-quote.svg'
 import External from '@/images/external.svg'
 
@@ -50,6 +51,7 @@ const serializers = {
   },
   marks: {
     em: ({ children }) => <Styled.em>{children}</Styled.em>,
+    internalLink: InternalLink,
     link: ({ children, mark }) => {
       const { blank, href } = mark
       return blank ? (
