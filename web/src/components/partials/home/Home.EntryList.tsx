@@ -16,7 +16,7 @@ const EntryList = () => {
         <Heading as="h2">
           Things I&lsquo;ve <span sx={{ color: 'main.avagreen' }}>written.</span>
         </Heading>
-        <Text variant="secondary">Words on pages.</Text>
+        <Text variant="secondary">Words on pages. Thoughts noted in stages.</Text>
       </Box>
       <Box
         as="section"
@@ -38,7 +38,11 @@ const EntryList = () => {
               }}
             >
               <Box>
-                {number > 0 && <Text sx={{ color: 'muted.lightbluegrey' }}>{numeral(number).format('000')}</Text>}
+                {number > 0 && (
+                  <Text variant="counter" sx={{ color: 'muted.lightbluegrey' }}>
+                    {numeral(number).format('000')}
+                  </Text>
+                )}
               </Box>
               <Box sx={{ flex: '1', px: 4 }}>
                 <Heading sx={{ fontFamily: 'body', fontSize: [2, 2, 4, null] }}>

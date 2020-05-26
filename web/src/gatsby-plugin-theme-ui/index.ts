@@ -68,6 +68,11 @@ const text = {
   },
 
   // ...
+  counter: {
+    fontVariantNumeric: 'tabular-nums',
+  },
+
+  // ...
   entry: {
     title: {
       fontSize: [7, 9],

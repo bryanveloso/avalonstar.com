@@ -34,7 +34,11 @@ const EntryList = () => {
             )}
             <Flex pt={3} sx={{ alignItems: 'baseline' }}>
               <Box>
-                {number > 0 && <Text sx={{ color: 'muted.lightbluegrey' }}>{numeral(number).format('000')}</Text>}
+                {number > 0 && (
+                  <Text variant="counter" sx={{ color: 'muted.lightbluegrey' }}>
+                    {numeral(number).format('000')}
+                  </Text>
+                )}
               </Box>
               <Box pl={4} sx={{ flex: 1 }}>
                 <Heading sx={{ lineHeight: '1.5rem' }}>
