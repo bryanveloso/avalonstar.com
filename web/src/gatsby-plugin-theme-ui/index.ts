@@ -6,20 +6,7 @@ import { styles } from './mdx'
 
 const breakpoints = ['600px', '900px', '1200px', '1800px']
 
-const space = [
-  0,
-  '0.25rem',
-  '0.5rem',
-  '1rem',
-  '1.5rem',
-  '2rem',
-  '2.5rem',
-  '3rem',
-  '4rem',
-  '8rem',
-  '16rem',
-  '32rem',
-]
+const space = [0, '0.25rem', '0.5rem', '1rem', '1.5rem', '2rem', '2.5rem', '3rem', '4rem', '8rem', '16rem', '32rem']
 
 const radii = [0, 2, 4, 16, 9999, '100%']
 
@@ -258,7 +245,7 @@ const layout = {
   wrapper: {
     maxWidth: [480, 720, 960, 1440],
     mx: 'auto',
-    px: 4,
+    px: [4, null, 8, 9],
   },
   container: {
     maxWidth: [480, 720, 960, 1440],

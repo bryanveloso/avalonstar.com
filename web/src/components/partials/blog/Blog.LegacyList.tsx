@@ -3,6 +3,7 @@ import format from 'date-fns/format'
 import parse from 'date-fns/parse'
 import { Link } from 'gatsby'
 import groupBy from 'lodash/groupBy'
+import Pluralize from 'react-pluralize'
 import { jsx, Box, Heading, Text, Grid } from 'theme-ui'
 
 import { useLegacyData } from '@/hooks'
@@ -11,15 +12,30 @@ const Section = (props) => {
   const { data, year } = props
   return (
     <Grid columns={['auto', 'auto 1fr']} mb={4}>
-      <Heading
+      <Box>
+        <Heading
+          sx={{
+            color: 'main.avayellow',
+            fontVariantNumeric: 'lining-nums',
+            mr: [0, 4],
+          }}
+        >
+          {year}
+        </Heading>
+        <Text sx={{ color: 'muted.yellow', fontSize: 1 }}>
+          <Pluralize singular="entry" plural="entries" count={data.length} />
+        </Text>
+      </Box>
+      <ul
         sx={{
-          color: 'main.avayellow',
-          fontVariantNumeric: 'lining-nums',
+          borderLeft: ['none', '1px solid'],
+          borderLeftColor: ['none', 'gradient.darker'],
+          listStyle: 'none',
+          my: 1,
+          p: 0,
+          pl: [0, 4],
         }}
       >
-        {year}
-      </Heading>
-      <ul sx={{ listStyle: 'none', my: 1, p: 0 }}>
         {data.map((node) => {
           const {
             fields: { slug },
