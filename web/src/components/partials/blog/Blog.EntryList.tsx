@@ -15,10 +15,10 @@ const EntryList = () => {
   const ratio = useResponsiveValue([36 / 9, 52 / 9])
   return (
     <Box as="section">
-      {data.map(({ node }, index) => {
+      {data.map(({ node }, index: number) => {
         const { coverImage, id, number, publishedAt, slug, title } = node
         return (
-          <Box key={id} sx={{ pb: 4 }}>
+          <Box key={id}>
             {index === 0 && (
               <Box sx={{ position: 'relative', boxShadow: 'card.lg', zIndex: '100' }}>
                 <Link to={getBlogUrl(publishedAt, slug.current)}>
