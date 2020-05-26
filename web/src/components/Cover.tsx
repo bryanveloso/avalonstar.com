@@ -6,7 +6,7 @@ import { jsx, AspectRatio, Text, Box } from 'theme-ui'
 const Cover = ({ ratio, asset, alt, caption }) => (
   <Fragment>
     <Box sx={{ position: 'relative', boxShadow: 'card.xl', zIndex: '100' }}>
-      <AspectRatio ratio={ratio} sx={{ bg: 'main.dark' }}>
+      <AspectRatio ratio={ratio}>
         {asset && (
           <Img
             fluid={asset}
