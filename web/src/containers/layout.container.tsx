@@ -30,6 +30,7 @@ const Layout = ({ children, location }) => (
     sx={{
       borderTop: '0.25rem solid',
       borderTopColor: 'gradient.darkest',
+      boxShadow: 'inset 0 1px 0 #23292f',
       width: '100vw',
     }}
   >
