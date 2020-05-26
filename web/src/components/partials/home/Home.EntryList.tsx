@@ -3,7 +3,7 @@ import format from 'date-fns/format'
 import parseISO from 'date-fns/parseISO'
 import { Link } from 'gatsby'
 import numeral from 'numeral'
-import { jsx, Box, Heading, Styled, Text, Grid } from 'theme-ui'
+import { jsx, Box, Flex, Heading, Text } from 'theme-ui'
 
 import { useEntryData } from '@/hooks'
 import { getBlogUrl } from '@/lib/helpers'
@@ -26,11 +26,9 @@ const EntryList = () => {
         }}
       >
         {data.map(({ node }) => {
-          const { coverImage, id, isFeatured, number, publishedAt, slug, title } = node
+          const { id, number, publishedAt, slug, title } = node
           return (
-            <Grid
-              gap={4}
-              columns={['auto 1fr auto']}
+            <Flex
               key={id}
               sx={{
                 alignItems: 'baseline',
@@ -40,11 +38,9 @@ const EntryList = () => {
               }}
             >
               <Box>
-                {number > 0 && (
-                  <Text sx={{ color: 'muted.lightbluegrey' }}>{numeral(number).format('000')}</Text>
-                )}
+                {number > 0 && <Text sx={{ color: 'muted.lightbluegrey' }}>{numeral(number).format('000')}</Text>}
               </Box>
-              <Box>
+              <Box sx={{ flex: '1', px: 4 }}>
                 <Heading sx={{ fontFamily: 'body', fontSize: [2, 2, 4, null] }}>
                   <Link
                     to={getBlogUrl(publishedAt, slug.current)}
@@ -55,9 +51,10 @@ const EntryList = () => {
                   </Link>
                 </Heading>
               </Box>
-              <Text variant="date">{format(parseISO(publishedAt), 'MMMM d, yyyy')}</Text>
-              {/* {isFeatured && <Styled.p>{excerpt}</Styled.p>} */}
-            </Grid>
+              <Text variant="date" sx={{ whiteSpace: 'nowrap' }}>
+                {format(parseISO(publishedAt), 'MMMM d, yyyy')}
+              </Text>
+            </Flex>
           )
         })}
       </Box>
