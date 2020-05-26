@@ -29,7 +29,7 @@ const Layout = ({ children, location }) => (
   <Box
     sx={{
       borderTop: '0.25rem solid',
-      borderTopColor: 'muted.dark',
+      borderTopColor: 'gradient.darkest',
       width: '100vw',
     }}
   >

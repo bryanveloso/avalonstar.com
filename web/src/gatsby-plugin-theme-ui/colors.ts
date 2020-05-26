@@ -1,7 +1,7 @@
 export const colors = {
   // ...
   text: '#efefef',
-  background: '#1a1f23',
+  background: '#05070d',
   primary: '#1cdaf4',
   highlight: 'rgba(255, 255, 255, 0.1)',
 
@@ -27,5 +27,6 @@ export const colors = {
   gradient: {
     lighter: '#23292f',
     darker: '#1a1f23',
+    darkest: '#05070d',
   },
 }

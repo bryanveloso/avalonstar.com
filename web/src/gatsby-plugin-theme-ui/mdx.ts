@@ -2,8 +2,7 @@ export const styles = {
   root: {
     fontFamily: 'body',
     fontWeight: 'book',
-    backgroundColor: 'muted.dark',
-    backgroundImage: 'linear-gradient(#1a1f23, #0d0a11 512px)',
+    backgroundImage: 'linear-gradient(#1a1f23, #05070d 640px)',
     backgroundRepeat: 'no-repeat',
   },
 

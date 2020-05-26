@@ -17,7 +17,7 @@ const TwitchStatus = () => {
   })
 
   return !loading && !error && data.data.length ? (
-    <Box sx={{ backgroundColor: 'muted.dark' }}>
+    <Box sx={{ backgroundColor: 'gradient.darkest' }}>
       <Box py={3} sx={{ borderBottom: '1px solid', borderColor: 'gradient.lighter', fontSize: 0 }}>
         <Flex variant="layout.wrapper">
           <Box mr={2} sx={{ color: 'main.avapurple', height: '1rem' }}>
