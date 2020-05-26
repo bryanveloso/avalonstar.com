@@ -15,26 +15,26 @@ const EntryList = () => {
   const ratio = useResponsiveValue([36 / 9, 52 / 9])
   return (
     <Box as="section">
-      {data.map(({ node }) => {
+      {data.map(({ node }, index) => {
         const { coverImage, id, number, publishedAt, slug, title } = node
         return (
-          <Box key={id} sx={{ pb: 6 }}>
-            <Box sx={{ position: 'relative', boxShadow: 'card.lg', zIndex: '100' }}>
-              <Link to={getBlogUrl(publishedAt, slug.current)}>
-                <AspectRatio ratio={ratio}>
-                  <Img
-                    fluid={coverImage.asset.fluid}
-                    alt={coverImage.alt}
-                    sx={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 2 }}
-                  />
-                </AspectRatio>
-              </Link>
-            </Box>
-            <Flex pt={3}>
+          <Box key={id} sx={{ pb: 4 }}>
+            {index === 0 && (
+              <Box sx={{ position: 'relative', boxShadow: 'card.lg', zIndex: '100' }}>
+                <Link to={getBlogUrl(publishedAt, slug.current)}>
+                  <AspectRatio ratio={ratio}>
+                    <Img
+                      fluid={coverImage.asset.fluid}
+                      alt={coverImage.alt}
+                      sx={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 2 }}
+                    />
+                  </AspectRatio>
+                </Link>
+              </Box>
+            )}
+            <Flex pt={3} sx={{ alignItems: 'baseline' }}>
               <Box>
-                {number > 0 && (
-                  <Text sx={{ color: 'muted.lightbluegrey', pt: '2px' }}>{numeral(number).format('000')}</Text>
-                )}
+                {number > 0 && <Text sx={{ color: 'muted.lightbluegrey' }}>{numeral(number).format('000')}</Text>}
               </Box>
               <Box pl={4} sx={{ flex: 1 }}>
                 <Heading sx={{ lineHeight: '1.5rem' }}>
