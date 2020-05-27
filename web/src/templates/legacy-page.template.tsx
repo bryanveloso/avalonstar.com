@@ -38,7 +38,7 @@ const Entry = (props) => {
       </Box>
       <Box
         sx={{
-          'p:first-of-type': {
+          '> p:first-of-type': {
             color: 'muted.lightbluegrey',
             fontSize: [3],
             fontStyle: 'italic',

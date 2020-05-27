@@ -1,11 +1,11 @@
 /** @jsx jsx */
-import { useResponsiveValue } from '@theme-ui/match-media'
 import format from 'date-fns/format'
 import parseISO from 'date-fns/parseISO'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import numeral from 'numeral'
 import { jsx, AspectRatio, Box, Flex, Heading, Text } from 'theme-ui'
+import { useResponsiveValue } from '@theme-ui/match-media'
 
 import { useEntryData } from '@/hooks'
 import { getBlogUrl } from '@/lib/helpers'

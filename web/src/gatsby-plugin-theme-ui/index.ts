@@ -12,7 +12,7 @@ const LINE_HEIGHTS = FONT_SIZES.map((f) => (Math.ceil(f / BASELINE) * BASELINE) 
 
 export const TEXT_MEGA = {
   fontSize: [5, 6],
-  lineHeight: [4, 4],
+  lineHeight: [4, 7],
 }
 
 export const TEXT_HUGE = {
