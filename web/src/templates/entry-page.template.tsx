@@ -6,53 +6,76 @@ import { formatDistanceStrict, differenceInDays, format, parseISO } from 'date-f
 import { graphql, Link } from 'gatsby'
 import numeral from 'numeral'
 import { Fragment } from 'react'
-import { jsx, Box, Container, Grid, Heading, Text } from 'theme-ui'
+import { jsx, Box, Grid, Heading, Text } from 'theme-ui'
 
 import { Cover, SEO } from '@/components'
 import serializers from '@/components/serializers/Entry'
 
 import clientConfig from '../../client-config'
 
+const Navigation = ({ text, publishedAt, slug, title }) => {
+  return (
+    <Box>
+      <Text
+        sx={{
+          color: 'muted.bluegrey',
+          fontSize: 0,
+          textTransform: 'uppercase',
+        }}
+      >
+        {text}
+      </Text>
+      <Link
+        to={`/blog/${format(parseISO(publishedAt), 'yyyy')}/${slug.current}`}
+        sx={{
+          variant: 'styles.a',
+          fontFamily: 'heading',
+          fontSize: [4],
+          lineHeight: [4],
+        }}
+      >
+        {title}
+        <span sx={{ color: 'white' }}>.</span>
+      </Link>
+    </Box>
+  )
+}
+
 const Entry = (props) => {
-  const { _rawBody, author, coverImage, number, publishedAt, title } = props
+  const { _rawBody, author, coverImage, number, publishedAt, title, prev, next } = props
   const ratio = useResponsiveValue([2.39 / 1, 4 / 1])
   return (
     <Box as="article">
-      <Container variant="entry">
-        {coverImage && coverImage.asset && (
-          <Cover ratio={ratio} asset={coverImage.asset.fluid} alt={coverImage.alt} caption={coverImage.caption} />
-        )}
-      </Container>
-      <Container variant="entry" sx={{ mx: 'auto', my: [6, 7, 8] }}>
-        <Box variant="structure.metadata" sx={{ display: 'inline-flex' }}>
+      {coverImage && coverImage.asset && (
+        <Cover ratio={ratio} asset={coverImage.asset.fluid} alt={coverImage.alt} caption={coverImage.caption} />
+      )}
+      <Box sx={{ my: [6, null, 7] }}>
+        <Box sx={{ display: 'inline-flex', fontSize: 1 }}>
           {number > 0 && (
-            <Text sx={{ color: 'muted.midgrey' }}>
+            <Text variant="counter">
               {numeral(number).format('000')}
               <span sx={{ px: 2 }}>&ndash;</span>
             </Text>
           )}
-          <Text as="time" variant="time">
+          <Text as="time" variant="date">
             {differenceInDays(new Date(), new Date(publishedAt)) < 3
               ? `${formatDistanceStrict(new Date(publishedAt), new Date())} ago`
               : format(new Date(publishedAt), 'MMMM dd, yyyy')}
           </Text>
         </Box>
-        <Heading variant="entry.title">
+        <Heading as="h1" variant="styles.h1">
           {title}
           <span sx={{ color: 'main.avagreen' }}>.</span>
         </Heading>
-      </Container>
-      <Container variant="entry">
-        <Box sx={{ bg: 'muted.lightbluegrey', height: 2, width: '20%' }} />
-      </Container>
-      <Container
-        variant="entry"
+      </Box>
+      <Box sx={{ bg: 'muted.bluegrey', height: 1, mb: 6, width: '25%' }} />
+      <Box
         sx={{
           'p:first-of-type': {
             color: 'muted.lightbluegrey',
             fontSize: [3],
             fontStyle: 'italic',
-            lineHeight: [1],
+            lineHeight: [3],
           },
         }}
       >
@@ -71,50 +94,22 @@ const Entry = (props) => {
             {author.name}
           </Box>
         )}
-      </Container>
-    </Box>
-  )
-}
-
-const Navigation = ({ next, prev }) => {
-  return (
-    <Container variant="entry" sx={{ mx: 'auto', mt: 8 }}>
+      </Box>
       <Grid
+        as="nav"
         gap={8}
         columns={[1, 2]}
         sx={{
           borderTop: '1px solid',
           borderColor: alpha('muted.bluegrey', 0.2),
-          my: 6,
+          my: 8,
           pt: 4,
         }}
       >
-        {prev && (
-          <Box>
-            <Text variant="entry.navigation">Previously</Text>
-            <Link
-              to={`/blog/${format(parseISO(prev.publishedAt), 'yyyy')}/${prev.slug.current}`}
-              sx={{ variant: 'links.entry.navigation' }}
-            >
-              {prev.title}
-              <span sx={{ color: 'white' }}>.</span>
-            </Link>
-          </Box>
-        )}
-        {next && (
-          <Box>
-            <Text variant="entry.navigation">Up Next</Text>
-            <Link
-              to={`/blog/${format(parseISO(next.publishedAt), 'yyyy')}/${next.slug.current}`}
-              sx={{ variant: 'links.entry.navigation' }}
-            >
-              {next.title}
-              <span sx={{ color: 'white' }}>.</span>
-            </Link>
-          </Box>
-        )}
+        {prev && <Navigation text="Previously" publishedAt={prev.publishedAt} slug={prev.slug} title={prev.title} />}
+        {next && <Navigation text="Up Next" publishedAt={next.publishedAt} slug={next.slug} title={next.title} />}
       </Grid>
-    </Container>
+    </Box>
   )
 }
 
@@ -133,8 +128,7 @@ const EntryPageTemplate = ({ data, errors, pageContext }) => {
           ]}
         />
       )}
-      {entry && <Entry {...entry} />}
-      {entry && <Navigation {...pageContext} />}
+      {entry && <Entry {...entry} {...pageContext} />}
     </Fragment>
   )
 }

@@ -1,8 +1,9 @@
 /** @jsx jsx */
+/* eslint-disable react/jsx-pascal-case */
 /* eslint-disable no-underscore-dangle */
 
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import { jsx, Box, Container, Grid } from 'theme-ui'
+import { jsx, Box, Container, Grid, Styled } from 'theme-ui'
 
 import { SEO } from '@/components'
 import { EntryList, QuoteList } from '@/components/partials/home'
@@ -25,23 +26,28 @@ export const IndexPageTemplate = () => {
       <SEO title={title} />
       <Container>
         <EntryList />
-        <Grid as="section" columns={[1, null, 2]} sx={{ mt: 4 }}>
-          <Box sx={{ fontSize: 1, lineHeight: ['1.5rem'] }}>
-            <p>
-              Hello, my name is Bryan Veloso and I've been around the web for a bit. Since I bought
-              this domain in 2000, Avalonstar has been one of the longest-running constants in my
-              life. It has managed to change in both form and function as much as I have, going from
-              personal site, to blog, to online moniker, to company namesake, and back again.
-            </p>
-            <p>
-              Avalonstar is an extension of me: the designer, the developer, the gamer, the content
-              creator, the entrepreneur, and whatever else the next 20 or so years have to offer.
-            </p>
-            <p>
-              <Link to="/history/" sx={{ variant: 'links.primaryButton' }}>
-                Take a look back
-              </Link>
-            </p>
+        <Grid gap={4} as="section" columns={[1, 2]} sx={{ mt: 4 }}>
+          <Box sx={{ fontSize: 1, mb: 4 }}>
+            <Styled.p>
+              Hello, my name is Bryan Veloso and I&apos;ve been around the web for a bit. Since I bought this domain in
+              2000, Avalonstar has been one of the longest-running constants in my life. It has managed to change in
+              both form and function as much as I have, going from personal site, to blog, to online moniker, to company
+              namesake, and back again.
+            </Styled.p>
+            <Styled.p>
+              Avalonstar is an extension of me: the designer, the developer, the gamer, the content creator, the
+              entrepreneur, and whatever else the next 20 or so years have to offer.
+            </Styled.p>
+            <Link
+              to="/history/"
+              sx={{
+                variant: 'links.button',
+                backgroundColor: 'main.avagreen',
+                color: 'main.dark',
+              }}
+            >
+              Take a look back
+            </Link>
           </Box>
           <QuoteList />
         </Grid>

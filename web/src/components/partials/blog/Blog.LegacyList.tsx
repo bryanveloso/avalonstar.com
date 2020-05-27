@@ -13,16 +13,8 @@ const Section = (props) => {
   return (
     <Grid columns={['auto', 'auto 1fr']} mb={4}>
       <Box>
-        <Heading
-          sx={{
-            color: 'main.avayellow',
-            fontVariantNumeric: 'lining-nums',
-            mr: [0, 4],
-          }}
-        >
-          {year}
-        </Heading>
-        <Text sx={{ color: 'muted.yellow', fontSize: 1 }}>
+        <Heading sx={{ color: 'main.avayellow', mr: [0, 4] }}>{year}</Heading>
+        <Text variant="text.smallCaps" sx={{ color: 'muted.yellow', position: 'relative', top: '-6px' }}>
           <Pluralize singular="entry" plural="entries" count={data.length} />
         </Text>
       </Box>
@@ -52,7 +44,6 @@ const Section = (props) => {
                   color: 'muted.bluegrey',
                   fontSize: 0,
                   fontVariantNumeric: 'tabular-nums',
-                  mt: [null, 1],
                 }}
               >
                 {format(parse(date, 'MMMM dd, yyyy', new Date()), 'MM/dd')}

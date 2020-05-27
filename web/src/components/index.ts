@@ -1,7 +1,6 @@
 export { default as Cover } from './Cover'
 export { default as Footer } from './Footer'
 export { default as Header } from './Header'
-export { default as NavLink } from './NavLink'
 export { default as PageHeader } from './PageHeader'
 export { default as PortableText } from './PortableText'
 export { default as SEO } from './SEO'

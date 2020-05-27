@@ -24,12 +24,7 @@ const MainNavigation = () => {
             const { title, slug } = node
             return (
               <motion.li animate key={slug.current} sx={{ pl: 4 }}>
-                <Link
-                  to={`/${slug.current}`}
-                  activeClassName="active"
-                  partiallyActive
-                  sx={{ variant: 'links.nav' }}
-                >
+                <Link to={`/${slug.current}`} activeClassName="active" partiallyActive>
                   {title}
                 </Link>
               </motion.li>

@@ -30,7 +30,7 @@ const Event = (props) => {
       <Grid
         gap={2}
         color={getHeaderColor()[subject]}
-        columns={['auto', null, '1fr 2fr']}
+        columns={['auto']}
         sx={{ fontSize: 1, gridColumn: '2', pl: 4, mb: 6 }}
       >
         {coverImage && (
@@ -50,8 +50,28 @@ const Event = (props) => {
           </Box>
         )}
         <Box>
-          <Text variant="history.date">{date}</Text>
-          <Text variant="history.title">{name}.</Text>
+          <Text
+            variant="date"
+            sx={{
+              color: 'main.avayellow',
+              fontWeight: 'book',
+              lineHeight: 4,
+              textTransform: 'uppercase',
+            }}
+          >
+            {date}
+          </Text>
+          <Text
+            sx={{
+              fontFamily: 'freight',
+              fontSize: 4,
+              lineHeight: 4,
+              fontWeight: 'bold',
+              mb: 2,
+            }}
+          >
+            {name}.
+          </Text>
           {_rawBody && <PortableText blocks={_rawBody} />}
         </Box>
       </Grid>

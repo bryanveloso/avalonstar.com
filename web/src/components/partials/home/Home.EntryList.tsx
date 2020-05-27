@@ -16,10 +16,10 @@ const EntryList = () => {
   return (
     <Box>
       <Box sx={{ mb: 4 }}>
-        <Heading as="h2">
+        <Heading as="h2" sx={{ lineHeight: [4] }}>
           Things I&lsquo;ve <span sx={{ color: 'main.avagreen' }}>written.</span>
         </Heading>
-        <Text variant="secondary">Words on pages. Thoughts noted in stages.</Text>
+        <Text variant="subheader">Words on pages. Thoughts noted in stages.</Text>
       </Box>
       <Box as="section">
         {data.map(({ node }, index: number) => {
@@ -27,38 +27,47 @@ const EntryList = () => {
           return (
             <Box key={id}>
               {index === 0 && (
-                <Box sx={{ position: 'relative', boxShadow: 'card.lg', zIndex: '100' }}>
+                <Box
+                  sx={{
+                    position: 'relative',
+                    backgroundColor: 'muted.dark',
+                    borderRadius: 2,
+                    boxShadow: 'card.lg',
+                    zIndex: '100',
+                  }}
+                >
                   <Link to={getBlogUrl(publishedAt, slug.current)}>
                     <AspectRatio ratio={ratio}>
-                      <Img
-                        fluid={coverImage.asset.fluid}
-                        alt={coverImage.alt}
-                        sx={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 2 }}
-                      />
+                      {coverImage && coverImage.asset && (
+                        <Img
+                          fluid={coverImage.asset.fluid}
+                          alt={coverImage.alt}
+                          sx={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 2 }}
+                        />
+                      )}
                     </AspectRatio>
                   </Link>
                 </Box>
               )}
               <Flex py={3} sx={{ alignItems: 'baseline', borderBottom: '1px solid', borderColor: 'gradient.darker' }}>
                 <Box>
-                  {number > 0 && (
-                    <Text variant="counter" sx={{ color: 'muted.lightbluegrey' }}>
-                      {numeral(number).format('000')}
-                    </Text>
-                  )}
+                  <Text variant="counter">{number > 0 ? numeral(number).format('000') : '000'}</Text>
                 </Box>
                 <Box sx={{ flex: '1', px: 4 }}>
-                  <Heading sx={{ fontFamily: 'body', fontSize: [2, 2, 4, null] }}>
-                    <Link
-                      to={getBlogUrl(publishedAt, slug.current)}
-                      sx={{ variant: 'styles.a', border: 'none', color: 'white' }}
-                    >
+                  <Heading
+                    sx={{
+                      fontFamily: 'body',
+                      fontSize: [2, null, 3],
+                      lineHeight: [4],
+                    }}
+                  >
+                    <Link to={getBlogUrl(publishedAt, slug.current)} sx={{ variant: 'links.title' }}>
                       {title}
-                      <span sx={{ color: 'main.avagreen' }}>.</span>
                     </Link>
+                    <span sx={{ color: 'main.avagreen' }}>.</span>
                   </Heading>
                 </Box>
-                <Text variant="date" sx={{ whiteSpace: 'nowrap' }}>
+                <Text as="time" variant="date">
                   {format(parseISO(publishedAt), 'MMMM d, yyyy')}
                 </Text>
               </Flex>

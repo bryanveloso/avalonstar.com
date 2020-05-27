@@ -1,4 +1,5 @@
 /** @jsx jsx */
+/* eslint-disable react/jsx-pascal-case */
 import getYouTubeId from 'get-youtube-id'
 import { jsx, Box, Embed, Flex, Styled } from 'theme-ui'
 
@@ -46,7 +47,7 @@ const serializers = {
     youtube: ({ node }) => {
       const { url } = node
       const id = getYouTubeId(url)
-      return <Embed src={`https://www.youtube.com/embed/${id}`} />
+      return <Embed src={`https://www.youtube.com/embed/${id}`} sx={{ mb: [4, 5] }} />
     },
   },
   marks: {

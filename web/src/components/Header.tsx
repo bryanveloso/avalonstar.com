@@ -21,7 +21,7 @@ const Header = () => {
               <Logotype sx={{ height: ['1.25rem', '1.75rem'] }} />
             </Link>
           </Flex>
-          <Box>
+          <Box variant="components.navigation">
             <MainNavigation />
             <MobileNavigation />
           </Box>

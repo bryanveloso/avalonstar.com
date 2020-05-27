@@ -20,34 +20,40 @@ const EntryList = () => {
         return (
           <Box key={id}>
             {index === 0 && (
-              <Box sx={{ position: 'relative', boxShadow: 'card.lg', zIndex: '100' }}>
+              <Box
+                sx={{
+                  position: 'relative',
+                  backgroundColor: 'muted.dark',
+                  borderRadius: 2,
+                  boxShadow: 'card.lg',
+                  zIndex: '100',
+                }}
+              >
                 <Link to={getBlogUrl(publishedAt, slug.current)}>
                   <AspectRatio ratio={ratio}>
-                    <Img
-                      fluid={coverImage.asset.fluid}
-                      alt={coverImage.alt}
-                      sx={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 2 }}
-                    />
+                    {coverImage && coverImage.asset && (
+                      <Img
+                        fluid={coverImage.asset.fluid}
+                        alt={coverImage.alt}
+                        sx={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 2 }}
+                      />
+                    )}
                   </AspectRatio>
                 </Link>
               </Box>
             )}
             <Flex pt={3} sx={{ alignItems: 'baseline' }}>
               <Box>
-                {number > 0 && (
-                  <Text variant="counter" sx={{ color: 'muted.lightbluegrey' }}>
-                    {numeral(number).format('000')}
-                  </Text>
-                )}
+                <Text variant="counter">{number > 0 ? numeral(number).format('000') : '000'}</Text>
               </Box>
               <Box pl={4} sx={{ flex: 1 }}>
                 <Heading sx={{ lineHeight: '1.5rem' }}>
-                  <Link to={getBlogUrl(publishedAt, slug.current)} sx={{ variant: 'links.header' }}>
+                  <Link to={getBlogUrl(publishedAt, slug.current)} sx={{ variant: 'links.title' }}>
                     {title}
-                    <span sx={{ color: 'main.avagreen' }}>.</span>
                   </Link>
+                  <span sx={{ color: 'main.avagreen' }}>.</span>
                 </Heading>
-                <Text variant="date" sx={{ pt: 1 }}>
+                <Text as="time" variant="date">
                   {format(parseISO(publishedAt), 'MMMM d, yyyy')}
                 </Text>
               </Box>

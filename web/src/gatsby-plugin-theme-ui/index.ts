@@ -1,310 +1,275 @@
 /* eslint-disable prefer-destructuring */
 import { alpha } from '@theme-ui/color'
 
-import { colors } from './colors'
-import { styles } from './mdx'
+const BASE_FONT = 16
+const BASE_LINE_HEIGHT = 1.8
+const BASELINE = BASE_FONT * BASE_LINE_HEIGHT
 
-const breakpoints = ['600px', '900px', '1200px', '1800px']
+const BREAKPOINTS = ['600px', '900px', '1200px', '1800px']
 
-const space = [0, '0.25rem', '0.5rem', '1rem', '1.5rem', '2rem', '2.5rem', '3rem', '4rem', '8rem', '16rem', '32rem']
+const FONT_SIZES = [12, 14, 16, 18, 24, 32, 48, 56]
+const LINE_HEIGHTS = FONT_SIZES.map((f) => (Math.ceil(f / BASELINE) * BASELINE) / f)
 
-const radii = [0, 2, 4, 16, 9999, '100%']
-
-const fonts = {
-  adelle: 'adelle-sans, sans-serif',
-  freight: 'freight-sans-pro, sans-serif',
-  body: 'adelle-sans, sans-serif',
-  heading: 'freight-sans-pro, sans-serif',
+export const TEXT_MEGA = {
+  fontSize: [5, 6],
+  lineHeight: [4, 4],
 }
 
-const fontSizes = [
-  '0.75rem',
-  '0.875rem',
-  '1rem',
-  '1.125rem',
-  '1.25rem',
-  '1.5rem',
-  '1.75rem',
-  '2rem',
-  '2.5rem',
-  '3rem',
-  '3.5rem',
-]
-
-const lineHeights = ['1.5rem', '2rem', '2.5rem', '3rem', '3.5rem', '4rem']
-
-const fontWeights = {
-  light: 300,
-  book: 400,
-  bold: 700,
-  black: 900,
-
-  // Aliases.
-  body: 400,
-  heading: 700,
+export const TEXT_HUGE = {
+  fontSize: [5],
+  lineHeight: [4],
 }
 
-const text = {
+export const TEXT_XLARGE = {
+  fontSize: [4],
+  lineHeight: [4],
+}
+
+export const TEXT_LARGE = {
+  fontSize: [3],
+  lineHeight: [3],
+}
+
+export const COLORS = {
   // ...
-  heading: {
-    fontFamily: 'heading',
-  },
-  primary: {},
-  secondary: {
-    color: 'muted.lightbluegrey',
-    fontFamily: 'adelle',
-    fontWeight: 'book',
-    fontStyle: 'italic',
-  },
-  hero: {
-    variant: 'styles.h1',
-    fontWeight: 'black',
-  },
-  subhero: {
-    color: 'muted.lightbluegrey',
-    fontFamily: 'adelle',
-    fontWeight: 'book',
-    fontStyle: 'italic',
-  },
+  text: '#efefef',
+  background: '#05070d',
+  primary: '#1cdaf4',
+  highlight: 'rgba(255, 255, 255, 0.1)',
 
   // ...
-  counter: {
-    fontVariantNumeric: 'tabular-nums',
+  main: {
+    avagreen: '#5be058',
+    avapurple: '#6644e8',
+    avablue: '#1cdaf4',
+    avayellow: '#ffdd33',
+    dark: '#241f33',
+    light: '#efefef',
+  },
+  muted: {
+    purple: '#928add',
+    bluegrey: '#6d8591',
+    yellow: '#fff683',
+    lightgreen: '#e7f7e7',
+    midgrey: '#939393',
+    dark: '#0d0a11',
+    green: '#bbf4b0',
+    lightbluegrey: '#b4cbd6',
+  },
+  gradient: {
+    lighter: '#23292f',
+    darker: '#1a1f23',
+    darkest: '#05070d',
+  },
+}
+
+const baselineMultiple = (w) => (theme) => theme.baseline * w
+
+export default {
+  baseline: BASELINE,
+  space: [0, '0.25rem', '0.5rem', '1rem', '1.5rem', '2rem', '2.5rem', '3rem', '4rem', '8rem', '16rem', '32rem'],
+  radii: [0, 2, 4, 16, 9999, '100%'],
+
+  fontSizes: FONT_SIZES,
+  lineHeights: LINE_HEIGHTS,
+
+  breakpoints: BREAKPOINTS,
+
+  colors: COLORS,
+
+  fonts: {
+    adelle: 'adelle-sans, sans-serif',
+    freight: 'freight-sans-pro, sans-serif',
+    body: 'adelle-sans, sans-serif',
+    heading: 'freight-sans-pro, sans-serif',
+  },
+  fontWeights: {
+    light: 300,
+    book: 400,
+    bold: 700,
+    black: 900,
+
+    // Aliases.
+    body: 400,
+    heading: 700,
   },
 
-  // ...
-  entry: {
-    title: {
-      fontSize: [7, 9],
-      lineHeight: ['2rem', '3rem'],
-      py: [2, 0],
+  text: {
+    smallCaps: {
+      fontVariantCaps: 'all-small-caps',
     },
-    h3: {
-      variant: 'styles.h3',
-      textTransform: 'uppercase',
-    },
-    p: {
-      fontSize: 2,
-      lineHeight: 1,
-      mb: 4,
-    },
-    navigation: {
-      color: 'muted.bluegrey',
-      fontSize: 1,
-      textTransform: 'uppercase',
-      mb: [2],
-    },
-  },
 
-  history: {
+    // ...
+    hero: {
+      variant: 'styles.h1',
+      fontWeight: 'black',
+    },
+    subheader: {
+      color: 'muted.lightbluegrey',
+      fontStyle: 'italic',
+    },
+
+    // ...
+    counter: {
+      variant: 'text.smallCaps',
+      color: 'muted.lightbluegrey',
+    },
     date: {
-      fontWeight: 'book',
-      fontSize: 1,
-      textTransform: 'uppercase',
-    },
-    title: {
-      fontFamily: 'freight',
-      fontSize: [4, 4, 6, null],
-      fontWeight: 'bold',
-    },
-  },
-
-  // ...
-  date: {
-    color: 'main.avagreen',
-    fontWeight: 'book',
-    fontSize: [0, 1],
-    textTransform: 'uppercase',
-  },
-
-  // ...
-  time: {
-    color: 'main.avagreen',
-    fontSize: 1,
-    textTransform: 'uppercase',
-  },
-
-  // ...
-  quote: {
-    color: 'muted.lightbluegrey',
-    fontFamily: 'freight',
-    fontSize: [2, 4, null, null],
-    lineHeight: [1.4],
-    pb: 2,
-  },
-}
-
-const links = {
-  nav: {
-    color: 'inherit',
-    fontFamily: 'freight',
-    fontSize: 1,
-    fontWeight: 'black',
-    textDecoration: 'none',
-    textTransform: 'uppercase',
-    transition: 'all 300ms ease-out',
-    '&.active': { color: 'main.avablue' },
-    '&:hover': {
-      color: 'main.avablue',
-    },
-  },
-  title: {
-    color: 'white',
-    fontFamily: 'freight',
-    fontSize: 1,
-    fontWeight: 'bold',
-    textDecoration: 'none',
-  },
-
-  // ...
-  socials: {
-    color: 'main.avablue',
-    fontSize: 1,
-    fontWeight: 'bold',
-    svg: {
-      verticalAlign: 'middle',
-    },
-    span: {
-      display: ['none', 'inline'],
-      pl: 2,
-      fontSize: 0,
-    },
-  },
-
-  // ...
-  entry: {
-    navigation: {
-      variant: 'styles.a',
-      fontFamily: 'heading',
-      fontSize: [5],
-      lineHeight: ['1.5rem'],
-    },
-  },
-
-  // ...
-  header: {
-    variant: 'styles.a',
-    border: 'none',
-    color: 'white',
-    '&:hover': {
+      variant: 'text.smallCaps',
       color: 'main.avagreen',
     },
   },
+  links: {
+    title: {
+      color: 'white',
+      textDecoration: 'none',
+    },
+    button: {
+      appearance: 'none',
+      display: 'inline-block',
+      textAlign: 'center',
+      lineHeight: 'inherit',
+      textDecoration: 'none',
+      fontFamily: 'freight',
+      fontSize: 1,
+      fontWeight: 900,
+      m: 0,
+      px: 3,
+      py: 2,
+      border: 0,
+      borderRadius: 1,
+      textTransform: 'uppercase',
+    },
+  },
 
-  // ...
-  button: {
-    appearance: 'none',
-    display: 'inline-block',
-    textAlign: 'center',
-    lineHeight: 'inherit',
-    textDecoration: 'none',
-    fontFamily: 'freight',
-    fontSize: 1,
-    fontWeight: 900,
-    m: 0,
-    px: 3,
-    py: 2,
-    border: 0,
-    borderRadius: 1,
-    textTransform: 'uppercase',
-  },
-  primaryButton: {
-    variant: 'links.button',
-    backgroundColor: 'main.avapurple',
-    color: 'main.light',
-  },
-}
+  styles: {
+    root: {
+      background: 'linear-gradient(#1a1f23, #05070d 640px) no-repeat',
+      color: '#ecf3f9',
+      fontFamily: 'body',
+      fontSize: 2,
+      lineHeight: 2,
+    },
 
-const buttons = {
-  menu: {
-    display: ['block', 'none'],
-  },
-}
+    h1: {
+      ...TEXT_MEGA,
+      fontFamily: 'freight',
 
-const zIndices = {
-  '0': '0',
-  '10': '10',
-  '20': '20',
-  '30': '30',
-  '40': '40',
-  '50': '50',
-  auto: 'auto',
-}
+      '& a, & a:visited': {
+        color: 'inherit',
+      },
+    },
+    h2: {
+      ...TEXT_HUGE,
+      fontFamily: 'freight',
 
-const structure = {
-  caption: {
-    borderBottom: '1px solid',
-    borderColor: alpha('muted.bluegrey', 0.2),
-    color: 'muted.bluegrey',
-    fontSize: 0,
-    p: 2,
-    textAlign: 'right',
-  },
-  metadata: {
-    fontSize: 1,
-    textTransform: 'uppercase',
-  },
-}
+      '& a, & a:visited': {
+        color: 'inherit',
+      },
+    },
 
-const layout = {
-  wrapper: {
-    maxWidth: [480, 720, 960, 1440],
-    mx: 'auto',
-    px: [4, null, 8, 9],
-  },
-  container: {
-    maxWidth: [480, 720, 960, 1440],
-    mx: 'auto',
-  },
-  entry: {
-    maxWidth: [480, 720, 960],
-    mx: 'auto',
-  },
-}
+    blockquote: {
+      ...TEXT_LARGE,
+      color: 'muted.green',
+      fontFamily: 'freight',
+      mb: baselineMultiple(1.25),
+    },
+    p: {
+      mt: 0,
+      mb: baselineMultiple(1),
+    },
 
-const shadows = {
-  box: 'inset 0 0 0 1px #fff',
-  card: {
-    xs: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
-    sm: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
-    md: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
-    lg: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
-    xl: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)',
+    a: {
+      borderBottom: '1px solid',
+      borderColor: 'main.avablue',
+      color: 'inherit',
+      textDecoration: 'none',
+      transition: 'all 250ms ease',
+      ':hover': {
+        color: 'main.avablue',
+        textDecoration: 'none',
+      },
+    },
+    strong: {
+      fontWeight: 'bold',
+    },
+    em: {
+      fontStyle: 'italic',
+    },
   },
-}
 
-const cards = {
-  position: {
-    mb: 5,
+  layout: {
+    container: {
+      maxWidth: [480, 720, 960, 1440],
+      mx: 'auto',
+    },
+    wrapper: {
+      maxWidth: [480, 720, 960, 1440],
+      mx: 'auto',
+      px: [4, null, 8, 9],
+    },
+    entry: {
+      maxWidth: [480, 720, 960],
+    },
   },
-  compact: {
-    padding: 1,
-    borderRadius: 2,
-    border: '1px solid',
-    borderColor: 'muted',
+
+  shadows: {
+    box: 'inset 0 0 0 1px #fff',
+    card: {
+      xs: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+      sm: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
+      md: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+      lg: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)',
+      xl: '0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)',
+    },
   },
-}
 
-export default {
-  breakpoints,
-  space,
-  radii,
-  fonts,
-  fontSizes,
-  fontWeights,
-  lineHeights,
-  text,
-  links,
-  buttons,
-  zIndices,
-  structure,
-  cards,
-  layout,
-  shadows,
+  structure: {
+    caption: {
+      borderBottom: '1px solid',
+      borderColor: alpha('muted.bluegrey', 0.2),
+      color: 'muted.bluegrey',
+      fontSize: 0,
+      p: 2,
+      textAlign: 'right',
+    },
+  },
 
-  // ...
-  colors,
+  components: {
+    // Navigation-specific elements.
+    navigation: {
+      a: {
+        color: 'inherit',
+        fontFamily: 'freight',
+        fontSize: 1,
+        fontWeight: 'black',
+        textDecoration: 'none',
+        textTransform: 'uppercase',
+        transition: 'all 300ms ease-out',
+        '&.active': { color: 'main.avablue' },
+        '&:hover': {
+          color: 'main.avablue',
+        },
+      },
+    },
 
-  // ...
-  styles,
+    // Footer-specific elements.
+    footer: {
+      // Footer social links.
+      a: {
+        border: 'none',
+        color: 'main.avablue',
+        fontSize: 1,
+        fontWeight: 'bold',
+        textDecoration: 'none',
+        span: {
+          display: ['none', 'inline'],
+          pl: 2,
+        },
+        svg: {
+          verticalAlign: 'middle',
+        },
+      },
+    },
+  },
 }

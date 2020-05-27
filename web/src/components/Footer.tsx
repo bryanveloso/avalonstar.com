@@ -19,62 +19,43 @@ const Footer = () => {
   const { title } = useSiteSettings()
 
   return (
-    <footer>
-      <Grid
-        sx={{
-          variant: 'layout.container',
-          py: 6,
-        }}
-      >
-        <Grid columns={['auto', 'auto 1fr']} sx={{ pt: 6, borderTop: '1px solid', borderColor: 'muted.bluegrey' }}>
-          <Box>
-            <img src={Avalonstar} alt="logo" sx={{ height: 48 }} />
+    <footer sx={{ variant: 'components.footer' }}>
+      <Grid columns={[1, 'auto 1fr']} sx={{ my: 6, pt: 6, borderTop: '1px solid', borderColor: 'muted.bluegrey' }}>
+        <Box>
+          <img src={Avalonstar} alt="logo" sx={{ height: 48 }} />
+        </Box>
+        <Grid gap={6} columns={[1, 2]}>
+          <Box sx={{ color: 'muted.lightbluegrey', fontSize: 1 }}>
+            <strong sx={{ color: 'white' }}>Avalonstar</strong> is the{' '}
+            {differenceInYears(new Date(), new Date(2000, 9, 28))}
+            -year-old personal website of Bryan Veloso: <em>content creator</em>,{' '}
+            <em>retired professional user interface designer</em>, and <em>compass of purpose</em>.
           </Box>
-          <Grid gap={6} columns={['auto', '1fr 1fr']}>
-            <Box sx={{ color: 'muted.lightbluegrey', fontSize: 1, lineHeight: '1.5rem' }}>
-              <strong sx={{ color: 'white' }}>Avalonstar</strong> is the{' '}
-              {differenceInYears(new Date(), new Date(2000, 9, 28))}
-              -year-old personal website of Bryan Veloso: <em>content creator</em>,{' '}
-              <em>retired professional user interface designer</em>, and <em>compass of purpose</em>.
-            </Box>
-            <Grid gap={2} columns={[6, 2, 3]} sx={{ justifyContent: 'space-between' }}>
-              <Box>
-                <Link variant="socials" href={author.facebook}>
-                  <Facebook sx={{ height }} />
-                  <span>Facebook</span>
-                </Link>
-              </Box>
-              <Box>
-                <Link variant="socials" href={author.github}>
-                  <GitHub sx={{ height }} />
-                  <span>GitHub</span>
-                </Link>
-              </Box>
-              <Box>
-                <Link variant="socials" href={author.instagram}>
-                  <Instagram sx={{ height }} />
-                  <span>Instagram</span>
-                </Link>
-              </Box>
-              <Box>
-                <Link variant="socials" href={author.twitch}>
-                  <Twitch sx={{ height }} />
-                  <span>Twitch</span>
-                </Link>
-              </Box>
-              <Box>
-                <Link variant="socials" href={author.twitter}>
-                  <Twitter sx={{ height }} />
-                  <span>Twitter</span>
-                </Link>
-              </Box>
-              <Box>
-                <Link variant="socials" href={author.youtube}>
-                  <YouTube sx={{ height }} />
-                  <span>YouTube</span>
-                </Link>
-              </Box>
-            </Grid>
+          <Grid gap={2} columns={[6, 2, 3]} sx={{ justifyContent: 'space-between' }}>
+            <Link href={author.facebook}>
+              <Facebook sx={{ height }} />
+              <span>Facebook</span>
+            </Link>
+            <Link href={author.github}>
+              <GitHub sx={{ height }} />
+              <span>GitHub</span>
+            </Link>
+            <Link href={author.instagram}>
+              <Instagram sx={{ height }} />
+              <span>Instagram</span>
+            </Link>
+            <Link href={author.twitch}>
+              <Twitch sx={{ height }} />
+              <span>Twitch</span>
+            </Link>
+            <Link href={author.twitter}>
+              <Twitter sx={{ height }} />
+              <span>Twitter</span>
+            </Link>
+            <Link href={author.youtube}>
+              <YouTube sx={{ height }} />
+              <span>YouTube</span>
+            </Link>
           </Grid>
         </Grid>
       </Grid>
