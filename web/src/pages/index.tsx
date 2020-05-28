@@ -1,12 +1,12 @@
 /** @jsx jsx */
-/* eslint-disable react/jsx-pascal-case */
 /* eslint-disable no-underscore-dangle */
+/* eslint-disable react/jsx-pascal-case */
 
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { jsx, Box, Container, Grid, Styled } from 'theme-ui'
 
 import { SEO } from '@/components'
-import { EntryList, QuoteList } from '@/components/partials/home'
+import { EntryList, QuoteList, Company } from '@/components/partials/home'
 
 const QUERY = graphql`
   query {
@@ -26,6 +26,7 @@ export const IndexPageTemplate = () => {
       <SEO title={title} />
       <Container>
         <EntryList />
+        <Company />
         <Grid gap={4} as="section" columns={[1, 2]} sx={{ mt: 4 }}>
           <Box sx={{ fontSize: 1, mb: 4 }}>
             <Styled.p>
@@ -42,7 +43,7 @@ export const IndexPageTemplate = () => {
               to="/history/"
               sx={{
                 variant: 'links.button',
-                backgroundColor: 'main.avagreen',
+                backgroundColor: 'main.avablue',
                 color: 'main.dark',
               }}
             >

@@ -16,7 +16,7 @@ const EntryList = () => {
   return (
     <Box>
       <Box sx={{ mb: 4 }}>
-        <Heading as="h2" sx={{ lineHeight: [4] }}>
+        <Heading as="h2" variant="styles.h2">
           Things I&lsquo;ve <span sx={{ color: 'main.avagreen' }}>written.</span>
         </Heading>
         <Text variant="subheader">Words on pages. Thoughts noted in stages.</Text>
