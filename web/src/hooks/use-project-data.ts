@@ -19,6 +19,13 @@ const QUERY = graphql`
           _rawSummary(resolveReferences: { maxDepth: 10 })
           _rawInvolvement(resolveReferences: { maxDepth: 10 })
           _rawBody(resolveReferences: { maxDepth: 10 })
+          image {
+            asset {
+              fluid(maxWidth: 1080) {
+                ...GatsbySanityImageFluid
+              }
+            }
+          }
         }
       }
     }
