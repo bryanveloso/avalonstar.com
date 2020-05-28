@@ -1,12 +1,37 @@
 /** @jsx jsx */
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import { jsx, Box, Flex, Grid, Heading, Link, Text } from 'theme-ui'
 
-import iPhoneGitHub from '@/images/iphone-github.png'
-import iPhonePatreon from '@/images/iphone-patreon.png'
-import iPhoneTwitch from '@/images/iphone-twitch.png'
 import Patreon from '@/images/patreon.svg'
 import GitHub from '@/images/github.svg'
 import Twitch from '@/images/twitch.svg'
+
+const QUERY = graphql`
+  query {
+    github: file(relativePath: { eq: "iphone-github.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    patreon: file(relativePath: { eq: "iphone-patreon.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    twitch: file(relativePath: { eq: "iphone-twitch.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
 
 const Image = ({ children }) => <Flex sx={{ flexDirection: 'column', alignItems: 'center' }}>{children}</Flex>
 
@@ -23,6 +48,7 @@ const Description = ({ children }) => (
 )
 
 const Company = () => {
+  const data = useStaticQuery(QUERY)
   return (
     <Box as="section" sx={{ my: 8 }}>
       <Box sx={{ mb: [6, 4] }}>
@@ -39,7 +65,7 @@ const Company = () => {
         <Box sx={{ mb: [2, 0] }}>
           <Image>
             <Twitch sx={{ height: '2rem', mb: 3 }} />
-            <img src={iPhoneTwitch} sx={{ width: ['90%', '100%'] }} alt="" />
+            <Img fluid={data.twitch.childImageSharp.fluid} sx={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </Image>
           <Name text="avalonstar.tv" />
           <Description>
@@ -51,7 +77,7 @@ const Company = () => {
         <Box sx={{ mb: [2, 0] }}>
           <Image>
             <GitHub sx={{ height: '2rem', mb: 3 }} />
-            <img src={iPhoneGitHub} sx={{ width: ['90%', '100%'] }} alt="" />
+            <Img fluid={data.github.childImageSharp.fluid} sx={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </Image>
           <Name text="Synthform" />
           <Description>
@@ -63,7 +89,10 @@ const Company = () => {
         <Box sx={{ mb: [2, 0] }}>
           <Image>
             <Patreon sx={{ height: '2rem', mb: 3 }} />
-            <img src={iPhonePatreon} sx={{ width: ['90%', '100%'] }} alt="" />
+            <Img
+              fluid={data.patreon.childImageSharp.fluid}
+              sx={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
           </Image>
           <Name text="Patreon" />
           <Description>
