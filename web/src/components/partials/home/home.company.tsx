@@ -12,21 +12,21 @@ const QUERY = graphql`
     github: file(relativePath: { eq: "iphone-github.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     patreon: file(relativePath: { eq: "iphone-patreon.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     twitch: file(relativePath: { eq: "iphone-twitch.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
