@@ -21,29 +21,23 @@ const getLogo = (height = '60px') => ({
 })
 
 const ProjectList = ({ projects }) => (
-  <Box sx={{ pt: 3, fontSize: 0 }}>
-    <Heading
-      variant="styles.h5"
-      sx={{
-        color: 'muted.lightbluegrey',
-        mb: 0,
-        pr: 4,
-        lineHeight: 2.5,
-      }}
-    >
+  <Box sx={{ fontSize: 0 }}>
+    <Text variant="text.smallCaps" sx={{ color: 'main.avayellow', fontSize: 1 }}>
       Projects
-    </Heading>
+    </Text>
     <Box>
       {projects.map((project) => {
-        const { announcementUrl, date, isActive, name, projectUrl } = project
-        return projectUrl ? (
-          <Link href={projectUrl} key={name} sx={{ display: 'block', opacity: isActive ? 1 : 0.5 }}>
-            {name} {date}
-          </Link>
+        const { announcementUrl, date, name } = project
+        return announcementUrl ? (
+          <div>
+            <Link href={announcementUrl} key={name}>
+              {name}
+            </Link>
+          </div>
         ) : (
-          <Text key={name} sx={{ opacity: isActive ? 1 : 0.5 }}>
-            {name} {date}
-          </Text>
+          <div>
+            <Text key={name}>{name}</Text>
+          </div>
         )
       })}
     </Box>
@@ -57,15 +51,15 @@ const PositionList = () => {
       {data.map(({ node }) => {
         const { _rawSummary, id, company, date, projects, slug, title } = node
         return (
-          <Card key={id} variant="position">
-            <Box pb={3}>{getLogo()[slug.current]}</Box>
-            <Box>
+          <Card key={id}>
+            <Box mb={2}>{getLogo()[slug.current]}</Box>
+            <Box sx={{ lineHeight: 3 }}>
               <Text variant="date">{date}</Text>
-              <Heading sx={{}}>
+              <Heading sx={{ mb: 3 }}>
                 {company}&rsquo;s {title}
               </Heading>
             </Box>
-            <Grid>
+            <Grid columns={['1fr 7rem']}>
               {_rawSummary && <PortableText blocks={_rawSummary} />}
               {projects && <ProjectList projects={projects} />}
             </Grid>

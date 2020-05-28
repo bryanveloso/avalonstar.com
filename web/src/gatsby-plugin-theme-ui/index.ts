@@ -272,4 +272,23 @@ export default {
       },
     },
   },
+
+  pages: {
+    projects: {
+      dl: {
+        fontSize: 1,
+        m: 0,
+        mb: 4,
+      },
+      dt: {
+        variant: 'text.smallCaps',
+        color: 'main.avayellow',
+      },
+      dd: {
+        m: 0,
+
+        '& + dt': { mt: 2 },
+      },
+    },
+  },
 }
