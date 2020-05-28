@@ -17,7 +17,7 @@ const EntryList = () => {
     <Box>
       <Box sx={{ mb: 4 }}>
         <Heading as="h2" variant="styles.h2">
-          Things I&lsquo;ve <span sx={{ color: 'main.avagreen' }}>written.</span>
+          The things I&lsquo;ve <span sx={{ color: 'main.avagreen' }}>written.</span>
         </Heading>
         <Text variant="subheader">Words on pages. Thoughts noted in stages.</Text>
       </Box>
