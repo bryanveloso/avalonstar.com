@@ -58,7 +58,7 @@ const Section = (props) => {
 
 const LegacyList = () => {
   const data = useLegacyData()
-  const dataByYear = groupBy(data, (datum) => datum.frontmatter.date.substr(datum.frontmatter.date.length - 4))
+  const dataByYear = groupBy(data, ({ frontmatter }) => frontmatter.date.substr(frontmatter.date.length - 4))
 
   return (
     <Box as="section" mt={6}>
@@ -66,7 +66,7 @@ const LegacyList = () => {
         <Heading as="h2">
           Legacy entries<span sx={{ color: 'main.avagreen' }}>.</span>
         </Heading>
-        <Text color="muted.lightbluegrey" variant="styles.p" my={2}>
+        <Text variant="subheader" my={2}>
           The links that follow are a collection of <strong>legacy blog entries from 2004&ndash;2014</strong>, or{' '}
           <em>&ldquo;when I started blogging on this domain&rdquo;</em> to{' '}
           <em>&ldquo;when I got into streaming.&rdquo;</em> Although these posts have survived the numerous platform

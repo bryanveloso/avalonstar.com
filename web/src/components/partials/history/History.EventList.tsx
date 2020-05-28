@@ -48,7 +48,7 @@ const Event = ({ _rawBody, coverImage, date, name, subject }) => {
           <Text variant="date" sx={{ fontSize: 2, mb: 2 }}>
             {date}
           </Text>
-          {_rawBody && <PortableText blocks={_rawBody} />}
+          <Box variant="layout.readable">{_rawBody && <PortableText blocks={_rawBody} />}</Box>
         </Box>
       </Grid>
     </Fragment>

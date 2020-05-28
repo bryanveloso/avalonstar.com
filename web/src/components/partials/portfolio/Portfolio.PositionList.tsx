@@ -27,7 +27,7 @@ const ProjectList = ({ projects }) => (
     </Text>
     <Box>
       {projects.map((project) => {
-        const { announcementUrl, date, name } = project
+        const { announcementUrl, name } = project
         return announcementUrl ? (
           <div>
             <Link href={announcementUrl} key={name}>

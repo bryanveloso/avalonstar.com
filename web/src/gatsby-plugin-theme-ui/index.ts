@@ -105,6 +105,7 @@ export default {
       fontWeight: 'black',
     },
     subheader: {
+      variant: 'layout.readable',
       color: 'muted.lightbluegrey',
       fontStyle: 'italic',
     },
@@ -210,6 +211,9 @@ export default {
     },
     entry: {
       maxWidth: [480, 720, 960],
+    },
+    readable: {
+      maxWidth: '36rem',
     },
   },
 

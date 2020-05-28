@@ -81,7 +81,7 @@ const ProjectList = () => {
                   )}
                 </dl>
               </Box>
-              <Box sx={{ mb: 4 }}>
+              <Box variant="layout.readable" sx={{ mb: 4 }}>
                 {_rawSummary && (
                   <Box>
                     <Text variant="text.smallCaps" sx={{ color: 'main.avagreen', fontSize: 1 }}>
@@ -93,7 +93,7 @@ const ProjectList = () => {
                 {_rawInvolvement && (
                   <Box>
                     <Text variant="text.smallCaps" sx={{ color: 'main.avagreen', fontSize: 1 }}>
-                      My Involment
+                      My Involement
                     </Text>
                     <PortableText blocks={_rawInvolvement} />
                   </Box>
