@@ -2,7 +2,7 @@
 import Img from 'gatsby-image'
 import groupBy from 'lodash/groupBy'
 import { Fragment } from 'react'
-import { jsx, AspectRatio, Box, Text, Grid, Heading } from 'theme-ui'
+import { jsx, AspectRatio, Box, Flex, Grid, Heading, Text } from 'theme-ui'
 
 import { PortableText } from '@/components'
 import { useEventData } from '@/hooks'
@@ -10,67 +10,43 @@ import BrowserPageAccount from '@/images/browser-page-account.svg'
 import SingleNeutralFocus from '@/images/single-neutral-focus.svg'
 import StartupLaunch from '@/images/startup-launch.svg'
 
-const getEventIcon = () => ({
-  company: <StartupLaunch sx={{ color: 'main.avayellow' }} />,
-  person: <SingleNeutralFocus sx={{ color: 'muted.lightbluegrey' }} />,
-  website: <BrowserPageAccount sx={{ color: 'main.avagreen' }} />,
+const getEventIcon = (height = '1.5rem') => ({
+  company: <StartupLaunch sx={{ height }} />,
+  person: <SingleNeutralFocus sx={{ height }} />,
+  website: <BrowserPageAccount sx={{ height }} />,
 })
 
-const getHeaderColor = () => ({
-  company: 'white',
+const getSubjectColor = () => ({
+  company: 'main.avayellow',
   person: 'muted.lightbluegrey',
-  website: 'white',
+  website: 'main.avagreen',
 })
 
-const Event = (props) => {
-  const { _rawBody, coverImage, date, name, subject } = props
+const Event = ({ _rawBody, coverImage, date, name, subject }) => {
   return (
     <Fragment>
-      <Box sx={{ gridColumn: '1' }}>{getEventIcon()[subject]}</Box>
-      <Grid
-        gap={2}
-        color={getHeaderColor()[subject]}
-        columns={['auto']}
-        sx={{ fontSize: 1, gridColumn: '2', pl: 4, mb: 6 }}
-      >
+      <Flex sx={{ color: getSubjectColor()[subject], gridColumn: '1', fontSize: 0 }}>
+        {getEventIcon()[subject]}
+        <Text variant="smallCaps" sx={{ pl: 2 }}>
+          The {subject}
+        </Text>
+      </Flex>
+      <Grid gap={2} color="white" columns={['auto']} sx={{ fontSize: 1, gridColumn: '2', pl: 4, mb: 6 }}>
         {coverImage && (
-          <Box sx={{ mb: 2 }}>
-            <AspectRatio ratio={16 / 9} sx={{ objectFit: 'cover', width: '100%', height: '100%' }}>
+          <Box sx={{ boxShadow: 'card.xl', mb: 2 }}>
+            <AspectRatio ratio={16 / 9}>
               <Img
                 fluid={coverImage.asset.fluid}
                 alt={coverImage.alt}
-                sx={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  borderRadius: 2,
-                }}
+                sx={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 2 }}
               />
             </AspectRatio>
           </Box>
         )}
         <Box>
-          <Text
-            variant="date"
-            sx={{
-              color: 'main.avayellow',
-              fontWeight: 'book',
-              lineHeight: 4,
-              textTransform: 'uppercase',
-            }}
-          >
+          <Text sx={{ fontFamily: 'freight', fontSize: 4, lineHeight: 4, fontWeight: 'bold' }}>{name}.</Text>
+          <Text variant="date" sx={{ mb: 2 }}>
             {date}
-          </Text>
-          <Text
-            sx={{
-              fontFamily: 'freight',
-              fontSize: 4,
-              lineHeight: 4,
-              fontWeight: 'bold',
-              mb: 2,
-            }}
-          >
-            {name}.
           </Text>
           {_rawBody && <PortableText blocks={_rawBody} />}
         </Box>
@@ -79,20 +55,10 @@ const Event = (props) => {
   )
 }
 
-const Section = (props) => {
-  const { data, year } = props
+const Section = ({ data, year }) => {
   return (
     <Fragment>
-      <Heading
-        sx={{
-          color: 'main.avablue',
-          gridColumn: 1,
-          pt: 3,
-          pb: 3,
-        }}
-      >
-        {year}
-      </Heading>
+      <Heading sx={{ color: 'main.avablue', gridColumn: 1, py: 2 }}>{year}</Heading>
       {data.map((node) => (
         <Event key={node.id} {...node} />
       ))}
@@ -102,10 +68,10 @@ const Section = (props) => {
 
 const EventList = () => {
   const data = useEventData()
-  const dataByYear = groupBy(data, (datum) => datum.date.substr(datum.date.length - 4))
+  const dataByYear = groupBy(data, ({ date }) => date.substr(date.length - 4))
 
   return (
-    <Grid gap={0} columns={['24px auto']} as="section" sx={{ position: 'relative' }}>
+    <Grid gap={0} columns={['7rem auto']} as="section" sx={{ position: 'relative' }}>
       {Object.keys(dataByYear).map((key) => (
         <Section key={key} year={key} data={dataByYear[key]} />
       ))}
