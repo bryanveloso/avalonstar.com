@@ -127,6 +127,7 @@ module.exports = {
         whitelistHostnames: ['avalonstar.com'],
       },
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
   ],
 }
