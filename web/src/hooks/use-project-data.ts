@@ -13,6 +13,9 @@ const QUERY = graphql`
           }
           position {
             company
+            slug {
+              current
+            }
           }
           projectUrl
           announcementUrl
