@@ -65,7 +65,8 @@ const Footer = () => {
         sx={{ py: 4, color: 'muted.bluegrey', fontSize: 1, justifyContent: 'space-between' }}
       >
         <Box>
-          © 2000–{new Date().getFullYear()} {title}. All rights reserved.
+          © 2000–{new Date().getFullYear()} {title}. &ldquo;Avalonstar&rdquo; is a registered trademark of Avalonstar,
+          Inc. All rights reserved.
         </Box>
         <Box>
           <em>Remember the ;</em>
