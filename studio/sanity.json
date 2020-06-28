@@ -17,7 +17,8 @@
     "dashboard-widget-netlify",
     "@sanity/dashboard",
     "dashboard-widget-document-list",
-    "@sanity/google-maps-input"
+    "@sanity/google-maps-input",
+    "dark-theme-blue"
   ],
   "env": {
     "development": {
