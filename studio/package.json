@@ -35,7 +35,7 @@
     "react-icons": "^3.10.0",
     "react-youtube": "^7.11.2",
     "sanity-plugin-dark-theme-blue": "^1.0.1",
-    "sanity-plugin-dashboard-widget-document-list": "^0.0.10",
+    "sanity-plugin-dashboard-widget-document-list": "^0.0.11",
     "sanity-plugin-dashboard-widget-netlify": "^1.0.1",
     "sanity-plugin-markdown": "^1.0.1"
   },
