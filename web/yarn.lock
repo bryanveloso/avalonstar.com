@@ -7508,14 +7508,16 @@ gatsby-plugin-fathom@^1.3.0:
     "@babel/runtime" "7.9.6"
     react "16.x"
 
-gatsby-plugin-feed@^2.5.14:
-  version "2.5.14"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.5.14.tgz#ca46a11b06d7240e0199185c5c30deaed3a118e9"
-  integrity sha512-fMbTpuv1ekL2RU7KGk2o+hc/DGGbAO7kthiM/a8gxT1CqGYh5O6ma9jtqWR1FlTi95gYaWPYiPCyGcIbYurkQA==
+gatsby-plugin-feed@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.6.0.tgz#b5b1cf428011b457e31419e978614c6436740921"
+  integrity sha512-BxsFwp5tJVew4Asf6NOP2ebhonjBDL0CuQT5HaRzuDjBj9N1/Bc5VRfYQpFy25wj+qQ5CMm5rJWkNGVVwl9//A==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@hapi/joi" "^15.1.1"
+    common-tags "^1.8.0"
     fs-extra "^8.1.0"
+    gatsby-plugin-utils "^0.2.40"
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
