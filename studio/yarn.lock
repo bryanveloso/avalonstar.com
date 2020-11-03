@@ -1126,10 +1126,10 @@
     react-split-pane "^0.1.84"
     rxjs "^6.5.3"
 
-"@sanity/core@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.0.1.tgz#1dc0c856085343d0984cc2d7d005b818c7b9c5bc"
-  integrity sha512-i9NcDFJ/lSeL9ijACjhj7d+u76IsO4WoU/H4V0Q7hFChasCNXybYlOydq97zsIJ59cKZTDJnJSobJ7omVRCr3Q==
+"@sanity/core@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@sanity/core/-/core-2.0.5.tgz#18f27c5899ed7337834b3e54f648ea101db4df49"
+  integrity sha512-7QV26hO8n76BODNa8hpnp/hPc3JWEECQPH0QsSc5UbYGbieiCge8PvgcnkYbWEfH/4Vobnz5LCngzxXxU4sCvg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.10.4"
     "@babel/preset-env" "^7.11.5"
@@ -1142,7 +1142,7 @@
     "@sanity/import" "2.0.1"
     "@sanity/mutator" "2.0.1"
     "@sanity/observable" "2.0.1"
-    "@sanity/plugin-loader" "2.0.1"
+    "@sanity/plugin-loader" "2.0.5"
     "@sanity/resolver" "2.0.1"
     "@sanity/schema" "2.0.1"
     "@sanity/server" "2.0.1"
@@ -1470,10 +1470,10 @@
     object-assign "^4.1.1"
     rxjs "^6.5.3"
 
-"@sanity/plugin-loader@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@sanity/plugin-loader/-/plugin-loader-2.0.1.tgz#3190c1eb3baa8a86921b67aa7d61a4563dd4f6dd"
-  integrity sha512-coWqKa86G22WDHETevd/KuQXqF+AZxydjwWSm7zcTFt8SnkOh7GIPNGiOhpRSYwLLbRt3PwhvwaKA/SeFxZ7kA==
+"@sanity/plugin-loader@2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@sanity/plugin-loader/-/plugin-loader-2.0.5.tgz#832047383e2e9fb82bb4586d54ec2423d1548192"
+  integrity sha512-BfM7ptTKFYELUoet0VhafeuUO50tONFkPgX7zWHUQrWYpKxBpUpz5i0Iz9+WC12s6COb36SW1Wlz6L0k4e1JxQ==
   dependencies:
     "@sanity/resolver" "2.0.1"
     "@sanity/util" "2.0.1"
