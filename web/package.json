@@ -37,7 +37,7 @@
     "gatsby-plugin-typescript": "^2.5.0",
     "gatsby-source-filesystem": "^2.3.34",
     "gatsby-source-sanity": "^6.0.4",
-    "gatsby-theme-style-guide": "^0.3.1",
+    "gatsby-theme-style-guide": "^0.3.3",
     "gatsby-transform-portable-text": "^0.0.2",
     "gatsby-transformer-sharp": "^2.5.17",
     "get-youtube-id": "^1.0.1",
