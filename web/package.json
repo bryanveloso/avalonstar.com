@@ -6,7 +6,7 @@
   "dependencies": {
     "@emotion/core": "^10.1.1",
     "@mdx-js/mdx": "^1.6.18",
-    "@mdx-js/react": "^1.6.21",
+    "@mdx-js/react": "^1.6.22",
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/image-url": "^0.140.19",
     "@theme-ui/color": "^0.3.4",
