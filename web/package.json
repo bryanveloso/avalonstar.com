@@ -35,7 +35,7 @@
     "gatsby-plugin-sitemap": "^2.8.0",
     "gatsby-plugin-theme-ui": "^0.3.4",
     "gatsby-plugin-typescript": "^2.5.0",
-    "gatsby-source-filesystem": "^2.4.2",
+    "gatsby-source-filesystem": "^2.7.0",
     "gatsby-source-sanity": "^6.0.4",
     "gatsby-theme-style-guide": "^0.3.3",
     "gatsby-transform-portable-text": "^0.0.2",
