@@ -1196,10 +1196,10 @@
     postcss-value-parser "^3.3.0"
     source-list-map "^2.0.0"
 
-"@sanity/dashboard@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@sanity/dashboard/-/dashboard-2.1.0.tgz#a545f604c02e14cb64ca3ec13a5c81b04cf869b9"
-  integrity sha512-0eAhTlkOtSkEnbLHxm1kBLRxTmwMdJ4Si5LEGflwbzd2o0ALnVo77mYUweKED8KxbpScr/R4WKVRqfqyRWbQ6Q==
+"@sanity/dashboard@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@sanity/dashboard/-/dashboard-2.1.4.tgz#1e9ecd34161c78c399c5df38627cf5be35555866"
+  integrity sha512-ayATrXpItYsiW6w/TxRxtGqTsvJoD6bf+/YOQ86WNMMV9N1rdMUbZVVvXEWMZIVsxfa4iJENA6gUTVJvbJcUkw==
   dependencies:
     "@sanity/image-url" "^0.140.19"
     lodash "^4.17.15"
