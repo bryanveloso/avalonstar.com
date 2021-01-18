@@ -1897,10 +1897,10 @@
     es6-error "^4.0.2"
     type-of-is "^3.5.1"
 
-"@sanity/vision@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-2.1.0.tgz#a81a9df04d95a5d1ee49da8bb12a3527f0dd012d"
-  integrity sha512-fjG6E6qCWHCQue4yz/nAQ5f5H0/GpRk6uQyNBHo5FG7bOPFxnEpJ3zVuaXUs9hRUMAZNhfglwjYrdVtD4ki7fQ==
+"@sanity/vision@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-2.1.4.tgz#1358c29fa26ddbb4d56fbfeba755d16e8693940d"
+  integrity sha512-Jge8ggS4JZ1Oaq87LzzWZuX9C2GAZtmvTXmpNAIn1Aaybo6ZyLYG4y5C6hkOc22ifJ+VFGO1/yArINI47NdqrQ==
   dependencies:
     classnames "^2.2.5"
     codemirror "^5.47.0"
