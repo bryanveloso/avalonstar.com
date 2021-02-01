@@ -1285,13 +1285,6 @@
     styled-components "^5.2.1"
     use-onclickoutside "^0.3.1"
 
-"@sanity/diff@2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@sanity/diff/-/diff-2.1.4.tgz#d0d7fdbfb1afbfd93344debb2648cb6a3700a00b"
-  integrity sha512-ZZlZh2XngwkxrIom2pbOlteGWMlrr6vjbz+oo8j+Te0mPxqTf25W+KTJPgqOeLYm9SAghamfXQSIGwkprgIfOA==
-  dependencies:
-    diff-match-patch "^1.0.4"
-
 "@sanity/diff@2.2.6":
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/@sanity/diff/-/diff-2.2.6.tgz#7d26161a17ac047465648b37b08464bd57e7b626"
@@ -1336,20 +1329,6 @@
     p-queue "^2.3.0"
     simple-get "^4.0.0"
     split2 "^3.2.2"
-
-"@sanity/field@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@sanity/field/-/field-2.2.0.tgz#d9b3cf8126bf026838d0bc940645815b18e3472d"
-  integrity sha512-hZvn9wokJC/HO5vYpDcZ6DvWmUdkIwjVz3S5DFMG9nCOH7k5H/medss11WEdo1Z/EAmhkZpOzDdjJ21fjPvEtw==
-  dependencies:
-    "@sanity/asset-utils" "^1.1.2"
-    "@sanity/base" "2.2.0"
-    "@sanity/diff" "2.1.4"
-    "@sanity/react-hooks" "2.1.4"
-    "@sanity/types" "2.1.4"
-    "@sanity/util" "2.1.4"
-    date-fns "^2.16.1"
-    sanity-diff-patch "^1.0.9"
 
 "@sanity/field@2.3.0":
   version "2.3.0"
@@ -1423,14 +1402,14 @@
   resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-2.2.6.tgz#1673872e2747d1e8aa9406486a80ba6d3e36869d"
   integrity sha512-DXRKXnOCoqObNEEuJJlJ78YOehgoBk92xm1ol4PfPuD4xJv5Z/cMwDecaQ2K05nx8Ecr4KJR/26XMF/FQMg9Tw==
 
-"@sanity/google-maps-input@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@sanity/google-maps-input/-/google-maps-input-2.2.0.tgz#9dc4e1cc9c8d9fcb7639b561d5cfdcbac16c085b"
-  integrity sha512-cxGpTdy8GdSFtFL01hYgJCzIzgmNvwY77VyQarqhQMii0QGaMg2kAqq/4G6UtdGHOEmP1UjQHL9rIgJXZRxc/w==
+"@sanity/google-maps-input@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@sanity/google-maps-input/-/google-maps-input-2.3.0.tgz#9b73e2e0c4a6d3ded31e011223ed334cb456cf36"
+  integrity sha512-7WW7eQaYRKga49muBvUuF7RP8+d07I9sSghGvf/USLiMw1dXnMNwzaZgnXMg+wnmyzGpK/mznv1hfLeYE3MyaA==
   dependencies:
-    "@sanity/field" "2.2.0"
-    "@sanity/react-hooks" "2.1.4"
-    "@sanity/types" "2.1.4"
+    "@sanity/field" "2.3.0"
+    "@sanity/react-hooks" "2.2.6"
+    "@sanity/types" "2.2.6"
     classnames "^2.2.5"
     rxjs "^6.5.3"
 
@@ -1570,16 +1549,6 @@
     lodash "^4.17.15"
     slate "^0.58.4"
     styled-components "^5.0.0"
-
-"@sanity/react-hooks@2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-2.1.4.tgz#c692d57780dd9ccf2eb05b998c962d0976575c84"
-  integrity sha512-QGesJlodUncHaUSjq9pXPPApoeUl3VJRbRoASTGfGQ3GKq99FjX3siB1yDHT2VFBdver5APCKrQi+eQAEkkVYg==
-  dependencies:
-    "@sanity/types" "2.1.4"
-    lodash "^4.17.15"
-    rxjs "^6.5.3"
-    shallow-equals "^1.0.0"
 
 "@sanity/react-hooks@2.2.6":
   version "2.2.6"
