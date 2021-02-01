@@ -1235,12 +1235,12 @@
     react-props-stream "^1.0.0"
     rxjs "^6.5.3"
 
-"@sanity/default-login@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-2.1.4.tgz#abdf5cc348bc3e58869df71c92272eaea89b23ce"
-  integrity sha512-IHuU08xgKqyMHojMm8mqUQbBTZBXsvCBWIr7YsSG0VQQO5Nj6OCtszzLqVXswqVwnUduxpIMEGxqkCNhhuVm5w==
+"@sanity/default-login@^2.2.6":
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/@sanity/default-login/-/default-login-2.2.6.tgz#5f9710565bbd0a575ff7b58ff3fb3ed00f6ab7b3"
+  integrity sha512-yBrooBby/cxZ3+bZh+5GcswV+L9bbgwI/mVNIlXukEuKS62Ou6z/gjJfER9NI1BiStbF7JCxu0TSR4IAYJcZiw==
   dependencies:
-    "@sanity/generate-help-url" "2.1.4"
+    "@sanity/generate-help-url" "2.2.6"
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
