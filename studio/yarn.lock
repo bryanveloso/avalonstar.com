@@ -1207,12 +1207,12 @@
     "@sanity/generate-help-url" "2.2.6"
     lodash "^4.17.15"
 
-"@sanity/default-layout@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.3.0.tgz#36f42a74292dc63e0f5b80ecb2f8dfc59cfd7ff8"
-  integrity sha512-ioJUmtFvG3zpG5JlJZ+LZOa/rhqWnPqCFiwP2bI1pV9ld+mh1iMwT54uGbzFu54zPqDC0FaG0wV4Qcm8OUtBKg==
+"@sanity/default-layout@^2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.3.3.tgz#9b6818920d36f1853cecbcf344c80eaecf970867"
+  integrity sha512-DXjbnGf1iLS/5z70HUqgVdANNVTj3Ej+vnlxPl42VHZ18WXEJYBN6psp1fnCYIu/CxlTvIaaION7EkLbqeS4Pg==
   dependencies:
-    "@sanity/base" "2.3.0"
+    "@sanity/base" "2.3.3"
     "@sanity/generate-help-url" "2.2.6"
     "@sanity/ui" "^0.33.0"
     "@sanity/util" "2.2.6"
