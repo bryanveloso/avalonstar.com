@@ -1624,10 +1624,10 @@
     es6-error "^4.0.2"
     type-of-is "^3.5.1"
 
-"@sanity/vision@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-2.1.4.tgz#1358c29fa26ddbb4d56fbfeba755d16e8693940d"
-  integrity sha512-Jge8ggS4JZ1Oaq87LzzWZuX9C2GAZtmvTXmpNAIn1Aaybo6ZyLYG4y5C6hkOc22ifJ+VFGO1/yArINI47NdqrQ==
+"@sanity/vision@^2.2.6":
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-2.2.6.tgz#b89ff4e2338c715846184f60cef812f6f935b71e"
+  integrity sha512-xZlwc8DsFg6WqOuHoaE6to1R6TBin4lTWJgtFggiQXN5Ne9ULdlstf5FfemK9hj94BRBhMbSsD6DlXF7kAJ9Vg==
   dependencies:
     classnames "^2.2.5"
     codemirror "^5.47.0"
