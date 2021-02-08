@@ -25,7 +25,7 @@
     "@sanity/default-layout": "^2.3.3",
     "@sanity/default-login": "^2.2.6",
     "@sanity/desk-tool": "^2.3.3",
-    "@sanity/google-maps-input": "^2.3.0",
+    "@sanity/google-maps-input": "^2.3.3",
     "@sanity/vision": "^2.2.6",
     "date-fns": "^2.17.0",
     "get-youtube-id": "^1.0.1",
