@@ -1215,14 +1215,14 @@
     "@sanity/generate-help-url" "2.2.6"
     lodash "^4.17.15"
 
-"@sanity/default-layout@^2.3.3":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.3.3.tgz#9b6818920d36f1853cecbcf344c80eaecf970867"
-  integrity sha512-DXjbnGf1iLS/5z70HUqgVdANNVTj3Ej+vnlxPl42VHZ18WXEJYBN6psp1fnCYIu/CxlTvIaaION7EkLbqeS4Pg==
+"@sanity/default-layout@^2.3.6":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@sanity/default-layout/-/default-layout-2.3.6.tgz#326fcf39d1bcca8fd6cf86727c6b335289edcf06"
+  integrity sha512-kK7eUJAui55XMDt2Z8JqZvkjIDhKTeUn/PiIaX/KV4wuV5wriwx2FD6py2MDyxWlg47sXPZPoUXqqnBrVAU3EQ==
   dependencies:
-    "@sanity/base" "2.3.3"
+    "@sanity/base" "2.3.6"
     "@sanity/generate-help-url" "2.2.6"
-    "@sanity/ui" "^0.33.0"
+    "@sanity/ui" "^0.33.1"
     "@sanity/util" "2.2.6"
     classnames "^2.2.5"
     is-hotkey "^0.1.4"
