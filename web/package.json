@@ -13,7 +13,7 @@
     "@theme-ui/match-media": "^0.3.5",
     "@types/react-helmet": "^6.1.0",
     "axios": "^0.20.0",
-    "axios-hooks": "^2.3.0",
+    "axios-hooks": "^2.4.1",
     "date-fns": "^2.17.0",
     "dotenv": "^8.2.0",
     "framer-motion": "^2.9.4",
