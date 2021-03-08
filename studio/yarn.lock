@@ -1334,6 +1334,22 @@
     sanity-diff-patch "^1.0.9"
     styled-components "^5.2.1"
 
+"@sanity/field@2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@sanity/field/-/field-2.6.0.tgz#fcff5967c10f4cc0545d478ef5a3cb0a9a7dc17d"
+  integrity sha512-LXZ5moyDmdI7Ee2hcenpsZZVaQeTqaA6njXbeJT0ZtjfPl016K1/YAN+Z+S0hVxvW9E+mldRGIIF55TWwsu9sg==
+  dependencies:
+    "@sanity/asset-utils" "^1.1.2"
+    "@sanity/base" "2.6.0"
+    "@sanity/diff" "2.2.6"
+    "@sanity/react-hooks" "2.6.0"
+    "@sanity/types" "2.6.0"
+    "@sanity/ui" "^0.33.6"
+    "@sanity/util" "2.6.0"
+    date-fns "^2.16.1"
+    sanity-diff-patch "^1.0.9"
+    styled-components "^5.2.1"
+
 "@sanity/form-builder@2.4.3":
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.4.3.tgz#4b2cf1117cb2170b807e5accbf6c521baca3d0aa"
@@ -1386,14 +1402,14 @@
   resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-2.2.6.tgz#1673872e2747d1e8aa9406486a80ba6d3e36869d"
   integrity sha512-DXRKXnOCoqObNEEuJJlJ78YOehgoBk92xm1ol4PfPuD4xJv5Z/cMwDecaQ2K05nx8Ecr4KJR/26XMF/FQMg9Tw==
 
-"@sanity/google-maps-input@^2.4.3":
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/@sanity/google-maps-input/-/google-maps-input-2.4.3.tgz#3a718aa0b4414e0ca2417fdc96947208283f2fb0"
-  integrity sha512-C3QJ/sJTGuIeOhuO4fx6Bs04J6Rne176FMDHk4Nm6yO6kh2odBp3tPmx6M1ZcCKngDEG8xDMm8hnPhcOsdXZeQ==
+"@sanity/google-maps-input@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@sanity/google-maps-input/-/google-maps-input-2.6.0.tgz#70a1d6643a83773b178a2140cb3207752636a4da"
+  integrity sha512-NEE3yqDKsOTPuiyjdQSysr8xTX8voa3bwijovkYsatXDjsPOOQ/wurRO7kvezdyCbKzonzC3xUEIbytrjcd9uA==
   dependencies:
-    "@sanity/field" "2.4.3"
-    "@sanity/react-hooks" "2.4.0"
-    "@sanity/types" "2.4.0"
+    "@sanity/field" "2.6.0"
+    "@sanity/react-hooks" "2.6.0"
+    "@sanity/types" "2.6.0"
     classnames "^2.2.5"
     rxjs "^6.5.3"
 
@@ -1529,6 +1545,16 @@
   integrity sha512-hY7eFVrvnWCXJI5Yt0GBaJfF0eDfll64FsOF+NhXbtA38uw2HmYbcRjv0/o8xWQKwKVNma1H8LSCMmIEjOCtjQ==
   dependencies:
     "@sanity/types" "2.4.0"
+    lodash "^4.17.15"
+    rxjs "^6.5.3"
+    shallow-equals "^1.0.0"
+
+"@sanity/react-hooks@2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@sanity/react-hooks/-/react-hooks-2.6.0.tgz#787fc59f37c804bccbf23b52656ae7646c47b55e"
+  integrity sha512-KIx7glsLN5r2pEoxooXOdmC/RrKRoSDWeK+6R7lRYuNkwg9Ej4qa5q+BoC58H3L9XVU0T3n/RzH7aDE08Waobw==
+  dependencies:
+    "@sanity/types" "2.6.0"
     lodash "^4.17.15"
     rxjs "^6.5.3"
     shallow-equals "^1.0.0"
@@ -1677,14 +1703,14 @@
     "@types/lodash" "^4.14.149"
     lodash "^4.17.15"
 
-"@sanity/types@2.4.0", "@sanity/types@^2.0.0":
+"@sanity/types@2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@sanity/types/-/types-2.4.0.tgz#061b5eae40d2903053f228fedfc3363e0066b093"
   integrity sha512-/5Kpdof1hSXE3I9UrFZ72bF7nyce0NOUW3hcOPnDb6I+PFRwUv0+sck+WTGrLvlBOdXoN0RMv37KR59Oz88wUA==
   dependencies:
     "@types/react" "^17.0.0"
 
-"@sanity/types@2.6.0":
+"@sanity/types@2.6.0", "@sanity/types@^2.0.0":
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/@sanity/types/-/types-2.6.0.tgz#4ec315146b63a393feae5ecff8d769ea5a5aa6ab"
   integrity sha512-PkQSikC0LzpH7YaWe6K2JFvQu6IH7N04rJXjLIbk41FUCieYFj509rsvm93OnfasWwLbchjj4orhtzpsGbcbAQ==
