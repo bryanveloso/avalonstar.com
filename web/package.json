@@ -8,7 +8,7 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@sanity/block-content-to-react": "^2.0.7",
-    "@sanity/image-url": "^0.140.19",
+    "@sanity/image-url": "^0.140.22",
     "@theme-ui/color": "^0.3.5",
     "@theme-ui/match-media": "^0.3.5",
     "@types/react-helmet": "^6.1.0",
