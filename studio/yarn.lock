@@ -894,6 +894,11 @@
   resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.2.0.tgz#5e0b448d27fe3091bae6216456512c5904d05661"
   integrity sha512-fsLxt0CHx2HCV9EL8lDoVkwHffsA0snUpddYjdLyXcG5E41xaamn9ZyQqOE9TUJdrRlH8/hjIf+UdOdDeKCUgg==
 
+"@juggle/resize-observer@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.3.0.tgz#2e7a2935adbfae46f9efbd1e1455254ee7ea2219"
+  integrity sha512-P1v2nvK7z2gOLVM/bveIRLG9L99uEahTGgTltyF03zixZAjI9YmKLj5Z9MpS9wBIUt5WDoQORT2lXvLOIF89iA==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npmjs.org/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -910,6 +915,11 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.8.6.tgz#ad75ebe8dbecfa145af3c7e4d0ae98016458d005"
   integrity sha512-1oXH2bAFXz9SttE1v/0Jp+2ZVePsPEAPGIuPKrmljWZcS3FPBEn2Q4WcANozZC0YiCjTWOF55k0g6rbSZS39ew==
 
+"@popperjs/core@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.1.tgz#7f554e7368c9ab679a11f4a042ca17149d70cf12"
+  integrity sha512-DvJbbn3dUgMxDnJLH+RZQPnXak1h4ZVYQ7CWiFWjQwBFkVajT4rfw2PdpHLTSTwxrYfnoEXkuBiwkDm6tPMQeA==
+
 "@reach/auto-id@^0.10.5":
   version "0.10.5"
   resolved "https://registry.npmjs.org/@reach/auto-id/-/auto-id-0.10.5.tgz#fa78c71ce2f565ebed1ad91a8d9a685176d23c48"
@@ -924,6 +934,14 @@
   dependencies:
     "@reach/utils" "0.13.0"
     tslib "^2.0.0"
+
+"@reach/auto-id@^0.13.2":
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@reach/auto-id/-/auto-id-0.13.2.tgz#6c7fe7142285707b0f38b2f556f32accb467df32"
+  integrity sha512-dWeXt6xxjN+NPRoZFXgmNkF89t8MEPsWLYjIIDf3gNXA/Dxaoytc9YBOIfVGpDSpdOwxPpxOu8rH+4Y3Jk2gHA==
+  dependencies:
+    "@reach/utils" "0.13.2"
+    tslib "^2.1.0"
 
 "@reach/utils@0.10.5":
   version "0.10.5"
@@ -940,6 +958,15 @@
   dependencies:
     "@types/warning" "^3.0.0"
     tslib "^2.0.0"
+    warning "^4.0.3"
+
+"@reach/utils@0.13.2":
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.13.2.tgz#87e8fef8ebfe583fa48250238a1a3ed03189fcc8"
+  integrity sha512-3ir6cN60zvUrwjOJu7C6jec/samqAeyAB12ZADK+qjnmQPdzSYldrFWwDVV5H0WkhbYXR3uh+eImu13hCetNPQ==
+  dependencies:
+    "@types/warning" "^3.0.0"
+    tslib "^2.1.0"
     warning "^4.0.3"
 
 "@rexxars/eventsource-polyfill@^1.0.0":
@@ -972,6 +999,61 @@
     "@sanity/transaction-collator" "2.5.0"
     "@sanity/types" "2.6.0"
     "@sanity/ui" "^0.33.6"
+    "@sanity/util" "2.6.0"
+    "@sanity/validation" "2.5.0"
+    boundless-arrow-key-navigation "^1.1.0"
+    chance "^1.0.4"
+    circular-at "^1.0.3"
+    classnames "^2.2.5"
+    dataloader "^2.0.0"
+    date-fns "^2.16.1"
+    dom-scroll-into-view "^1.2.1"
+    element-resize-detector "^1.1.14"
+    history "^4.6.3"
+    lodash "^4.17.15"
+    nano-pubsub "^2.0.0"
+    nanoid "^3.1.9"
+    observable-callback "^1.0.1"
+    oneline "^1.0.3"
+    polished "^4.0.5"
+    popper-max-size-modifier "^0.2.0"
+    promise-props "^1.0.0"
+    raf "^3.4.1"
+    react-click-outside "^3.0.0"
+    react-fast-compare "^2.0.2"
+    react-icon-base "^2.1.2"
+    react-intl "^2.2.2"
+    react-popper "^2.2.4"
+    react-props-stream "^1.0.0"
+    react-refractor "^2.1.2"
+    react-sortable-hoc "^1.11.0"
+    react-split-pane "^0.1.84"
+    rxjs "^6.5.3"
+    semver-compare "^1.0.0"
+    shallow-equals "^1.0.0"
+    styled-components "^5.2.1"
+
+"@sanity/base@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/@sanity/base/-/base-2.6.2.tgz#8a48a58e24f9f0f301fdd75e1fb8a5848490fd5e"
+  integrity sha512-Wt8QDvdUwcTcNdsGtfRz9pX56j/72pMHTaHb52l9JLpA29GnUPGWq3hYDLoL12kz12Rm8eKhAN4Ffr40gtdT6g==
+  dependencies:
+    "@popperjs/core" "^2.5.4"
+    "@reach/auto-id" "^0.13.2"
+    "@sanity/bifur-client" "^0.0.7"
+    "@sanity/client" "2.2.6"
+    "@sanity/color" "^1.0.0"
+    "@sanity/generate-help-url" "2.2.6"
+    "@sanity/icons" "^1.0.1"
+    "@sanity/image-url" "^0.140.19"
+    "@sanity/initial-value-templates" "2.6.0"
+    "@sanity/mutator" "2.2.6"
+    "@sanity/schema" "2.5.0"
+    "@sanity/state-router" "2.2.6"
+    "@sanity/structure" "2.6.0"
+    "@sanity/transaction-collator" "2.5.0"
+    "@sanity/types" "2.6.0"
+    "@sanity/ui" "^0.33.9"
     "@sanity/util" "2.6.0"
     "@sanity/validation" "2.5.0"
     boundless-arrow-key-navigation "^1.1.0"
@@ -1279,6 +1361,22 @@
     sanity-diff-patch "^1.0.9"
     styled-components "^5.2.1"
 
+"@sanity/field@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/@sanity/field/-/field-2.6.2.tgz#6fc31f19cfb01e52b27f1d6a63b4408877ff02d2"
+  integrity sha512-tDkIiqywtwjdqO5RrIdYUNk6XIoNB/47eCn3AvKfiPLbCuldZ3SiR/EvX0CQVRWUWrbZfqYIa71U6emhAgsM9g==
+  dependencies:
+    "@sanity/asset-utils" "^1.1.2"
+    "@sanity/base" "2.6.2"
+    "@sanity/diff" "2.2.6"
+    "@sanity/react-hooks" "2.6.0"
+    "@sanity/types" "2.6.0"
+    "@sanity/ui" "^0.33.9"
+    "@sanity/util" "2.6.0"
+    date-fns "^2.16.1"
+    sanity-diff-patch "^1.0.9"
+    styled-components "^5.2.1"
+
 "@sanity/form-builder@2.6.1":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@sanity/form-builder/-/form-builder-2.6.1.tgz#9ff41520db6aefb547330ad47ddbee0441ac931b"
@@ -1333,12 +1431,12 @@
   resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-2.2.6.tgz#1673872e2747d1e8aa9406486a80ba6d3e36869d"
   integrity sha512-DXRKXnOCoqObNEEuJJlJ78YOehgoBk92xm1ol4PfPuD4xJv5Z/cMwDecaQ2K05nx8Ecr4KJR/26XMF/FQMg9Tw==
 
-"@sanity/google-maps-input@^2.6.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@sanity/google-maps-input/-/google-maps-input-2.6.0.tgz#70a1d6643a83773b178a2140cb3207752636a4da"
-  integrity sha512-NEE3yqDKsOTPuiyjdQSysr8xTX8voa3bwijovkYsatXDjsPOOQ/wurRO7kvezdyCbKzonzC3xUEIbytrjcd9uA==
+"@sanity/google-maps-input@^2.6.2":
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/@sanity/google-maps-input/-/google-maps-input-2.6.2.tgz#3b2b28c049e8de31f09e76aa53bdaa648f4d21cc"
+  integrity sha512-DOd4qAcKK7mjm/58GsItPDQglG0iAZnp/hWngWCM/lVmeTs8FJLnGN3oTI4pTsckGeO0qcSE1NOav5WyAn3eug==
   dependencies:
-    "@sanity/field" "2.6.0"
+    "@sanity/field" "2.6.2"
     "@sanity/react-hooks" "2.6.0"
     "@sanity/types" "2.6.0"
     classnames "^2.2.5"
@@ -1353,6 +1451,11 @@
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-1.0.4.tgz#d18b741da323ac0105b6a1bd4d0c5a9c1fda927e"
   integrity sha512-1iM+9tkWGwjDHlOzYNY8Q9DdxCOTI7rCfegLaujsuFkDfRROcbw9s6llRIX7sUbygtbYvIiIK4sS1cDtPDZAwg==
+
+"@sanity/icons@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-1.0.5.tgz#e00fb474f48e57b90bd169e668c37422d6dae3b0"
+  integrity sha512-Z6Q1H3TP0p7Bg/eVdTqx8Zz8SwUjwVS14kQPq/4yhXXWJZY0FHAmMuP2X54GqkzL6lEDjenwlV//vJ6b4RZtpQ==
 
 "@sanity/image-url@^0.140.19":
   version "0.140.19"
@@ -1595,6 +1698,22 @@
     "@sanity/color" "^2.0.14"
     "@sanity/icons" "^1.0.4"
     framer-motion "^3.5.2"
+    popper-max-size-modifier "^0.2.0"
+    react-is "^17.0.1"
+    react-popper "^2.2.4"
+    react-refractor "^2.1.4"
+
+"@sanity/ui@^0.33.9":
+  version "0.33.10"
+  resolved "https://registry.yarnpkg.com/@sanity/ui/-/ui-0.33.10.tgz#d67185d2de1fc5c3286646a6392b524b4cc85d87"
+  integrity sha512-dPkIdSFHjoB2Im9OHCGN9uCARRQCH6oFIWalU7QoCmw7QLPyU76nL7xEbpZs0xqWX1aJol0JrEwHPuAFVBW4wg==
+  dependencies:
+    "@juggle/resize-observer" "^3.3.0"
+    "@popperjs/core" "^2.9.1"
+    "@reach/auto-id" "^0.13.2"
+    "@sanity/color" "^2.0.14"
+    "@sanity/icons" "^1.0.5"
+    framer-motion "^3.10.2"
     popper-max-size-modifier "^0.2.0"
     react-is "^17.0.1"
     react-popper "^2.2.4"
@@ -4617,6 +4736,19 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
+framer-motion@^3.10.2:
+  version "3.10.6"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-3.10.6.tgz#67737ef05ed0408860751d81c919770ac831b394"
+  integrity sha512-OxOtKgQS4km9a8dm0IMBtNNp4f0DiHfQ/IzxKs818+Kg9V/Ve/pRUJ2dtWBb6+W4lIPNLgRSpbOwOACVj15XcQ==
+  dependencies:
+    framesync "5.2.0"
+    hey-listen "^1.0.8"
+    popmotion "9.3.1"
+    style-value-types "4.1.1"
+    tslib "^1.10.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
 framer-motion@^3.5.2:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-3.8.1.tgz#dbe1a0f61f0941f9cd18092ec8a69645f0a7acaa"
@@ -7031,6 +7163,16 @@ popmotion@9.3.0:
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-9.3.0.tgz#53c96597f01d12f6cc4edf43c72b8f14f0b24a9a"
   integrity sha512-zIfbu7MBZpaotT6peSPNH+irQx9P8sePcfQj8x7pzyyw/pRTdyJstu/5sToxw72BdBOdYKVh/iy+UdpOnmkdDg==
+  dependencies:
+    framesync "5.2.0"
+    hey-listen "^1.0.8"
+    style-value-types "4.1.1"
+    tslib "^1.10.0"
+
+popmotion@9.3.1:
+  version "9.3.1"
+  resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-9.3.1.tgz#134319ed4b9b8e3ec506c99064f7b2f14bc05781"
+  integrity sha512-Qozvg8rz2OGeZwWuIjqlSXqqgWto/+QL24ll8sAAc0n71KY/wvN1W4sAASxTuHv8YWdDnk9u9IdadyPo2DGvDA==
   dependencies:
     framesync "5.2.0"
     hey-listen "^1.0.8"
@@ -9457,6 +9599,11 @@ tslib@^1.9.0:
 tslib@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
+
+tslib@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
 tty-browserify@0.0.0:
   version "0.0.0"
