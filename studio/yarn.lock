@@ -8645,9 +8645,10 @@ run-async@^2.2.0, run-async@^2.4.0:
   version "2.4.1"
   resolved "https://registry.npmjs.org/run-async/-/run-async-2.4.1.tgz#8440eccf99ea3e70bd409d49aab88e10c189a455"
 
-rxjs@^6.4.0, rxjs@^6.5.2, rxjs@^6.5.3, rxjs@^6.6.0:
-  version "6.6.3"
-  resolved "https://registry.npmjs.org/rxjs/-/rxjs-6.6.3.tgz#8ca84635c4daa900c0d3967a6ee7ac60271ee552"
+rxjs@^6.0.0, rxjs@^6.4.0, rxjs@^6.5.2, rxjs@^6.5.3, rxjs@^6.6.0:
+  version "6.6.6"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.6.tgz#14d8417aa5a07c5e633995b525e1e3c0dec03b70"
+  integrity sha512-/oTwee4N4iWzAMAL9xdGKjkEHmIwupR3oXbQjCKywF1BeFohswF3vZdogbmEF6pZkOsXTzWkrZszrWpQTByYVg==
   dependencies:
     tslib "^1.9.0"
 
@@ -8690,12 +8691,14 @@ sanity-plugin-dashboard-widget-document-list@^0.0.11:
   dependencies:
     lodash "^4.17.15"
 
-sanity-plugin-dashboard-widget-netlify@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/sanity-plugin-dashboard-widget-netlify/-/sanity-plugin-dashboard-widget-netlify-1.0.1.tgz#e510e40e05b9bcfdf11a4a2affed590e191bb93b"
+sanity-plugin-dashboard-widget-netlify@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/sanity-plugin-dashboard-widget-netlify/-/sanity-plugin-dashboard-widget-netlify-1.1.0.tgz#cc8218e5345eff08d7336d0612824336feb1c816"
+  integrity sha512-HzEK7TZx7xn75OBbFxF4qVzX2tM8yxcEm2k1T+Gbj9oIP0I7RxZsgwfFTr5+PclonQsnKx8ng+IN6sIGLaaYpg==
   dependencies:
     abort-controller "^2.0.3"
     react-props-stream "^1.0.0"
+    rxjs "^6.0.0"
 
 sanity-plugin-markdown@^1.0.1:
   version "1.0.1"
