@@ -1214,10 +1214,10 @@
     postcss-value-parser "^3.3.0"
     source-list-map "^2.0.0"
 
-"@sanity/dashboard@^2.2.6":
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/@sanity/dashboard/-/dashboard-2.2.6.tgz#e6707e2079584b53b34f30f60e8d6c94497357ca"
-  integrity sha512-2TzNqZJ3nczz1Z4DcQkU5+SND8w7kHqs2mbZydWgJFHMCFH5zyPzlYDXqo+x2kj/xOOj7GArbEUrJSYn63hWCQ==
+"@sanity/dashboard@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@sanity/dashboard/-/dashboard-2.7.0.tgz#73df5333ada718933c8ae7e4680dc7cea079a547"
+  integrity sha512-i5WPUNobXAudttwj3+YbZoXWaHcjazeuUE9aY6xfcdo/FJIrK5am/Vz1DhgWBYrmKYds0kBTM9zR7vNbQdAZIQ==
   dependencies:
     "@sanity/image-url" "^0.140.19"
     lodash "^4.17.15"
