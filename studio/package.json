@@ -23,7 +23,7 @@
     "@sanity/core": "^2.7.4",
     "@sanity/dashboard": "^2.7.0",
     "@sanity/default-layout": "^2.7.4",
-    "@sanity/default-login": "^2.7.0",
+    "@sanity/default-login": "^2.8.0",
     "@sanity/desk-tool": "^2.8.0",
     "@sanity/google-maps-input": "^2.7.4",
     "@sanity/vision": "^2.8.0",
