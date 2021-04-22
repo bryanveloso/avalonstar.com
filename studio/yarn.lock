@@ -1451,12 +1451,12 @@
     classnames "^2.2.5"
     rxjs "^6.5.3"
 
-"@sanity/icons@1.0.5", "@sanity/icons@^1.0.1", "@sanity/icons@^1.0.5":
+"@sanity/icons@1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-1.0.5.tgz#e00fb474f48e57b90bd169e668c37422d6dae3b0"
   integrity sha512-Z6Q1H3TP0p7Bg/eVdTqx8Zz8SwUjwVS14kQPq/4yhXXWJZY0FHAmMuP2X54GqkzL6lEDjenwlV//vJ6b4RZtpQ==
 
-"@sanity/icons@^1.0.6":
+"@sanity/icons@^1.0.1", "@sanity/icons@^1.0.5", "@sanity/icons@^1.0.6":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-1.0.6.tgz#ae9e9f79b17f8b48304c930e527f05e5138cba99"
   integrity sha512-+7U2ZJPhRuaS1dMDro+3zZ0lSMo9qyHlmtTkCbf4JspYb025W/5YkVRnN63FDwkLZrjLdTrZQI3cPsDwpp2t9A==
@@ -1797,13 +1797,13 @@
     es6-error "^4.0.2"
     type-of-is "^3.5.1"
 
-"@sanity/vision@^2.7.4":
-  version "2.7.4"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-2.7.4.tgz#c4714de75290ed19eb4f90f79e792d14604b3b8f"
-  integrity sha512-jO1DokcHpig6e0VE2wZfUjpgC3bqeeWNh0HNBajumeu6tpqgJ6laJOGK75ZG7VQ+tfxpaGd/X4nXwQrxGd5bdQ==
+"@sanity/vision@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-2.8.0.tgz#7b412e75dd52a438363779346982d8d1c173bb8b"
+  integrity sha512-h45RU8PBxmE7Y2zzFQurRGfwiNKC05nwGUc/JxXTxEDSQwmEq8ailqmSbTRqRNyauCV9dQ3hLG/imQohRlIOug==
   dependencies:
     "@sanity/icons" "^1.0.5"
-    "@sanity/ui" "^0.33.9"
+    "@sanity/ui" "^0.33.12"
     classnames "^2.2.5"
     codemirror "^5.47.0"
     moment "^2.19.1"
