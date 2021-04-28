@@ -20,7 +20,7 @@
   "dependencies": {
     "@sanity/base": "^2.3.8",
     "@sanity/components": "^2.2.6",
-    "@sanity/core": "^2.7.4",
+    "@sanity/core": "^2.9.1",
     "@sanity/dashboard": "^2.7.0",
     "@sanity/default-layout": "^2.9.0",
     "@sanity/default-login": "^2.8.0",
