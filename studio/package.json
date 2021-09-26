@@ -40,6 +40,7 @@
     "sanity-plugin-markdown": "^1.0.1"
   },
   "devDependencies": {
+    "@sanity/cli": "^2.20.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^6.15.0",
