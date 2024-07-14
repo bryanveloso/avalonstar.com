@@ -8,6 +8,8 @@ import FormattedDate from '../components/FormattedDate.astro';
 type Props = CollectionEntry<'blog'>['data'];
 
 const { title, description, date, updatedDate, heroImage } = Astro.props;
+
+const isLegacyPost = date.getFullYear() < 2015;
 ---
 
 <html lang="en">
@@ -58,6 +60,19 @@ const { title, description, date, updatedDate, heroImage } = Astro.props;
     <Header />
     <main>
       <article>
+        <div class="legacy-warning">
+          {
+            isLegacyPost && (
+              <p>
+                The entry below is classified as a <strong>LEGACY</strong> post,
+                meaning that it was written (well) before the current version of
+                Avalonstar was released. Although these posts have survived the
+                numerous moves over years, there is no guarantee that
+                they&apos;ve survived the trip unscathed (especially the links).
+              </p>
+            )
+          }
+        </div>
         <div class="hero-image">
           {
             heroImage && (
