@@ -1,23 +1,22 @@
 {
-  "name": "avalonstar-com",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/avalonstar/dot-com",
-  "author": "Bryan Veloso <bryan@avalonstar.com>",
-  "license": "MIT",
-  "private": true,
+  "name": "avalonstar.com",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "lerna run build --parallel",
-    "dev": "lerna run dev --parallel",
-    "format": "lerna run format",
-    "build-studio": "lerna bootstrap && cd studio && npm run build",
-    "build-web": "lerna bootstrap && (cd studio && SANITY_AUTH_TOKEN=$SANITY_DEPLOY_STUDIO_TOKEN npm run graphql-deploy) && (cd web && npm run build)",
-    "graphql-deploy": "lerna run graphql-deploy",
-    "lint": "lerna run lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "devDependencies": {
-    "@sanity/cli": "^2.20.0",
-    "lerna": "^4.0.0"
+  "dependencies": {
+    "@astrojs/check": "^0.3.4",
+    "@astrojs/mdx": "^2.3.1",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/sitemap": "^3.1.6",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.11.5",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.3"
   }
 }
